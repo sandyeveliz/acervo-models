@@ -1,0 +1,39 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.egg-info/
+dist/
+build/
+.venv/
+venv/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Generated data (large JSONL files)
+01_dataset/data/s1_raw/*.jsonl
+01_dataset/data/s1_5_raw/*.jsonl
+01_dataset/data/merged/*.jsonl
+
+# Model weights and artifacts
+*.bin
+*.safetensors
+*.gguf
+*.pt
+*.pth
+checkpoints/
+outputs/
+
+# Environment and secrets
+.env
+.env.local
+
+# OS
+Thumbs.db
+Desktop.ini
+.DS_Store
+
+# IDE
+.vscode/
+.idea/

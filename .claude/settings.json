@@ -1,0 +1,16 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(ls -la /d/Development/acervo-graph-model/.*)",
+      "Bash(pip --version)",
+      "Bash(nvidia-smi)",
+      "Bash(pip list:*)",
+      "Bash(python -c \"import torch; print\\(torch.__version__\\); print\\(torch.cuda.is_available\\(\\)\\); print\\(torch.cuda.get_device_capability\\(\\)\\)\")",
+      "Bash(jupyter --version)",
+      "WebSearch",
+      "Bash(python 01_dataset/schema.py)",
+      "Bash(git init:*)",
+      "Bash(git add:*)"
+    ]
+  }
+}
