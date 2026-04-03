@@ -11,10 +11,11 @@ venv/
 # Jupyter
 .ipynb_checkpoints/
 
-# Generated data (large JSONL files)
-01_dataset/data/s1_raw/*.jsonl
-01_dataset/data/s1_5_raw/*.jsonl
-01_dataset/data/merged/*.jsonl
+# Generated data (large JSONL files — regenerate with scripts)
+training_data/*.jsonl
+training_data/v2/
+01_dataset/data/
+01_dataset/training_data/
 
 # Model weights and artifacts
 *.bin
@@ -23,7 +24,10 @@ venv/
 *.pt
 *.pth
 checkpoints/
-outputs/
+02_training/outputs/
+
+# Unsloth compiled cache (auto-generated, machine-specific)
+02_training/unsloth_compiled_cache/
 
 # HF upload staging (contains copied weights)
 hf_upload/*.safetensors

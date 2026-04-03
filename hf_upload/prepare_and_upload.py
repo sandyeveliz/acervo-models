@@ -14,11 +14,12 @@ from pathlib import Path
 
 PROJECT_ROOT = Path(__file__).resolve().parent.parent
 HF_DIR = PROJECT_ROOT / "hf_upload"
-LORA_DIR = PROJECT_ROOT / "02_training" / "outputs" / "s1_sft_v2" / "final_lora"
-GGUF_DIR = PROJECT_ROOT / "02_training" / "outputs" / "s1_sft_v2" / "gguf_gguf"
-TRAINING_DATA = PROJECT_ROOT / "training_data"
+LORA_DIR = PROJECT_ROOT / "02_training" / "outputs" / "s1_sft_v3" / "final_lora"
+GGUF_DIR = PROJECT_ROOT / "02_training" / "outputs" / "s1_sft_v3" / "gguf_gguf"
+TRAINING_DATA = PROJECT_ROOT / "training_data" / "v2"
 
-REPO_ID = "SandyVeliz/acervo-extractor-qwen3.5-9b"
+REPO_ID = "SandyVeliz/acervo-extractor-v2"
+GGUF_NAME = "acervo-extractor-v2"  # Base name for GGUF files
 
 # Files to copy from the LoRA output
 LORA_FILES = [
@@ -33,9 +34,8 @@ LORA_FILES = [
 
 # Training data files to include (optional)
 DATA_FILES = [
-    "s1_extraction.jsonl",
-    "s1_suplementary_training.jsonl",
-    "s1_stress_test.jsonl",
+    "s1_v2_full_training.jsonl",
+    "s1_v2_full_validation.jsonl",
 ]
 
 
@@ -59,15 +59,20 @@ def prepare(include_gguf: bool = False, include_data: bool = False):
 
     print(f"\nCopied {copied} LoRA files to hf_upload/")
 
-    # Copy GGUF if requested
+    # Copy GGUF if requested — rename to acervo-extractor-v2-<quant>.gguf
     if include_gguf and GGUF_DIR.exists():
         gguf_out = HF_DIR / "gguf"
         gguf_out.mkdir(exist_ok=True)
         for f in GGUF_DIR.glob("*.gguf"):
-            shutil.copy2(f, gguf_out / f.name)
+            # Extract quantization suffix (e.g., Q4_K_M, Q8_0)
+            # Unsloth names files like: model-unsloth-Q4_K_M.gguf
+            parts = f.stem.split("-")
+            quant = parts[-1] if parts else "Q4_K_M"
+            new_name = f"{GGUF_NAME}-{quant}.gguf"
+            shutil.copy2(f, gguf_out / new_name)
             size_gb = f.stat().st_size / 1e9
-            print(f"  gguf/{f.name} ({size_gb:.1f} GB)")
-        print("GGUF files copied.")
+            print(f"  gguf/{new_name} ({size_gb:.1f} GB)")
+        print("GGUF files copied and renamed.")
     elif include_gguf:
         print(f"WARNING: GGUF not found at {GGUF_DIR}")
 

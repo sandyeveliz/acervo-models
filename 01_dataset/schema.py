@@ -95,7 +95,9 @@ class GraphFact(BaseModel):
 
 
 class S1Output(BaseModel):
+    intent: Literal["overview", "specific", "chat", "followup"]
     topic: TopicResult
+    retrieval: Literal["summary_only", "with_chunks"]
     entities: list[Entity] = Field(default_factory=list)
     relations: list[Relation] = Field(default_factory=list)
     facts: list[GraphFact] = Field(default_factory=list)
@@ -189,8 +191,22 @@ def validate_s1_jsonl(path: str) -> dict:
 
 S1_SYSTEM_PROMPT = (
     "You are a knowledge extractor for a personal knowledge graph. "
-    "Analyze the conversation and return a single JSON object with "
-    "topic classification, entities, relations, and facts. "
+    "Analyze the conversation and return a single JSON object with: "
+    "intent, topic, retrieval, entities, relations, and facts.\n\n"
+    "Intent — classify the user's intent:\n"
+    '- "overview": user wants a high-level summary, project description, '
+    "general information, counts, or listings.\n"
+    '- "specific": user wants a precise detail, specific code, a particular '
+    "fact, or a specific section.\n"
+    '- "chat": casual conversation, greetings, acknowledgments, opinions, '
+    "or thanks.\n"
+    '- "followup": continuing the previous topic with more depth, "tell me '
+    'more", or referencing something just discussed.\n\n'
+    "Retrieval — decide what data the system should fetch:\n"
+    '- "summary_only": the node summary is enough (overview, chat, conceptual '
+    "questions).\n"
+    '- "with_chunks": the user needs specific content from documents (code '
+    "lookups, specific facts, detailed analysis).\n\n"
     "Output valid JSON only, no markdown, no explanation."
 )
 
@@ -209,7 +225,9 @@ S1_5_SYSTEM_PROMPT = (
 if __name__ == "__main__":
     # Validate a sample S1 output (new format)
     sample_s1 = json.dumps({
+        "intent": "specific",
         "topic": {"action": "same", "label": None},
+        "retrieval": "with_chunks",
         "entities": [
             {"id": "beacon", "label": "Beacon", "type": "project", "layer": "PERSONAL",
              "attributes": {}, "facts": [], "existing_id": None}
@@ -227,7 +245,9 @@ if __name__ == "__main__":
 
     # Empty extraction
     sample_empty = json.dumps({
+        "intent": "chat",
         "topic": {"action": "same", "label": None},
+        "retrieval": "summary_only",
         "entities": [],
         "relations": [],
         "facts": [],

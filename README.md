@@ -2,29 +2,29 @@
 
 Fine-tuning pipeline for **Qwen3.5-9B** — a specialized model that extracts structured knowledge graphs from conversations. Built for [Acervo](https://github.com/sandyeveliz/acervo), a semantic compression layer for AI agents.
 
-**Model on Hugging Face:** [SandyVeliz/acervo-extractor-qwen3.5-9b](https://huggingface.co/SandyVeliz/acervo-extractor-qwen3.5-9b)
+**Latest model:** [SandyVeliz/acervo-extractor-v2](https://huggingface.co/SandyVeliz/acervo-extractor-v2)
 
 ## Why this exists
 
 Traditional RAG retrieves raw text chunks. Acervo replaces that with a compressed knowledge graph — structured nodes with entities, relations, and facts. This requires a fast, specialized model that can:
 
-1. **Classify the conversation topic** (same / subtopic / changed)
-2. **Extract entities** with types (person, project, technology, etc.) and layers (PERSONAL / UNIVERSAL)
-3. **Map relations** between entities (uses_technology, part_of, works_at, etc.)
-4. **Attach facts** to existing entities without creating duplicates
-5. **Output valid JSON** — every time, no markdown, no explanation
+1. **Classify user intent** (overview / specific / chat / followup)
+2. **Decide retrieval strategy** (summary_only / with_chunks)
+3. **Classify the conversation topic** (same / subtopic / changed)
+4. **Extract entities** with types (person, project, technology, etc.) and layers (PERSONAL / UNIVERSAL)
+5. **Map relations** between entities (uses_technology, part_of, works_at, etc.)
+6. **Attach facts** to existing entities without creating duplicates
+7. **Output valid JSON** — every time, no markdown, no explanation
 
 A general-purpose LLM can do this but is slow and expensive. This fine-tuned 9B model does it in one pass with structured output.
 
-## What the model does
-
-**Input:** a conversation turn + existing graph nodes as context
-
-**Output:** structured JSON
+## What the model outputs
 
 ```json
 {
+  "intent": "specific",
   "topic": {"action": "same"},
+  "retrieval": "with_chunks",
   "entities": [
     {"id": "kubernetes", "label": "Kubernetes", "type": "technology",
      "layer": "UNIVERSAL", "attributes": {}, "facts": [], "existing_id": null}
@@ -38,70 +38,107 @@ A general-purpose LLM can do this but is slow and expensive. This fine-tuned 9B 
 }
 ```
 
-The model handles bilingual input (English/Spanish), returns empty arrays for small talk (no hallucinated entities), and references existing graph nodes via `existing_id` to avoid duplicates.
-
 ## Project structure
 
 ```
-00_setup/           GPU verification + dependency installation
-01_dataset/         Pydantic schemas + dataset generation scripts
-02_training/        SFT notebooks (initial + incremental)
-03_eval/            Evaluation (WIP)
-04_export/          Export to GGUF (WIP)
-hf_upload/          Staging directory for Hugging Face uploads
-training_data/      Generated JSONL datasets (gitignored)
+00_setup/               GPU verification + dependency installation
+01_dataset/
+  schema.py             Pydantic schemas, system prompts, validation
+  generate_s1_training.py       v1 dataset generator (612 examples)
+  generate_s1_v2_training.py    v2 dataset generator (~390 new examples)
+  add_intent_to_v1.py           Migrate v1 data to v2 schema
+  merge_v2_dataset.py           Merge all data into final training set
+  benchmark_failures.jsonl      9 S1 failures from v0.4 benchmarks
+02_training/
+  train_sft.ipynb               v1 initial SFT (450 examples, 3 epochs)
+  train_sft_continue.ipynb      v1 incremental SFT (582 examples, 2 epochs)
+  train_sft_v3.ipynb            v2 SFT with intent+retrieval (~1,000 examples, 3 epochs)
+03_eval/
+  eval_benchmarks.py            Benchmark evaluation + v1 vs v2 comparison
+  eval_extraction.py            Indexed content extraction eval
+hf_upload/
+  prepare_and_upload.py         Upload LoRA + GGUF to HuggingFace
+  README.md                     Model card
+training_data/                  Generated JSONL datasets (gitignored)
+```
+
+## Version history
+
+| Version | HF Model | Examples | Key changes |
+|---------|----------|----------|-------------|
+| v1 | [acervo-extractor-qwen3.5-9b](https://huggingface.co/SandyVeliz/acervo-extractor-qwen3.5-9b) (deprecated) | 612 | Topic detection + entity extraction |
+| **v2** | **[acervo-extractor-v2](https://huggingface.co/SandyVeliz/acervo-extractor-v2)** | **~1,000** | **+ Intent classification, retrieval decision, code/doc/prose extraction** |
+
+## How to train a new version
+
+### Prerequisites
+- NVIDIA GPU with 16GB+ VRAM (tested on RTX 5070 Ti)
+- Python 3.12, CUDA 12.8
+- Run `00_setup/check_gpu.ipynb` and `00_setup/install_deps.ipynb`
+
+### Step 1: Update schema (if changing output format)
+
+Edit `01_dataset/schema.py` — add/modify fields in `S1Output`, update `S1_SYSTEM_PROMPT`.
+
+### Step 2: Generate training data
+
+```bash
+cd 01_dataset
+
+# Migrate existing data to new schema (if schema changed)
+python add_intent_to_v1.py --dry-run    # review distribution
+python add_intent_to_v1.py              # writes to training_data/v2/
+
+# Generate new examples
+python generate_s1_v2_training.py --seed 42
+
+# Merge into final dataset
+python merge_v2_dataset.py
+```
+
+### Step 3: Train
+
+Open `02_training/train_sft_v3.ipynb` and run all cells. The notebook:
+1. Loads the previous LoRA checkpoint
+2. Trains on the merged dataset (lr=5e-5, 3 epochs)
+3. Tests intent classification on 4 test cases
+4. Tests the 9 v0.4 benchmark failures
+5. Saves LoRA adapter
+6. Exports to GGUF (named `acervo-extractor-v2-Q4_K_M.gguf`)
+
+### Step 4: Evaluate
+
+```bash
+cd 03_eval
+python eval_benchmarks.py --model-path ../02_training/outputs/s1_sft_v3/final_lora \
+    --benchmark-file ../01_dataset/benchmark_failures.jsonl
+python eval_extraction.py --model-path ../02_training/outputs/s1_sft_v3/final_lora
+```
+
+### Step 5: Upload to HuggingFace
+
+```bash
+# Update REPO_ID in hf_upload/prepare_and_upload.py for new version
+python hf_upload/prepare_and_upload.py --upload --include-gguf
 ```
 
 ## Schema
 
 ### Entity types
-`person` · `organization` · `project` · `technology` · `place` · `event` · `document` · `concept`
+`person` `organization` `project` `technology` `place` `event` `document` `concept`
 
 ### Relation types
-`part_of` · `created_by` · `maintains` · `works_at` · `member_of` · `uses_technology` · `depends_on` · `alternative_to` · `located_in` · `deployed_on` · `produces` · `serves` · `documented_in` · `participated_in` · `triggered_by` · `resulted_in`
+`part_of` `created_by` `maintains` `works_at` `member_of` `uses_technology` `depends_on` `alternative_to` `located_in` `deployed_on` `produces` `serves` `documented_in` `participated_in` `triggered_by` `resulted_in`
+
+### Intent types (v2)
+`overview` `specific` `chat` `followup`
+
+### Retrieval modes (v2)
+`summary_only` `with_chunks`
 
 ### Layers
 - **PERSONAL** — user owns, created, or directly uses it
 - **UNIVERSAL** — public knowledge (technologies, cities, fictional characters)
-
-## Training pipeline
-
-### 1. Setup (`00_setup/`)
-
-- `check_gpu.ipynb` — verify GPU, CUDA, compute capability
-- `install_deps.ipynb` — install dependencies in correct order (critical for Blackwell GPUs)
-
-**Stack:** PyTorch cu128, unsloth, trl, bitsandbytes, peft
-
-### 2. Dataset (`01_dataset/`)
-
-- `schema.py` — Pydantic v2 schemas for S1 and S1.5 outputs, validation helpers, system prompts
-- `generate_s1_training.py` — template-based generator: 450 train + 50 validation examples across 11 conversation types and 5 domains
-
-**Dataset composition:**
-
-| Type | % | Description |
-|------|---|-------------|
-| Facts on existing entities | 30% | New info about known nodes |
-| New entity extraction | 20% | First mentions |
-| Empty output (small talk/queries) | 15% | Must return `[]`, not hallucinate |
-| Topic changes | 10% | Detecting new conversation topics |
-| Subtopic shifts | 10% | Deeper into an aspect |
-| Literary events | 5% | Narrative events with chronological markers |
-| Corrections | 5% | "We switched from X to Y" |
-| Dedup / existing refs | 5% | "nuestro proyecto" → existing_id |
-
-### 3. Training (`02_training/`)
-
-- `train_sft.ipynb` — initial SFT: LoRA r=16, alpha=32, lr=2e-4, 3 epochs on 450 examples
-- `train_sft_continue.ipynb` — incremental SFT: loads existing LoRA, lr=5e-5, 2 epochs on 582 examples (original + supplementary + stress test)
-
-**LoRA config:** 7 target modules, QLoRA 4-bit, adamw_8bit optimizer
-
-### 4. Upload (`hf_upload/`)
-
-- `prepare_and_upload.py` — copies LoRA + GGUF + training data to staging dir, uploads to HF
-- `README.md` — model card with usage examples and metrics
 
 ## Hardware
 
@@ -109,67 +146,35 @@ training_data/      Generated JSONL datasets (gitignored)
 |-----------|------|
 | GPU | NVIDIA RTX 5070 Ti (16GB VRAM, Blackwell sm_120) |
 | CUDA | 12.8 (cu128) |
-| PyTorch | nightly with cu128 backend |
+| PyTorch | 2.10.0+cu128 |
 | OS | Windows 11 |
-| Training time | ~1h15m for 582 examples x 2 epochs |
-
-## Quick start
-
-```bash
-# 1. Clone
-git clone https://github.com/sandyeveliz/acervo-graph-model
-cd acervo-graph-model
-
-# 2. Setup (run notebooks in order)
-#    00_setup/check_gpu.ipynb
-#    00_setup/install_deps.ipynb
-
-# 3. Generate training data
-python 01_dataset/generate_s1_training.py --seed 42
-
-# 4. Train
-#    02_training/train_sft.ipynb
-
-# 5. Upload to HF
-pip install huggingface_hub
-huggingface-cli login
-python hf_upload/prepare_and_upload.py --upload --include-gguf --include-data
-```
 
 ## Using the model
 
-### With Unsloth (recommended)
+### With LM Studio / Ollama
+
+Download the GGUF from the [HF repo](https://huggingface.co/SandyVeliz/acervo-extractor-v2). Shows as **acervo-extractor-v2** in LM Studio.
+
+### With Unsloth
 
 ```python
 from unsloth import FastLanguageModel
 
 model, tokenizer = FastLanguageModel.from_pretrained(
-    "SandyVeliz/acervo-extractor-qwen3.5-9b",
+    "SandyVeliz/acervo-extractor-v2",
     max_seq_length=2048, load_in_4bit=True,
 )
 FastLanguageModel.for_inference(model)
 ```
-
-### With LM Studio / Ollama
-
-Download the GGUF from the [HF repo](https://huggingface.co/SandyVeliz/acervo-extractor-qwen3.5-9b) and load it directly.
 
 ### With Acervo
 
 ```python
 from acervo import Acervo, OpenAIClient
 
-llm = OpenAIClient(base_url="http://localhost:1234/v1", model="acervo-extractor")
+llm = OpenAIClient(base_url="http://localhost:1234/v1", model="acervo-extractor-v2")
 memory = Acervo(llm=llm, owner="user")
 ```
-
-## Results
-
-| Metric | v1 (450 examples) | v2 (582 examples) |
-|--------|-------------------|-------------------|
-| JSON parse rate | 95% | 100% |
-| Stress test accuracy | 45% (9/20) | TBD |
-| Training loss | 0.16 | TBD |
 
 ## License
 
