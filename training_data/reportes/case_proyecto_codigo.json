@@ -1,0 +1,1465 @@
+{
+  "name": "proyecto_codigo",
+  "domain": "Proyecto Codigo",
+  "total_turns": 50,
+  "passed_turns": 7,
+  "pass_rate": 14,
+  "entity_accuracy": 56,
+  "relation_accuracy": 38,
+  "fact_accuracy": 0,
+  "topic_accuracy": 100,
+  "final_graph": {
+    "nodes": 36,
+    "edges": 87
+  },
+  "total_elapsed_ms": 362273,
+  "entity_misses": [
+    {
+      "turn": 2,
+      "msg": "Stack: React con TypeScript para el frontend, Node.js con Express para el backend, PostgreSQL para l",
+      "missing": [
+        "Node.js"
+      ]
+    },
+    {
+      "turn": 4,
+      "msg": "Inicializá el monorepo con Turborepo. El package.json root debe tener los workspaces configurados. U",
+      "missing": [
+        "pnpm"
+      ]
+    },
+    {
+      "turn": 6,
+      "msg": "El schema de User: id (uuid), name, email (unique), password_hash, avatar_url, created_at. Usamos bc",
+      "missing": [
+        "bcrypt",
+        "JWT"
+      ]
+    },
+    {
+      "turn": 13,
+      "msg": "Validación con Zod. Cada endpoint tiene su schema de validación. createExpenseSchema valida: amount ",
+      "missing": [
+        "Zod"
+      ]
+    },
+    {
+      "turn": 16,
+      "msg": "Ahora el frontend. Creá el proyecto React con Vite y TypeScript. Routing con React Router v6. Estado",
+      "missing": [
+        "Zustand",
+        "Tailwind CSS"
+      ]
+    },
+    {
+      "turn": 21,
+      "msg": "Creá el API client con Axios. Un archivo api.ts que configure la base URL, interceptor para JWT, y f",
+      "missing": [
+        "Axios"
+      ]
+    },
+    {
+      "turn": 23,
+      "msg": "Quiero agregar categorías con iconos. Usemos lucide-react para los iconos. Comida → UtensilsCrossed,",
+      "missing": [
+        "lucide-react"
+      ]
+    },
+    {
+      "turn": 25,
+      "msg": "CI/CD con GitHub Actions. Pipeline: lint → test → build → deploy. En PR solo lint+test, en merge a m",
+      "missing": [
+        "GitHub Actions"
+      ]
+    },
+    {
+      "turn": 42,
+      "msg": "Documentá la API con Swagger/OpenAPI. Cada endpoint documentado con request/response schemas, auth r",
+      "missing": [
+        "Swagger/OpenAPI"
+      ]
+    },
+    {
+      "turn": 43,
+      "msg": "Quiero agregar avatares generados automáticamente. Cuando un usuario se registra, genera un avatar c",
+      "missing": [
+        "DiceBear"
+      ]
+    }
+  ],
+  "relation_misses": [
+    {
+      "turn": 2,
+      "msg": "Stack: React con TypeScript para el frontend, Node.js con Express para el backend, PostgreSQL para l",
+      "missing": [
+        [
+          "dividiapp",
+          "nodejs"
+        ]
+      ]
+    },
+    {
+      "turn": 6,
+      "msg": "El schema de User: id (uuid), name, email (unique), password_hash, avatar_url, created_at. Usamos bc",
+      "missing": [
+        [
+          "dividiapp",
+          "bcrypt"
+        ],
+        [
+          "dividiapp",
+          "jwt"
+        ]
+      ]
+    },
+    {
+      "turn": 13,
+      "msg": "Validación con Zod. Cada endpoint tiene su schema de validación. createExpenseSchema valida: amount ",
+      "missing": [
+        [
+          "dividiapp",
+          "zod"
+        ]
+      ]
+    },
+    {
+      "turn": 16,
+      "msg": "Ahora el frontend. Creá el proyecto React con Vite y TypeScript. Routing con React Router v6. Estado",
+      "missing": [
+        [
+          "dividiapp",
+          "vite"
+        ],
+        [
+          "dividiapp",
+          "zustand"
+        ],
+        [
+          "dividiapp",
+          "tailwind"
+        ]
+      ]
+    },
+    {
+      "turn": 21,
+      "msg": "Creá el API client con Axios. Un archivo api.ts que configure la base URL, interceptor para JWT, y f",
+      "missing": [
+        [
+          "dividiapp",
+          "axios"
+        ]
+      ]
+    },
+    {
+      "turn": 22,
+      "msg": "Necesito notificaciones push. Vamos con Firebase Cloud Messaging. Cuando alguien agrega un gasto al ",
+      "missing": [
+        [
+          "dividiapp",
+          "fcm"
+        ]
+      ]
+    },
+    {
+      "turn": 23,
+      "msg": "Quiero agregar categorías con iconos. Usemos lucide-react para los iconos. Comida → UtensilsCrossed,",
+      "missing": [
+        [
+          "dividiapp",
+          "lucide"
+        ]
+      ]
+    },
+    {
+      "turn": 25,
+      "msg": "CI/CD con GitHub Actions. Pipeline: lint → test → build → deploy. En PR solo lint+test, en merge a m",
+      "missing": [
+        [
+          "dividiapp",
+          "github_actions"
+        ]
+      ]
+    },
+    {
+      "turn": 35,
+      "msg": "En el frontend, implementá el chart de gastos por mes usando Recharts. BarChart con meses en el eje ",
+      "missing": [
+        [
+          "dividiapp",
+          "recharts"
+        ]
+      ]
+    },
+    {
+      "turn": 42,
+      "msg": "Documentá la API con Swagger/OpenAPI. Cada endpoint documentado con request/response schemas, auth r",
+      "missing": [
+        [
+          "dividiapp",
+          "swagger"
+        ]
+      ]
+    },
+    {
+      "turn": 43,
+      "msg": "Quiero agregar avatares generados automáticamente. Cuando un usuario se registra, genera un avatar c",
+      "missing": [
+        [
+          "dividiapp",
+          "dicebear"
+        ]
+      ]
+    },
+    {
+      "turn": 44,
+      "msg": "Feature: receipts. Los usuarios pueden sacar foto del ticket y la app extrae el monto con OCR (Tesse",
+      "missing": [
+        [
+          "dividiapp",
+          "tesseract_js"
+        ]
+      ]
+    }
+  ],
+  "fact_misses": [
+    {
+      "turn": 3,
+      "msg": "Empecemos con la estructura del proyecto. Quiero monorepo con Turborepo: carpeta apps/web para el fr",
+      "missing": [
+        "Estructura: monorepo Turborepo. apps/web (React), apps/api ("
+      ]
+    },
+    {
+      "turn": 4,
+      "msg": "Inicializá el monorepo con Turborepo. El package.json root debe tener los workspaces configurados. U",
+      "missing": [
+        "Package manager: pnpm"
+      ]
+    },
+    {
+      "turn": 5,
+      "msg": "Ahora el backend. Necesito el modelo de datos. Las entidades principales son: User, Group, Expense, ",
+      "missing": [
+        "Modelo datos: User, Group, Expense, Settlement. User ↔ Group"
+      ]
+    },
+    {
+      "turn": 6,
+      "msg": "El schema de User: id (uuid), name, email (unique), password_hash, avatar_url, created_at. Usamos bc",
+      "missing": [
+        "User schema: id uuid, name, email unique, password_hash, ava"
+      ]
+    },
+    {
+      "turn": 7,
+      "msg": "Schema de Group: id, name, description, created_by (FK user), invite_code (unique, 8 chars), created",
+      "missing": [
+        "Group schema: id, name, description, created_by, invite_code"
+      ]
+    },
+    {
+      "turn": 8,
+      "msg": "Schema de Expense: id, group_id, paid_by (FK user), amount (decimal), description, category, date, s",
+      "missing": [
+        "Expense schema: group_id, paid_by, amount, description, cate"
+      ]
+    },
+    {
+      "turn": 10,
+      "msg": "Ahora la API. Quiero endpoints REST con esta estructura: POST /auth/register, POST /auth/login, GET ",
+      "missing": [
+        "API endpoints: auth (register/login), groups CRUD, join via "
+      ]
+    },
+    {
+      "turn": 11,
+      "msg": "El endpoint de balances es el más importante. El algoritmo tiene que calcular las deudas netas de ca",
+      "missing": [
+        "Algoritmo balances: deudas netas + simplificación de transfe"
+      ]
+    },
+    {
+      "turn": 12,
+      "msg": "Implementá el middleware de auth. Todas las rutas excepto /auth/* requieren JWT válido. El token tie",
+      "missing": [
+        "Auth middleware: JWT obligatorio excepto /auth/*. Token con "
+      ]
+    },
+    {
+      "turn": 14,
+      "msg": "Error handling centralizado. Necesito un error handler middleware que catchee todos los errores y de",
+      "missing": [
+        "Error handler centralizado: {error, message, code}. Logging "
+      ]
+    },
+    {
+      "turn": 15,
+      "msg": "Tests. Usemos Vitest para el backend. Quiero tests para: el algoritmo de balance simplification, los",
+      "missing": [
+        "Tests con Vitest: algoritmo balances, auth endpoints, expens"
+      ]
+    },
+    {
+      "turn": 17,
+      "msg": "Páginas del frontend: Login, Register, Dashboard (lista de grupos), GroupDetail (gastos + balances),",
+      "missing": [
+        "Páginas: Login, Register, Dashboard, GroupDetail, AddExpense"
+      ]
+    },
+    {
+      "turn": 18,
+      "msg": "El Dashboard muestra: tus grupos con el balance resumido de cada uno (verde si te deben, rojo si deb",
+      "missing": [
+        "Dashboard: grupos con balance color-coded (verde=te deben, r"
+      ]
+    },
+    {
+      "turn": 19,
+      "msg": "GroupDetail tiene 3 tabs: Gastos (lista cronológica con quién pagó y cuánto), Balances (quién le deb",
+      "missing": [
+        "GroupDetail: 3 tabs - Gastos (cronológico), Balances (deudas"
+      ]
+    },
+    {
+      "turn": 20,
+      "msg": "El form de AddExpense tiene: monto, descripción, categoría (dropdown: comida, transporte, alojamient",
+      "missing": [
+        "AddExpense form: monto, desc, categoría, fecha, split type, "
+      ]
+    },
+    {
+      "turn": 22,
+      "msg": "Necesito notificaciones push. Vamos con Firebase Cloud Messaging. Cuando alguien agrega un gasto al ",
+      "missing": [
+        "Push notifications: FCM, trigger en nuevo gasto"
+      ]
+    },
+    {
+      "turn": 24,
+      "msg": "Ahora deploy. Configurá Railway con 2 servicios: api (Node.js) y db (PostgreSQL). El frontend lo dep",
+      "missing": [
+        "Deploy: API+DB en Railway, Frontend en Vercel. Env: DATABASE"
+      ]
+    },
+    {
+      "turn": 25,
+      "msg": "CI/CD con GitHub Actions. Pipeline: lint → test → build → deploy. En PR solo lint+test, en merge a m",
+      "missing": [
+        "CI/CD: PR=lint+test, merge main=deploy auto"
+      ]
+    },
+    {
+      "turn": 26,
+      "msg": "Necesito seed data para development. Creá un script que genere: 3 usuarios (Alice, Bob, Charlie), 2 ",
+      "missing": [
+        "Seed data: 3 users, 2 groups, 10 expenses con splits variado"
+      ]
+    },
+    {
+      "turn": 27,
+      "msg": "Implementá el dark mode. Tailwind tiene soporte nativo. Toggle en Settings y que persista en localSt",
+      "missing": [
+        "Dark mode: toggle en Settings, persist localStorage, default"
+      ]
+    },
+    {
+      "turn": 28,
+      "msg": "Feature nueva: recurring expenses. Si pagás Netflix todos los meses, podés marcarlo como recurrente ",
+      "missing": [
+        "Feature: gastos recurrentes con cron job backend"
+      ]
+    },
+    {
+      "turn": 29,
+      "msg": "Armá un README profesional. Badges de CI, features listados, screenshots placeholder, instrucciones ",
+      "missing": [
+        "README: badges CI, features, screenshots, setup local, tech "
+      ]
+    },
+    {
+      "turn": 31,
+      "msg": "Quiero agregar internacionalización. i18next para React. Idiomas: español e inglés. Todas las string",
+      "missing": [
+        "i18n con i18next: español + inglés"
+      ]
+    },
+    {
+      "turn": 32,
+      "msg": "Feature: exportar gastos a CSV. Botón en GroupDetail que descarga un CSV con: fecha, descripción, ca",
+      "missing": [
+        "Feature: export gastos a CSV desde GroupDetail"
+      ]
+    },
+    {
+      "turn": 33,
+      "msg": "Necesito rate limiting en la API. Express-rate-limit, 100 requests por minuto por IP en general, 5 p",
+      "missing": [
+        "Rate limiting: 100 req/min general, 5 req/min en login"
+      ]
+    },
+    {
+      "turn": 34,
+      "msg": "Agregá un endpoint GET /groups/:id/stats que devuelva: total gastado por el grupo, gasto promedio, t",
+      "missing": [
+        "Endpoint stats: total gastado, promedio, top categoría, top "
+      ]
+    },
+    {
+      "turn": 36,
+      "msg": "Security review. Verificá: SQL injection (Prisma debería proteger), XSS (sanitizar inputs), CSRF, CO",
+      "missing": [
+        "Security checklist: SQL injection, XSS, CSRF, CORS, password"
+      ]
+    },
+    {
+      "turn": 37,
+      "msg": "Performance: lazy loading de rutas con React.lazy(), code splitting por página, imágenes optimizadas",
+      "missing": [
+        "Performance: lazy loading rutas, code splitting, pagination "
+      ]
+    },
+    {
+      "turn": 38,
+      "msg": "Vamos a agregar PWA support. Service worker para offline básico, manifest.json con nombre e iconos, ",
+      "missing": [
+        "PWA: service worker offline, manifest.json, install prompt, "
+      ]
+    },
+    {
+      "turn": 44,
+      "msg": "Feature: receipts. Los usuarios pueden sacar foto del ticket y la app extrae el monto con OCR (Tesse",
+      "missing": [
+        "Feature: foto de ticket con OCR (Tesseract.js), extrae monto"
+      ]
+    },
+    {
+      "turn": 45,
+      "msg": "Configurá environments: development (local), staging (Railway preview), production (Railway + Vercel",
+      "missing": [
+        "Environments: dev (local), staging (Railway preview), prod ("
+      ]
+    },
+    {
+      "turn": 46,
+      "msg": "El MVP está listo! Funcionalidades: auth, grupos con invite, gastos con splits, cálculo de balances,",
+      "missing": [
+        "MVP v1.0.0 completo: auth, grupos, gastos, balances, push, d"
+      ]
+    },
+    {
+      "turn": 47,
+      "msg": "Mandé el link a mis amigos para que lo prueben. Creamos un grupo 'Asado del finde' y cargamos los ga",
+      "missing": [
+        "Testing con amigos: grupo 'Asado del finde', funciona correc"
+      ]
+    },
+    {
+      "turn": 48,
+      "msg": "Feedback de los testers: quieren poder adjuntar fotos a los gastos (no solo recibos, también fotos d",
+      "missing": [
+        "Feedback v1: adjuntar fotos a gastos, comentarios en gastos"
+      ]
+    },
+    {
+      "turn": 49,
+      "msg": "Hacé un roadmap para v1.1: fotos en gastos, comentarios, mejoras de UX según feedback, y optimizació",
+      "missing": [
+        "Roadmap v1.1: fotos, comentarios, UX improvements, query opt"
+      ]
+    }
+  ],
+  "turns": [
+    {
+      "turn": 1,
+      "user_msg": "Quiero arrancar un proyecto nuevo: una app de control de gastos compartidos tipo Splitwise pero más ",
+      "elapsed_ms": 6985,
+      "passed": true,
+      "entity_accuracy": 100,
+      "relation_accuracy": null,
+      "fact_accuracy": null,
+      "topic_ok": true,
+      "graph_nodes": 2,
+      "graph_edges": 2,
+      "node_delta": 2,
+      "failures": [],
+      "missing_entities": [],
+      "missing_facts": []
+    },
+    {
+      "turn": 2,
+      "user_msg": "Stack: React con TypeScript para el frontend, Node.js con Express para el backend, PostgreSQL para l",
+      "elapsed_ms": 10014,
+      "passed": false,
+      "entity_accuracy": 83,
+      "relation_accuracy": 83,
+      "fact_accuracy": null,
+      "topic_ok": true,
+      "graph_nodes": 7,
+      "graph_edges": 12,
+      "node_delta": 5,
+      "failures": [
+        "entities missing: ['Node.js']",
+        "relations missing: [('dividiapp', 'nodejs')]"
+      ],
+      "missing_entities": [
+        "Node.js"
+      ],
+      "missing_facts": []
+    },
+    {
+      "turn": 3,
+      "user_msg": "Empecemos con la estructura del proyecto. Quiero monorepo con Turborepo: carpeta apps/web para el fr",
+      "elapsed_ms": 8938,
+      "passed": false,
+      "entity_accuracy": 100,
+      "relation_accuracy": 100,
+      "fact_accuracy": 0,
+      "topic_ok": true,
+      "graph_nodes": 8,
+      "graph_edges": 14,
+      "node_delta": 1,
+      "failures": [
+        "facts missing: ['Estructura: monorepo Turborepo. apps/web']"
+      ],
+      "missing_entities": [],
+      "missing_facts": [
+        "Estructura: monorepo Turborepo. apps/web (React), apps/api ("
+      ]
+    },
+    {
+      "turn": 4,
+      "user_msg": "Inicializá el monorepo con Turborepo. El package.json root debe tener los workspaces configurados. U",
+      "elapsed_ms": 8875,
+      "passed": false,
+      "entity_accuracy": 0,
+      "relation_accuracy": null,
+      "fact_accuracy": 0,
+      "topic_ok": true,
+      "graph_nodes": 9,
+      "graph_edges": 17,
+      "node_delta": 1,
+      "failures": [
+        "entities missing: ['pnpm']",
+        "facts missing: ['Package manager: pnpm']"
+      ],
+      "missing_entities": [
+        "pnpm"
+      ],
+      "missing_facts": [
+        "Package manager: pnpm"
+      ]
+    },
+    {
+      "turn": 5,
+      "user_msg": "Ahora el backend. Necesito el modelo de datos. Las entidades principales son: User, Group, Expense, ",
+      "elapsed_ms": 8140,
+      "passed": false,
+      "entity_accuracy": null,
+      "relation_accuracy": null,
+      "fact_accuracy": 0,
+      "topic_ok": true,
+      "graph_nodes": 13,
+      "graph_edges": 24,
+      "node_delta": 4,
+      "failures": [
+        "facts missing: ['Modelo datos: User, Group, Expense, Sett']"
+      ],
+      "missing_entities": [],
+      "missing_facts": [
+        "Modelo datos: User, Group, Expense, Settlement. User ↔ Group"
+      ]
+    },
+    {
+      "turn": 6,
+      "user_msg": "El schema de User: id (uuid), name, email (unique), password_hash, avatar_url, created_at. Usamos bc",
+      "elapsed_ms": 6469,
+      "passed": false,
+      "entity_accuracy": 0,
+      "relation_accuracy": 0,
+      "fact_accuracy": 0,
+      "topic_ok": true,
+      "graph_nodes": 13,
+      "graph_edges": 24,
+      "node_delta": 0,
+      "failures": [
+        "entities missing: ['bcrypt', 'JWT']",
+        "relations missing: [('dividiapp', 'bcrypt'), ('dividiapp', 'jwt')]",
+        "facts missing: ['User schema: id uuid, name, email unique']"
+      ],
+      "missing_entities": [
+        "bcrypt",
+        "JWT"
+      ],
+      "missing_facts": [
+        "User schema: id uuid, name, email unique, password_hash, ava"
+      ]
+    },
+    {
+      "turn": 7,
+      "user_msg": "Schema de Group: id, name, description, created_by (FK user), invite_code (unique, 8 chars), created",
+      "elapsed_ms": 7155,
+      "passed": false,
+      "entity_accuracy": null,
+      "relation_accuracy": null,
+      "fact_accuracy": 0,
+      "topic_ok": true,
+      "graph_nodes": 13,
+      "graph_edges": 24,
+      "node_delta": 0,
+      "failures": [
+        "facts missing: ['Group schema: id, name, description, cre']"
+      ],
+      "missing_entities": [],
+      "missing_facts": [
+        "Group schema: id, name, description, created_by, invite_code"
+      ]
+    },
+    {
+      "turn": 8,
+      "user_msg": "Schema de Expense: id, group_id, paid_by (FK user), amount (decimal), description, category, date, s",
+      "elapsed_ms": 8734,
+      "passed": false,
+      "entity_accuracy": null,
+      "relation_accuracy": null,
+      "fact_accuracy": 0,
+      "topic_ok": true,
+      "graph_nodes": 13,
+      "graph_edges": 27,
+      "node_delta": 0,
+      "failures": [
+        "facts missing: ['Expense schema: group_id, paid_by, amoun']"
+      ],
+      "missing_entities": [],
+      "missing_facts": [
+        "Expense schema: group_id, paid_by, amount, description, cate"
+      ]
+    },
+    {
+      "turn": 9,
+      "user_msg": "Creá las migraciones de Prisma con este schema. Usamos Prisma como ORM.",
+      "elapsed_ms": 6797,
+      "passed": true,
+      "entity_accuracy": 100,
+      "relation_accuracy": 100,
+      "fact_accuracy": null,
+      "topic_ok": true,
+      "graph_nodes": 14,
+      "graph_edges": 29,
+      "node_delta": 1,
+      "failures": [],
+      "missing_entities": [],
+      "missing_facts": []
+    },
+    {
+      "turn": 10,
+      "user_msg": "Ahora la API. Quiero endpoints REST con esta estructura: POST /auth/register, POST /auth/login, GET ",
+      "elapsed_ms": 7186,
+      "passed": false,
+      "entity_accuracy": null,
+      "relation_accuracy": null,
+      "fact_accuracy": 0,
+      "topic_ok": true,
+      "graph_nodes": 14,
+      "graph_edges": 29,
+      "node_delta": 0,
+      "failures": [
+        "facts missing: ['API endpoints: auth (register/login), gr']"
+      ],
+      "missing_entities": [],
+      "missing_facts": [
+        "API endpoints: auth (register/login), groups CRUD, join via "
+      ]
+    },
+    {
+      "turn": 11,
+      "user_msg": "El endpoint de balances es el más importante. El algoritmo tiene que calcular las deudas netas de ca",
+      "elapsed_ms": 6344,
+      "passed": false,
+      "entity_accuracy": null,
+      "relation_accuracy": null,
+      "fact_accuracy": 0,
+      "topic_ok": true,
+      "graph_nodes": 14,
+      "graph_edges": 29,
+      "node_delta": 0,
+      "failures": [
+        "facts missing: ['Algoritmo balances: deudas netas + simpl']"
+      ],
+      "missing_entities": [],
+      "missing_facts": [
+        "Algoritmo balances: deudas netas + simplificación de transfe"
+      ]
+    },
+    {
+      "turn": 12,
+      "user_msg": "Implementá el middleware de auth. Todas las rutas excepto /auth/* requieren JWT válido. El token tie",
+      "elapsed_ms": 6219,
+      "passed": false,
+      "entity_accuracy": null,
+      "relation_accuracy": null,
+      "fact_accuracy": 0,
+      "topic_ok": true,
+      "graph_nodes": 14,
+      "graph_edges": 29,
+      "node_delta": 0,
+      "failures": [
+        "facts missing: ['Auth middleware: JWT obligatorio excepto']"
+      ],
+      "missing_entities": [],
+      "missing_facts": [
+        "Auth middleware: JWT obligatorio excepto /auth/*. Token con "
+      ]
+    },
+    {
+      "turn": 13,
+      "user_msg": "Validación con Zod. Cada endpoint tiene su schema de validación. createExpenseSchema valida: amount ",
+      "elapsed_ms": 5780,
+      "passed": false,
+      "entity_accuracy": 0,
+      "relation_accuracy": 0,
+      "fact_accuracy": null,
+      "topic_ok": true,
+      "graph_nodes": 14,
+      "graph_edges": 29,
+      "node_delta": 0,
+      "failures": [
+        "entities missing: ['Zod']",
+        "relations missing: [('dividiapp', 'zod')]"
+      ],
+      "missing_entities": [
+        "Zod"
+      ],
+      "missing_facts": []
+    },
+    {
+      "turn": 14,
+      "user_msg": "Error handling centralizado. Necesito un error handler middleware que catchee todos los errores y de",
+      "elapsed_ms": 6452,
+      "passed": false,
+      "entity_accuracy": null,
+      "relation_accuracy": null,
+      "fact_accuracy": 0,
+      "topic_ok": true,
+      "graph_nodes": 15,
+      "graph_edges": 31,
+      "node_delta": 1,
+      "failures": [
+        "facts missing: ['Error handler centralizado: {error, mess']"
+      ],
+      "missing_entities": [],
+      "missing_facts": [
+        "Error handler centralizado: {error, message, code}. Logging "
+      ]
+    },
+    {
+      "turn": 15,
+      "user_msg": "Tests. Usemos Vitest para el backend. Quiero tests para: el algoritmo de balance simplification, los",
+      "elapsed_ms": 6953,
+      "passed": false,
+      "entity_accuracy": 100,
+      "relation_accuracy": 100,
+      "fact_accuracy": 0,
+      "topic_ok": true,
+      "graph_nodes": 16,
+      "graph_edges": 33,
+      "node_delta": 1,
+      "failures": [
+        "facts missing: ['Tests con Vitest: algoritmo balances, au']"
+      ],
+      "missing_entities": [],
+      "missing_facts": [
+        "Tests con Vitest: algoritmo balances, auth endpoints, expens"
+      ]
+    },
+    {
+      "turn": 16,
+      "user_msg": "Ahora el frontend. Creá el proyecto React con Vite y TypeScript. Routing con React Router v6. Estado",
+      "elapsed_ms": 7359,
+      "passed": false,
+      "entity_accuracy": 33,
+      "relation_accuracy": 0,
+      "fact_accuracy": null,
+      "topic_ok": true,
+      "graph_nodes": 16,
+      "graph_edges": 33,
+      "node_delta": 0,
+      "failures": [
+        "entities missing: ['Zustand', 'Tailwind CSS']",
+        "relations missing: [('dividiapp', 'vite'), ('dividiapp', 'zustand'), ('dividiapp', 'tailwind')]"
+      ],
+      "missing_entities": [
+        "Zustand",
+        "Tailwind CSS"
+      ],
+      "missing_facts": []
+    },
+    {
+      "turn": 17,
+      "user_msg": "Páginas del frontend: Login, Register, Dashboard (lista de grupos), GroupDetail (gastos + balances),",
+      "elapsed_ms": 6265,
+      "passed": false,
+      "entity_accuracy": null,
+      "relation_accuracy": null,
+      "fact_accuracy": 0,
+      "topic_ok": true,
+      "graph_nodes": 16,
+      "graph_edges": 33,
+      "node_delta": 0,
+      "failures": [
+        "facts missing: ['Páginas: Login, Register, Dashboard, Gro']"
+      ],
+      "missing_entities": [],
+      "missing_facts": [
+        "Páginas: Login, Register, Dashboard, GroupDetail, AddExpense"
+      ]
+    },
+    {
+      "turn": 18,
+      "user_msg": "El Dashboard muestra: tus grupos con el balance resumido de cada uno (verde si te deben, rojo si deb",
+      "elapsed_ms": 5984,
+      "passed": false,
+      "entity_accuracy": null,
+      "relation_accuracy": null,
+      "fact_accuracy": 0,
+      "topic_ok": true,
+      "graph_nodes": 16,
+      "graph_edges": 33,
+      "node_delta": 0,
+      "failures": [
+        "facts missing: ['Dashboard: grupos con balance color-code']"
+      ],
+      "missing_entities": [],
+      "missing_facts": [
+        "Dashboard: grupos con balance color-coded (verde=te deben, r"
+      ]
+    },
+    {
+      "turn": 19,
+      "user_msg": "GroupDetail tiene 3 tabs: Gastos (lista cronológica con quién pagó y cuánto), Balances (quién le deb",
+      "elapsed_ms": 6842,
+      "passed": false,
+      "entity_accuracy": null,
+      "relation_accuracy": null,
+      "fact_accuracy": 0,
+      "topic_ok": true,
+      "graph_nodes": 17,
+      "graph_edges": 35,
+      "node_delta": 1,
+      "failures": [
+        "facts missing: ['GroupDetail: 3 tabs - Gastos (cronológic']"
+      ],
+      "missing_entities": [],
+      "missing_facts": [
+        "GroupDetail: 3 tabs - Gastos (cronológico), Balances (deudas"
+      ]
+    },
+    {
+      "turn": 20,
+      "user_msg": "El form de AddExpense tiene: monto, descripción, categoría (dropdown: comida, transporte, alojamient",
+      "elapsed_ms": 6500,
+      "passed": false,
+      "entity_accuracy": null,
+      "relation_accuracy": null,
+      "fact_accuracy": 0,
+      "topic_ok": true,
+      "graph_nodes": 17,
+      "graph_edges": 35,
+      "node_delta": 0,
+      "failures": [
+        "facts missing: ['AddExpense form: monto, desc, categoría,']"
+      ],
+      "missing_entities": [],
+      "missing_facts": [
+        "AddExpense form: monto, desc, categoría, fecha, split type, "
+      ]
+    },
+    {
+      "turn": 21,
+      "user_msg": "Creá el API client con Axios. Un archivo api.ts que configure la base URL, interceptor para JWT, y f",
+      "elapsed_ms": 6938,
+      "passed": false,
+      "entity_accuracy": 0,
+      "relation_accuracy": 0,
+      "fact_accuracy": null,
+      "topic_ok": true,
+      "graph_nodes": 18,
+      "graph_edges": 37,
+      "node_delta": 1,
+      "failures": [
+        "entities missing: ['Axios']",
+        "relations missing: [('dividiapp', 'axios')]"
+      ],
+      "missing_entities": [
+        "Axios"
+      ],
+      "missing_facts": []
+    },
+    {
+      "turn": 22,
+      "user_msg": "Necesito notificaciones push. Vamos con Firebase Cloud Messaging. Cuando alguien agrega un gasto al ",
+      "elapsed_ms": 6844,
+      "passed": false,
+      "entity_accuracy": 100,
+      "relation_accuracy": 0,
+      "fact_accuracy": 0,
+      "topic_ok": true,
+      "graph_nodes": 19,
+      "graph_edges": 39,
+      "node_delta": 1,
+      "failures": [
+        "relations missing: [('dividiapp', 'fcm')]",
+        "facts missing: ['Push notifications: FCM, trigger en nuev']"
+      ],
+      "missing_entities": [],
+      "missing_facts": [
+        "Push notifications: FCM, trigger en nuevo gasto"
+      ]
+    },
+    {
+      "turn": 23,
+      "user_msg": "Quiero agregar categorías con iconos. Usemos lucide-react para los iconos. Comida → UtensilsCrossed,",
+      "elapsed_ms": 6984,
+      "passed": false,
+      "entity_accuracy": 0,
+      "relation_accuracy": 0,
+      "fact_accuracy": null,
+      "topic_ok": true,
+      "graph_nodes": 19,
+      "graph_edges": 39,
+      "node_delta": 0,
+      "failures": [
+        "entities missing: ['lucide-react']",
+        "relations missing: [('dividiapp', 'lucide')]"
+      ],
+      "missing_entities": [
+        "lucide-react"
+      ],
+      "missing_facts": []
+    },
+    {
+      "turn": 24,
+      "user_msg": "Ahora deploy. Configurá Railway con 2 servicios: api (Node.js) y db (PostgreSQL). El frontend lo dep",
+      "elapsed_ms": 9530,
+      "passed": false,
+      "entity_accuracy": null,
+      "relation_accuracy": null,
+      "fact_accuracy": 0,
+      "topic_ok": true,
+      "graph_nodes": 20,
+      "graph_edges": 43,
+      "node_delta": 1,
+      "failures": [
+        "facts missing: ['Deploy: API+DB en Railway, Frontend en V']"
+      ],
+      "missing_entities": [],
+      "missing_facts": [
+        "Deploy: API+DB en Railway, Frontend en Vercel. Env: DATABASE"
+      ]
+    },
+    {
+      "turn": 25,
+      "user_msg": "CI/CD con GitHub Actions. Pipeline: lint → test → build → deploy. En PR solo lint+test, en merge a m",
+      "elapsed_ms": 10219,
+      "passed": false,
+      "entity_accuracy": 0,
+      "relation_accuracy": 0,
+      "fact_accuracy": 0,
+      "topic_ok": true,
+      "graph_nodes": 20,
+      "graph_edges": 43,
+      "node_delta": 0,
+      "failures": [
+        "entities missing: ['GitHub Actions']",
+        "relations missing: [('dividiapp', 'github_actions')]",
+        "facts missing: ['CI/CD: PR=lint+test, merge main=deploy a']"
+      ],
+      "missing_entities": [
+        "GitHub Actions"
+      ],
+      "missing_facts": [
+        "CI/CD: PR=lint+test, merge main=deploy auto"
+      ]
+    },
+    {
+      "turn": 26,
+      "user_msg": "Necesito seed data para development. Creá un script que genere: 3 usuarios (Alice, Bob, Charlie), 2 ",
+      "elapsed_ms": 6530,
+      "passed": false,
+      "entity_accuracy": null,
+      "relation_accuracy": null,
+      "fact_accuracy": 0,
+      "topic_ok": true,
+      "graph_nodes": 20,
+      "graph_edges": 43,
+      "node_delta": 0,
+      "failures": [
+        "facts missing: ['Seed data: 3 users, 2 groups, 10 expense']"
+      ],
+      "missing_entities": [],
+      "missing_facts": [
+        "Seed data: 3 users, 2 groups, 10 expenses con splits variado"
+      ]
+    },
+    {
+      "turn": 27,
+      "user_msg": "Implementá el dark mode. Tailwind tiene soporte nativo. Toggle en Settings y que persista en localSt",
+      "elapsed_ms": 7094,
+      "passed": false,
+      "entity_accuracy": null,
+      "relation_accuracy": null,
+      "fact_accuracy": 0,
+      "topic_ok": true,
+      "graph_nodes": 21,
+      "graph_edges": 45,
+      "node_delta": 1,
+      "failures": [
+        "facts missing: ['Dark mode: toggle en Settings, persist l']"
+      ],
+      "missing_entities": [],
+      "missing_facts": [
+        "Dark mode: toggle en Settings, persist localStorage, default"
+      ]
+    },
+    {
+      "turn": 28,
+      "user_msg": "Feature nueva: recurring expenses. Si pagás Netflix todos los meses, podés marcarlo como recurrente ",
+      "elapsed_ms": 5983,
+      "passed": false,
+      "entity_accuracy": null,
+      "relation_accuracy": null,
+      "fact_accuracy": 0,
+      "topic_ok": true,
+      "graph_nodes": 21,
+      "graph_edges": 45,
+      "node_delta": 0,
+      "failures": [
+        "facts missing: ['Feature: gastos recurrentes con cron job']"
+      ],
+      "missing_entities": [],
+      "missing_facts": [
+        "Feature: gastos recurrentes con cron job backend"
+      ]
+    },
+    {
+      "turn": 29,
+      "user_msg": "Armá un README profesional. Badges de CI, features listados, screenshots placeholder, instrucciones ",
+      "elapsed_ms": 5907,
+      "passed": false,
+      "entity_accuracy": null,
+      "relation_accuracy": null,
+      "fact_accuracy": 0,
+      "topic_ok": true,
+      "graph_nodes": 21,
+      "graph_edges": 45,
+      "node_delta": 0,
+      "failures": [
+        "facts missing: ['README: badges CI, features, screenshots']"
+      ],
+      "missing_entities": [],
+      "missing_facts": [
+        "README: badges CI, features, screenshots, setup local, tech "
+      ]
+    },
+    {
+      "turn": 30,
+      "user_msg": "Revisemos los tests. Corré los tests y decime cuántos pasan. Si hay alguno roto, fixealo.",
+      "elapsed_ms": 5811,
+      "passed": true,
+      "entity_accuracy": null,
+      "relation_accuracy": null,
+      "fact_accuracy": null,
+      "topic_ok": true,
+      "graph_nodes": 21,
+      "graph_edges": 45,
+      "node_delta": 0,
+      "failures": [],
+      "missing_entities": [],
+      "missing_facts": []
+    },
+    {
+      "turn": 31,
+      "user_msg": "Quiero agregar internacionalización. i18next para React. Idiomas: español e inglés. Todas las string",
+      "elapsed_ms": 7672,
+      "passed": false,
+      "entity_accuracy": 100,
+      "relation_accuracy": 100,
+      "fact_accuracy": 0,
+      "topic_ok": true,
+      "graph_nodes": 22,
+      "graph_edges": 48,
+      "node_delta": 1,
+      "failures": [
+        "facts missing: ['i18n con i18next: español + inglés']"
+      ],
+      "missing_entities": [],
+      "missing_facts": [
+        "i18n con i18next: español + inglés"
+      ]
+    },
+    {
+      "turn": 32,
+      "user_msg": "Feature: exportar gastos a CSV. Botón en GroupDetail que descarga un CSV con: fecha, descripción, ca",
+      "elapsed_ms": 6030,
+      "passed": false,
+      "entity_accuracy": null,
+      "relation_accuracy": null,
+      "fact_accuracy": 0,
+      "topic_ok": true,
+      "graph_nodes": 22,
+      "graph_edges": 48,
+      "node_delta": 0,
+      "failures": [
+        "facts missing: ['Feature: export gastos a CSV desde Group']"
+      ],
+      "missing_entities": [],
+      "missing_facts": [
+        "Feature: export gastos a CSV desde GroupDetail"
+      ]
+    },
+    {
+      "turn": 33,
+      "user_msg": "Necesito rate limiting en la API. Express-rate-limit, 100 requests por minuto por IP en general, 5 p",
+      "elapsed_ms": 9813,
+      "passed": false,
+      "entity_accuracy": null,
+      "relation_accuracy": null,
+      "fact_accuracy": 0,
+      "topic_ok": true,
+      "graph_nodes": 23,
+      "graph_edges": 61,
+      "node_delta": 1,
+      "failures": [
+        "facts missing: ['Rate limiting: 100 req/min general, 5 re']"
+      ],
+      "missing_entities": [],
+      "missing_facts": [
+        "Rate limiting: 100 req/min general, 5 req/min en login"
+      ]
+    },
+    {
+      "turn": 34,
+      "user_msg": "Agregá un endpoint GET /groups/:id/stats que devuelva: total gastado por el grupo, gasto promedio, t",
+      "elapsed_ms": 5875,
+      "passed": false,
+      "entity_accuracy": null,
+      "relation_accuracy": null,
+      "fact_accuracy": 0,
+      "topic_ok": true,
+      "graph_nodes": 23,
+      "graph_edges": 61,
+      "node_delta": 0,
+      "failures": [
+        "facts missing: ['Endpoint stats: total gastado, promedio,']"
+      ],
+      "missing_entities": [],
+      "missing_facts": [
+        "Endpoint stats: total gastado, promedio, top categoría, top "
+      ]
+    },
+    {
+      "turn": 35,
+      "user_msg": "En el frontend, implementá el chart de gastos por mes usando Recharts. BarChart con meses en el eje ",
+      "elapsed_ms": 10780,
+      "passed": false,
+      "entity_accuracy": 100,
+      "relation_accuracy": 0,
+      "fact_accuracy": null,
+      "topic_ok": true,
+      "graph_nodes": 25,
+      "graph_edges": 67,
+      "node_delta": 2,
+      "failures": [
+        "relations missing: [('dividiapp', 'recharts')]"
+      ],
+      "missing_entities": [],
+      "missing_facts": []
+    },
+    {
+      "turn": 36,
+      "user_msg": "Security review. Verificá: SQL injection (Prisma debería proteger), XSS (sanitizar inputs), CSRF, CO",
+      "elapsed_ms": 5952,
+      "passed": false,
+      "entity_accuracy": null,
+      "relation_accuracy": null,
+      "fact_accuracy": 0,
+      "topic_ok": true,
+      "graph_nodes": 25,
+      "graph_edges": 67,
+      "node_delta": 0,
+      "failures": [
+        "facts missing: ['Security checklist: SQL injection, XSS, ']"
+      ],
+      "missing_entities": [],
+      "missing_facts": [
+        "Security checklist: SQL injection, XSS, CSRF, CORS, password"
+      ]
+    },
+    {
+      "turn": 37,
+      "user_msg": "Performance: lazy loading de rutas con React.lazy(), code splitting por página, imágenes optimizadas",
+      "elapsed_ms": 8484,
+      "passed": false,
+      "entity_accuracy": null,
+      "relation_accuracy": null,
+      "fact_accuracy": 0,
+      "topic_ok": true,
+      "graph_nodes": 28,
+      "graph_edges": 73,
+      "node_delta": 3,
+      "failures": [
+        "facts missing: ['Performance: lazy loading rutas, code sp']"
+      ],
+      "missing_entities": [],
+      "missing_facts": [
+        "Performance: lazy loading rutas, code splitting, pagination "
+      ]
+    },
+    {
+      "turn": 38,
+      "user_msg": "Vamos a agregar PWA support. Service worker para offline básico, manifest.json con nombre e iconos, ",
+      "elapsed_ms": 9796,
+      "passed": false,
+      "entity_accuracy": null,
+      "relation_accuracy": null,
+      "fact_accuracy": 0,
+      "topic_ok": true,
+      "graph_nodes": 32,
+      "graph_edges": 79,
+      "node_delta": 4,
+      "failures": [
+        "facts missing: ['PWA: service worker offline, manifest.js']"
+      ],
+      "missing_entities": [],
+      "missing_facts": [
+        "PWA: service worker offline, manifest.json, install prompt, "
+      ]
+    },
+    {
+      "turn": 39,
+      "user_msg": "Necesito monitoring. Sentry para error tracking en frontend y backend. El plan free alcanza para el ",
+      "elapsed_ms": 7360,
+      "passed": true,
+      "entity_accuracy": 100,
+      "relation_accuracy": 100,
+      "fact_accuracy": null,
+      "topic_ok": true,
+      "graph_nodes": 33,
+      "graph_edges": 81,
+      "node_delta": 1,
+      "failures": [],
+      "missing_entities": [],
+      "missing_facts": []
+    },
+    {
+      "turn": 40,
+      "user_msg": "Revisá el código completo. Buscá: console.logs que quedaron, TODO comments sin resolver, imports no ",
+      "elapsed_ms": 5811,
+      "passed": true,
+      "entity_accuracy": null,
+      "relation_accuracy": null,
+      "fact_accuracy": null,
+      "topic_ok": true,
+      "graph_nodes": 33,
+      "graph_edges": 81,
+      "node_delta": 0,
+      "failures": [],
+      "missing_entities": [],
+      "missing_facts": []
+    },
+    {
+      "turn": 41,
+      "user_msg": "Escribí tests E2E con Playwright. Flujo completo: register → login → create group → add expense → ch",
+      "elapsed_ms": 7030,
+      "passed": true,
+      "entity_accuracy": 100,
+      "relation_accuracy": 100,
+      "fact_accuracy": null,
+      "topic_ok": true,
+      "graph_nodes": 34,
+      "graph_edges": 83,
+      "node_delta": 1,
+      "failures": [],
+      "missing_entities": [],
+      "missing_facts": []
+    },
+    {
+      "turn": 42,
+      "user_msg": "Documentá la API con Swagger/OpenAPI. Cada endpoint documentado con request/response schemas, auth r",
+      "elapsed_ms": 6578,
+      "passed": false,
+      "entity_accuracy": 0,
+      "relation_accuracy": 0,
+      "fact_accuracy": null,
+      "topic_ok": true,
+      "graph_nodes": 34,
+      "graph_edges": 83,
+      "node_delta": 0,
+      "failures": [
+        "entities missing: ['Swagger/OpenAPI']",
+        "relations missing: [('dividiapp', 'swagger')]"
+      ],
+      "missing_entities": [
+        "Swagger/OpenAPI"
+      ],
+      "missing_facts": []
+    },
+    {
+      "turn": 43,
+      "user_msg": "Quiero agregar avatares generados automáticamente. Cuando un usuario se registra, genera un avatar c",
+      "elapsed_ms": 6140,
+      "passed": false,
+      "entity_accuracy": 0,
+      "relation_accuracy": 0,
+      "fact_accuracy": null,
+      "topic_ok": true,
+      "graph_nodes": 34,
+      "graph_edges": 83,
+      "node_delta": 0,
+      "failures": [
+        "entities missing: ['DiceBear']",
+        "relations missing: [('dividiapp', 'dicebear')]"
+      ],
+      "missing_entities": [
+        "DiceBear"
+      ],
+      "missing_facts": []
+    },
+    {
+      "turn": 44,
+      "user_msg": "Feature: receipts. Los usuarios pueden sacar foto del ticket y la app extrae el monto con OCR (Tesse",
+      "elapsed_ms": 7609,
+      "passed": false,
+      "entity_accuracy": 100,
+      "relation_accuracy": 0,
+      "fact_accuracy": 0,
+      "topic_ok": true,
+      "graph_nodes": 36,
+      "graph_edges": 87,
+      "node_delta": 2,
+      "failures": [
+        "relations missing: [('dividiapp', 'tesseract_js')]",
+        "facts missing: ['Feature: foto de ticket con OCR (Tessera']"
+      ],
+      "missing_entities": [],
+      "missing_facts": [
+        "Feature: foto de ticket con OCR (Tesseract.js), extrae monto"
+      ]
+    },
+    {
+      "turn": 45,
+      "user_msg": "Configurá environments: development (local), staging (Railway preview), production (Railway + Vercel",
+      "elapsed_ms": 10092,
+      "passed": false,
+      "entity_accuracy": null,
+      "relation_accuracy": null,
+      "fact_accuracy": 0,
+      "topic_ok": true,
+      "graph_nodes": 36,
+      "graph_edges": 87,
+      "node_delta": 0,
+      "failures": [
+        "facts missing: ['Environments: dev (local), staging (Rail']"
+      ],
+      "missing_entities": [],
+      "missing_facts": [
+        "Environments: dev (local), staging (Railway preview), prod ("
+      ]
+    },
+    {
+      "turn": 46,
+      "user_msg": "El MVP está listo! Funcionalidades: auth, grupos con invite, gastos con splits, cálculo de balances,",
+      "elapsed_ms": 6797,
+      "passed": false,
+      "entity_accuracy": null,
+      "relation_accuracy": null,
+      "fact_accuracy": 0,
+      "topic_ok": true,
+      "graph_nodes": 36,
+      "graph_edges": 87,
+      "node_delta": 0,
+      "failures": [
+        "facts missing: ['MVP v1.0.0 completo: auth, grupos, gasto']"
+      ],
+      "missing_entities": [],
+      "missing_facts": [
+        "MVP v1.0.0 completo: auth, grupos, gastos, balances, push, d"
+      ]
+    },
+    {
+      "turn": 47,
+      "user_msg": "Mandé el link a mis amigos para que lo prueben. Creamos un grupo 'Asado del finde' y cargamos los ga",
+      "elapsed_ms": 5938,
+      "passed": false,
+      "entity_accuracy": null,
+      "relation_accuracy": null,
+      "fact_accuracy": 0,
+      "topic_ok": true,
+      "graph_nodes": 36,
+      "graph_edges": 87,
+      "node_delta": 0,
+      "failures": [
+        "facts missing: [\"Testing con amigos: grupo 'Asado del fin\"]"
+      ],
+      "missing_entities": [],
+      "missing_facts": [
+        "Testing con amigos: grupo 'Asado del finde', funciona correc"
+      ]
+    },
+    {
+      "turn": 48,
+      "user_msg": "Feedback de los testers: quieren poder adjuntar fotos a los gastos (no solo recibos, también fotos d",
+      "elapsed_ms": 6421,
+      "passed": false,
+      "entity_accuracy": null,
+      "relation_accuracy": null,
+      "fact_accuracy": 0,
+      "topic_ok": true,
+      "graph_nodes": 36,
+      "graph_edges": 87,
+      "node_delta": 0,
+      "failures": [
+        "facts missing: ['Feedback v1: adjuntar fotos a gastos, co']"
+      ],
+      "missing_entities": [],
+      "missing_facts": [
+        "Feedback v1: adjuntar fotos a gastos, comentarios en gastos"
+      ]
+    },
+    {
+      "turn": 49,
+      "user_msg": "Hacé un roadmap para v1.1: fotos en gastos, comentarios, mejoras de UX según feedback, y optimizació",
+      "elapsed_ms": 6405,
+      "passed": false,
+      "entity_accuracy": null,
+      "relation_accuracy": null,
+      "fact_accuracy": 0,
+      "topic_ok": true,
+      "graph_nodes": 36,
+      "graph_edges": 87,
+      "node_delta": 0,
+      "failures": [
+        "facts missing: ['Roadmap v1.1: fotos, comentarios, UX imp']"
+      ],
+      "missing_entities": [],
+      "missing_facts": [
+        "Roadmap v1.1: fotos, comentarios, UX improvements, query opt"
+      ]
+    },
+    {
+      "turn": 50,
+      "user_msg": "Hacé una nota con la arquitectura completa del proyecto, decisiones técnicas tomadas, y el roadmap. ",
+      "elapsed_ms": 5859,
+      "passed": true,
+      "entity_accuracy": null,
+      "relation_accuracy": null,
+      "fact_accuracy": null,
+      "topic_ok": true,
+      "graph_nodes": 36,
+      "graph_edges": 87,
+      "node_delta": 0,
+      "failures": [],
+      "missing_entities": [],
+      "missing_facts": []
+    }
+  ]
+}

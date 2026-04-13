@@ -1,0 +1,1389 @@
+{
+  "name": "casa",
+  "domain": "Casa",
+  "total_turns": 49,
+  "passed_turns": 6,
+  "pass_rate": 12,
+  "entity_accuracy": 62,
+  "relation_accuracy": 0,
+  "fact_accuracy": 0,
+  "topic_accuracy": 100,
+  "final_graph": {
+    "nodes": 34,
+    "edges": 61
+  },
+  "total_elapsed_ms": 368384,
+  "entity_misses": [
+    {
+      "turn": 3,
+      "msg": "El inmobiliario Martín de la inmobiliaria Punto Sur nos mostró un lote en La Herradura de 350m2 a 32",
+      "missing": [
+        "Punto Sur Inmobiliaria",
+        "Lote La Herradura"
+      ]
+    },
+    {
+      "turn": 4,
+      "msg": "También vimos uno en Puente 83, 600m2 a 25.000 USD. No tiene gas natural, habría que poner garrafa o",
+      "missing": [
+        "Lote Puente 83"
+      ]
+    },
+    {
+      "turn": 6,
+      "msg": "Fuimos a ver al arquitecto Carlos Peña. Tiene estudio en Neuquén, lo recomendó mi suegra Marta. Nos ",
+      "missing": [
+        "Carlos Peña"
+      ]
+    },
+    {
+      "turn": 8,
+      "msg": "Carlos Peña nos mostró el anteproyecto. Es una casa de 120m2 con 3 dormitorios, 2 baños, living-come",
+      "missing": [
+        "Casa La Herradura"
+      ]
+    },
+    {
+      "turn": 11,
+      "msg": "Fui al Banco Hipotecario a preguntar por el crédito UVA. Me atendió Gabriela de la sucursal Neuquén.",
+      "missing": [
+        "Gabriela"
+      ]
+    },
+    {
+      "turn": 25,
+      "msg": "Para la cocina, Laura eligió mesada de granito negro de la marmolerería Del Sur en Neuquén. El baño ",
+      "missing": [
+        "Marmolería Del Sur"
+      ]
+    },
+    {
+      "turn": 32,
+      "msg": "Vecino del lote de al lado se presentó, se llama Néstor. También está construyendo con Construir SRL",
+      "missing": [
+        "Néstor"
+      ]
+    },
+    {
+      "turn": 41,
+      "msg": "El pintor arrancó esta semana. Se llama Daniel, recomendado por Néstor el vecino. Pinta interior y e",
+      "missing": [
+        "Daniel"
+      ]
+    }
+  ],
+  "relation_misses": [
+    {
+      "turn": 2,
+      "msg": "Estuve mirando en tres zonas: La Herradura que es un barrio nuevo con lotes de 300-400m2, Puente 83 ",
+      "missing": [
+        [
+          "la_herradura",
+          "cipolletti"
+        ],
+        [
+          "puente_83",
+          "cipolletti"
+        ]
+      ]
+    },
+    {
+      "turn": 3,
+      "msg": "El inmobiliario Martín de la inmobiliaria Punto Sur nos mostró un lote en La Herradura de 350m2 a 32",
+      "missing": [
+        [
+          "martin_inmob",
+          "punto_sur"
+        ],
+        [
+          "lote_herradura",
+          "la_herradura"
+        ]
+      ]
+    },
+    {
+      "turn": 4,
+      "msg": "También vimos uno en Puente 83, 600m2 a 25.000 USD. No tiene gas natural, habría que poner garrafa o",
+      "missing": [
+        [
+          "lote_puente83",
+          "puente_83"
+        ]
+      ]
+    },
+    {
+      "turn": 6,
+      "msg": "Fuimos a ver al arquitecto Carlos Peña. Tiene estudio en Neuquén, lo recomendó mi suegra Marta. Nos ",
+      "missing": [
+        [
+          "carlos_pena",
+          "neuquen"
+        ]
+      ]
+    },
+    {
+      "turn": 8,
+      "msg": "Carlos Peña nos mostró el anteproyecto. Es una casa de 120m2 con 3 dormitorios, 2 baños, living-come",
+      "missing": [
+        [
+          "carlos_pena",
+          "casa_proyecto"
+        ]
+      ]
+    },
+    {
+      "turn": 11,
+      "msg": "Fui al Banco Hipotecario a preguntar por el crédito UVA. Me atendió Gabriela de la sucursal Neuquén.",
+      "missing": [
+        [
+          "gabriela_bh",
+          "banco_hipotecario"
+        ]
+      ]
+    },
+    {
+      "turn": 14,
+      "msg": "Carlos nos presentó al constructor, Jorge Domínguez de la empresa Construir SRL. Tiene 20 años de ex",
+      "missing": [
+        [
+          "jorge_dominguez",
+          "construir_srl"
+        ]
+      ]
+    },
+    {
+      "turn": 25,
+      "msg": "Para la cocina, Laura eligió mesada de granito negro de la marmolerería Del Sur en Neuquén. El baño ",
+      "missing": [
+        [
+          "del_sur",
+          "neuquen"
+        ]
+      ]
+    },
+    {
+      "turn": 27,
+      "msg": "El electricista se llama Pablo, trabaja con Jorge hace 10 años. Está haciendo toda la instalación el",
+      "missing": [
+        [
+          "pablo_electricista",
+          "construir_srl"
+        ]
+      ]
+    },
+    {
+      "turn": 38,
+      "msg": "Laura ya está viendo muebles en Muebles Sur de Neuquén y en MercadoLibre. El dormitorio principal qu",
+      "missing": [
+        [
+          "muebles_sur",
+          "neuquen"
+        ]
+      ]
+    }
+  ],
+  "fact_misses": [
+    {
+      "turn": 5,
+      "msg": "Laura prefiere La Herradura porque queda más cerca de la guardería y de su trabajo. Yo banco Puente ",
+      "missing": [
+        "Laura lo prefiere por cercanía a guardería y trabajo",
+        "Sandy lo prefiere por espacio y tranquilidad"
+      ]
+    },
+    {
+      "turn": 7,
+      "msg": "Decidimos ir con La Herradura! Señamos el lote con 5.000 USD. El saldo de 27.000 USD lo pagamos en 6",
+      "missing": [
+        "Comprado: seña 5.000 USD, saldo 27.000 USD en 6 cuotas en pe"
+      ]
+    },
+    {
+      "turn": 9,
+      "msg": "El presupuesto de construcción que nos pasó Carlos es de 180.000 USD para llave en mano. Incluye man",
+      "missing": [
+        "Presupuesto llave en mano: 180.000 USD (no incluye muebles n"
+      ]
+    },
+    {
+      "turn": 10,
+      "msg": "Entonces el total es: terreno 32.000 + proyecto 5.000 + construcción 180.000 = 217.000 USD. Más mueb",
+      "missing": [
+        "Costo total estimado: 240.000 USD (terreno 32K + proyecto 5K"
+      ]
+    },
+    {
+      "turn": 12,
+      "msg": "Los requisitos del crédito: antigüedad laboral 1 año, ingresos demostrables 3 veces la cuota, seguro",
+      "missing": [
+        "Requisitos: 1 año antigüedad, ingresos 3x cuota, seguro vida",
+        "Califica para cuota hipotecaria de hasta 1.2M ARS con sueldo"
+      ]
+    },
+    {
+      "turn": 13,
+      "msg": "Laura dice que empecemos a construir con lo que tenemos y después sacamos el crédito para terminar. ",
+      "missing": [
+        "Estrategia: empezar con fondos propios, crédito hipotecario "
+      ]
+    },
+    {
+      "turn": 15,
+      "msg": "El plan de obra es: primeros 3 meses cimientos y estructura, meses 4-6 mampostería y techo, meses 7-",
+      "missing": [
+        "Plan 12 meses: M1-3 cimientos/estructura, M4-6 mampostería/t"
+      ]
+    },
+    {
+      "turn": 16,
+      "msg": "Empezó la obra!! Hoy vinieron a hacer el movimiento de suelos y el replanteo. Estuvimos con Carlos y",
+      "missing": [
+        "Inicio de obra: movimiento de suelos y replanteo completado."
+      ]
+    },
+    {
+      "turn": 18,
+      "msg": "Problema: el precio del hierro subió un 30% en un mes. Jorge dice que compremos todo el hierro que n",
+      "missing": [
+        "Problema: hierro subió 30%, necesidad de comprar 15K USD en "
+      ]
+    },
+    {
+      "turn": 19,
+      "msg": "Compramos todo el hierro, 15.200 USD. Nos queda justo para los cimientos. Vamos a necesitar el crédi",
+      "missing": [
+        "Hierro comprado: 15.200 USD. Crédito necesario antes de lo p"
+      ]
+    },
+    {
+      "turn": 20,
+      "msg": "La semana que viene viene el gasista Rubén a hacer el proyecto de la instalación de gas. Carlos dice",
+      "missing": [
+        "Pendiente: plano de gas para factibilidad de Camuzzi"
+      ]
+    },
+    {
+      "turn": 21,
+      "msg": "Los cimientos están listos! Jorge dice que quedaron perfectos. Ahora viene la estructura de hormigón",
+      "missing": [
+        "Cimientos completados, arranca estructura hormigón",
+        "Descuento 10% por volumen"
+      ]
+    },
+    {
+      "turn": 22,
+      "msg": "Tuvimos un problema con el municipio. Nos falta un permiso de construcción que no tramitamos. Carlos",
+      "missing": [
+        "Problema: falta permiso de construcción municipal, trámite 2"
+      ]
+    },
+    {
+      "turn": 23,
+      "msg": "Salió el permiso de construcción! Número de expediente 2847/2026. Ahora estamos habilitados para seg",
+      "missing": [
+        "Permiso de construcción aprobado, expediente 2847/2026"
+      ]
+    },
+    {
+      "turn": 24,
+      "msg": "Laura quiere piso de porcelanato en toda la casa menos los dormitorios que van con piso flotante. Ca",
+      "missing": [
+        "Pisos: porcelanato símil madera en zonas comunes, piso flota"
+      ]
+    },
+    {
+      "turn": 25,
+      "msg": "Para la cocina, Laura eligió mesada de granito negro de la marmolerería Del Sur en Neuquén. El baño ",
+      "missing": [
+        "Cocina: mesada granito negro. Baño principal: vanitory doble"
+      ]
+    },
+    {
+      "turn": 26,
+      "msg": "Vamos mes 4 de obra y llevamos gastados 72.000 USD. Nos pasamos 12.000 del presupuesto de los primer",
+      "missing": [
+        "Mes 4: gastados 72K USD (12K sobre presupuesto de 60K, por a"
+      ]
+    },
+    {
+      "turn": 29,
+      "msg": "Carlos sugiere dejar la preinstalación para paneles solares en el techo aunque no los pongamos ahora",
+      "missing": [
+        "Preinstalación solar en techo: 500 USD extra, recomendado po"
+      ]
+    },
+    {
+      "turn": 30,
+      "msg": "Aprobamos el crédito hipotecario del Banco Hipotecario! 120.000 USD equivalentes en UVA, a 20 años. ",
+      "missing": [
+        "Crédito aprobado: 120K USD en UVA, 20 años, cuota inicial 89",
+        "Financiamiento: crédito hipotecario 120K USD aprobado"
+      ]
+    },
+    {
+      "turn": 31,
+      "msg": "La estructura está casi lista. Columnas, vigas y losa terminadas. La semana que viene empiezan con l",
+      "missing": [
+        "Estructura completa (columnas, vigas, losa). Arranca mampost"
+      ]
+    },
+    {
+      "turn": 33,
+      "msg": "Eligiendo aberturas: ventanas de aluminio línea Modena de Aluar. Las puertas interiores de madera en",
+      "missing": [
+        "Aberturas: ventanas aluminio Modena Aluar, puertas madera ca"
+      ]
+    },
+    {
+      "turn": 34,
+      "msg": "Rubén terminó la instalación de gas. Pasó la inspección de Camuzzi a la primera! El medidor lo insta",
+      "missing": [
+        "Instalación de gas aprobada por Camuzzi, medidor en 15 días"
+      ]
+    },
+    {
+      "turn": 35,
+      "msg": "El techo va con chapa y aislación térmica. Jorge sugiere membrana asfáltica arriba de la losa y chap",
+      "missing": [
+        "Techo: chapa prepintada gris grafito + membrana asfáltica + "
+      ]
+    },
+    {
+      "turn": 36,
+      "msg": "Estamos en mes 8 de 12. Lleamos gastados 145.000 USD. Nos quedan 35.000 del crédito más unos 15.000 ",
+      "missing": [
+        "Mes 8/12: gastados 145K USD, disponible 50K (35K crédito + 1"
+      ]
+    },
+    {
+      "turn": 37,
+      "msg": "Para el jardín estoy pensando en riego por goteo automático. Un sistema Netafim para 350m2 sale como",
+      "missing": [
+        "Jardín: sistema riego por goteo Netafim, 2.000 USD con progr"
+      ]
+    },
+    {
+      "turn": 38,
+      "msg": "Laura ya está viendo muebles en Muebles Sur de Neuquén y en MercadoLibre. El dormitorio principal qu",
+      "missing": [
+        "Dormitorio principal: sommier king size + placard 3m"
+      ]
+    },
+    {
+      "turn": 39,
+      "msg": "El dormitorio de Lionel lo estamos pensando con tema de astronautas. Laura encontró unas vinilos re ",
+      "missing": [
+        "Dormitorio Lionel: temática astronautas, cama Montessori baj"
+      ]
+    },
+    {
+      "turn": 40,
+      "msg": "Falta el tercer dormitorio que por ahora va a ser oficina/estudio para mi trabajo remoto. Quiero un ",
+      "missing": [
+        "Tercer dormitorio: oficina/estudio para trabajo remoto, escr"
+      ]
+    },
+    {
+      "turn": 42,
+      "msg": "Los colores que eligió Laura: living y cocina blanco cálido, dormitorios en tonos pasteles (celeste ",
+      "missing": [
+        "Colores: living/cocina blanco cálido, dormitorio Lionel cele"
+      ]
+    },
+    {
+      "turn": 45,
+      "msg": "La casa está casi terminada!!! Mes 11 de 12, faltan terminaciones menores, el jardín, y la mudanza. ",
+      "missing": [
+        "Mes 11/12: casi terminada, gastados 195K USD (15K sobre pres"
+      ]
+    },
+    {
+      "turn": 46,
+      "msg": "La mudanza la hacemos con Transportes Arias de Cipolletti. Nos cobran 250.000 ARS el flete. Nos muda",
+      "missing": [
+        "Mudanza programada para el 15 del mes que viene"
+      ]
+    },
+    {
+      "turn": 47,
+      "msg": "Cancelamos el alquiler con 30 días de preaviso como dice el contrato. El dueño nos devuelve el depós",
+      "missing": [
+        "Alquiler cancelado, depósito devuelto 700K ARS, destinado a "
+      ]
+    },
+    {
+      "turn": 48,
+      "msg": "NOS MUDAMOS!!! 🎉 La casa quedó espectacular. Lionel ama su cuarto de astronautas. Laura está feliz c",
+      "missing": [
+        "Mudanza completada. Casa terminada y habitada."
+      ]
+    }
+  ],
+  "turns": [
+    {
+      "turn": 1,
+      "user_msg": "Quiero empezar a buscar terreno para construir nuestra casa. Vivimos en Cipolletti y queremos quedar",
+      "elapsed_ms": 9859,
+      "passed": true,
+      "entity_accuracy": 100,
+      "relation_accuracy": null,
+      "fact_accuracy": null,
+      "topic_ok": true,
+      "graph_nodes": 1,
+      "graph_edges": 1,
+      "node_delta": 1,
+      "failures": [],
+      "missing_entities": [],
+      "missing_facts": []
+    },
+    {
+      "turn": 2,
+      "user_msg": "Estuve mirando en tres zonas: La Herradura que es un barrio nuevo con lotes de 300-400m2, Puente 83 ",
+      "elapsed_ms": 7625,
+      "passed": false,
+      "entity_accuracy": 100,
+      "relation_accuracy": 0,
+      "fact_accuracy": null,
+      "topic_ok": true,
+      "graph_nodes": 4,
+      "graph_edges": 4,
+      "node_delta": 3,
+      "failures": [
+        "relations missing: [('la_herradura', 'cipolletti'), ('puente_83', 'cipolletti')]"
+      ],
+      "missing_entities": [],
+      "missing_facts": []
+    },
+    {
+      "turn": 3,
+      "user_msg": "El inmobiliario Martín de la inmobiliaria Punto Sur nos mostró un lote en La Herradura de 350m2 a 32",
+      "elapsed_ms": 9686,
+      "passed": false,
+      "entity_accuracy": 33,
+      "relation_accuracy": 0,
+      "fact_accuracy": null,
+      "topic_ok": true,
+      "graph_nodes": 6,
+      "graph_edges": 6,
+      "node_delta": 2,
+      "failures": [
+        "entities missing: ['Punto Sur Inmobiliaria', 'Lote La Herradura']",
+        "relations missing: [('martin_inmob', 'punto_sur'), ('lote_herradura', 'la_herradura')]"
+      ],
+      "missing_entities": [
+        "Punto Sur Inmobiliaria",
+        "Lote La Herradura"
+      ],
+      "missing_facts": []
+    },
+    {
+      "turn": 4,
+      "user_msg": "También vimos uno en Puente 83, 600m2 a 25.000 USD. No tiene gas natural, habría que poner garrafa o",
+      "elapsed_ms": 6703,
+      "passed": false,
+      "entity_accuracy": 0,
+      "relation_accuracy": 0,
+      "fact_accuracy": null,
+      "topic_ok": true,
+      "graph_nodes": 6,
+      "graph_edges": 6,
+      "node_delta": 0,
+      "failures": [
+        "entities missing: ['Lote Puente 83']",
+        "relations missing: [('lote_puente83', 'puente_83')]"
+      ],
+      "missing_entities": [
+        "Lote Puente 83"
+      ],
+      "missing_facts": []
+    },
+    {
+      "turn": 5,
+      "user_msg": "Laura prefiere La Herradura porque queda más cerca de la guardería y de su trabajo. Yo banco Puente ",
+      "elapsed_ms": 5782,
+      "passed": false,
+      "entity_accuracy": null,
+      "relation_accuracy": null,
+      "fact_accuracy": 0,
+      "topic_ok": true,
+      "graph_nodes": 6,
+      "graph_edges": 6,
+      "node_delta": 0,
+      "failures": [
+        "facts missing: ['Laura lo prefiere por cercanía a guarder', 'Sandy lo prefiere por espacio y tranquil']"
+      ],
+      "missing_entities": [],
+      "missing_facts": [
+        "Laura lo prefiere por cercanía a guardería y trabajo",
+        "Sandy lo prefiere por espacio y tranquilidad"
+      ]
+    },
+    {
+      "turn": 6,
+      "user_msg": "Fuimos a ver al arquitecto Carlos Peña. Tiene estudio en Neuquén, lo recomendó mi suegra Marta. Nos ",
+      "elapsed_ms": 8608,
+      "passed": false,
+      "entity_accuracy": 0,
+      "relation_accuracy": 0,
+      "fact_accuracy": null,
+      "topic_ok": true,
+      "graph_nodes": 7,
+      "graph_edges": 8,
+      "node_delta": 1,
+      "failures": [
+        "entities missing: ['Carlos Peña']",
+        "relations missing: [('carlos_pena', 'neuquen')]"
+      ],
+      "missing_entities": [
+        "Carlos Peña"
+      ],
+      "missing_facts": []
+    },
+    {
+      "turn": 7,
+      "user_msg": "Decidimos ir con La Herradura! Señamos el lote con 5.000 USD. El saldo de 27.000 USD lo pagamos en 6",
+      "elapsed_ms": 6141,
+      "passed": false,
+      "entity_accuracy": null,
+      "relation_accuracy": null,
+      "fact_accuracy": 0,
+      "topic_ok": true,
+      "graph_nodes": 7,
+      "graph_edges": 8,
+      "node_delta": 0,
+      "failures": [
+        "facts missing: ['Comprado: seña 5.000 USD, saldo 27.000 U']"
+      ],
+      "missing_entities": [],
+      "missing_facts": [
+        "Comprado: seña 5.000 USD, saldo 27.000 USD en 6 cuotas en pe"
+      ]
+    },
+    {
+      "turn": 8,
+      "user_msg": "Carlos Peña nos mostró el anteproyecto. Es una casa de 120m2 con 3 dormitorios, 2 baños, living-come",
+      "elapsed_ms": 7358,
+      "passed": false,
+      "entity_accuracy": 0,
+      "relation_accuracy": 0,
+      "fact_accuracy": null,
+      "topic_ok": true,
+      "graph_nodes": 8,
+      "graph_edges": 10,
+      "node_delta": 1,
+      "failures": [
+        "entities missing: ['Casa La Herradura']",
+        "relations missing: [('carlos_pena', 'casa_proyecto')]"
+      ],
+      "missing_entities": [
+        "Casa La Herradura"
+      ],
+      "missing_facts": []
+    },
+    {
+      "turn": 9,
+      "user_msg": "El presupuesto de construcción que nos pasó Carlos es de 180.000 USD para llave en mano. Incluye man",
+      "elapsed_ms": 8094,
+      "passed": false,
+      "entity_accuracy": null,
+      "relation_accuracy": null,
+      "fact_accuracy": 0,
+      "topic_ok": true,
+      "graph_nodes": 8,
+      "graph_edges": 10,
+      "node_delta": 0,
+      "failures": [
+        "facts missing: ['Presupuesto llave en mano: 180.000 USD (']"
+      ],
+      "missing_entities": [],
+      "missing_facts": [
+        "Presupuesto llave en mano: 180.000 USD (no incluye muebles n"
+      ]
+    },
+    {
+      "turn": 10,
+      "user_msg": "Entonces el total es: terreno 32.000 + proyecto 5.000 + construcción 180.000 = 217.000 USD. Más mueb",
+      "elapsed_ms": 6172,
+      "passed": false,
+      "entity_accuracy": null,
+      "relation_accuracy": null,
+      "fact_accuracy": 0,
+      "topic_ok": true,
+      "graph_nodes": 8,
+      "graph_edges": 10,
+      "node_delta": 0,
+      "failures": [
+        "facts missing: ['Costo total estimado: 240.000 USD (terre']"
+      ],
+      "missing_entities": [],
+      "missing_facts": [
+        "Costo total estimado: 240.000 USD (terreno 32K + proyecto 5K"
+      ]
+    },
+    {
+      "turn": 11,
+      "user_msg": "Fui al Banco Hipotecario a preguntar por el crédito UVA. Me atendió Gabriela de la sucursal Neuquén.",
+      "elapsed_ms": 9639,
+      "passed": false,
+      "entity_accuracy": 50,
+      "relation_accuracy": 0,
+      "fact_accuracy": null,
+      "topic_ok": true,
+      "graph_nodes": 9,
+      "graph_edges": 14,
+      "node_delta": 1,
+      "failures": [
+        "entities missing: ['Gabriela']",
+        "relations missing: [('gabriela_bh', 'banco_hipotecario')]"
+      ],
+      "missing_entities": [
+        "Gabriela"
+      ],
+      "missing_facts": []
+    },
+    {
+      "turn": 12,
+      "user_msg": "Los requisitos del crédito: antigüedad laboral 1 año, ingresos demostrables 3 veces la cuota, seguro",
+      "elapsed_ms": 5813,
+      "passed": false,
+      "entity_accuracy": null,
+      "relation_accuracy": null,
+      "fact_accuracy": 0,
+      "topic_ok": true,
+      "graph_nodes": 9,
+      "graph_edges": 14,
+      "node_delta": 0,
+      "failures": [
+        "facts missing: ['Requisitos: 1 año antigüedad, ingresos 3', 'Califica para cuota hipotecaria de hasta']"
+      ],
+      "missing_entities": [],
+      "missing_facts": [
+        "Requisitos: 1 año antigüedad, ingresos 3x cuota, seguro vida",
+        "Califica para cuota hipotecaria de hasta 1.2M ARS con sueldo"
+      ]
+    },
+    {
+      "turn": 13,
+      "user_msg": "Laura dice que empecemos a construir con lo que tenemos y después sacamos el crédito para terminar. ",
+      "elapsed_ms": 6203,
+      "passed": false,
+      "entity_accuracy": null,
+      "relation_accuracy": null,
+      "fact_accuracy": 0,
+      "topic_ok": true,
+      "graph_nodes": 9,
+      "graph_edges": 14,
+      "node_delta": 0,
+      "failures": [
+        "facts missing: ['Estrategia: empezar con fondos propios, ']"
+      ],
+      "missing_entities": [],
+      "missing_facts": [
+        "Estrategia: empezar con fondos propios, crédito hipotecario "
+      ]
+    },
+    {
+      "turn": 14,
+      "user_msg": "Carlos nos presentó al constructor, Jorge Domínguez de la empresa Construir SRL. Tiene 20 años de ex",
+      "elapsed_ms": 8171,
+      "passed": false,
+      "entity_accuracy": 100,
+      "relation_accuracy": 0,
+      "fact_accuracy": null,
+      "topic_ok": true,
+      "graph_nodes": 11,
+      "graph_edges": 18,
+      "node_delta": 2,
+      "failures": [
+        "relations missing: [('jorge_dominguez', 'construir_srl')]"
+      ],
+      "missing_entities": [],
+      "missing_facts": []
+    },
+    {
+      "turn": 15,
+      "user_msg": "El plan de obra es: primeros 3 meses cimientos y estructura, meses 4-6 mampostería y techo, meses 7-",
+      "elapsed_ms": 6140,
+      "passed": false,
+      "entity_accuracy": null,
+      "relation_accuracy": null,
+      "fact_accuracy": 0,
+      "topic_ok": true,
+      "graph_nodes": 11,
+      "graph_edges": 18,
+      "node_delta": 0,
+      "failures": [
+        "facts missing: ['Plan 12 meses: M1-3 cimientos/estructura']"
+      ],
+      "missing_entities": [],
+      "missing_facts": [
+        "Plan 12 meses: M1-3 cimientos/estructura, M4-6 mampostería/t"
+      ]
+    },
+    {
+      "turn": 16,
+      "user_msg": "Empezó la obra!! Hoy vinieron a hacer el movimiento de suelos y el replanteo. Estuvimos con Carlos y",
+      "elapsed_ms": 7640,
+      "passed": false,
+      "entity_accuracy": null,
+      "relation_accuracy": null,
+      "fact_accuracy": 0,
+      "topic_ok": true,
+      "graph_nodes": 11,
+      "graph_edges": 18,
+      "node_delta": 0,
+      "failures": [
+        "facts missing: ['Inicio de obra: movimiento de suelos y r']"
+      ],
+      "missing_entities": [],
+      "missing_facts": [
+        "Inicio de obra: movimiento de suelos y replanteo completado."
+      ]
+    },
+    {
+      "turn": 17,
+      "user_msg": "Los materiales los estamos comprando en Cerámicos del Valle y en Easy de Neuquén. El hierro lo compr",
+      "elapsed_ms": 9438,
+      "passed": true,
+      "entity_accuracy": 100,
+      "relation_accuracy": null,
+      "fact_accuracy": null,
+      "topic_ok": true,
+      "graph_nodes": 15,
+      "graph_edges": 26,
+      "node_delta": 4,
+      "failures": [],
+      "missing_entities": [],
+      "missing_facts": []
+    },
+    {
+      "turn": 18,
+      "user_msg": "Problema: el precio del hierro subió un 30% en un mes. Jorge dice que compremos todo el hierro que n",
+      "elapsed_ms": 6203,
+      "passed": false,
+      "entity_accuracy": null,
+      "relation_accuracy": null,
+      "fact_accuracy": 0,
+      "topic_ok": true,
+      "graph_nodes": 15,
+      "graph_edges": 26,
+      "node_delta": 0,
+      "failures": [
+        "facts missing: ['Problema: hierro subió 30%, necesidad de']"
+      ],
+      "missing_entities": [],
+      "missing_facts": [
+        "Problema: hierro subió 30%, necesidad de comprar 15K USD en "
+      ]
+    },
+    {
+      "turn": 19,
+      "user_msg": "Compramos todo el hierro, 15.200 USD. Nos queda justo para los cimientos. Vamos a necesitar el crédi",
+      "elapsed_ms": 6375,
+      "passed": false,
+      "entity_accuracy": null,
+      "relation_accuracy": null,
+      "fact_accuracy": 0,
+      "topic_ok": true,
+      "graph_nodes": 15,
+      "graph_edges": 26,
+      "node_delta": 0,
+      "failures": [
+        "facts missing: ['Hierro comprado: 15.200 USD. Crédito nec']"
+      ],
+      "missing_entities": [],
+      "missing_facts": [
+        "Hierro comprado: 15.200 USD. Crédito necesario antes de lo p"
+      ]
+    },
+    {
+      "turn": 20,
+      "user_msg": "La semana que viene viene el gasista Rubén a hacer el proyecto de la instalación de gas. Carlos dice",
+      "elapsed_ms": 7842,
+      "passed": false,
+      "entity_accuracy": 100,
+      "relation_accuracy": null,
+      "fact_accuracy": 0,
+      "topic_ok": true,
+      "graph_nodes": 17,
+      "graph_edges": 28,
+      "node_delta": 2,
+      "failures": [
+        "facts missing: ['Pendiente: plano de gas para factibilida']"
+      ],
+      "missing_entities": [],
+      "missing_facts": [
+        "Pendiente: plano de gas para factibilidad de Camuzzi"
+      ]
+    },
+    {
+      "turn": 21,
+      "user_msg": "Los cimientos están listos! Jorge dice que quedaron perfectos. Ahora viene la estructura de hormigón",
+      "elapsed_ms": 7094,
+      "passed": false,
+      "entity_accuracy": null,
+      "relation_accuracy": null,
+      "fact_accuracy": 0,
+      "topic_ok": true,
+      "graph_nodes": 17,
+      "graph_edges": 28,
+      "node_delta": 0,
+      "failures": [
+        "facts missing: ['Cimientos completados, arranca estructur', 'Descuento 10% por volumen']"
+      ],
+      "missing_entities": [],
+      "missing_facts": [
+        "Cimientos completados, arranca estructura hormigón",
+        "Descuento 10% por volumen"
+      ]
+    },
+    {
+      "turn": 22,
+      "user_msg": "Tuvimos un problema con el municipio. Nos falta un permiso de construcción que no tramitamos. Carlos",
+      "elapsed_ms": 8155,
+      "passed": false,
+      "entity_accuracy": null,
+      "relation_accuracy": null,
+      "fact_accuracy": 0,
+      "topic_ok": true,
+      "graph_nodes": 18,
+      "graph_edges": 30,
+      "node_delta": 1,
+      "failures": [
+        "facts missing: ['Problema: falta permiso de construcción ']"
+      ],
+      "missing_entities": [],
+      "missing_facts": [
+        "Problema: falta permiso de construcción municipal, trámite 2"
+      ]
+    },
+    {
+      "turn": 23,
+      "user_msg": "Salió el permiso de construcción! Número de expediente 2847/2026. Ahora estamos habilitados para seg",
+      "elapsed_ms": 6344,
+      "passed": false,
+      "entity_accuracy": null,
+      "relation_accuracy": null,
+      "fact_accuracy": 0,
+      "topic_ok": true,
+      "graph_nodes": 18,
+      "graph_edges": 30,
+      "node_delta": 0,
+      "failures": [
+        "facts missing: ['Permiso de construcción aprobado, expedi']"
+      ],
+      "missing_entities": [],
+      "missing_facts": [
+        "Permiso de construcción aprobado, expediente 2847/2026"
+      ]
+    },
+    {
+      "turn": 24,
+      "user_msg": "Laura quiere piso de porcelanato en toda la casa menos los dormitorios que van con piso flotante. Ca",
+      "elapsed_ms": 6875,
+      "passed": false,
+      "entity_accuracy": null,
+      "relation_accuracy": null,
+      "fact_accuracy": 0,
+      "topic_ok": true,
+      "graph_nodes": 19,
+      "graph_edges": 31,
+      "node_delta": 1,
+      "failures": [
+        "facts missing: ['Pisos: porcelanato símil madera en zonas']"
+      ],
+      "missing_entities": [],
+      "missing_facts": [
+        "Pisos: porcelanato símil madera en zonas comunes, piso flota"
+      ]
+    },
+    {
+      "turn": 25,
+      "user_msg": "Para la cocina, Laura eligió mesada de granito negro de la marmolerería Del Sur en Neuquén. El baño ",
+      "elapsed_ms": 9265,
+      "passed": false,
+      "entity_accuracy": 0,
+      "relation_accuracy": 0,
+      "fact_accuracy": 0,
+      "topic_ok": true,
+      "graph_nodes": 21,
+      "graph_edges": 35,
+      "node_delta": 2,
+      "failures": [
+        "entities missing: ['Marmolería Del Sur']",
+        "relations missing: [('del_sur', 'neuquen')]",
+        "facts missing: ['Cocina: mesada granito negro. Baño princ']"
+      ],
+      "missing_entities": [
+        "Marmolería Del Sur"
+      ],
+      "missing_facts": [
+        "Cocina: mesada granito negro. Baño principal: vanitory doble"
+      ]
+    },
+    {
+      "turn": 26,
+      "user_msg": "Vamos mes 4 de obra y llevamos gastados 72.000 USD. Nos pasamos 12.000 del presupuesto de los primer",
+      "elapsed_ms": 7030,
+      "passed": false,
+      "entity_accuracy": null,
+      "relation_accuracy": null,
+      "fact_accuracy": 0,
+      "topic_ok": true,
+      "graph_nodes": 21,
+      "graph_edges": 35,
+      "node_delta": 0,
+      "failures": [
+        "facts missing: ['Mes 4: gastados 72K USD (12K sobre presu']"
+      ],
+      "missing_entities": [],
+      "missing_facts": [
+        "Mes 4: gastados 72K USD (12K sobre presupuesto de 60K, por a"
+      ]
+    },
+    {
+      "turn": 27,
+      "user_msg": "El electricista se llama Pablo, trabaja con Jorge hace 10 años. Está haciendo toda la instalación el",
+      "elapsed_ms": 7109,
+      "passed": false,
+      "entity_accuracy": 100,
+      "relation_accuracy": 0,
+      "fact_accuracy": null,
+      "topic_ok": true,
+      "graph_nodes": 22,
+      "graph_edges": 37,
+      "node_delta": 1,
+      "failures": [
+        "relations missing: [('pablo_electricista', 'construir_srl')]"
+      ],
+      "missing_entities": [],
+      "missing_facts": []
+    },
+    {
+      "turn": 28,
+      "user_msg": "Quiero poner paneles solares. Vi una empresa Energía Solar Comahue que hace instalaciones. Un sistem",
+      "elapsed_ms": 7203,
+      "passed": true,
+      "entity_accuracy": 100,
+      "relation_accuracy": null,
+      "fact_accuracy": null,
+      "topic_ok": true,
+      "graph_nodes": 23,
+      "graph_edges": 39,
+      "node_delta": 1,
+      "failures": [],
+      "missing_entities": [],
+      "missing_facts": []
+    },
+    {
+      "turn": 29,
+      "user_msg": "Carlos sugiere dejar la preinstalación para paneles solares en el techo aunque no los pongamos ahora",
+      "elapsed_ms": 7640,
+      "passed": false,
+      "entity_accuracy": null,
+      "relation_accuracy": null,
+      "fact_accuracy": 0,
+      "topic_ok": true,
+      "graph_nodes": 23,
+      "graph_edges": 39,
+      "node_delta": 0,
+      "failures": [
+        "facts missing: ['Preinstalación solar en techo: 500 USD e']"
+      ],
+      "missing_entities": [],
+      "missing_facts": [
+        "Preinstalación solar en techo: 500 USD extra, recomendado po"
+      ]
+    },
+    {
+      "turn": 30,
+      "user_msg": "Aprobamos el crédito hipotecario del Banco Hipotecario! 120.000 USD equivalentes en UVA, a 20 años. ",
+      "elapsed_ms": 8140,
+      "passed": false,
+      "entity_accuracy": null,
+      "relation_accuracy": null,
+      "fact_accuracy": 0,
+      "topic_ok": true,
+      "graph_nodes": 24,
+      "graph_edges": 41,
+      "node_delta": 1,
+      "failures": [
+        "facts missing: ['Crédito aprobado: 120K USD en UVA, 20 añ', 'Financiamiento: crédito hipotecario 120K']"
+      ],
+      "missing_entities": [],
+      "missing_facts": [
+        "Crédito aprobado: 120K USD en UVA, 20 años, cuota inicial 89",
+        "Financiamiento: crédito hipotecario 120K USD aprobado"
+      ]
+    },
+    {
+      "turn": 31,
+      "user_msg": "La estructura está casi lista. Columnas, vigas y losa terminadas. La semana que viene empiezan con l",
+      "elapsed_ms": 6515,
+      "passed": false,
+      "entity_accuracy": null,
+      "relation_accuracy": null,
+      "fact_accuracy": 0,
+      "topic_ok": true,
+      "graph_nodes": 24,
+      "graph_edges": 41,
+      "node_delta": 0,
+      "failures": [
+        "facts missing: ['Estructura completa (columnas, vigas, lo']"
+      ],
+      "missing_entities": [],
+      "missing_facts": [
+        "Estructura completa (columnas, vigas, losa). Arranca mampost"
+      ]
+    },
+    {
+      "turn": 32,
+      "user_msg": "Vecino del lote de al lado se presentó, se llama Néstor. También está construyendo con Construir SRL",
+      "elapsed_ms": 7407,
+      "passed": false,
+      "entity_accuracy": 0,
+      "relation_accuracy": null,
+      "fact_accuracy": null,
+      "topic_ok": true,
+      "graph_nodes": 24,
+      "graph_edges": 41,
+      "node_delta": 0,
+      "failures": [
+        "entities missing: ['Néstor']"
+      ],
+      "missing_entities": [
+        "Néstor"
+      ],
+      "missing_facts": []
+    },
+    {
+      "turn": 33,
+      "user_msg": "Eligiendo aberturas: ventanas de aluminio línea Modena de Aluar. Las puertas interiores de madera en",
+      "elapsed_ms": 12092,
+      "passed": false,
+      "entity_accuracy": null,
+      "relation_accuracy": null,
+      "fact_accuracy": 0,
+      "topic_ok": true,
+      "graph_nodes": 24,
+      "graph_edges": 41,
+      "node_delta": 0,
+      "failures": [
+        "facts missing: ['Aberturas: ventanas aluminio Modena Alua']"
+      ],
+      "missing_entities": [],
+      "missing_facts": [
+        "Aberturas: ventanas aluminio Modena Aluar, puertas madera ca"
+      ]
+    },
+    {
+      "turn": 34,
+      "user_msg": "Rubén terminó la instalación de gas. Pasó la inspección de Camuzzi a la primera! El medidor lo insta",
+      "elapsed_ms": 8859,
+      "passed": false,
+      "entity_accuracy": null,
+      "relation_accuracy": null,
+      "fact_accuracy": 0,
+      "topic_ok": true,
+      "graph_nodes": 24,
+      "graph_edges": 41,
+      "node_delta": 0,
+      "failures": [
+        "facts missing: ['Instalación de gas aprobada por Camuzzi,']"
+      ],
+      "missing_entities": [],
+      "missing_facts": [
+        "Instalación de gas aprobada por Camuzzi, medidor en 15 días"
+      ]
+    },
+    {
+      "turn": 35,
+      "user_msg": "El techo va con chapa y aislación térmica. Jorge sugiere membrana asfáltica arriba de la losa y chap",
+      "elapsed_ms": 7936,
+      "passed": false,
+      "entity_accuracy": null,
+      "relation_accuracy": null,
+      "fact_accuracy": 0,
+      "topic_ok": true,
+      "graph_nodes": 25,
+      "graph_edges": 43,
+      "node_delta": 1,
+      "failures": [
+        "facts missing: ['Techo: chapa prepintada gris grafito + m']"
+      ],
+      "missing_entities": [],
+      "missing_facts": [
+        "Techo: chapa prepintada gris grafito + membrana asfáltica + "
+      ]
+    },
+    {
+      "turn": 36,
+      "user_msg": "Estamos en mes 8 de 12. Lleamos gastados 145.000 USD. Nos quedan 35.000 del crédito más unos 15.000 ",
+      "elapsed_ms": 7547,
+      "passed": false,
+      "entity_accuracy": null,
+      "relation_accuracy": null,
+      "fact_accuracy": 0,
+      "topic_ok": true,
+      "graph_nodes": 25,
+      "graph_edges": 43,
+      "node_delta": 0,
+      "failures": [
+        "facts missing: ['Mes 8/12: gastados 145K USD, disponible ']"
+      ],
+      "missing_entities": [],
+      "missing_facts": [
+        "Mes 8/12: gastados 145K USD, disponible 50K (35K crédito + 1"
+      ]
+    },
+    {
+      "turn": 37,
+      "user_msg": "Para el jardín estoy pensando en riego por goteo automático. Un sistema Netafim para 350m2 sale como",
+      "elapsed_ms": 6938,
+      "passed": false,
+      "entity_accuracy": null,
+      "relation_accuracy": null,
+      "fact_accuracy": 0,
+      "topic_ok": true,
+      "graph_nodes": 26,
+      "graph_edges": 45,
+      "node_delta": 1,
+      "failures": [
+        "facts missing: ['Jardín: sistema riego por goteo Netafim,']"
+      ],
+      "missing_entities": [],
+      "missing_facts": [
+        "Jardín: sistema riego por goteo Netafim, 2.000 USD con progr"
+      ]
+    },
+    {
+      "turn": 38,
+      "user_msg": "Laura ya está viendo muebles en Muebles Sur de Neuquén y en MercadoLibre. El dormitorio principal qu",
+      "elapsed_ms": 8030,
+      "passed": false,
+      "entity_accuracy": 100,
+      "relation_accuracy": 0,
+      "fact_accuracy": 0,
+      "topic_ok": true,
+      "graph_nodes": 28,
+      "graph_edges": 49,
+      "node_delta": 2,
+      "failures": [
+        "relations missing: [('muebles_sur', 'neuquen')]",
+        "facts missing: ['Dormitorio principal: sommier king size ']"
+      ],
+      "missing_entities": [],
+      "missing_facts": [
+        "Dormitorio principal: sommier king size + placard 3m"
+      ]
+    },
+    {
+      "turn": 39,
+      "user_msg": "El dormitorio de Lionel lo estamos pensando con tema de astronautas. Laura encontró unas vinilos re ",
+      "elapsed_ms": 8219,
+      "passed": false,
+      "entity_accuracy": null,
+      "relation_accuracy": null,
+      "fact_accuracy": 0,
+      "topic_ok": true,
+      "graph_nodes": 29,
+      "graph_edges": 52,
+      "node_delta": 1,
+      "failures": [
+        "facts missing: ['Dormitorio Lionel: temática astronautas,']"
+      ],
+      "missing_entities": [],
+      "missing_facts": [
+        "Dormitorio Lionel: temática astronautas, cama Montessori baj"
+      ]
+    },
+    {
+      "turn": 40,
+      "user_msg": "Falta el tercer dormitorio que por ahora va a ser oficina/estudio para mi trabajo remoto. Quiero un ",
+      "elapsed_ms": 6280,
+      "passed": false,
+      "entity_accuracy": null,
+      "relation_accuracy": null,
+      "fact_accuracy": 0,
+      "topic_ok": true,
+      "graph_nodes": 29,
+      "graph_edges": 52,
+      "node_delta": 0,
+      "failures": [
+        "facts missing: ['Tercer dormitorio: oficina/estudio para ']"
+      ],
+      "missing_entities": [],
+      "missing_facts": [
+        "Tercer dormitorio: oficina/estudio para trabajo remoto, escr"
+      ]
+    },
+    {
+      "turn": 41,
+      "user_msg": "El pintor arrancó esta semana. Se llama Daniel, recomendado por Néstor el vecino. Pinta interior y e",
+      "elapsed_ms": 7655,
+      "passed": false,
+      "entity_accuracy": 0,
+      "relation_accuracy": null,
+      "fact_accuracy": null,
+      "topic_ok": true,
+      "graph_nodes": 30,
+      "graph_edges": 54,
+      "node_delta": 1,
+      "failures": [
+        "entities missing: ['Daniel']"
+      ],
+      "missing_entities": [
+        "Daniel"
+      ],
+      "missing_facts": []
+    },
+    {
+      "turn": 42,
+      "user_msg": "Los colores que eligió Laura: living y cocina blanco cálido, dormitorios en tonos pasteles (celeste ",
+      "elapsed_ms": 7030,
+      "passed": false,
+      "entity_accuracy": null,
+      "relation_accuracy": null,
+      "fact_accuracy": 0,
+      "topic_ok": true,
+      "graph_nodes": 31,
+      "graph_edges": 55,
+      "node_delta": 1,
+      "failures": [
+        "facts missing: ['Colores: living/cocina blanco cálido, do']"
+      ],
+      "missing_entities": [],
+      "missing_facts": [
+        "Colores: living/cocina blanco cálido, dormitorio Lionel cele"
+      ]
+    },
+    {
+      "turn": 43,
+      "user_msg": "Contratamos alarma con la empresa Prosegur. Sensor en puertas y ventanas, 2 cámaras exteriores, y mo",
+      "elapsed_ms": 7313,
+      "passed": true,
+      "entity_accuracy": 100,
+      "relation_accuracy": null,
+      "fact_accuracy": null,
+      "topic_ok": true,
+      "graph_nodes": 32,
+      "graph_edges": 57,
+      "node_delta": 1,
+      "failures": [],
+      "missing_entities": [],
+      "missing_facts": []
+    },
+    {
+      "turn": 44,
+      "user_msg": "Para internet voy a poner fibra óptica de Baires Net que es el único proveedor en La Herradura con f",
+      "elapsed_ms": 7390,
+      "passed": true,
+      "entity_accuracy": 100,
+      "relation_accuracy": null,
+      "fact_accuracy": null,
+      "topic_ok": true,
+      "graph_nodes": 33,
+      "graph_edges": 59,
+      "node_delta": 1,
+      "failures": [],
+      "missing_entities": [],
+      "missing_facts": []
+    },
+    {
+      "turn": 45,
+      "user_msg": "La casa está casi terminada!!! Mes 11 de 12, faltan terminaciones menores, el jardín, y la mudanza. ",
+      "elapsed_ms": 7171,
+      "passed": false,
+      "entity_accuracy": null,
+      "relation_accuracy": null,
+      "fact_accuracy": 0,
+      "topic_ok": true,
+      "graph_nodes": 33,
+      "graph_edges": 59,
+      "node_delta": 0,
+      "failures": [
+        "facts missing: ['Mes 11/12: casi terminada, gastados 195K']"
+      ],
+      "missing_entities": [],
+      "missing_facts": [
+        "Mes 11/12: casi terminada, gastados 195K USD (15K sobre pres"
+      ]
+    },
+    {
+      "turn": 46,
+      "user_msg": "La mudanza la hacemos con Transportes Arias de Cipolletti. Nos cobran 250.000 ARS el flete. Nos muda",
+      "elapsed_ms": 7515,
+      "passed": false,
+      "entity_accuracy": 100,
+      "relation_accuracy": null,
+      "fact_accuracy": 0,
+      "topic_ok": true,
+      "graph_nodes": 34,
+      "graph_edges": 61,
+      "node_delta": 1,
+      "failures": [
+        "facts missing: ['Mudanza programada para el 15 del mes qu']"
+      ],
+      "missing_entities": [],
+      "missing_facts": [
+        "Mudanza programada para el 15 del mes que viene"
+      ]
+    },
+    {
+      "turn": 47,
+      "user_msg": "Cancelamos el alquiler con 30 días de preaviso como dice el contrato. El dueño nos devuelve el depós",
+      "elapsed_ms": 7641,
+      "passed": false,
+      "entity_accuracy": null,
+      "relation_accuracy": null,
+      "fact_accuracy": 0,
+      "topic_ok": true,
+      "graph_nodes": 34,
+      "graph_edges": 61,
+      "node_delta": 0,
+      "failures": [
+        "facts missing: ['Alquiler cancelado, depósito devuelto 70']"
+      ],
+      "missing_entities": [],
+      "missing_facts": [
+        "Alquiler cancelado, depósito devuelto 700K ARS, destinado a "
+      ]
+    },
+    {
+      "turn": 48,
+      "user_msg": "NOS MUDAMOS!!! 🎉 La casa quedó espectacular. Lionel ama su cuarto de astronautas. Laura está feliz c",
+      "elapsed_ms": 6421,
+      "passed": false,
+      "entity_accuracy": null,
+      "relation_accuracy": null,
+      "fact_accuracy": 0,
+      "topic_ok": true,
+      "graph_nodes": 34,
+      "graph_edges": 61,
+      "node_delta": 0,
+      "failures": [
+        "facts missing: ['Mudanza completada. Casa terminada y hab']"
+      ],
+      "missing_entities": [],
+      "missing_facts": [
+        "Mudanza completada. Casa terminada y habitada."
+      ]
+    },
+    {
+      "turn": 49,
+      "user_msg": "Podés hacer una nota final con todo el resumen del proyecto de la casa? Desde la búsqueda del terren",
+      "elapsed_ms": 6078,
+      "passed": true,
+      "entity_accuracy": null,
+      "relation_accuracy": null,
+      "fact_accuracy": null,
+      "topic_ok": true,
+      "graph_nodes": 34,
+      "graph_edges": 61,
+      "node_delta": 0,
+      "failures": [],
+      "missing_entities": [],
+      "missing_facts": []
+    }
+  ]
+}

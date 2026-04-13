@@ -1,0 +1,1306 @@
+{
+  "name": "finanzas",
+  "domain": "Finanzas",
+  "total_turns": 49,
+  "passed_turns": 13,
+  "pass_rate": 27,
+  "entity_accuracy": 40,
+  "relation_accuracy": 0,
+  "fact_accuracy": 0,
+  "topic_accuracy": 100,
+  "final_graph": {
+    "nodes": 23,
+    "edges": 30
+  },
+  "total_elapsed_ms": 326244,
+  "entity_misses": [
+    {
+      "turn": 4,
+      "msg": "Mis metas de ahorro son 5: fondo de emergencia (6 meses de gastos), viaje 2027 a España (5.000 USD),",
+      "missing": [
+        "Fondo de Emergencia",
+        "Fondo Viaje 2027",
+        "Fondo Universidad Lionel",
+        "Fondo Jubilación",
+        "Fondo Casa Propia"
+      ]
+    },
+    {
+      "turn": 10,
+      "msg": "Ok, puse 1.000.000 ARS en el FCI Balanz Ahorro en pesos (money market). Rinde 70% TNA pero es liquid",
+      "missing": [
+        "Balanz Ahorro"
+      ]
+    },
+    {
+      "turn": 11,
+      "msg": "Para el viaje necesito dólares. ¿Cómo compro dólar MEP? Vi que en Balanz se puede con bonos AL30.",
+      "missing": [
+        "Dólar MEP",
+        "AL30"
+      ]
+    },
+    {
+      "turn": 13,
+      "msg": "Para el largo plazo quiero meter algo en CEDEARs. Me interesan empresas de tecnología. ¿Qué pensás d",
+      "missing": [
+        "CEDEARs"
+      ]
+    },
+    {
+      "turn": 14,
+      "msg": "Compré mis primeros CEDEARs: 5 de Apple (AAPL) a 18.500 ARS cada uno, y 3 de Mercado Libre (MELI) a ",
+      "missing": [
+        "AAPL (CEDEAR)",
+        "MELI (CEDEAR)"
+      ]
+    },
+    {
+      "turn": 25,
+      "msg": "Estoy viendo bonos CER para protegerme de la inflación. El TX26 y el TX28. ¿Qué onda con estos? ¿Son",
+      "missing": [
+        "TX26",
+        "TX28"
+      ]
+    },
+    {
+      "turn": 31,
+      "msg": "Gastos extra este mes: arreglo del lavarropas 80.000, cumple de Valentina (regalo) 25.000, veterinar",
+      "missing": [
+        "Rocco"
+      ]
+    },
+    {
+      "turn": 35,
+      "msg": "Con el aumento, quiero meter 300.000 más por mes en CEDEARs. Estoy viendo sumar Google (GOOGL) y Ama",
+      "missing": [
+        "GOOGL (CEDEAR)",
+        "AMZN (CEDEAR)"
+      ]
+    },
+    {
+      "turn": 38,
+      "msg": "Decidí hacer un split: 60% del fondo de emergencia en money market (liquidez inmediata) y 40% en FCI",
+      "missing": [
+        "Balanz Renta Fija"
+      ]
+    }
+  ],
+  "relation_misses": [
+    {
+      "turn": 10,
+      "msg": "Ok, puse 1.000.000 ARS en el FCI Balanz Ahorro en pesos (money market). Rinde 70% TNA pero es liquid",
+      "missing": [
+        [
+          "balanz_ahorro",
+          "fondo_emergencia"
+        ]
+      ]
+    },
+    {
+      "turn": 14,
+      "msg": "Compré mis primeros CEDEARs: 5 de Apple (AAPL) a 18.500 ARS cada uno, y 3 de Mercado Libre (MELI) a ",
+      "missing": [
+        [
+          "apple_cedear",
+          "fondo_jubilacion"
+        ],
+        [
+          "meli_cedear",
+          "fondo_jubilacion"
+        ]
+      ]
+    },
+    {
+      "turn": 26,
+      "msg": "Compré 500.000 nominales de TX28 a 1.850 ARS cada 100 nominales. Esto lo pongo en la cubeta de media",
+      "missing": [
+        [
+          "tx28",
+          "fondo_casa"
+        ]
+      ]
+    },
+    {
+      "turn": 38,
+      "msg": "Decidí hacer un split: 60% del fondo de emergencia en money market (liquidez inmediata) y 40% en FCI",
+      "missing": [
+        [
+          "balanz_renta_fija",
+          "fondo_emergencia"
+        ]
+      ]
+    }
+  ],
+  "fact_misses": [
+    {
+      "turn": 1,
+      "msg": "Quiero empezar a organizar mis finanzas. Mi sueldo hoy son 4.000.000 ARS por mes como monotributista",
+      "missing": [
+        "Sueldo: 4.000.000 ARS/mes, monotributista categoría H"
+      ]
+    },
+    {
+      "turn": 2,
+      "msg": "Los gastos fijos mensuales son: alquiler 350.000 ARS, OSDE 280.000, guardería Pequeños Pasos 180.000",
+      "missing": [
+        "Gastos fijos mensuales: alquiler 350K, OSDE 280K, guardería "
+      ]
+    },
+    {
+      "turn": 3,
+      "msg": "O sea que me quedan como 2.500.000 ARS libres por mes. De eso quiero armar un plan de ahorro e inver",
+      "missing": [
+        "Capacidad de ahorro: ~2.500.000 ARS/mes"
+      ]
+    },
+    {
+      "turn": 8,
+      "msg": "Abrí cuenta en Balanz. Ya hice la verificación de identidad y transferí 500.000 ARS de prueba desde ",
+      "missing": [
+        "Cuenta abierta y verificada, primera transferencia de 500K A"
+      ]
+    },
+    {
+      "turn": 9,
+      "msg": "Para el fondo de emergencia, ¿me conviene un FCI money market o un plazo fijo? El plazo fijo en Banc",
+      "missing": [
+        "Plazo fijo: 75% TNA"
+      ]
+    },
+    {
+      "turn": 12,
+      "msg": "Hice mi primera operación de dólar MEP. Compré AL30 en pesos y vendí en dólares. Conseguí 450 USD a ",
+      "missing": [
+        "Primera compra: 450 USD via MEP a 1.111 ARS/USD"
+      ]
+    },
+    {
+      "turn": 15,
+      "msg": "El contador Pablo Méndez me dijo que los CEDEARs pagan impuesto a las ganancias. Tengo que declararl",
+      "missing": [
+        "Pagan impuesto a las ganancias, declarar en DJ anual",
+        "FCI money market exento de ganancias"
+      ]
+    },
+    {
+      "turn": 17,
+      "msg": "Abrí cuenta en Ripio. Compré 0.005 BTC y 0.05 ETH con 200.000 ARS. Lo dejo ahí a largo plazo y no lo",
+      "missing": [
+        "Compra: 0.005 BTC por 200K ARS (parte)",
+        "Compra: 0.05 ETH por 200K ARS (parte)"
+      ]
+    },
+    {
+      "turn": 19,
+      "msg": "Me gustaría hacer un rebalanceo mensual. El día 5 de cada mes cuando cobro, distribuir automáticamen",
+      "missing": [
+        "Plan de distribución mensual (día 5): 40% emergencia, 20% vi"
+      ]
+    },
+    {
+      "turn": 20,
+      "msg": "Anotá que las cuotas del préstamo del Virtus son 520.000 ARS por mes. Se debitan el 10 de cada mes d",
+      "missing": [
+        "Préstamo auto Virtus: 520.000 ARS/mes, débito el 10, 35 cuot"
+      ]
+    },
+    {
+      "turn": 21,
+      "msg": "Hoy cobré y distribuí como acordamos: 1.000.000 al money market, 500.000 para dólar MEP (viaje), 500",
+      "missing": [
+        "Distribución abril: 1M money market, 500K MEP, 500K casa, 25"
+      ]
+    },
+    {
+      "turn": 22,
+      "msg": "MELI subió un 15% desde que compré!! Ahora cada CEDEAR vale 109.250 ARS. ¿Vendo algo o holdeo?",
+      "missing": [
+        "Subió 15%, valor actual: 109.250 ARS c/u (compra fue a 95.00"
+      ]
+    },
+    {
+      "turn": 23,
+      "msg": "El dólar MEP subió a 1.180 ARS. Ahora tengo 450 USD + compré 420 USD más este mes. Total 870 USD par",
+      "missing": [
+        "Progreso: 870 USD de 5.000 USD (17.4%). Dólar MEP a 1.180 AR"
+      ]
+    },
+    {
+      "turn": 24,
+      "msg": "Pablo Méndez me dijo que puedo deducir el alquiler de ganancias si pido factura. Me va a ahorrar com",
+      "missing": [
+        "Puede deducir alquiler de ganancias con factura, ahorro ~200"
+      ]
+    },
+    {
+      "turn": 26,
+      "msg": "Compré 500.000 nominales de TX28 a 1.850 ARS cada 100 nominales. Esto lo pongo en la cubeta de media",
+      "missing": [
+        "Compra: 500K nominales a 1.850 ARS/100VN"
+      ]
+    },
+    {
+      "turn": 27,
+      "msg": "Laura quiere que abramos una caja de ahorro en dólares en el Banco Patagonia para ir juntando ahí lo",
+      "missing": [
+        "Plan: abrir caja de ahorro USD en Banco Patagonia para guard"
+      ]
+    },
+    {
+      "turn": 28,
+      "msg": "Abrimos la caja de ahorro en USD. Transferí los 870 USD de Balanz al banco. Ahora el viaje se ahorra",
+      "missing": [
+        "Caja de ahorro USD abierta, 870 USD transferidos desde Balan",
+        "Ahorro en caja de ahorro USD del Banco Patagonia"
+      ]
+    },
+    {
+      "turn": 29,
+      "msg": "Mi hermano Diego me preguntó si puede invertir conmigo en algo. Tiene 500.000 ARS que quiere poner e",
+      "missing": [
+        "Quiere invertir 500K ARS a 3 meses en algo seguro"
+      ]
+    },
+    {
+      "turn": 30,
+      "msg": "Update del portafolio a fin de mes: money market 2.100.000 ARS, USD viaje 1.290 USD, CEDEARs valor 6",
+      "missing": [
+        "Portfolio fin de mes: MM 2.1M ARS, viaje 1.290 USD, CEDEARs "
+      ]
+    },
+    {
+      "turn": 31,
+      "msg": "Gastos extra este mes: arreglo del lavarropas 80.000, cumple de Valentina (regalo) 25.000, veterinar",
+      "missing": [
+        "Gastos imprevistos del mes: lavarropas 80K, regalo cumple 25"
+      ]
+    },
+    {
+      "turn": 33,
+      "msg": "El alquiler sube en julio a 420.000 ARS, ajuste semestral del contrato. Hay que recalcular los gasto",
+      "missing": [
+        "Alquiler sube a 420.000 ARS en julio (ajuste semestral)"
+      ]
+    },
+    {
+      "turn": 34,
+      "msg": "Buenas noticias: me aumentaron el sueldo a 4.800.000 ARS a partir de agosto. Puedo destinar más a ah",
+      "missing": [
+        "Aumento sueldo a 4.800.000 ARS desde agosto"
+      ]
+    },
+    {
+      "turn": 35,
+      "msg": "Con el aumento, quiero meter 300.000 más por mes en CEDEARs. Estoy viendo sumar Google (GOOGL) y Ama",
+      "missing": [
+        "Plan: 300K ARS/mes adicionales en CEDEARs desde agosto"
+      ]
+    },
+    {
+      "turn": 36,
+      "msg": "El fondo de emergencia ya tiene 4.200.000 ARS! Nos falta la mitad. A este ritmo, en 4 meses más lo c",
+      "missing": [
+        "Progreso: 4.200.000 ARS de 8.640.000 (48.6%), ~4 meses para "
+      ]
+    },
+    {
+      "turn": 38,
+      "msg": "Decidí hacer un split: 60% del fondo de emergencia en money market (liquidez inmediata) y 40% en FCI",
+      "missing": [
+        "Distribución: 60% money market (inmediata) + 40% renta fija "
+      ]
+    },
+    {
+      "turn": 40,
+      "msg": "El Bitcoin pegó un salto, mi 0.01 BTC ahora vale 180.000 ARS (lo compré a 100.000). Ethereum también",
+      "missing": [
+        "0.01 BTC pasó de 100K a 180K ARS (+80%)",
+        "ETH subió 25% desde compra"
+      ]
+    },
+    {
+      "turn": 42,
+      "msg": "Compromiso con Laura: bajo cripto del 10% al 5% y subo casa del 20% al 25%. Nueva distribución: 40% ",
+      "missing": [
+        "Nueva distribución mensual: 40% emergencia, 20% viaje, 25% c"
+      ]
+    },
+    {
+      "turn": 43,
+      "msg": "Me llegó un bono de fin de año de un cliente: 2.000.000 ARS extra. Voy a meter todo en dólar MEP par",
+      "missing": [
+        "Bono cliente 2M ARS → todo a dólar MEP, total estimado ~2.50"
+      ]
+    },
+    {
+      "turn": 44,
+      "msg": "Resumen del año: arranqué con 0 en inversiones, hoy tengo ~8M ARS entre money market y renta fija, 2",
+      "missing": [
+        "Portfolio a 8 meses: ~8M ARS (MM+RF), 2.500 USD (viaje), 1.2"
+      ]
+    },
+    {
+      "turn": 47,
+      "msg": "Ah, me olvidé de contarte que cancelé anticipadamente 5 cuotas del préstamo del auto. Pagué 2.600.00",
+      "missing": [
+        "Préstamo auto: cancelación anticipada 5 cuotas (2.6M ARS), q"
+      ]
+    }
+  ],
+  "turns": [
+    {
+      "turn": 1,
+      "user_msg": "Quiero empezar a organizar mis finanzas. Mi sueldo hoy son 4.000.000 ARS por mes como monotributista",
+      "elapsed_ms": 6625,
+      "passed": false,
+      "entity_accuracy": null,
+      "relation_accuracy": null,
+      "fact_accuracy": 0,
+      "topic_ok": true,
+      "graph_nodes": 0,
+      "graph_edges": 0,
+      "node_delta": 0,
+      "failures": [
+        "facts missing: ['Sueldo: 4.000.000 ARS/mes, monotributist']"
+      ],
+      "missing_entities": [],
+      "missing_facts": [
+        "Sueldo: 4.000.000 ARS/mes, monotributista categoría H"
+      ]
+    },
+    {
+      "turn": 2,
+      "user_msg": "Los gastos fijos mensuales son: alquiler 350.000 ARS, OSDE 280.000, guardería Pequeños Pasos 180.000",
+      "elapsed_ms": 6561,
+      "passed": false,
+      "entity_accuracy": null,
+      "relation_accuracy": null,
+      "fact_accuracy": 0,
+      "topic_ok": true,
+      "graph_nodes": 0,
+      "graph_edges": 0,
+      "node_delta": 0,
+      "failures": [
+        "facts missing: ['Gastos fijos mensuales: alquiler 350K, O']"
+      ],
+      "missing_entities": [],
+      "missing_facts": [
+        "Gastos fijos mensuales: alquiler 350K, OSDE 280K, guardería "
+      ]
+    },
+    {
+      "turn": 3,
+      "user_msg": "O sea que me quedan como 2.500.000 ARS libres por mes. De eso quiero armar un plan de ahorro e inver",
+      "elapsed_ms": 5530,
+      "passed": false,
+      "entity_accuracy": null,
+      "relation_accuracy": null,
+      "fact_accuracy": 0,
+      "topic_ok": true,
+      "graph_nodes": 0,
+      "graph_edges": 0,
+      "node_delta": 0,
+      "failures": [
+        "facts missing: ['Capacidad de ahorro: ~2.500.000 ARS/mes']"
+      ],
+      "missing_entities": [],
+      "missing_facts": [
+        "Capacidad de ahorro: ~2.500.000 ARS/mes"
+      ]
+    },
+    {
+      "turn": 4,
+      "user_msg": "Mis metas de ahorro son 5: fondo de emergencia (6 meses de gastos), viaje 2027 a España (5.000 USD),",
+      "elapsed_ms": 5484,
+      "passed": false,
+      "entity_accuracy": 0,
+      "relation_accuracy": null,
+      "fact_accuracy": null,
+      "topic_ok": true,
+      "graph_nodes": 0,
+      "graph_edges": 0,
+      "node_delta": 0,
+      "failures": [
+        "entities missing: ['Fondo de Emergencia', 'Fondo Viaje 2027', 'Fondo Universidad Lionel', 'Fondo Jubilación', 'Fondo Casa Propia']"
+      ],
+      "missing_entities": [
+        "Fondo de Emergencia",
+        "Fondo Viaje 2027",
+        "Fondo Universidad Lionel",
+        "Fondo Jubilación",
+        "Fondo Casa Propia"
+      ],
+      "missing_facts": []
+    },
+    {
+      "turn": 5,
+      "user_msg": "¿Cómo debería distribuir los 2.5M entre esas 5 metas? Cuál es la prioridad?",
+      "elapsed_ms": 5422,
+      "passed": true,
+      "entity_accuracy": null,
+      "relation_accuracy": null,
+      "fact_accuracy": null,
+      "topic_ok": true,
+      "graph_nodes": 0,
+      "graph_edges": 0,
+      "node_delta": 0,
+      "failures": [],
+      "missing_entities": [],
+      "missing_facts": []
+    },
+    {
+      "turn": 6,
+      "user_msg": "Me gusta eso de las cubetas por plazo. Corto plazo para emergencia, mediano para viaje y casa, largo",
+      "elapsed_ms": 5483,
+      "passed": true,
+      "entity_accuracy": null,
+      "relation_accuracy": null,
+      "fact_accuracy": null,
+      "topic_ok": true,
+      "graph_nodes": 0,
+      "graph_edges": 0,
+      "node_delta": 0,
+      "failures": [],
+      "missing_entities": [],
+      "missing_facts": []
+    },
+    {
+      "turn": 7,
+      "user_msg": "Me recomendaron abrir cuenta en Balanz. También miré Bull Market y IOL (InvertirOnline). ¿Cuál me co",
+      "elapsed_ms": 7266,
+      "passed": true,
+      "entity_accuracy": 100,
+      "relation_accuracy": null,
+      "fact_accuracy": null,
+      "topic_ok": true,
+      "graph_nodes": 3,
+      "graph_edges": 3,
+      "node_delta": 3,
+      "failures": [],
+      "missing_entities": [],
+      "missing_facts": []
+    },
+    {
+      "turn": 8,
+      "user_msg": "Abrí cuenta en Balanz. Ya hice la verificación de identidad y transferí 500.000 ARS de prueba desde ",
+      "elapsed_ms": 7421,
+      "passed": false,
+      "entity_accuracy": null,
+      "relation_accuracy": null,
+      "fact_accuracy": 0,
+      "topic_ok": true,
+      "graph_nodes": 4,
+      "graph_edges": 5,
+      "node_delta": 1,
+      "failures": [
+        "facts missing: ['Cuenta abierta y verificada, primera tra']"
+      ],
+      "missing_entities": [],
+      "missing_facts": [
+        "Cuenta abierta y verificada, primera transferencia de 500K A"
+      ]
+    },
+    {
+      "turn": 9,
+      "user_msg": "Para el fondo de emergencia, ¿me conviene un FCI money market o un plazo fijo? El plazo fijo en Banc",
+      "elapsed_ms": 5796,
+      "passed": false,
+      "entity_accuracy": null,
+      "relation_accuracy": null,
+      "fact_accuracy": 0,
+      "topic_ok": true,
+      "graph_nodes": 4,
+      "graph_edges": 5,
+      "node_delta": 0,
+      "failures": [
+        "facts missing: ['Plazo fijo: 75% TNA']"
+      ],
+      "missing_entities": [],
+      "missing_facts": [
+        "Plazo fijo: 75% TNA"
+      ]
+    },
+    {
+      "turn": 10,
+      "user_msg": "Ok, puse 1.000.000 ARS en el FCI Balanz Ahorro en pesos (money market). Rinde 70% TNA pero es liquid",
+      "elapsed_ms": 5907,
+      "passed": false,
+      "entity_accuracy": 0,
+      "relation_accuracy": 0,
+      "fact_accuracy": null,
+      "topic_ok": true,
+      "graph_nodes": 4,
+      "graph_edges": 5,
+      "node_delta": 0,
+      "failures": [
+        "entities missing: ['Balanz Ahorro']",
+        "relations missing: [('balanz_ahorro', 'fondo_emergencia')]"
+      ],
+      "missing_entities": [
+        "Balanz Ahorro"
+      ],
+      "missing_facts": []
+    },
+    {
+      "turn": 11,
+      "user_msg": "Para el viaje necesito dólares. ¿Cómo compro dólar MEP? Vi que en Balanz se puede con bonos AL30.",
+      "elapsed_ms": 5327,
+      "passed": false,
+      "entity_accuracy": 0,
+      "relation_accuracy": null,
+      "fact_accuracy": null,
+      "topic_ok": true,
+      "graph_nodes": 4,
+      "graph_edges": 5,
+      "node_delta": 0,
+      "failures": [
+        "entities missing: ['Dólar MEP', 'AL30']"
+      ],
+      "missing_entities": [
+        "Dólar MEP",
+        "AL30"
+      ],
+      "missing_facts": []
+    },
+    {
+      "turn": 12,
+      "user_msg": "Hice mi primera operación de dólar MEP. Compré AL30 en pesos y vendí en dólares. Conseguí 450 USD a ",
+      "elapsed_ms": 6390,
+      "passed": false,
+      "entity_accuracy": null,
+      "relation_accuracy": null,
+      "fact_accuracy": 0,
+      "topic_ok": true,
+      "graph_nodes": 4,
+      "graph_edges": 5,
+      "node_delta": 0,
+      "failures": [
+        "facts missing: ['Primera compra: 450 USD via MEP a 1.111 ']"
+      ],
+      "missing_entities": [],
+      "missing_facts": [
+        "Primera compra: 450 USD via MEP a 1.111 ARS/USD"
+      ]
+    },
+    {
+      "turn": 13,
+      "user_msg": "Para el largo plazo quiero meter algo en CEDEARs. Me interesan empresas de tecnología. ¿Qué pensás d",
+      "elapsed_ms": 8016,
+      "passed": false,
+      "entity_accuracy": 0,
+      "relation_accuracy": null,
+      "fact_accuracy": null,
+      "topic_ok": true,
+      "graph_nodes": 7,
+      "graph_edges": 11,
+      "node_delta": 3,
+      "failures": [
+        "entities missing: ['CEDEARs']"
+      ],
+      "missing_entities": [
+        "CEDEARs"
+      ],
+      "missing_facts": []
+    },
+    {
+      "turn": 14,
+      "user_msg": "Compré mis primeros CEDEARs: 5 de Apple (AAPL) a 18.500 ARS cada uno, y 3 de Mercado Libre (MELI) a ",
+      "elapsed_ms": 7796,
+      "passed": false,
+      "entity_accuracy": 0,
+      "relation_accuracy": 0,
+      "fact_accuracy": null,
+      "topic_ok": true,
+      "graph_nodes": 7,
+      "graph_edges": 11,
+      "node_delta": 0,
+      "failures": [
+        "entities missing: ['AAPL (CEDEAR)', 'MELI (CEDEAR)']",
+        "relations missing: [('apple_cedear', 'fondo_jubilacion'), ('meli_cedear', 'fondo_jubilacion')]"
+      ],
+      "missing_entities": [
+        "AAPL (CEDEAR)",
+        "MELI (CEDEAR)"
+      ],
+      "missing_facts": []
+    },
+    {
+      "turn": 15,
+      "user_msg": "El contador Pablo Méndez me dijo que los CEDEARs pagan impuesto a las ganancias. Tengo que declararl",
+      "elapsed_ms": 6436,
+      "passed": false,
+      "entity_accuracy": 100,
+      "relation_accuracy": null,
+      "fact_accuracy": 0,
+      "topic_ok": true,
+      "graph_nodes": 8,
+      "graph_edges": 12,
+      "node_delta": 1,
+      "failures": [
+        "facts missing: ['Pagan impuesto a las ganancias, declarar', 'FCI money market exento de ganancias']"
+      ],
+      "missing_entities": [],
+      "missing_facts": [
+        "Pagan impuesto a las ganancias, declarar en DJ anual",
+        "FCI money market exento de ganancias"
+      ]
+    },
+    {
+      "turn": 16,
+      "user_msg": "Quiero meter un poquito en cripto también. No mucho, un 5% del portafolio. Estoy pensando en Bitcoin",
+      "elapsed_ms": 6609,
+      "passed": true,
+      "entity_accuracy": 100,
+      "relation_accuracy": null,
+      "fact_accuracy": null,
+      "topic_ok": true,
+      "graph_nodes": 10,
+      "graph_edges": 14,
+      "node_delta": 2,
+      "failures": [],
+      "missing_entities": [],
+      "missing_facts": []
+    },
+    {
+      "turn": 17,
+      "user_msg": "Abrí cuenta en Ripio. Compré 0.005 BTC y 0.05 ETH con 200.000 ARS. Lo dejo ahí a largo plazo y no lo",
+      "elapsed_ms": 8078,
+      "passed": false,
+      "entity_accuracy": 100,
+      "relation_accuracy": null,
+      "fact_accuracy": 0,
+      "topic_ok": true,
+      "graph_nodes": 11,
+      "graph_edges": 18,
+      "node_delta": 1,
+      "failures": [
+        "facts missing: ['Compra: 0.005 BTC por 200K ARS (parte)', 'Compra: 0.05 ETH por 200K ARS (parte)']"
+      ],
+      "missing_entities": [],
+      "missing_facts": [
+        "Compra: 0.005 BTC por 200K ARS (parte)",
+        "Compra: 0.05 ETH por 200K ARS (parte)"
+      ]
+    },
+    {
+      "turn": 18,
+      "user_msg": "¿Podés hacerme un resumen del portafolio completo? Quiero ver todo junto: money market, MEP, CEDEARs",
+      "elapsed_ms": 5842,
+      "passed": true,
+      "entity_accuracy": null,
+      "relation_accuracy": null,
+      "fact_accuracy": null,
+      "topic_ok": true,
+      "graph_nodes": 11,
+      "graph_edges": 18,
+      "node_delta": 0,
+      "failures": [],
+      "missing_entities": [],
+      "missing_facts": []
+    },
+    {
+      "turn": 19,
+      "user_msg": "Me gustaría hacer un rebalanceo mensual. El día 5 de cada mes cuando cobro, distribuir automáticamen",
+      "elapsed_ms": 6078,
+      "passed": false,
+      "entity_accuracy": null,
+      "relation_accuracy": null,
+      "fact_accuracy": 0,
+      "topic_ok": true,
+      "graph_nodes": 11,
+      "graph_edges": 18,
+      "node_delta": 0,
+      "failures": [
+        "facts missing: ['Plan de distribución mensual (día 5): 40']"
+      ],
+      "missing_entities": [],
+      "missing_facts": [
+        "Plan de distribución mensual (día 5): 40% emergencia, 20% vi"
+      ]
+    },
+    {
+      "turn": 20,
+      "user_msg": "Anotá que las cuotas del préstamo del Virtus son 520.000 ARS por mes. Se debitan el 10 de cada mes d",
+      "elapsed_ms": 7188,
+      "passed": false,
+      "entity_accuracy": null,
+      "relation_accuracy": null,
+      "fact_accuracy": 0,
+      "topic_ok": true,
+      "graph_nodes": 11,
+      "graph_edges": 18,
+      "node_delta": 0,
+      "failures": [
+        "facts missing: ['Préstamo auto Virtus: 520.000 ARS/mes, d']"
+      ],
+      "missing_entities": [],
+      "missing_facts": [
+        "Préstamo auto Virtus: 520.000 ARS/mes, débito el 10, 35 cuot"
+      ]
+    },
+    {
+      "turn": 21,
+      "user_msg": "Hoy cobré y distribuí como acordamos: 1.000.000 al money market, 500.000 para dólar MEP (viaje), 500",
+      "elapsed_ms": 6530,
+      "passed": false,
+      "entity_accuracy": null,
+      "relation_accuracy": null,
+      "fact_accuracy": 0,
+      "topic_ok": true,
+      "graph_nodes": 11,
+      "graph_edges": 18,
+      "node_delta": 0,
+      "failures": [
+        "facts missing: ['Distribución abril: 1M money market, 500']"
+      ],
+      "missing_entities": [],
+      "missing_facts": [
+        "Distribución abril: 1M money market, 500K MEP, 500K casa, 25"
+      ]
+    },
+    {
+      "turn": 22,
+      "user_msg": "MELI subió un 15% desde que compré!! Ahora cada CEDEAR vale 109.250 ARS. ¿Vendo algo o holdeo?",
+      "elapsed_ms": 7015,
+      "passed": false,
+      "entity_accuracy": null,
+      "relation_accuracy": null,
+      "fact_accuracy": 0,
+      "topic_ok": true,
+      "graph_nodes": 12,
+      "graph_edges": 19,
+      "node_delta": 1,
+      "failures": [
+        "facts missing: ['Subió 15%, valor actual: 109.250 ARS c/u']"
+      ],
+      "missing_entities": [],
+      "missing_facts": [
+        "Subió 15%, valor actual: 109.250 ARS c/u (compra fue a 95.00"
+      ]
+    },
+    {
+      "turn": 23,
+      "user_msg": "El dólar MEP subió a 1.180 ARS. Ahora tengo 450 USD + compré 420 USD más este mes. Total 870 USD par",
+      "elapsed_ms": 7250,
+      "passed": false,
+      "entity_accuracy": null,
+      "relation_accuracy": null,
+      "fact_accuracy": 0,
+      "topic_ok": true,
+      "graph_nodes": 13,
+      "graph_edges": 20,
+      "node_delta": 1,
+      "failures": [
+        "facts missing: ['Progreso: 870 USD de 5.000 USD (17.4%). ']"
+      ],
+      "missing_entities": [],
+      "missing_facts": [
+        "Progreso: 870 USD de 5.000 USD (17.4%). Dólar MEP a 1.180 AR"
+      ]
+    },
+    {
+      "turn": 24,
+      "user_msg": "Pablo Méndez me dijo que puedo deducir el alquiler de ganancias si pido factura. Me va a ahorrar com",
+      "elapsed_ms": 6186,
+      "passed": false,
+      "entity_accuracy": null,
+      "relation_accuracy": null,
+      "fact_accuracy": 0,
+      "topic_ok": true,
+      "graph_nodes": 13,
+      "graph_edges": 20,
+      "node_delta": 0,
+      "failures": [
+        "facts missing: ['Puede deducir alquiler de ganancias con ']"
+      ],
+      "missing_entities": [],
+      "missing_facts": [
+        "Puede deducir alquiler de ganancias con factura, ahorro ~200"
+      ]
+    },
+    {
+      "turn": 25,
+      "user_msg": "Estoy viendo bonos CER para protegerme de la inflación. El TX26 y el TX28. ¿Qué onda con estos? ¿Son",
+      "elapsed_ms": 5844,
+      "passed": false,
+      "entity_accuracy": 0,
+      "relation_accuracy": null,
+      "fact_accuracy": null,
+      "topic_ok": true,
+      "graph_nodes": 13,
+      "graph_edges": 20,
+      "node_delta": 0,
+      "failures": [
+        "entities missing: ['TX26', 'TX28']"
+      ],
+      "missing_entities": [
+        "TX26",
+        "TX28"
+      ],
+      "missing_facts": []
+    },
+    {
+      "turn": 26,
+      "user_msg": "Compré 500.000 nominales de TX28 a 1.850 ARS cada 100 nominales. Esto lo pongo en la cubeta de media",
+      "elapsed_ms": 6703,
+      "passed": false,
+      "entity_accuracy": null,
+      "relation_accuracy": 0,
+      "fact_accuracy": 0,
+      "topic_ok": true,
+      "graph_nodes": 13,
+      "graph_edges": 20,
+      "node_delta": 0,
+      "failures": [
+        "relations missing: [('tx28', 'fondo_casa')]",
+        "facts missing: ['Compra: 500K nominales a 1.850 ARS/100VN']"
+      ],
+      "missing_entities": [],
+      "missing_facts": [
+        "Compra: 500K nominales a 1.850 ARS/100VN"
+      ]
+    },
+    {
+      "turn": 27,
+      "user_msg": "Laura quiere que abramos una caja de ahorro en dólares en el Banco Patagonia para ir juntando ahí lo",
+      "elapsed_ms": 7827,
+      "passed": false,
+      "entity_accuracy": null,
+      "relation_accuracy": null,
+      "fact_accuracy": 0,
+      "topic_ok": true,
+      "graph_nodes": 13,
+      "graph_edges": 20,
+      "node_delta": 0,
+      "failures": [
+        "facts missing: ['Plan: abrir caja de ahorro USD en Banco ']"
+      ],
+      "missing_entities": [],
+      "missing_facts": [
+        "Plan: abrir caja de ahorro USD en Banco Patagonia para guard"
+      ]
+    },
+    {
+      "turn": 28,
+      "user_msg": "Abrimos la caja de ahorro en USD. Transferí los 870 USD de Balanz al banco. Ahora el viaje se ahorra",
+      "elapsed_ms": 7235,
+      "passed": false,
+      "entity_accuracy": null,
+      "relation_accuracy": null,
+      "fact_accuracy": 0,
+      "topic_ok": true,
+      "graph_nodes": 13,
+      "graph_edges": 20,
+      "node_delta": 0,
+      "failures": [
+        "facts missing: ['Caja de ahorro USD abierta, 870 USD tran', 'Ahorro en caja de ahorro USD del Banco P']"
+      ],
+      "missing_entities": [],
+      "missing_facts": [
+        "Caja de ahorro USD abierta, 870 USD transferidos desde Balan",
+        "Ahorro en caja de ahorro USD del Banco Patagonia"
+      ]
+    },
+    {
+      "turn": 29,
+      "user_msg": "Mi hermano Diego me preguntó si puede invertir conmigo en algo. Tiene 500.000 ARS que quiere poner e",
+      "elapsed_ms": 6375,
+      "passed": false,
+      "entity_accuracy": null,
+      "relation_accuracy": null,
+      "fact_accuracy": 0,
+      "topic_ok": true,
+      "graph_nodes": 13,
+      "graph_edges": 20,
+      "node_delta": 0,
+      "failures": [
+        "facts missing: ['Quiere invertir 500K ARS a 3 meses en al']"
+      ],
+      "missing_entities": [],
+      "missing_facts": [
+        "Quiere invertir 500K ARS a 3 meses en algo seguro"
+      ]
+    },
+    {
+      "turn": 30,
+      "user_msg": "Update del portafolio a fin de mes: money market 2.100.000 ARS, USD viaje 1.290 USD, CEDEARs valor 6",
+      "elapsed_ms": 6780,
+      "passed": false,
+      "entity_accuracy": null,
+      "relation_accuracy": null,
+      "fact_accuracy": 0,
+      "topic_ok": true,
+      "graph_nodes": 13,
+      "graph_edges": 20,
+      "node_delta": 0,
+      "failures": [
+        "facts missing: ['Portfolio fin de mes: MM 2.1M ARS, viaje']"
+      ],
+      "missing_entities": [],
+      "missing_facts": [
+        "Portfolio fin de mes: MM 2.1M ARS, viaje 1.290 USD, CEDEARs "
+      ]
+    },
+    {
+      "turn": 31,
+      "user_msg": "Gastos extra este mes: arreglo del lavarropas 80.000, cumple de Valentina (regalo) 25.000, veterinar",
+      "elapsed_ms": 6594,
+      "passed": false,
+      "entity_accuracy": 0,
+      "relation_accuracy": null,
+      "fact_accuracy": 0,
+      "topic_ok": true,
+      "graph_nodes": 13,
+      "graph_edges": 20,
+      "node_delta": 0,
+      "failures": [
+        "entities missing: ['Rocco']",
+        "facts missing: ['Gastos imprevistos del mes: lavarropas 8']"
+      ],
+      "missing_entities": [
+        "Rocco"
+      ],
+      "missing_facts": [
+        "Gastos imprevistos del mes: lavarropas 80K, regalo cumple 25"
+      ]
+    },
+    {
+      "turn": 32,
+      "user_msg": "Creo que necesito un presupuesto más detallado. ¿Podés hacer una nota con todos los gastos fijos, va",
+      "elapsed_ms": 5827,
+      "passed": true,
+      "entity_accuracy": null,
+      "relation_accuracy": null,
+      "fact_accuracy": null,
+      "topic_ok": true,
+      "graph_nodes": 13,
+      "graph_edges": 20,
+      "node_delta": 0,
+      "failures": [],
+      "missing_entities": [],
+      "missing_facts": []
+    },
+    {
+      "turn": 33,
+      "user_msg": "El alquiler sube en julio a 420.000 ARS, ajuste semestral del contrato. Hay que recalcular los gasto",
+      "elapsed_ms": 6453,
+      "passed": false,
+      "entity_accuracy": null,
+      "relation_accuracy": null,
+      "fact_accuracy": 0,
+      "topic_ok": true,
+      "graph_nodes": 13,
+      "graph_edges": 20,
+      "node_delta": 0,
+      "failures": [
+        "facts missing: ['Alquiler sube a 420.000 ARS en julio (aj']"
+      ],
+      "missing_entities": [],
+      "missing_facts": [
+        "Alquiler sube a 420.000 ARS en julio (ajuste semestral)"
+      ]
+    },
+    {
+      "turn": 34,
+      "user_msg": "Buenas noticias: me aumentaron el sueldo a 4.800.000 ARS a partir de agosto. Puedo destinar más a ah",
+      "elapsed_ms": 6219,
+      "passed": false,
+      "entity_accuracy": null,
+      "relation_accuracy": null,
+      "fact_accuracy": 0,
+      "topic_ok": true,
+      "graph_nodes": 13,
+      "graph_edges": 20,
+      "node_delta": 0,
+      "failures": [
+        "facts missing: ['Aumento sueldo a 4.800.000 ARS desde ago']"
+      ],
+      "missing_entities": [],
+      "missing_facts": [
+        "Aumento sueldo a 4.800.000 ARS desde agosto"
+      ]
+    },
+    {
+      "turn": 35,
+      "user_msg": "Con el aumento, quiero meter 300.000 más por mes en CEDEARs. Estoy viendo sumar Google (GOOGL) y Ama",
+      "elapsed_ms": 8375,
+      "passed": false,
+      "entity_accuracy": 0,
+      "relation_accuracy": null,
+      "fact_accuracy": 0,
+      "topic_ok": true,
+      "graph_nodes": 14,
+      "graph_edges": 22,
+      "node_delta": 1,
+      "failures": [
+        "entities missing: ['GOOGL (CEDEAR)', 'AMZN (CEDEAR)']",
+        "facts missing: ['Plan: 300K ARS/mes adicionales en CEDEAR']"
+      ],
+      "missing_entities": [
+        "GOOGL (CEDEAR)",
+        "AMZN (CEDEAR)"
+      ],
+      "missing_facts": [
+        "Plan: 300K ARS/mes adicionales en CEDEARs desde agosto"
+      ]
+    },
+    {
+      "turn": 36,
+      "user_msg": "El fondo de emergencia ya tiene 4.200.000 ARS! Nos falta la mitad. A este ritmo, en 4 meses más lo c",
+      "elapsed_ms": 6452,
+      "passed": false,
+      "entity_accuracy": null,
+      "relation_accuracy": null,
+      "fact_accuracy": 0,
+      "topic_ok": true,
+      "graph_nodes": 14,
+      "graph_edges": 22,
+      "node_delta": 0,
+      "failures": [
+        "facts missing: ['Progreso: 4.200.000 ARS de 8.640.000 (48']"
+      ],
+      "missing_entities": [],
+      "missing_facts": [
+        "Progreso: 4.200.000 ARS de 8.640.000 (48.6%), ~4 meses para "
+      ]
+    },
+    {
+      "turn": 37,
+      "user_msg": "¿Podés buscar cuánto rinden los FCI T+1 en Balanz? Quiero mover parte del fondo de emergencia a algo",
+      "elapsed_ms": 5875,
+      "passed": true,
+      "entity_accuracy": null,
+      "relation_accuracy": null,
+      "fact_accuracy": null,
+      "topic_ok": true,
+      "graph_nodes": 14,
+      "graph_edges": 22,
+      "node_delta": 0,
+      "failures": [],
+      "missing_entities": [],
+      "missing_facts": []
+    },
+    {
+      "turn": 38,
+      "user_msg": "Decidí hacer un split: 60% del fondo de emergencia en money market (liquidez inmediata) y 40% en FCI",
+      "elapsed_ms": 7328,
+      "passed": false,
+      "entity_accuracy": 0,
+      "relation_accuracy": 0,
+      "fact_accuracy": 0,
+      "topic_ok": true,
+      "graph_nodes": 15,
+      "graph_edges": 23,
+      "node_delta": 1,
+      "failures": [
+        "entities missing: ['Balanz Renta Fija']",
+        "relations missing: [('balanz_renta_fija', 'fondo_emergencia')]",
+        "facts missing: ['Distribución: 60% money market (inmediat']"
+      ],
+      "missing_entities": [
+        "Balanz Renta Fija"
+      ],
+      "missing_facts": [
+        "Distribución: 60% money market (inmediata) + 40% renta fija "
+      ]
+    },
+    {
+      "turn": 39,
+      "user_msg": "¿Me podés armar un dashboard o resumen mensual que pueda ir actualizando? Con todas las cuentas, mon",
+      "elapsed_ms": 5875,
+      "passed": true,
+      "entity_accuracy": null,
+      "relation_accuracy": null,
+      "fact_accuracy": null,
+      "topic_ok": true,
+      "graph_nodes": 15,
+      "graph_edges": 23,
+      "node_delta": 0,
+      "failures": [],
+      "missing_entities": [],
+      "missing_facts": []
+    },
+    {
+      "turn": 40,
+      "user_msg": "El Bitcoin pegó un salto, mi 0.01 BTC ahora vale 180.000 ARS (lo compré a 100.000). Ethereum también",
+      "elapsed_ms": 7046,
+      "passed": false,
+      "entity_accuracy": null,
+      "relation_accuracy": null,
+      "fact_accuracy": 0,
+      "topic_ok": true,
+      "graph_nodes": 15,
+      "graph_edges": 23,
+      "node_delta": 0,
+      "failures": [
+        "facts missing: ['0.01 BTC pasó de 100K a 180K ARS (+80%)', 'ETH subió 25% desde compra']"
+      ],
+      "missing_entities": [],
+      "missing_facts": [
+        "0.01 BTC pasó de 100K a 180K ARS (+80%)",
+        "ETH subió 25% desde compra"
+      ]
+    },
+    {
+      "turn": 41,
+      "user_msg": "Laura dice que dejemos de invertir en cripto y metamos todo en dólares para la casa. Tiene razón en ",
+      "elapsed_ms": 6375,
+      "passed": true,
+      "entity_accuracy": null,
+      "relation_accuracy": null,
+      "fact_accuracy": null,
+      "topic_ok": true,
+      "graph_nodes": 16,
+      "graph_edges": 24,
+      "node_delta": 1,
+      "failures": [],
+      "missing_entities": [],
+      "missing_facts": []
+    },
+    {
+      "turn": 42,
+      "user_msg": "Compromiso con Laura: bajo cripto del 10% al 5% y subo casa del 20% al 25%. Nueva distribución: 40% ",
+      "elapsed_ms": 6703,
+      "passed": false,
+      "entity_accuracy": null,
+      "relation_accuracy": null,
+      "fact_accuracy": 0,
+      "topic_ok": true,
+      "graph_nodes": 16,
+      "graph_edges": 24,
+      "node_delta": 0,
+      "failures": [
+        "facts missing: ['Nueva distribución mensual: 40% emergenc']"
+      ],
+      "missing_entities": [],
+      "missing_facts": [
+        "Nueva distribución mensual: 40% emergencia, 20% viaje, 25% c"
+      ]
+    },
+    {
+      "turn": 43,
+      "user_msg": "Me llegó un bono de fin de año de un cliente: 2.000.000 ARS extra. Voy a meter todo en dólar MEP par",
+      "elapsed_ms": 7546,
+      "passed": false,
+      "entity_accuracy": null,
+      "relation_accuracy": null,
+      "fact_accuracy": 0,
+      "topic_ok": true,
+      "graph_nodes": 17,
+      "graph_edges": 25,
+      "node_delta": 1,
+      "failures": [
+        "facts missing: ['Bono cliente 2M ARS → todo a dólar MEP, ']"
+      ],
+      "missing_entities": [],
+      "missing_facts": [
+        "Bono cliente 2M ARS → todo a dólar MEP, total estimado ~2.50"
+      ]
+    },
+    {
+      "turn": 44,
+      "user_msg": "Resumen del año: arranqué con 0 en inversiones, hoy tengo ~8M ARS entre money market y renta fija, 2",
+      "elapsed_ms": 9922,
+      "passed": false,
+      "entity_accuracy": null,
+      "relation_accuracy": null,
+      "fact_accuracy": 0,
+      "topic_ok": true,
+      "graph_nodes": 20,
+      "graph_edges": 28,
+      "node_delta": 3,
+      "failures": [
+        "facts missing: ['Portfolio a 8 meses: ~8M ARS (MM+RF), 2.']"
+      ],
+      "missing_entities": [],
+      "missing_facts": [
+        "Portfolio a 8 meses: ~8M ARS (MM+RF), 2.500 USD (viaje), 1.2"
+      ]
+    },
+    {
+      "turn": 45,
+      "user_msg": "Para el año que viene quiero empezar a mirar créditos hipotecarios UVA. El Banco Nación y el Banco P",
+      "elapsed_ms": 6967,
+      "passed": true,
+      "entity_accuracy": 100,
+      "relation_accuracy": null,
+      "fact_accuracy": null,
+      "topic_ok": true,
+      "graph_nodes": 22,
+      "graph_edges": 30,
+      "node_delta": 2,
+      "failures": [],
+      "missing_entities": [],
+      "missing_facts": []
+    },
+    {
+      "turn": 46,
+      "user_msg": "Haceme una nota con el plan financiero completo actualizado. Todas las metas, instrumentos, distribu",
+      "elapsed_ms": 5921,
+      "passed": true,
+      "entity_accuracy": null,
+      "relation_accuracy": null,
+      "fact_accuracy": null,
+      "topic_ok": true,
+      "graph_nodes": 22,
+      "graph_edges": 30,
+      "node_delta": 0,
+      "failures": [],
+      "missing_entities": [],
+      "missing_facts": []
+    },
+    {
+      "turn": 47,
+      "user_msg": "Ah, me olvidé de contarte que cancelé anticipadamente 5 cuotas del préstamo del auto. Pagué 2.600.00",
+      "elapsed_ms": 6969,
+      "passed": false,
+      "entity_accuracy": null,
+      "relation_accuracy": null,
+      "fact_accuracy": 0,
+      "topic_ok": true,
+      "graph_nodes": 22,
+      "graph_edges": 30,
+      "node_delta": 0,
+      "failures": [
+        "facts missing: ['Préstamo auto: cancelación anticipada 5 ']"
+      ],
+      "missing_entities": [],
+      "missing_facts": [
+        "Préstamo auto: cancelación anticipada 5 cuotas (2.6M ARS), q"
+      ]
+    },
+    {
+      "turn": 48,
+      "user_msg": "qué onda con las Obligaciones Negociables? Me dijeron que rinden en dólares y son de empresas argent",
+      "elapsed_ms": 6703,
+      "passed": true,
+      "entity_accuracy": 100,
+      "relation_accuracy": null,
+      "fact_accuracy": null,
+      "topic_ok": true,
+      "graph_nodes": 23,
+      "graph_edges": 30,
+      "node_delta": 1,
+      "failures": [],
+      "missing_entities": [],
+      "missing_facts": []
+    },
+    {
+      "turn": 49,
+      "user_msg": "Bueno, basta de finanzas por hoy jaja. Haceme un resumen final de todo lo que hablamos y después seg",
+      "elapsed_ms": 6094,
+      "passed": true,
+      "entity_accuracy": null,
+      "relation_accuracy": null,
+      "fact_accuracy": null,
+      "topic_ok": true,
+      "graph_nodes": 23,
+      "graph_edges": 30,
+      "node_delta": 0,
+      "failures": [],
+      "missing_entities": [],
+      "missing_facts": []
+    }
+  ]
+}

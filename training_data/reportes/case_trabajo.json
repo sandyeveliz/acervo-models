@@ -1,0 +1,1372 @@
+{
+  "name": "trabajo",
+  "domain": "Trabajo",
+  "total_turns": 50,
+  "passed_turns": 7,
+  "pass_rate": 14,
+  "entity_accuracy": 78,
+  "relation_accuracy": 43,
+  "fact_accuracy": 4,
+  "topic_accuracy": 100,
+  "final_graph": {
+    "nodes": 32,
+    "edges": 68
+  },
+  "total_elapsed_ms": 434068,
+  "entity_misses": [
+    {
+      "turn": 4,
+      "msg": "Checkear es para la empresa Inspecciones del Sur SRL. El contacto es Roberto Méndez, gerente de oper",
+      "missing": [
+        "Roberto Méndez"
+      ]
+    },
+    {
+      "turn": 14,
+      "msg": "Daniela de Butaco está re contenta, el e-commerce ya tiene 150 productos cargados y vendieron 45 ped",
+      "missing": [
+        "Mercado Pago",
+        "Andreani"
+      ]
+    },
+    {
+      "turn": 31,
+      "msg": "Entrevisté a Camila, backend dev de Cipolletti, 4 años de experiencia con Node.js y Python. Sabe de ",
+      "missing": [
+        "Camila"
+      ]
+    },
+    {
+      "turn": 35,
+      "msg": "Camila implementó el OCR con Tesseract para Checkear. Lee las etiquetas de materiales de construcció",
+      "missing": [
+        "Tesseract"
+      ]
+    }
+  ],
+  "relation_misses": [
+    {
+      "turn": 1,
+      "msg": "En AltoValleStudio tenemos 3 proyectos activos: Walletfy (app finanzas con React y Supabase), Checke",
+      "missing": [
+        [
+          "altovallestudio",
+          "walletfy"
+        ],
+        [
+          "altovallestudio",
+          "checkear"
+        ],
+        [
+          "altovallestudio",
+          "butaco"
+        ],
+        [
+          "butaco",
+          "nextjs"
+        ]
+      ]
+    },
+    {
+      "turn": 2,
+      "msg": "En Walletfy trabajan conmigo: Martín como frontend dev y Sofía como diseñadora UX. Martín es full-ti",
+      "missing": [
+        [
+          "martin_dev",
+          "walletfy"
+        ],
+        [
+          "sofia_ux",
+          "walletfy"
+        ]
+      ]
+    },
+    {
+      "turn": 4,
+      "msg": "Checkear es para la empresa Inspecciones del Sur SRL. El contacto es Roberto Méndez, gerente de oper",
+      "missing": [
+        [
+          "roberto_mendez",
+          "inspecciones_del_sur"
+        ],
+        [
+          "inspecciones_del_sur",
+          "checkear"
+        ]
+      ]
+    },
+    {
+      "turn": 5,
+      "msg": "Butaco es para una tienda de ropa de Neuquén que se llama Butaco Indumentaria. La dueña es Daniela R",
+      "missing": [
+        [
+          "daniela_ruiz",
+          "butaco_indumentaria"
+        ]
+      ]
+    },
+    {
+      "turn": 35,
+      "msg": "Camila implementó el OCR con Tesseract para Checkear. Lee las etiquetas de materiales de construcció",
+      "missing": [
+        [
+          "checkear",
+          "tesseract"
+        ]
+      ]
+    }
+  ],
+  "fact_misses": [
+    {
+      "turn": 3,
+      "msg": "Walletfy ya tiene beta con 20 usuarios. El feedback es positivo pero piden más categorías de gastos ",
+      "missing": [
+        "Beta con 20 usuarios. Feedback: más categorías + conexión ba"
+      ]
+    },
+    {
+      "turn": 6,
+      "msg": "Cobros este mes: Checkear me pagó 800.000 ARS. Butaco paga 600.000 ARS mensuales. Walletfy todavía n",
+      "missing": [
+        "Ingreso mensual: 800.000 ARS",
+        "Ingreso mensual: 600.000 ARS",
+        "Sin ingresos todavía"
+      ]
+    },
+    {
+      "turn": 7,
+      "msg": "Problema: Martín me avisa que se va en 2 meses. Le ofrecieron trabajo en Globant. Necesito buscar re",
+      "missing": [
+        "Se va en 2 meses, aceptó oferta en Globant"
+      ]
+    },
+    {
+      "turn": 8,
+      "msg": "Publiqué la búsqueda en LinkedIn y en la comunidad de devs de Neuquén. Busco React developer con exp",
+      "missing": [
+        "Búsqueda: React dev con exp fintech, 2.5M ARS, full-time rem"
+      ]
+    },
+    {
+      "turn": 10,
+      "msg": "Entrevisté a Lucas. Muy bueno técnicamente, conoce React y Supabase. Le gustó el proyecto de Walletf",
+      "missing": [
+        "Entrevista positiva, conoce React + Supabase, oferta: arranc"
+      ]
+    },
+    {
+      "turn": 11,
+      "msg": "Lucas aceptó! Arranca el 1ro del mes que viene. Martín va a hacer un handoff de 2 semanas con él. Pe",
+      "missing": [
+        "Aceptó, arranca el 1ro. Handoff 2 semanas con Martín"
+      ]
+    },
+    {
+      "turn": 12,
+      "msg": "Roberto de Inspecciones del Sur pidió una feature nueva para Checkear: quiere que los inspectores pu",
+      "missing": [
+        "Feature request: fotos con geolocalización automática en for"
+      ]
+    },
+    {
+      "turn": 13,
+      "msg": "Estimé 3 sprints de 2 semanas para la feature de fotos. Le paso presupuesto a Roberto: 1.200.000 ARS",
+      "missing": [
+        "Feature fotos: 3 sprints (6 sem), presupuesto 1.2M ARS"
+      ]
+    },
+    {
+      "turn": 14,
+      "msg": "Daniela de Butaco está re contenta, el e-commerce ya tiene 150 productos cargados y vendieron 45 ped",
+      "missing": [
+        "Primer mes: 150 productos, 45 pedidos. Integrar Mercado Pago"
+      ]
+    },
+    {
+      "turn": 15,
+      "msg": "Sofía hizo los mockups de la nueva UI de Walletfy. Está usando Figma. Los compartió por el Slack del",
+      "missing": [
+        "Nuevos mockups: dashboard gastos con gráficos torta y barras"
+      ]
+    },
+    {
+      "turn": 16,
+      "msg": "Necesitamos CI/CD para los 3 proyectos. Estoy configurando GitHub Actions. Walletfy ya tiene, Checke",
+      "missing": [
+        "Falta CI/CD con GitHub Actions",
+        "Falta CI/CD con GitHub Actions"
+      ]
+    },
+    {
+      "turn": 17,
+      "msg": "Lucas arrancó hoy. Le di acceso al repo de Walletfy, al Supabase project, y al Slack. Martín está ha",
+      "missing": [
+        "Primer día. Acceso repo + Supabase + Slack. Handoff auth mod"
+      ]
+    },
+    {
+      "turn": 19,
+      "msg": "Problema en Butaco: el hosting en Vercel nos está saliendo caro, 75 USD/mes por el tráfico. Daniela ",
+      "missing": [
+        "Hosting Vercel: 75 USD/mes, demasiado caro. Evaluar migrar a"
+      ]
+    },
+    {
+      "turn": 20,
+      "msg": "Reunión con Roberto. Aprobó el presupuesto de fotos. Empezamos la semana que viene. También pidió qu",
+      "missing": [
+        "Presupuesto fotos aprobado, arranca próxima semana. Pedido a"
+      ]
+    },
+    {
+      "turn": 21,
+      "msg": "Lucas está volando con Walletfy. En una semana implementó la integración con Fintoc y ya puede lista",
+      "missing": [
+        "Implementó integración Fintoc en 1 semana",
+        "Feature: listing de cuentas bancarias via Fintoc"
+      ]
+    },
+    {
+      "turn": 22,
+      "msg": "Martín se fue hoy. Último día. Le armamos una despedida por Zoom. Buen pibe, le deseo lo mejor en Gl",
+      "missing": [
+        "Último día, handoff completado"
+      ]
+    },
+    {
+      "turn": 23,
+      "msg": "Walletfy beta update: 45 usuarios ahora (de 20). La conexión con bancos fue un hit. 80% de los usuar",
+      "missing": [
+        "Beta: 45 usuarios (+25). 80% conectaron cuenta bancaria"
+      ]
+    },
+    {
+      "turn": 26,
+      "msg": "Sofía diseñó el tema white-label de Walletfy. Permite cambiar colores, logo, y nombre de la app. Luc",
+      "missing": [
+        "White-label: customización colores/logo/nombre. Estimación: "
+      ]
+    },
+    {
+      "turn": 27,
+      "msg": "Migré Butaco de Vercel a DigitalOcean. VPS de 12 USD/mes vs 75 USD. Daniela está chocha. El sitio an",
+      "missing": [
+        "Migrado a DigitalOcean: 12 USD/mes (era 75 en Vercel)"
+      ]
+    },
+    {
+      "turn": 28,
+      "msg": "Sprint review de Checkear: feature de fotos terminada! Los inspectores ya pueden sacar fotos con GPS",
+      "missing": [
+        "Feature fotos con geolocalización: completada y probada en c"
+      ]
+    },
+    {
+      "turn": 29,
+      "msg": "Ingresos del mes: Checkear 800K + extra feature 400K = 1.2M, Butaco 600K, total 1.8M ARS. Si sale Co",
+      "missing": [
+        "Ingresos mes: Checkear 1.2M + Butaco 600K = 1.8M ARS. Pendie"
+      ]
+    },
+    {
+      "turn": 30,
+      "msg": "Necesito contratar a alguien más. Un backend developer para Checkear (Node.js) y para manejar el OCR",
+      "missing": [
+        "Búsqueda: backend dev Node.js para Checkear + OCR"
+      ]
+    },
+    {
+      "turn": 32,
+      "msg": "Camila aceptó! Arranca la semana que viene. El equipo de AltoValleStudio ahora somos: yo (lead + ful",
+      "missing": [
+        "Equipo: Sandy (lead), Lucas (Walletfy), Sofía (UX), Camila ("
+      ]
+    },
+    {
+      "turn": 33,
+      "msg": "CoinPay firmó contrato! 5.000 USD de setup fee ya cobrados. Lucas arranca el white-label la semana q",
+      "missing": [
+        "Primer cliente B2B: CoinPay"
+      ]
+    },
+    {
+      "turn": 34,
+      "msg": "Butaco superó los 100 pedidos mensuales! Daniela quiere sumar categoría de calzado además de ropa. M",
+      "missing": [
+        "100+ pedidos/mes. Sumar calzado, filtros por talle, tabla de"
+      ]
+    },
+    {
+      "turn": 35,
+      "msg": "Camila implementó el OCR con Tesseract para Checkear. Lee las etiquetas de materiales de construcció",
+      "missing": [
+        "OCR con Tesseract: 85% precisión en etiquetas de materiales"
+      ]
+    },
+    {
+      "turn": 36,
+      "msg": "Estoy pensando en cobrar un retainer mensual a CoinPay por mantenimiento y updates del white-label. ",
+      "missing": [
+        "Retainer mantenimiento: 500 USD/mes (aceptado)"
+      ]
+    },
+    {
+      "turn": 37,
+      "msg": "Walletfy va a salir al app store la semana que viene! Versión 1.0. Features: tracking de gastos, con",
+      "missing": [
+        "Launch v1.0 app store próxima semana. Free + premium 4.99 US"
+      ]
+    },
+    {
+      "turn": 38,
+      "msg": "WALLETFY ESTÁ EN EL APP STORE!!! 🎉 Primeras 24 horas: 150 descargas. 12 usuarios compraron premium. ",
+      "missing": [
+        "Lanzamiento: 150 descargas en 24h, 12 premium (4.99 USD c/u)"
+      ]
+    },
+    {
+      "turn": 39,
+      "msg": "Review de fin de trimestre de AltoValleStudio. Ingresos: Checkear 800K/mes, Butaco 600K/mes, CoinPay",
+      "missing": [
+        "Q review: ingresos ~2.1M ARS/mes + ~560 USD/mes. Equipo de 4"
+      ]
+    },
+    {
+      "turn": 41,
+      "msg": "Roberto quiere un contrato anual para Checkear. 700K ARS/mes fijos con soporte incluido. Es menos po",
+      "missing": [
+        "Propuesta contrato anual: 700K ARS/mes fijos con soporte"
+      ]
+    },
+    {
+      "turn": 42,
+      "msg": "Acepté el contrato anual de Checkear. Firmamos por 12 meses. Esto me da previsibilidad para planific",
+      "missing": [
+        "Contrato anual firmado: 700K ARS/mes x 12 meses"
+      ]
+    },
+    {
+      "turn": 44,
+      "msg": "Empiezo a pensar que Butaco podría ser una plataforma SaaS de e-commerce para comercios locales. Cob",
+      "missing": [
+        "Idea: pivotar a SaaS e-commerce para comercios locales. Mode"
+      ]
+    },
+    {
+      "turn": 45,
+      "msg": "Hablé con Daniela y le encanta la idea. Dice que ella puede ser nuestra primera referencia si le hac",
+      "missing": [
+        "Acepta ser referencia de Butaco SaaS con 50% descuento"
+      ]
+    },
+    {
+      "turn": 46,
+      "msg": "Lucas implementó el white-label de Walletfy para CoinPay. Ya está en producción. Alejandro dice que ",
+      "missing": [
+        "White-label en producción, 200 usuarios activos semana 1"
+      ]
+    },
+    {
+      "turn": 47,
+      "msg": "Walletfy en el app store: después de 1 mes, 1.200 descargas, 85 premium. Rating 4.6 estrellas. Los r",
+      "missing": [
+        "Mes 1 app store: 1.200 descargas, 85 premium, 4.6★. Piden sy"
+      ]
+    },
+    {
+      "turn": 49,
+      "msg": "Sofía propone hacer un redesign completo de Checkear. El frontend en Angular está medio anticuado, p",
+      "missing": [
+        "Propuesta: redesign y migración de Angular a React"
+      ]
+    },
+    {
+      "turn": 50,
+      "msg": "Resumen: AltoValleStudio pasó de ser yo solo haciendo freelance a tener un equipo de 4 personas y 3 ",
+      "missing": [
+        "Evolución: de freelance solo a equipo de 4 con 3 productos a"
+      ]
+    }
+  ],
+  "turns": [
+    {
+      "turn": 1,
+      "user_msg": "En AltoValleStudio tenemos 3 proyectos activos: Walletfy (app finanzas con React y Supabase), Checke",
+      "elapsed_ms": 11375,
+      "passed": false,
+      "entity_accuracy": 100,
+      "relation_accuracy": 50,
+      "fact_accuracy": null,
+      "topic_ok": true,
+      "graph_nodes": 9,
+      "graph_edges": 14,
+      "node_delta": 9,
+      "failures": [
+        "relations missing: [('altovallestudio', 'walletfy'), ('altovallestudio', 'checkear'), ('altovallestudio', 'butaco'), ('butaco', 'nextjs')]"
+      ],
+      "missing_entities": [],
+      "missing_facts": []
+    },
+    {
+      "turn": 2,
+      "user_msg": "En Walletfy trabajan conmigo: Martín como frontend dev y Sofía como diseñadora UX. Martín es full-ti",
+      "elapsed_ms": 9171,
+      "passed": false,
+      "entity_accuracy": 100,
+      "relation_accuracy": 0,
+      "fact_accuracy": null,
+      "topic_ok": true,
+      "graph_nodes": 11,
+      "graph_edges": 20,
+      "node_delta": 2,
+      "failures": [
+        "relations missing: [('martin_dev', 'walletfy'), ('sofia_ux', 'walletfy')]"
+      ],
+      "missing_entities": [],
+      "missing_facts": []
+    },
+    {
+      "turn": 3,
+      "user_msg": "Walletfy ya tiene beta con 20 usuarios. El feedback es positivo pero piden más categorías de gastos ",
+      "elapsed_ms": 6578,
+      "passed": false,
+      "entity_accuracy": null,
+      "relation_accuracy": null,
+      "fact_accuracy": 0,
+      "topic_ok": true,
+      "graph_nodes": 11,
+      "graph_edges": 20,
+      "node_delta": 0,
+      "failures": [
+        "facts missing: ['Beta con 20 usuarios. Feedback: más cate']"
+      ],
+      "missing_entities": [],
+      "missing_facts": [
+        "Beta con 20 usuarios. Feedback: más categorías + conexión ba"
+      ]
+    },
+    {
+      "turn": 4,
+      "user_msg": "Checkear es para la empresa Inspecciones del Sur SRL. El contacto es Roberto Méndez, gerente de oper",
+      "elapsed_ms": 8546,
+      "passed": false,
+      "entity_accuracy": 50,
+      "relation_accuracy": 0,
+      "fact_accuracy": null,
+      "topic_ok": true,
+      "graph_nodes": 12,
+      "graph_edges": 24,
+      "node_delta": 1,
+      "failures": [
+        "entities missing: ['Roberto Méndez']",
+        "relations missing: [('roberto_mendez', 'inspecciones_del_sur'), ('inspecciones_del_sur', 'checkear')]"
+      ],
+      "missing_entities": [
+        "Roberto Méndez"
+      ],
+      "missing_facts": []
+    },
+    {
+      "turn": 5,
+      "user_msg": "Butaco es para una tienda de ropa de Neuquén que se llama Butaco Indumentaria. La dueña es Daniela R",
+      "elapsed_ms": 9563,
+      "passed": false,
+      "entity_accuracy": 100,
+      "relation_accuracy": 50,
+      "fact_accuracy": null,
+      "topic_ok": true,
+      "graph_nodes": 14,
+      "graph_edges": 27,
+      "node_delta": 2,
+      "failures": [
+        "relations missing: [('daniela_ruiz', 'butaco_indumentaria')]"
+      ],
+      "missing_entities": [],
+      "missing_facts": []
+    },
+    {
+      "turn": 6,
+      "user_msg": "Cobros este mes: Checkear me pagó 800.000 ARS. Butaco paga 600.000 ARS mensuales. Walletfy todavía n",
+      "elapsed_ms": 6796,
+      "passed": false,
+      "entity_accuracy": null,
+      "relation_accuracy": null,
+      "fact_accuracy": 0,
+      "topic_ok": true,
+      "graph_nodes": 14,
+      "graph_edges": 27,
+      "node_delta": 0,
+      "failures": [
+        "facts missing: ['Ingreso mensual: 800.000 ARS', 'Ingreso mensual: 600.000 ARS', 'Sin ingresos todavía']"
+      ],
+      "missing_entities": [],
+      "missing_facts": [
+        "Ingreso mensual: 800.000 ARS",
+        "Ingreso mensual: 600.000 ARS",
+        "Sin ingresos todavía"
+      ]
+    },
+    {
+      "turn": 7,
+      "user_msg": "Problema: Martín me avisa que se va en 2 meses. Le ofrecieron trabajo en Globant. Necesito buscar re",
+      "elapsed_ms": 6719,
+      "passed": false,
+      "entity_accuracy": null,
+      "relation_accuracy": null,
+      "fact_accuracy": 0,
+      "topic_ok": true,
+      "graph_nodes": 15,
+      "graph_edges": 28,
+      "node_delta": 1,
+      "failures": [
+        "facts missing: ['Se va en 2 meses, aceptó oferta en Globa']"
+      ],
+      "missing_entities": [],
+      "missing_facts": [
+        "Se va en 2 meses, aceptó oferta en Globant"
+      ]
+    },
+    {
+      "turn": 8,
+      "user_msg": "Publiqué la búsqueda en LinkedIn y en la comunidad de devs de Neuquén. Busco React developer con exp",
+      "elapsed_ms": 5796,
+      "passed": false,
+      "entity_accuracy": null,
+      "relation_accuracy": null,
+      "fact_accuracy": 0,
+      "topic_ok": true,
+      "graph_nodes": 15,
+      "graph_edges": 28,
+      "node_delta": 0,
+      "failures": [
+        "facts missing: ['Búsqueda: React dev con exp fintech, 2.5']"
+      ],
+      "missing_entities": [],
+      "missing_facts": [
+        "Búsqueda: React dev con exp fintech, 2.5M ARS, full-time rem"
+      ]
+    },
+    {
+      "turn": 9,
+      "user_msg": "Tengo 3 candidatos: Lucas de Buenos Aires (5 años exp React, trabajó en Ualá), Valentina de Córdoba ",
+      "elapsed_ms": 8109,
+      "passed": true,
+      "entity_accuracy": 100,
+      "relation_accuracy": null,
+      "fact_accuracy": null,
+      "topic_ok": true,
+      "graph_nodes": 18,
+      "graph_edges": 31,
+      "node_delta": 3,
+      "failures": [],
+      "missing_entities": [],
+      "missing_facts": []
+    },
+    {
+      "turn": 10,
+      "user_msg": "Entrevisté a Lucas. Muy bueno técnicamente, conoce React y Supabase. Le gustó el proyecto de Walletf",
+      "elapsed_ms": 7578,
+      "passed": false,
+      "entity_accuracy": null,
+      "relation_accuracy": null,
+      "fact_accuracy": 0,
+      "topic_ok": true,
+      "graph_nodes": 18,
+      "graph_edges": 32,
+      "node_delta": 0,
+      "failures": [
+        "facts missing: ['Entrevista positiva, conoce React + Supa']"
+      ],
+      "missing_entities": [],
+      "missing_facts": [
+        "Entrevista positiva, conoce React + Supabase, oferta: arranc"
+      ]
+    },
+    {
+      "turn": 11,
+      "user_msg": "Lucas aceptó! Arranca el 1ro del mes que viene. Martín va a hacer un handoff de 2 semanas con él. Pe",
+      "elapsed_ms": 7078,
+      "passed": false,
+      "entity_accuracy": null,
+      "relation_accuracy": null,
+      "fact_accuracy": 0,
+      "topic_ok": true,
+      "graph_nodes": 19,
+      "graph_edges": 33,
+      "node_delta": 1,
+      "failures": [
+        "facts missing: ['Aceptó, arranca el 1ro. Handoff 2 semana']"
+      ],
+      "missing_entities": [],
+      "missing_facts": [
+        "Aceptó, arranca el 1ro. Handoff 2 semanas con Martín"
+      ]
+    },
+    {
+      "turn": 12,
+      "user_msg": "Roberto de Inspecciones del Sur pidió una feature nueva para Checkear: quiere que los inspectores pu",
+      "elapsed_ms": 7936,
+      "passed": false,
+      "entity_accuracy": null,
+      "relation_accuracy": null,
+      "fact_accuracy": 0,
+      "topic_ok": true,
+      "graph_nodes": 19,
+      "graph_edges": 33,
+      "node_delta": 0,
+      "failures": [
+        "facts missing: ['Feature request: fotos con geolocalizaci']"
+      ],
+      "missing_entities": [],
+      "missing_facts": [
+        "Feature request: fotos con geolocalización automática en for"
+      ]
+    },
+    {
+      "turn": 13,
+      "user_msg": "Estimé 3 sprints de 2 semanas para la feature de fotos. Le paso presupuesto a Roberto: 1.200.000 ARS",
+      "elapsed_ms": 7859,
+      "passed": false,
+      "entity_accuracy": null,
+      "relation_accuracy": null,
+      "fact_accuracy": 0,
+      "topic_ok": true,
+      "graph_nodes": 19,
+      "graph_edges": 33,
+      "node_delta": 0,
+      "failures": [
+        "facts missing: ['Feature fotos: 3 sprints (6 sem), presup']"
+      ],
+      "missing_entities": [],
+      "missing_facts": [
+        "Feature fotos: 3 sprints (6 sem), presupuesto 1.2M ARS"
+      ]
+    },
+    {
+      "turn": 14,
+      "user_msg": "Daniela de Butaco está re contenta, el e-commerce ya tiene 150 productos cargados y vendieron 45 ped",
+      "elapsed_ms": 8140,
+      "passed": false,
+      "entity_accuracy": 0,
+      "relation_accuracy": null,
+      "fact_accuracy": 0,
+      "topic_ok": true,
+      "graph_nodes": 19,
+      "graph_edges": 33,
+      "node_delta": 0,
+      "failures": [
+        "entities missing: ['Mercado Pago', 'Andreani']",
+        "facts missing: ['Primer mes: 150 productos, 45 pedidos. I']"
+      ],
+      "missing_entities": [
+        "Mercado Pago",
+        "Andreani"
+      ],
+      "missing_facts": [
+        "Primer mes: 150 productos, 45 pedidos. Integrar Mercado Pago"
+      ]
+    },
+    {
+      "turn": 15,
+      "user_msg": "Sofía hizo los mockups de la nueva UI de Walletfy. Está usando Figma. Los compartió por el Slack del",
+      "elapsed_ms": 8921,
+      "passed": false,
+      "entity_accuracy": 100,
+      "relation_accuracy": null,
+      "fact_accuracy": 0,
+      "topic_ok": true,
+      "graph_nodes": 20,
+      "graph_edges": 35,
+      "node_delta": 1,
+      "failures": [
+        "facts missing: ['Nuevos mockups: dashboard gastos con grá']"
+      ],
+      "missing_entities": [],
+      "missing_facts": [
+        "Nuevos mockups: dashboard gastos con gráficos torta y barras"
+      ]
+    },
+    {
+      "turn": 16,
+      "user_msg": "Necesitamos CI/CD para los 3 proyectos. Estoy configurando GitHub Actions. Walletfy ya tiene, Checke",
+      "elapsed_ms": 7859,
+      "passed": false,
+      "entity_accuracy": 100,
+      "relation_accuracy": null,
+      "fact_accuracy": 0,
+      "topic_ok": true,
+      "graph_nodes": 21,
+      "graph_edges": 38,
+      "node_delta": 1,
+      "failures": [
+        "facts missing: ['Falta CI/CD con GitHub Actions', 'Falta CI/CD con GitHub Actions']"
+      ],
+      "missing_entities": [],
+      "missing_facts": [
+        "Falta CI/CD con GitHub Actions",
+        "Falta CI/CD con GitHub Actions"
+      ]
+    },
+    {
+      "turn": 17,
+      "user_msg": "Lucas arrancó hoy. Le di acceso al repo de Walletfy, al Supabase project, y al Slack. Martín está ha",
+      "elapsed_ms": 11907,
+      "passed": false,
+      "entity_accuracy": null,
+      "relation_accuracy": null,
+      "fact_accuracy": 0,
+      "topic_ok": true,
+      "graph_nodes": 22,
+      "graph_edges": 39,
+      "node_delta": 1,
+      "failures": [
+        "facts missing: ['Primer día. Acceso repo + Supabase + Sla']"
+      ],
+      "missing_entities": [],
+      "missing_facts": [
+        "Primer día. Acceso repo + Supabase + Slack. Handoff auth mod"
+      ]
+    },
+    {
+      "turn": 18,
+      "user_msg": "Sprint planning de Walletfy: las próximas 2 semanas vamos a hacer la conexión con bancos vía API de ",
+      "elapsed_ms": 10155,
+      "passed": true,
+      "entity_accuracy": 100,
+      "relation_accuracy": 100,
+      "fact_accuracy": null,
+      "topic_ok": true,
+      "graph_nodes": 23,
+      "graph_edges": 41,
+      "node_delta": 1,
+      "failures": [],
+      "missing_entities": [],
+      "missing_facts": []
+    },
+    {
+      "turn": 19,
+      "user_msg": "Problema en Butaco: el hosting en Vercel nos está saliendo caro, 75 USD/mes por el tráfico. Daniela ",
+      "elapsed_ms": 8765,
+      "passed": false,
+      "entity_accuracy": 100,
+      "relation_accuracy": null,
+      "fact_accuracy": 0,
+      "topic_ok": true,
+      "graph_nodes": 25,
+      "graph_edges": 45,
+      "node_delta": 2,
+      "failures": [
+        "facts missing: ['Hosting Vercel: 75 USD/mes, demasiado ca']"
+      ],
+      "missing_entities": [],
+      "missing_facts": [
+        "Hosting Vercel: 75 USD/mes, demasiado caro. Evaluar migrar a"
+      ]
+    },
+    {
+      "turn": 20,
+      "user_msg": "Reunión con Roberto. Aprobó el presupuesto de fotos. Empezamos la semana que viene. También pidió qu",
+      "elapsed_ms": 8015,
+      "passed": false,
+      "entity_accuracy": null,
+      "relation_accuracy": null,
+      "fact_accuracy": 0,
+      "topic_ok": true,
+      "graph_nodes": 26,
+      "graph_edges": 46,
+      "node_delta": 1,
+      "failures": [
+        "facts missing: ['Presupuesto fotos aprobado, arranca próx']"
+      ],
+      "missing_entities": [],
+      "missing_facts": [
+        "Presupuesto fotos aprobado, arranca próxima semana. Pedido a"
+      ]
+    },
+    {
+      "turn": 21,
+      "user_msg": "Lucas está volando con Walletfy. En una semana implementó la integración con Fintoc y ya puede lista",
+      "elapsed_ms": 8671,
+      "passed": false,
+      "entity_accuracy": null,
+      "relation_accuracy": null,
+      "fact_accuracy": 0,
+      "topic_ok": true,
+      "graph_nodes": 26,
+      "graph_edges": 47,
+      "node_delta": 0,
+      "failures": [
+        "facts missing: ['Implementó integración Fintoc en 1 seman', 'Feature: listing de cuentas bancarias vi']"
+      ],
+      "missing_entities": [],
+      "missing_facts": [
+        "Implementó integración Fintoc en 1 semana",
+        "Feature: listing de cuentas bancarias via Fintoc"
+      ]
+    },
+    {
+      "turn": 22,
+      "user_msg": "Martín se fue hoy. Último día. Le armamos una despedida por Zoom. Buen pibe, le deseo lo mejor en Gl",
+      "elapsed_ms": 9484,
+      "passed": false,
+      "entity_accuracy": null,
+      "relation_accuracy": null,
+      "fact_accuracy": 0,
+      "topic_ok": true,
+      "graph_nodes": 27,
+      "graph_edges": 50,
+      "node_delta": 1,
+      "failures": [
+        "facts missing: ['Último día, handoff completado']"
+      ],
+      "missing_entities": [],
+      "missing_facts": [
+        "Último día, handoff completado"
+      ]
+    },
+    {
+      "turn": 23,
+      "user_msg": "Walletfy beta update: 45 usuarios ahora (de 20). La conexión con bancos fue un hit. 80% de los usuar",
+      "elapsed_ms": 6671,
+      "passed": false,
+      "entity_accuracy": null,
+      "relation_accuracy": null,
+      "fact_accuracy": 0,
+      "topic_ok": true,
+      "graph_nodes": 27,
+      "graph_edges": 50,
+      "node_delta": 0,
+      "failures": [
+        "facts missing: ['Beta: 45 usuarios (+25). 80% conectaron ']"
+      ],
+      "missing_entities": [],
+      "missing_facts": [
+        "Beta: 45 usuarios (+25). 80% conectaron cuenta bancaria"
+      ]
+    },
+    {
+      "turn": 24,
+      "user_msg": "Me contactó una fintech de Buenos Aires, CoinPay, para ver si les hacemos una integración. Quieren m",
+      "elapsed_ms": 6828,
+      "passed": true,
+      "entity_accuracy": 100,
+      "relation_accuracy": null,
+      "fact_accuracy": null,
+      "topic_ok": true,
+      "graph_nodes": 28,
+      "graph_edges": 52,
+      "node_delta": 1,
+      "failures": [],
+      "missing_entities": [],
+      "missing_facts": []
+    },
+    {
+      "turn": 25,
+      "user_msg": "Tuve call con el CEO de CoinPay, Alejandro Vidal. Propone un modelo de revenue share: ellos pagan se",
+      "elapsed_ms": 8265,
+      "passed": true,
+      "entity_accuracy": 100,
+      "relation_accuracy": 100,
+      "fact_accuracy": 100,
+      "topic_ok": true,
+      "graph_nodes": 29,
+      "graph_edges": 54,
+      "node_delta": 1,
+      "failures": [],
+      "missing_entities": [],
+      "missing_facts": []
+    },
+    {
+      "turn": 26,
+      "user_msg": "Sofía diseñó el tema white-label de Walletfy. Permite cambiar colores, logo, y nombre de la app. Luc",
+      "elapsed_ms": 7813,
+      "passed": false,
+      "entity_accuracy": null,
+      "relation_accuracy": null,
+      "fact_accuracy": 0,
+      "topic_ok": true,
+      "graph_nodes": 29,
+      "graph_edges": 54,
+      "node_delta": 0,
+      "failures": [
+        "facts missing: ['White-label: customización colores/logo/']"
+      ],
+      "missing_entities": [],
+      "missing_facts": [
+        "White-label: customización colores/logo/nombre. Estimación: "
+      ]
+    },
+    {
+      "turn": 27,
+      "user_msg": "Migré Butaco de Vercel a DigitalOcean. VPS de 12 USD/mes vs 75 USD. Daniela está chocha. El sitio an",
+      "elapsed_ms": 8546,
+      "passed": false,
+      "entity_accuracy": null,
+      "relation_accuracy": null,
+      "fact_accuracy": 0,
+      "topic_ok": true,
+      "graph_nodes": 29,
+      "graph_edges": 55,
+      "node_delta": 0,
+      "failures": [
+        "facts missing: ['Migrado a DigitalOcean: 12 USD/mes (era ']"
+      ],
+      "missing_entities": [],
+      "missing_facts": [
+        "Migrado a DigitalOcean: 12 USD/mes (era 75 en Vercel)"
+      ]
+    },
+    {
+      "turn": 28,
+      "user_msg": "Sprint review de Checkear: feature de fotos terminada! Los inspectores ya pueden sacar fotos con GPS",
+      "elapsed_ms": 8407,
+      "passed": false,
+      "entity_accuracy": null,
+      "relation_accuracy": null,
+      "fact_accuracy": 0,
+      "topic_ok": true,
+      "graph_nodes": 29,
+      "graph_edges": 55,
+      "node_delta": 0,
+      "failures": [
+        "facts missing: ['Feature fotos con geolocalización: compl']"
+      ],
+      "missing_entities": [],
+      "missing_facts": [
+        "Feature fotos con geolocalización: completada y probada en c"
+      ]
+    },
+    {
+      "turn": 29,
+      "user_msg": "Ingresos del mes: Checkear 800K + extra feature 400K = 1.2M, Butaco 600K, total 1.8M ARS. Si sale Co",
+      "elapsed_ms": 7030,
+      "passed": false,
+      "entity_accuracy": null,
+      "relation_accuracy": null,
+      "fact_accuracy": 0,
+      "topic_ok": true,
+      "graph_nodes": 29,
+      "graph_edges": 55,
+      "node_delta": 0,
+      "failures": [
+        "facts missing: ['Ingresos mes: Checkear 1.2M + Butaco 600']"
+      ],
+      "missing_entities": [],
+      "missing_facts": [
+        "Ingresos mes: Checkear 1.2M + Butaco 600K = 1.8M ARS. Pendie"
+      ]
+    },
+    {
+      "turn": 30,
+      "user_msg": "Necesito contratar a alguien más. Un backend developer para Checkear (Node.js) y para manejar el OCR",
+      "elapsed_ms": 7077,
+      "passed": false,
+      "entity_accuracy": null,
+      "relation_accuracy": null,
+      "fact_accuracy": 0,
+      "topic_ok": true,
+      "graph_nodes": 30,
+      "graph_edges": 57,
+      "node_delta": 1,
+      "failures": [
+        "facts missing: ['Búsqueda: backend dev Node.js para Check']"
+      ],
+      "missing_entities": [],
+      "missing_facts": [
+        "Búsqueda: backend dev Node.js para Checkear + OCR"
+      ]
+    },
+    {
+      "turn": 31,
+      "user_msg": "Entrevisté a Camila, backend dev de Cipolletti, 4 años de experiencia con Node.js y Python. Sabe de ",
+      "elapsed_ms": 8688,
+      "passed": false,
+      "entity_accuracy": 0,
+      "relation_accuracy": null,
+      "fact_accuracy": null,
+      "topic_ok": true,
+      "graph_nodes": 30,
+      "graph_edges": 57,
+      "node_delta": 0,
+      "failures": [
+        "entities missing: ['Camila']"
+      ],
+      "missing_entities": [
+        "Camila"
+      ],
+      "missing_facts": []
+    },
+    {
+      "turn": 32,
+      "user_msg": "Camila aceptó! Arranca la semana que viene. El equipo de AltoValleStudio ahora somos: yo (lead + ful",
+      "elapsed_ms": 6828,
+      "passed": false,
+      "entity_accuracy": 100,
+      "relation_accuracy": null,
+      "fact_accuracy": 0,
+      "topic_ok": true,
+      "graph_nodes": 31,
+      "graph_edges": 58,
+      "node_delta": 1,
+      "failures": [
+        "facts missing: ['Equipo: Sandy (lead), Lucas (Walletfy), ']"
+      ],
+      "missing_entities": [],
+      "missing_facts": [
+        "Equipo: Sandy (lead), Lucas (Walletfy), Sofía (UX), Camila ("
+      ]
+    },
+    {
+      "turn": 33,
+      "user_msg": "CoinPay firmó contrato! 5.000 USD de setup fee ya cobrados. Lucas arranca el white-label la semana q",
+      "elapsed_ms": 12483,
+      "passed": false,
+      "entity_accuracy": null,
+      "relation_accuracy": null,
+      "fact_accuracy": 50,
+      "topic_ok": true,
+      "graph_nodes": 31,
+      "graph_edges": 63,
+      "node_delta": 0,
+      "failures": [
+        "facts missing: ['Primer cliente B2B: CoinPay']"
+      ],
+      "missing_entities": [],
+      "missing_facts": [
+        "Primer cliente B2B: CoinPay"
+      ]
+    },
+    {
+      "turn": 34,
+      "user_msg": "Butaco superó los 100 pedidos mensuales! Daniela quiere sumar categoría de calzado además de ropa. M",
+      "elapsed_ms": 6905,
+      "passed": false,
+      "entity_accuracy": null,
+      "relation_accuracy": null,
+      "fact_accuracy": 0,
+      "topic_ok": true,
+      "graph_nodes": 31,
+      "graph_edges": 63,
+      "node_delta": 0,
+      "failures": [
+        "facts missing: ['100+ pedidos/mes. Sumar calzado, filtros']"
+      ],
+      "missing_entities": [],
+      "missing_facts": [
+        "100+ pedidos/mes. Sumar calzado, filtros por talle, tabla de"
+      ]
+    },
+    {
+      "turn": 35,
+      "user_msg": "Camila implementó el OCR con Tesseract para Checkear. Lee las etiquetas de materiales de construcció",
+      "elapsed_ms": 15297,
+      "passed": false,
+      "entity_accuracy": 0,
+      "relation_accuracy": 0,
+      "fact_accuracy": 0,
+      "topic_ok": true,
+      "graph_nodes": 31,
+      "graph_edges": 63,
+      "node_delta": 0,
+      "failures": [
+        "entities missing: ['Tesseract']",
+        "relations missing: [('checkear', 'tesseract')]",
+        "facts missing: ['OCR con Tesseract: 85% precisión en etiq']"
+      ],
+      "missing_entities": [
+        "Tesseract"
+      ],
+      "missing_facts": [
+        "OCR con Tesseract: 85% precisión en etiquetas de materiales"
+      ]
+    },
+    {
+      "turn": 36,
+      "user_msg": "Estoy pensando en cobrar un retainer mensual a CoinPay por mantenimiento y updates del white-label. ",
+      "elapsed_ms": 34359,
+      "passed": false,
+      "entity_accuracy": null,
+      "relation_accuracy": null,
+      "fact_accuracy": 0,
+      "topic_ok": true,
+      "graph_nodes": 31,
+      "graph_edges": 63,
+      "node_delta": 0,
+      "failures": [
+        "facts missing: ['Retainer mantenimiento: 500 USD/mes (ace']"
+      ],
+      "missing_entities": [],
+      "missing_facts": [
+        "Retainer mantenimiento: 500 USD/mes (aceptado)"
+      ]
+    },
+    {
+      "turn": 37,
+      "user_msg": "Walletfy va a salir al app store la semana que viene! Versión 1.0. Features: tracking de gastos, con",
+      "elapsed_ms": 6984,
+      "passed": false,
+      "entity_accuracy": null,
+      "relation_accuracy": null,
+      "fact_accuracy": 0,
+      "topic_ok": true,
+      "graph_nodes": 31,
+      "graph_edges": 63,
+      "node_delta": 0,
+      "failures": [
+        "facts missing: ['Launch v1.0 app store próxima semana. Fr']"
+      ],
+      "missing_entities": [],
+      "missing_facts": [
+        "Launch v1.0 app store próxima semana. Free + premium 4.99 US"
+      ]
+    },
+    {
+      "turn": 38,
+      "user_msg": "WALLETFY ESTÁ EN EL APP STORE!!! 🎉 Primeras 24 horas: 150 descargas. 12 usuarios compraron premium. ",
+      "elapsed_ms": 6608,
+      "passed": false,
+      "entity_accuracy": null,
+      "relation_accuracy": null,
+      "fact_accuracy": 0,
+      "topic_ok": true,
+      "graph_nodes": 31,
+      "graph_edges": 63,
+      "node_delta": 0,
+      "failures": [
+        "facts missing: ['Lanzamiento: 150 descargas en 24h, 12 pr']"
+      ],
+      "missing_entities": [],
+      "missing_facts": [
+        "Lanzamiento: 150 descargas en 24h, 12 premium (4.99 USD c/u)"
+      ]
+    },
+    {
+      "turn": 39,
+      "user_msg": "Review de fin de trimestre de AltoValleStudio. Ingresos: Checkear 800K/mes, Butaco 600K/mes, CoinPay",
+      "elapsed_ms": 7985,
+      "passed": false,
+      "entity_accuracy": null,
+      "relation_accuracy": null,
+      "fact_accuracy": 0,
+      "topic_ok": true,
+      "graph_nodes": 31,
+      "graph_edges": 63,
+      "node_delta": 0,
+      "failures": [
+        "facts missing: ['Q review: ingresos ~2.1M ARS/mes + ~560 ']"
+      ],
+      "missing_entities": [],
+      "missing_facts": [
+        "Q review: ingresos ~2.1M ARS/mes + ~560 USD/mes. Equipo de 4"
+      ]
+    },
+    {
+      "turn": 40,
+      "user_msg": "Hacé una nota con el estado de cada proyecto, el equipo, ingresos, y los próximos pasos. Necesito te",
+      "elapsed_ms": 6030,
+      "passed": true,
+      "entity_accuracy": null,
+      "relation_accuracy": null,
+      "fact_accuracy": null,
+      "topic_ok": true,
+      "graph_nodes": 31,
+      "graph_edges": 63,
+      "node_delta": 0,
+      "failures": [],
+      "missing_entities": [],
+      "missing_facts": []
+    },
+    {
+      "turn": 41,
+      "user_msg": "Roberto quiere un contrato anual para Checkear. 700K ARS/mes fijos con soporte incluido. Es menos po",
+      "elapsed_ms": 7577,
+      "passed": false,
+      "entity_accuracy": null,
+      "relation_accuracy": null,
+      "fact_accuracy": 0,
+      "topic_ok": true,
+      "graph_nodes": 31,
+      "graph_edges": 63,
+      "node_delta": 0,
+      "failures": [
+        "facts missing: ['Propuesta contrato anual: 700K ARS/mes f']"
+      ],
+      "missing_entities": [],
+      "missing_facts": [
+        "Propuesta contrato anual: 700K ARS/mes fijos con soporte"
+      ]
+    },
+    {
+      "turn": 42,
+      "user_msg": "Acepté el contrato anual de Checkear. Firmamos por 12 meses. Esto me da previsibilidad para planific",
+      "elapsed_ms": 7141,
+      "passed": false,
+      "entity_accuracy": null,
+      "relation_accuracy": null,
+      "fact_accuracy": 0,
+      "topic_ok": true,
+      "graph_nodes": 31,
+      "graph_edges": 63,
+      "node_delta": 0,
+      "failures": [
+        "facts missing: ['Contrato anual firmado: 700K ARS/mes x 1']"
+      ],
+      "missing_entities": [],
+      "missing_facts": [
+        "Contrato anual firmado: 700K ARS/mes x 12 meses"
+      ]
+    },
+    {
+      "turn": 43,
+      "user_msg": "Una empresa de Mendoza, Bodega Los Álamos, contactó a Daniela preguntando si hacemos e-commerce para",
+      "elapsed_ms": 9186,
+      "passed": true,
+      "entity_accuracy": 100,
+      "relation_accuracy": null,
+      "fact_accuracy": null,
+      "topic_ok": true,
+      "graph_nodes": 32,
+      "graph_edges": 66,
+      "node_delta": 1,
+      "failures": [],
+      "missing_entities": [],
+      "missing_facts": []
+    },
+    {
+      "turn": 44,
+      "user_msg": "Empiezo a pensar que Butaco podría ser una plataforma SaaS de e-commerce para comercios locales. Cob",
+      "elapsed_ms": 6655,
+      "passed": false,
+      "entity_accuracy": null,
+      "relation_accuracy": null,
+      "fact_accuracy": 0,
+      "topic_ok": true,
+      "graph_nodes": 32,
+      "graph_edges": 66,
+      "node_delta": 0,
+      "failures": [
+        "facts missing: ['Idea: pivotar a SaaS e-commerce para com']"
+      ],
+      "missing_entities": [],
+      "missing_facts": [
+        "Idea: pivotar a SaaS e-commerce para comercios locales. Mode"
+      ]
+    },
+    {
+      "turn": 45,
+      "user_msg": "Hablé con Daniela y le encanta la idea. Dice que ella puede ser nuestra primera referencia si le hac",
+      "elapsed_ms": 6671,
+      "passed": false,
+      "entity_accuracy": null,
+      "relation_accuracy": null,
+      "fact_accuracy": 0,
+      "topic_ok": true,
+      "graph_nodes": 32,
+      "graph_edges": 66,
+      "node_delta": 0,
+      "failures": [
+        "facts missing: ['Acepta ser referencia de Butaco SaaS con']"
+      ],
+      "missing_entities": [],
+      "missing_facts": [
+        "Acepta ser referencia de Butaco SaaS con 50% descuento"
+      ]
+    },
+    {
+      "turn": 46,
+      "user_msg": "Lucas implementó el white-label de Walletfy para CoinPay. Ya está en producción. Alejandro dice que ",
+      "elapsed_ms": 9547,
+      "passed": false,
+      "entity_accuracy": null,
+      "relation_accuracy": null,
+      "fact_accuracy": 0,
+      "topic_ok": true,
+      "graph_nodes": 32,
+      "graph_edges": 68,
+      "node_delta": 0,
+      "failures": [
+        "facts missing: ['White-label en producción, 200 usuarios ']"
+      ],
+      "missing_entities": [],
+      "missing_facts": [
+        "White-label en producción, 200 usuarios activos semana 1"
+      ]
+    },
+    {
+      "turn": 47,
+      "user_msg": "Walletfy en el app store: después de 1 mes, 1.200 descargas, 85 premium. Rating 4.6 estrellas. Los r",
+      "elapsed_ms": 7405,
+      "passed": false,
+      "entity_accuracy": null,
+      "relation_accuracy": null,
+      "fact_accuracy": 0,
+      "topic_ok": true,
+      "graph_nodes": 32,
+      "graph_edges": 68,
+      "node_delta": 0,
+      "failures": [
+        "facts missing: ['Mes 1 app store: 1.200 descargas, 85 pre']"
+      ],
+      "missing_entities": [],
+      "missing_facts": [
+        "Mes 1 app store: 1.200 descargas, 85 premium, 4.6★. Piden sy"
+      ]
+    },
+    {
+      "turn": 48,
+      "user_msg": "Necesito un plan estratégico para los próximos 6 meses. Walletfy tiene tracción, Butaco puede pivota",
+      "elapsed_ms": 5890,
+      "passed": true,
+      "entity_accuracy": null,
+      "relation_accuracy": null,
+      "fact_accuracy": null,
+      "topic_ok": true,
+      "graph_nodes": 32,
+      "graph_edges": 68,
+      "node_delta": 0,
+      "failures": [],
+      "missing_entities": [],
+      "missing_facts": []
+    },
+    {
+      "turn": 49,
+      "user_msg": "Sofía propone hacer un redesign completo de Checkear. El frontend en Angular está medio anticuado, p",
+      "elapsed_ms": 9264,
+      "passed": false,
+      "entity_accuracy": null,
+      "relation_accuracy": null,
+      "fact_accuracy": 0,
+      "topic_ok": true,
+      "graph_nodes": 32,
+      "graph_edges": 68,
+      "node_delta": 0,
+      "failures": [
+        "facts missing: ['Propuesta: redesign y migración de Angul']"
+      ],
+      "missing_entities": [],
+      "missing_facts": [
+        "Propuesta: redesign y migración de Angular a React"
+      ]
+    },
+    {
+      "turn": 50,
+      "user_msg": "Resumen: AltoValleStudio pasó de ser yo solo haciendo freelance a tener un equipo de 4 personas y 3 ",
+      "elapsed_ms": 6907,
+      "passed": false,
+      "entity_accuracy": null,
+      "relation_accuracy": null,
+      "fact_accuracy": 0,
+      "topic_ok": true,
+      "graph_nodes": 32,
+      "graph_edges": 68,
+      "node_delta": 0,
+      "failures": [
+        "facts missing: ['Evolución: de freelance solo a equipo de']"
+      ],
+      "missing_entities": [],
+      "missing_facts": [
+        "Evolución: de freelance solo a equipo de 4 con 3 productos a"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,1337 @@
+{
+  "name": "fitness",
+  "domain": "Fitness",
+  "total_turns": 50,
+  "passed_turns": 5,
+  "pass_rate": 10,
+  "entity_accuracy": 67,
+  "relation_accuracy": 12,
+  "fact_accuracy": 0,
+  "topic_accuracy": 100,
+  "final_graph": {
+    "nodes": 23,
+    "edges": 39
+  },
+  "total_elapsed_ms": 374258,
+  "entity_misses": [
+    {
+      "turn": 1,
+      "msg": "Quiero empezar a entrenar en serio. Hoy peso 92kg, mido 1.78m, tengo 37 años. Mi objetivo es bajar a",
+      "missing": [
+        "Sandy"
+      ]
+    },
+    {
+      "turn": 6,
+      "msg": "Fui al nutricionista Ezequiel Flores. Tiene consultorio en Cipolletti. Me hizo un plan nutricional p",
+      "missing": [
+        "Ezequiel Flores"
+      ]
+    },
+    {
+      "turn": 29,
+      "msg": "Ok, me anoto! Media maratón de Neuquén en 4 meses. Objetivo: terminarla. Ni siquiera pongo tiempo, s",
+      "missing": [
+        "Media Maratón Neuquén"
+      ]
+    },
+    {
+      "turn": 44,
+      "msg": "Gustavo me convenció de anotarnos en una maratón completa en Buenos Aires el año que viene. 42km. Es",
+      "missing": [
+        "Maratón Buenos Aires"
+      ]
+    }
+  ],
+  "relation_misses": [
+    {
+      "turn": 2,
+      "msg": "Los lunes y miércoles voy al gimnasio CrossFit Plottier a las 7am. El entrenador es Marcos. Los mart",
+      "missing": [
+        [
+          "marcos",
+          "crossfit_plottier"
+        ]
+      ]
+    },
+    {
+      "turn": 6,
+      "msg": "Fui al nutricionista Ezequiel Flores. Tiene consultorio en Cipolletti. Me hizo un plan nutricional p",
+      "missing": [
+        [
+          "ezequiel_flores",
+          "cipolletti"
+        ]
+      ]
+    },
+    {
+      "turn": 11,
+      "msg": "Fui al traumatólogo Dr. Navarro del centro médico Medisur en Neuquén. Diagnóstico: contractura del s",
+      "missing": [
+        [
+          "medisur",
+          "neuquen"
+        ]
+      ]
+    },
+    {
+      "turn": 34,
+      "msg": "Compré zapatillas de carbono Hoka Rocket X2 para la carrera. Son increíblemente livianas. 180.000 AR",
+      "missing": [
+        [
+          "locos_x_correr",
+          "neuquen"
+        ]
+      ]
+    }
+  ],
+  "fact_misses": [
+    {
+      "turn": 3,
+      "msg": "Marcos me armó una rutina de 3 bloques: calentamiento 10min, WOD (workout of the day) 25min, y enfri",
+      "missing": [
+        "Rutina: calentamiento 10min + WOD 25min + enfriamiento 10min"
+      ]
+    },
+    {
+      "turn": 4,
+      "msg": "Hoy hice mi primer benchmark WOD: Fran. Son 21-15-9 de thrusters y pull-ups. Lo hice en 8:45. Marcos",
+      "missing": [
+        "Benchmark Fran: 8:45 (21-15-9 thrusters + pull-ups)"
+      ]
+    },
+    {
+      "turn": 5,
+      "msg": "Para las corridas, estoy usando la app Strava para trackear. Mi mejor tiempo en 5km es 28:30. Quiero",
+      "missing": [
+        "Corrida 5km: mejor tiempo 28:30, objetivo sub-25"
+      ]
+    },
+    {
+      "turn": 7,
+      "msg": "El plan de Ezequiel: 2200 calorías diarias, 160g proteína, 200g carbohidratos, 75g grasas. Desayuno,",
+      "missing": [
+        "Plan nutricional: 2200 cal, 160g prot, 200g carb, 75g grasa."
+      ]
+    },
+    {
+      "turn": 9,
+      "msg": "Después de 2 semanas: peso 91.2kg, bajé 800g. No es mucho pero Marcos dice que al principio el múscu",
+      "missing": [
+        "Semana 2: 91.2kg (-800g). Más energía"
+      ]
+    },
+    {
+      "turn": 10,
+      "msg": "Hoy me lesioné el hombro derecho haciendo overhead press. No es grave pero me duele bastante. Marcos",
+      "missing": [
+        "Lesión hombro derecho en overhead press. Descanso 3 días tre"
+      ]
+    },
+    {
+      "turn": 12,
+      "msg": "Mientras me recupero del hombro, Marcos me arma rutinas de piernas y core solamente. También puedo c",
+      "missing": [
+        "Rutina modificada: solo piernas y core por lesión de hombro"
+      ]
+    },
+    {
+      "turn": 13,
+      "msg": "Hoy corrí 5km en 27:15! Mejoré más de un minuto. Creo que el CrossFit me está dando más resistencia.",
+      "missing": [
+        "Record 5km: 27:15 (mejora de 1:15 vs anterior)"
+      ]
+    },
+    {
+      "turn": 14,
+      "msg": "El hombro ya está mejor, el Dr. Navarro me dio el alta de kinesiología. Puedo volver a tren superior",
+      "missing": [
+        "Alta de kine hombro, volver a tren superior con peso moderad"
+      ]
+    },
+    {
+      "turn": 15,
+      "msg": "Mes 1 completo: peso 90.4kg (-1.6kg). Las medidas: cintura 94cm (era 98), pecho 104cm, brazo 36cm. M",
+      "missing": [
+        "Mes 1: 90.4kg (-1.6). Cintura 94cm (-4), pecho 104, brazo 36"
+      ]
+    },
+    {
+      "turn": 17,
+      "msg": "Marcos me armó un plan de running para la carrera: 3 corridas semanales. Martes 5km tempo, jueves 8k",
+      "missing": [
+        "Plan: mar tempo 5km, jue 8km lento, sáb long run progresivo"
+      ]
+    },
+    {
+      "turn": 18,
+      "msg": "Laura quiere empezar a entrenar también. Le recomendé CrossFit Plottier. Marcos tiene un horario de ",
+      "missing": [
+        "Quiere empezar CrossFit, horario 9am"
+      ]
+    },
+    {
+      "turn": 19,
+      "msg": "Laura arrancó CrossFit! Le encantó. Marcos le armó una rutina de principiante. Van a la misma clase ",
+      "missing": [
+        "Inició CrossFit Plottier, clase 9am lunes y miércoles"
+      ]
+    },
+    {
+      "turn": 20,
+      "msg": "Compré una cuerda para saltar y un par de mancuernas de 10kg para entrenar en casa los días de desca",
+      "missing": [
+        "Equipamiento casa: cuerda para saltar + mancuernas 10kg"
+      ]
+    },
+    {
+      "turn": 21,
+      "msg": "Long run de hoy: 12km en 1:08. Me sentí bien hasta el km 10, después me costó. Necesito mejor hidrat",
+      "missing": [
+        "Long run 12km en 1:08. Flaqueó km 10, mejorar hidratación"
+      ]
+    },
+    {
+      "turn": 22,
+      "msg": "Ezequiel ajustó la dieta: sumó 200 calorías los días de corrida larga. Más carbohidratos complejos l",
+      "missing": [
+        "Dieta ajustada: +200cal días long run, carbo loading, whey p"
+      ]
+    },
+    {
+      "turn": 23,
+      "msg": "Mes 2: peso 88.7kg (-3.3kg total). Ya se nota la diferencia en la ropa! Los jeans de la talla anteri",
+      "missing": [
+        "Mes 2: 88.7kg (-3.3 total). Cintura 91cm (-7)"
+      ]
+    },
+    {
+      "turn": 24,
+      "msg": "Hice Fran otra vez para comparar. Esta vez 7:20, ¡mejoré 1:25! Se nota el progreso en fuerza y cardi",
+      "missing": [
+        "Benchmark Fran actualizado: 7:20 (mejora 1:25 vs 8:45)"
+      ]
+    },
+    {
+      "turn": 26,
+      "msg": "La Corrida del Río es este fin de semana! Estoy nervioso pero preparado. 10km, objetivo sub-55. Me v",
+      "missing": [
+        "Carrera este fin de semana"
+      ]
+    },
+    {
+      "turn": 27,
+      "msg": "TERMINÉ LA CARRERA!! 10km en 52:38!!! Superé mi objetivo de sub-55. Gustavo hizo 48 minutos, un crac",
+      "missing": [
+        "Resultado: 52:38, objetivo sub-55 cumplido",
+        "Resultado Corrida del Río: 48 minutos"
+      ]
+    },
+    {
+      "turn": 30,
+      "msg": "Marcos dice que para la media necesito subir a 4 corridas semanales y bajar CrossFit a 2 veces. La p",
+      "missing": [
+        "Plan media maratón: 4 corridas/sem, CrossFit baja a 2/sem"
+      ]
+    },
+    {
+      "turn": 31,
+      "msg": "Mes 3: peso 87.5kg (-4.5kg total). A 2.5kg del objetivo de 85! Cintura 88cm. Estoy rindiendo mucho m",
+      "missing": [
+        "Mes 3: 87.5kg (-4.5 total). Cintura 88cm. A 2.5kg del objeti"
+      ]
+    },
+    {
+      "turn": 32,
+      "msg": "Hoy hice mi primer long run de 16km. Tardé 1:33. Las piernas me pesaban al final pero no paré en nin",
+      "missing": [
+        "Long run 16km en 1:33. Sin parar. Sales de hidratación"
+      ]
+    },
+    {
+      "turn": 33,
+      "msg": "Gustavo y yo corrimos juntos el sábado. Me enseñó el tema de las zonas cardíacas. Dice que tengo que",
+      "missing": [
+        "Aprendiendo zonas cardíacas, entrenar en zona 2 los easy run"
+      ]
+    },
+    {
+      "turn": 35,
+      "msg": "Marcos me agregó ejercicios de fortalecimiento de core y glúteos para prevenir lesiones en la media.",
+      "missing": [
+        "Prevención lesiones: planchas, hip thrust, step ups con peso"
+      ]
+    },
+    {
+      "turn": 36,
+      "msg": "Long run de 18km! Mi más largo ever. 1:46. Me sentí fuerte hasta el final. Creo que puedo hacer los ",
+      "missing": [
+        "Long run 18km en 1:46, se sintió fuerte"
+      ]
+    },
+    {
+      "turn": 37,
+      "msg": "Ezequiel me dijo que cargue carbohidratos 3 días antes de la carrera. Pasta, arroz, pan. Y la mañana",
+      "missing": [
+        "Carbo loading 3 días antes. Carrera: banana + manteca maní 2"
+      ]
+    },
+    {
+      "turn": 38,
+      "msg": "Mes 4: peso 85.8kg! Casi en el objetivo de 85! Nunca me sentí tan bien físicamente. Laura dice que s",
+      "missing": [
+        "Mes 4: 85.8kg (-6.2 total). Casi en objetivo de 85kg"
+      ]
+    },
+    {
+      "turn": 39,
+      "msg": "La media maratón es este domingo! Plan: salir conservador los primeros 10km (zona 2), meter ritmo de",
+      "missing": [
+        "Estrategia: conservador 0-10km, ritmo 10-18km, sprint final "
+      ]
+    },
+    {
+      "turn": 40,
+      "msg": "MEDIA MARATÓN COMPLETADA!!! 21km en 1:58:42. Bajé de las 2 horas!! Gustavo hizo 1:45. Marcos vino a ",
+      "missing": [
+        "Resultado: 1:58:42 (sub-2h!!)",
+        "Resultado media maratón: 1:45"
+      ]
+    },
+    {
+      "turn": 41,
+      "msg": "Después de la media me tomé una semana de descanso total. Solo caminatas suaves. El cuerpo lo necesi",
+      "missing": [
+        "Semana descanso post media maratón"
+      ]
+    },
+    {
+      "turn": 42,
+      "msg": "Objetivo cumplido: hoy me pesé y estoy en 85.1kg!! Prácticamente en 85. Fueron 4 meses y medio de la",
+      "missing": [
+        "OBJETIVO CUMPLIDO: 85.1kg (de 92kg en 4.5 meses, -6.9kg)"
+      ]
+    },
+    {
+      "turn": 43,
+      "msg": "Marcos dice que ahora el objetivo debería ser mantener y ganar músculo. Sugiere subir un poco las ca",
+      "missing": [
+        "Nueva fase: mantenimiento + hipertrofia. Subir calorías, más"
+      ]
+    },
+    {
+      "turn": 45,
+      "msg": "Laura ya baja 3kg desde que empezó CrossFit. Está re motivada. Ahora quiere empezar a correr también",
+      "missing": [
+        "Bajó 3kg con CrossFit, quiere empezar running"
+      ]
+    },
+    {
+      "turn": 46,
+      "msg": "Me compré un foam roller y una pistola de masaje para recuperación. El foam roller 25.000 ARS y la p",
+      "missing": [
+        "Equipamiento recuperación: foam roller 25K + pistola masaje "
+      ]
+    },
+    {
+      "turn": 47,
+      "msg": "Nuevo PR en Fran: 6:15!! De 8:45 a 6:15 en 4 meses. Marcos dice que es un progreso increíble para al",
+      "missing": [
+        "Benchmark Fran PR: 6:15 (de 8:45, mejora 2:30 en 4 meses)"
+      ]
+    },
+    {
+      "turn": 48,
+      "msg": "5km PR: 24:32!!! Bajé de 25 minutos que era mi objetivo original. De 28:30 a 24:32. El CrossFit y el",
+      "missing": [
+        "5km PR: 24:32 (de 28:30, mejora 3:58)"
+      ]
+    },
+    {
+      "turn": 49,
+      "msg": "Resumen de todo el proceso: 92→85kg, 5km de 28:30→24:32, Fran de 8:45→6:15, media maratón en 1:58. M",
+      "missing": [
+        "Resumen 4.5 meses: 92→85kg, 5km 28:30→24:32, Fran 8:45→6:15,"
+      ]
+    }
+  ],
+  "turns": [
+    {
+      "turn": 1,
+      "user_msg": "Quiero empezar a entrenar en serio. Hoy peso 92kg, mido 1.78m, tengo 37 años. Mi objetivo es bajar a",
+      "elapsed_ms": 7702,
+      "passed": false,
+      "entity_accuracy": 0,
+      "relation_accuracy": null,
+      "fact_accuracy": null,
+      "topic_ok": true,
+      "graph_nodes": 0,
+      "graph_edges": 0,
+      "node_delta": 0,
+      "failures": [
+        "entities missing: ['Sandy']"
+      ],
+      "missing_entities": [
+        "Sandy"
+      ],
+      "missing_facts": []
+    },
+    {
+      "turn": 2,
+      "user_msg": "Los lunes y miércoles voy al gimnasio CrossFit Plottier a las 7am. El entrenador es Marcos. Los mart",
+      "elapsed_ms": 8703,
+      "passed": false,
+      "entity_accuracy": 100,
+      "relation_accuracy": 0,
+      "fact_accuracy": null,
+      "topic_ok": true,
+      "graph_nodes": 3,
+      "graph_edges": 3,
+      "node_delta": 3,
+      "failures": [
+        "relations missing: [('marcos', 'crossfit_plottier')]"
+      ],
+      "missing_entities": [],
+      "missing_facts": []
+    },
+    {
+      "turn": 3,
+      "user_msg": "Marcos me armó una rutina de 3 bloques: calentamiento 10min, WOD (workout of the day) 25min, y enfri",
+      "elapsed_ms": 5938,
+      "passed": false,
+      "entity_accuracy": null,
+      "relation_accuracy": null,
+      "fact_accuracy": 0,
+      "topic_ok": true,
+      "graph_nodes": 3,
+      "graph_edges": 3,
+      "node_delta": 0,
+      "failures": [
+        "facts missing: ['Rutina: calentamiento 10min + WOD 25min ']"
+      ],
+      "missing_entities": [],
+      "missing_facts": [
+        "Rutina: calentamiento 10min + WOD 25min + enfriamiento 10min"
+      ]
+    },
+    {
+      "turn": 4,
+      "user_msg": "Hoy hice mi primer benchmark WOD: Fran. Son 21-15-9 de thrusters y pull-ups. Lo hice en 8:45. Marcos",
+      "elapsed_ms": 6405,
+      "passed": false,
+      "entity_accuracy": null,
+      "relation_accuracy": null,
+      "fact_accuracy": 0,
+      "topic_ok": true,
+      "graph_nodes": 3,
+      "graph_edges": 3,
+      "node_delta": 0,
+      "failures": [
+        "facts missing: ['Benchmark Fran: 8:45 (21-15-9 thrusters ']"
+      ],
+      "missing_entities": [],
+      "missing_facts": [
+        "Benchmark Fran: 8:45 (21-15-9 thrusters + pull-ups)"
+      ]
+    },
+    {
+      "turn": 5,
+      "user_msg": "Para las corridas, estoy usando la app Strava para trackear. Mi mejor tiempo en 5km es 28:30. Quiero",
+      "elapsed_ms": 6780,
+      "passed": false,
+      "entity_accuracy": 100,
+      "relation_accuracy": null,
+      "fact_accuracy": 0,
+      "topic_ok": true,
+      "graph_nodes": 4,
+      "graph_edges": 4,
+      "node_delta": 1,
+      "failures": [
+        "facts missing: ['Corrida 5km: mejor tiempo 28:30, objetiv']"
+      ],
+      "missing_entities": [],
+      "missing_facts": [
+        "Corrida 5km: mejor tiempo 28:30, objetivo sub-25"
+      ]
+    },
+    {
+      "turn": 6,
+      "user_msg": "Fui al nutricionista Ezequiel Flores. Tiene consultorio en Cipolletti. Me hizo un plan nutricional p",
+      "elapsed_ms": 6030,
+      "passed": false,
+      "entity_accuracy": 0,
+      "relation_accuracy": 0,
+      "fact_accuracy": null,
+      "topic_ok": true,
+      "graph_nodes": 4,
+      "graph_edges": 4,
+      "node_delta": 0,
+      "failures": [
+        "entities missing: ['Ezequiel Flores']",
+        "relations missing: [('ezequiel_flores', 'cipolletti')]"
+      ],
+      "missing_entities": [
+        "Ezequiel Flores"
+      ],
+      "missing_facts": []
+    },
+    {
+      "turn": 7,
+      "user_msg": "El plan de Ezequiel: 2200 calorías diarias, 160g proteína, 200g carbohidratos, 75g grasas. Desayuno,",
+      "elapsed_ms": 5594,
+      "passed": false,
+      "entity_accuracy": null,
+      "relation_accuracy": null,
+      "fact_accuracy": 0,
+      "topic_ok": true,
+      "graph_nodes": 4,
+      "graph_edges": 4,
+      "node_delta": 0,
+      "failures": [
+        "facts missing: ['Plan nutricional: 2200 cal, 160g prot, 2']"
+      ],
+      "missing_entities": [],
+      "missing_facts": [
+        "Plan nutricional: 2200 cal, 160g prot, 200g carb, 75g grasa."
+      ]
+    },
+    {
+      "turn": 8,
+      "user_msg": "Me compré unas zapatillas Nike Metcon 9 para CrossFit y unas Asics Gel-Nimbus para correr. Total 280",
+      "elapsed_ms": 7219,
+      "passed": true,
+      "entity_accuracy": 100,
+      "relation_accuracy": null,
+      "fact_accuracy": null,
+      "topic_ok": true,
+      "graph_nodes": 6,
+      "graph_edges": 6,
+      "node_delta": 2,
+      "failures": [],
+      "missing_entities": [],
+      "missing_facts": []
+    },
+    {
+      "turn": 9,
+      "user_msg": "Después de 2 semanas: peso 91.2kg, bajé 800g. No es mucho pero Marcos dice que al principio el múscu",
+      "elapsed_ms": 6421,
+      "passed": false,
+      "entity_accuracy": null,
+      "relation_accuracy": null,
+      "fact_accuracy": 0,
+      "topic_ok": true,
+      "graph_nodes": 6,
+      "graph_edges": 6,
+      "node_delta": 0,
+      "failures": [
+        "facts missing: ['Semana 2: 91.2kg (-800g). Más energía']"
+      ],
+      "missing_entities": [],
+      "missing_facts": [
+        "Semana 2: 91.2kg (-800g). Más energía"
+      ]
+    },
+    {
+      "turn": 10,
+      "user_msg": "Hoy me lesioné el hombro derecho haciendo overhead press. No es grave pero me duele bastante. Marcos",
+      "elapsed_ms": 6297,
+      "passed": false,
+      "entity_accuracy": null,
+      "relation_accuracy": null,
+      "fact_accuracy": 0,
+      "topic_ok": true,
+      "graph_nodes": 6,
+      "graph_edges": 6,
+      "node_delta": 0,
+      "failures": [
+        "facts missing: ['Lesión hombro derecho en overhead press.']"
+      ],
+      "missing_entities": [],
+      "missing_facts": [
+        "Lesión hombro derecho en overhead press. Descanso 3 días tre"
+      ]
+    },
+    {
+      "turn": 11,
+      "user_msg": "Fui al traumatólogo Dr. Navarro del centro médico Medisur en Neuquén. Diagnóstico: contractura del s",
+      "elapsed_ms": 9000,
+      "passed": false,
+      "entity_accuracy": 100,
+      "relation_accuracy": 50,
+      "fact_accuracy": null,
+      "topic_ok": true,
+      "graph_nodes": 10,
+      "graph_edges": 13,
+      "node_delta": 4,
+      "failures": [
+        "relations missing: [('medisur', 'neuquen')]"
+      ],
+      "missing_entities": [],
+      "missing_facts": []
+    },
+    {
+      "turn": 12,
+      "user_msg": "Mientras me recupero del hombro, Marcos me arma rutinas de piernas y core solamente. También puedo c",
+      "elapsed_ms": 5686,
+      "passed": false,
+      "entity_accuracy": null,
+      "relation_accuracy": null,
+      "fact_accuracy": 0,
+      "topic_ok": true,
+      "graph_nodes": 10,
+      "graph_edges": 13,
+      "node_delta": 0,
+      "failures": [
+        "facts missing: ['Rutina modificada: solo piernas y core p']"
+      ],
+      "missing_entities": [],
+      "missing_facts": [
+        "Rutina modificada: solo piernas y core por lesión de hombro"
+      ]
+    },
+    {
+      "turn": 13,
+      "user_msg": "Hoy corrí 5km en 27:15! Mejoré más de un minuto. Creo que el CrossFit me está dando más resistencia.",
+      "elapsed_ms": 6734,
+      "passed": false,
+      "entity_accuracy": null,
+      "relation_accuracy": null,
+      "fact_accuracy": 0,
+      "topic_ok": true,
+      "graph_nodes": 10,
+      "graph_edges": 13,
+      "node_delta": 0,
+      "failures": [
+        "facts missing: ['Record 5km: 27:15 (mejora de 1:15 vs ant']"
+      ],
+      "missing_entities": [],
+      "missing_facts": [
+        "Record 5km: 27:15 (mejora de 1:15 vs anterior)"
+      ]
+    },
+    {
+      "turn": 14,
+      "user_msg": "El hombro ya está mejor, el Dr. Navarro me dio el alta de kinesiología. Puedo volver a tren superior",
+      "elapsed_ms": 6936,
+      "passed": false,
+      "entity_accuracy": null,
+      "relation_accuracy": null,
+      "fact_accuracy": 0,
+      "topic_ok": true,
+      "graph_nodes": 11,
+      "graph_edges": 15,
+      "node_delta": 1,
+      "failures": [
+        "facts missing: ['Alta de kine hombro, volver a tren super']"
+      ],
+      "missing_entities": [],
+      "missing_facts": [
+        "Alta de kine hombro, volver a tren superior con peso moderad"
+      ]
+    },
+    {
+      "turn": 15,
+      "user_msg": "Mes 1 completo: peso 90.4kg (-1.6kg). Las medidas: cintura 94cm (era 98), pecho 104cm, brazo 36cm. M",
+      "elapsed_ms": 6891,
+      "passed": false,
+      "entity_accuracy": null,
+      "relation_accuracy": null,
+      "fact_accuracy": 0,
+      "topic_ok": true,
+      "graph_nodes": 11,
+      "graph_edges": 15,
+      "node_delta": 0,
+      "failures": [
+        "facts missing: ['Mes 1: 90.4kg (-1.6). Cintura 94cm (-4),']"
+      ],
+      "missing_entities": [],
+      "missing_facts": [
+        "Mes 1: 90.4kg (-1.6). Cintura 94cm (-4), pecho 104, brazo 36"
+      ]
+    },
+    {
+      "turn": 16,
+      "user_msg": "Me anoté en una carrera de 10km en Neuquén, la Corrida del Río. Es en 2 meses. Quiero terminarla sub",
+      "elapsed_ms": 7014,
+      "passed": true,
+      "entity_accuracy": 100,
+      "relation_accuracy": null,
+      "fact_accuracy": null,
+      "topic_ok": true,
+      "graph_nodes": 12,
+      "graph_edges": 17,
+      "node_delta": 1,
+      "failures": [],
+      "missing_entities": [],
+      "missing_facts": []
+    },
+    {
+      "turn": 17,
+      "user_msg": "Marcos me armó un plan de running para la carrera: 3 corridas semanales. Martes 5km tempo, jueves 8k",
+      "elapsed_ms": 6453,
+      "passed": false,
+      "entity_accuracy": null,
+      "relation_accuracy": null,
+      "fact_accuracy": 0,
+      "topic_ok": true,
+      "graph_nodes": 12,
+      "graph_edges": 17,
+      "node_delta": 0,
+      "failures": [
+        "facts missing: ['Plan: mar tempo 5km, jue 8km lento, sáb ']"
+      ],
+      "missing_entities": [],
+      "missing_facts": [
+        "Plan: mar tempo 5km, jue 8km lento, sáb long run progresivo"
+      ]
+    },
+    {
+      "turn": 18,
+      "user_msg": "Laura quiere empezar a entrenar también. Le recomendé CrossFit Plottier. Marcos tiene un horario de ",
+      "elapsed_ms": 7563,
+      "passed": false,
+      "entity_accuracy": null,
+      "relation_accuracy": null,
+      "fact_accuracy": 0,
+      "topic_ok": true,
+      "graph_nodes": 12,
+      "graph_edges": 18,
+      "node_delta": 0,
+      "failures": [
+        "facts missing: ['Quiere empezar CrossFit, horario 9am']"
+      ],
+      "missing_entities": [],
+      "missing_facts": [
+        "Quiere empezar CrossFit, horario 9am"
+      ]
+    },
+    {
+      "turn": 19,
+      "user_msg": "Laura arrancó CrossFit! Le encantó. Marcos le armó una rutina de principiante. Van a la misma clase ",
+      "elapsed_ms": 6983,
+      "passed": false,
+      "entity_accuracy": null,
+      "relation_accuracy": null,
+      "fact_accuracy": 0,
+      "topic_ok": true,
+      "graph_nodes": 13,
+      "graph_edges": 21,
+      "node_delta": 1,
+      "failures": [
+        "facts missing: ['Inició CrossFit Plottier, clase 9am lune']"
+      ],
+      "missing_entities": [],
+      "missing_facts": [
+        "Inició CrossFit Plottier, clase 9am lunes y miércoles"
+      ]
+    },
+    {
+      "turn": 20,
+      "user_msg": "Compré una cuerda para saltar y un par de mancuernas de 10kg para entrenar en casa los días de desca",
+      "elapsed_ms": 7125,
+      "passed": false,
+      "entity_accuracy": null,
+      "relation_accuracy": null,
+      "fact_accuracy": 0,
+      "topic_ok": true,
+      "graph_nodes": 13,
+      "graph_edges": 21,
+      "node_delta": 0,
+      "failures": [
+        "facts missing: ['Equipamiento casa: cuerda para saltar + ']"
+      ],
+      "missing_entities": [],
+      "missing_facts": [
+        "Equipamiento casa: cuerda para saltar + mancuernas 10kg"
+      ]
+    },
+    {
+      "turn": 21,
+      "user_msg": "Long run de hoy: 12km en 1:08. Me sentí bien hasta el km 10, después me costó. Necesito mejor hidrat",
+      "elapsed_ms": 6860,
+      "passed": false,
+      "entity_accuracy": null,
+      "relation_accuracy": null,
+      "fact_accuracy": 0,
+      "topic_ok": true,
+      "graph_nodes": 13,
+      "graph_edges": 21,
+      "node_delta": 0,
+      "failures": [
+        "facts missing: ['Long run 12km en 1:08. Flaqueó km 10, me']"
+      ],
+      "missing_entities": [],
+      "missing_facts": [
+        "Long run 12km en 1:08. Flaqueó km 10, mejorar hidratación"
+      ]
+    },
+    {
+      "turn": 22,
+      "user_msg": "Ezequiel ajustó la dieta: sumó 200 calorías los días de corrida larga. Más carbohidratos complejos l",
+      "elapsed_ms": 7280,
+      "passed": false,
+      "entity_accuracy": null,
+      "relation_accuracy": null,
+      "fact_accuracy": 0,
+      "topic_ok": true,
+      "graph_nodes": 13,
+      "graph_edges": 21,
+      "node_delta": 0,
+      "failures": [
+        "facts missing: ['Dieta ajustada: +200cal días long run, c']"
+      ],
+      "missing_entities": [],
+      "missing_facts": [
+        "Dieta ajustada: +200cal días long run, carbo loading, whey p"
+      ]
+    },
+    {
+      "turn": 23,
+      "user_msg": "Mes 2: peso 88.7kg (-3.3kg total). Ya se nota la diferencia en la ropa! Los jeans de la talla anteri",
+      "elapsed_ms": 6344,
+      "passed": false,
+      "entity_accuracy": null,
+      "relation_accuracy": null,
+      "fact_accuracy": 0,
+      "topic_ok": true,
+      "graph_nodes": 13,
+      "graph_edges": 21,
+      "node_delta": 0,
+      "failures": [
+        "facts missing: ['Mes 2: 88.7kg (-3.3 total). Cintura 91cm']"
+      ],
+      "missing_entities": [],
+      "missing_facts": [
+        "Mes 2: 88.7kg (-3.3 total). Cintura 91cm (-7)"
+      ]
+    },
+    {
+      "turn": 24,
+      "user_msg": "Hice Fran otra vez para comparar. Esta vez 7:20, ¡mejoré 1:25! Se nota el progreso en fuerza y cardi",
+      "elapsed_ms": 6250,
+      "passed": false,
+      "entity_accuracy": null,
+      "relation_accuracy": null,
+      "fact_accuracy": 0,
+      "topic_ok": true,
+      "graph_nodes": 13,
+      "graph_edges": 21,
+      "node_delta": 0,
+      "failures": [
+        "facts missing: ['Benchmark Fran actualizado: 7:20 (mejora']"
+      ],
+      "missing_entities": [],
+      "missing_facts": [
+        "Benchmark Fran actualizado: 7:20 (mejora 1:25 vs 8:45)"
+      ]
+    },
+    {
+      "turn": 25,
+      "user_msg": "Mi amigo Gustavo quiere empezar a correr conmigo. Vamos a correr juntos los sábados el long run. Él ",
+      "elapsed_ms": 6780,
+      "passed": true,
+      "entity_accuracy": 100,
+      "relation_accuracy": null,
+      "fact_accuracy": null,
+      "topic_ok": true,
+      "graph_nodes": 14,
+      "graph_edges": 23,
+      "node_delta": 1,
+      "failures": [],
+      "missing_entities": [],
+      "missing_facts": []
+    },
+    {
+      "turn": 26,
+      "user_msg": "La Corrida del Río es este fin de semana! Estoy nervioso pero preparado. 10km, objetivo sub-55. Me v",
+      "elapsed_ms": 6640,
+      "passed": false,
+      "entity_accuracy": null,
+      "relation_accuracy": null,
+      "fact_accuracy": 0,
+      "topic_ok": true,
+      "graph_nodes": 14,
+      "graph_edges": 23,
+      "node_delta": 0,
+      "failures": [
+        "facts missing: ['Carrera este fin de semana']"
+      ],
+      "missing_entities": [],
+      "missing_facts": [
+        "Carrera este fin de semana"
+      ]
+    },
+    {
+      "turn": 27,
+      "user_msg": "TERMINÉ LA CARRERA!! 10km en 52:38!!! Superé mi objetivo de sub-55. Gustavo hizo 48 minutos, un crac",
+      "elapsed_ms": 7936,
+      "passed": false,
+      "entity_accuracy": null,
+      "relation_accuracy": null,
+      "fact_accuracy": 0,
+      "topic_ok": true,
+      "graph_nodes": 15,
+      "graph_edges": 24,
+      "node_delta": 1,
+      "failures": [
+        "facts missing: ['Resultado: 52:38, objetivo sub-55 cumpli', 'Resultado Corrida del Río: 48 minutos']"
+      ],
+      "missing_entities": [],
+      "missing_facts": [
+        "Resultado: 52:38, objetivo sub-55 cumplido",
+        "Resultado Corrida del Río: 48 minutos"
+      ]
+    },
+    {
+      "turn": 28,
+      "user_msg": "Marcos me felicitó y dice que estoy listo para planificar una media maratón. La de Neuquén es en 4 m",
+      "elapsed_ms": 7266,
+      "passed": true,
+      "entity_accuracy": null,
+      "relation_accuracy": null,
+      "fact_accuracy": null,
+      "topic_ok": true,
+      "graph_nodes": 15,
+      "graph_edges": 25,
+      "node_delta": 0,
+      "failures": [],
+      "missing_entities": [],
+      "missing_facts": []
+    },
+    {
+      "turn": 29,
+      "user_msg": "Ok, me anoto! Media maratón de Neuquén en 4 meses. Objetivo: terminarla. Ni siquiera pongo tiempo, s",
+      "elapsed_ms": 7030,
+      "passed": false,
+      "entity_accuracy": 0,
+      "relation_accuracy": null,
+      "fact_accuracy": null,
+      "topic_ok": true,
+      "graph_nodes": 15,
+      "graph_edges": 25,
+      "node_delta": 0,
+      "failures": [
+        "entities missing: ['Media Maratón Neuquén']"
+      ],
+      "missing_entities": [
+        "Media Maratón Neuquén"
+      ],
+      "missing_facts": []
+    },
+    {
+      "turn": 30,
+      "user_msg": "Marcos dice que para la media necesito subir a 4 corridas semanales y bajar CrossFit a 2 veces. La p",
+      "elapsed_ms": 6890,
+      "passed": false,
+      "entity_accuracy": null,
+      "relation_accuracy": null,
+      "fact_accuracy": 0,
+      "topic_ok": true,
+      "graph_nodes": 15,
+      "graph_edges": 25,
+      "node_delta": 0,
+      "failures": [
+        "facts missing: ['Plan media maratón: 4 corridas/sem, Cros']"
+      ],
+      "missing_entities": [],
+      "missing_facts": [
+        "Plan media maratón: 4 corridas/sem, CrossFit baja a 2/sem"
+      ]
+    },
+    {
+      "turn": 31,
+      "user_msg": "Mes 3: peso 87.5kg (-4.5kg total). A 2.5kg del objetivo de 85! Cintura 88cm. Estoy rindiendo mucho m",
+      "elapsed_ms": 6717,
+      "passed": false,
+      "entity_accuracy": null,
+      "relation_accuracy": null,
+      "fact_accuracy": 0,
+      "topic_ok": true,
+      "graph_nodes": 15,
+      "graph_edges": 25,
+      "node_delta": 0,
+      "failures": [
+        "facts missing: ['Mes 3: 87.5kg (-4.5 total). Cintura 88cm']"
+      ],
+      "missing_entities": [],
+      "missing_facts": [
+        "Mes 3: 87.5kg (-4.5 total). Cintura 88cm. A 2.5kg del objeti"
+      ]
+    },
+    {
+      "turn": 32,
+      "user_msg": "Hoy hice mi primer long run de 16km. Tardé 1:33. Las piernas me pesaban al final pero no paré en nin",
+      "elapsed_ms": 7907,
+      "passed": false,
+      "entity_accuracy": null,
+      "relation_accuracy": null,
+      "fact_accuracy": 0,
+      "topic_ok": true,
+      "graph_nodes": 16,
+      "graph_edges": 26,
+      "node_delta": 1,
+      "failures": [
+        "facts missing: ['Long run 16km en 1:33. Sin parar. Sales ']"
+      ],
+      "missing_entities": [],
+      "missing_facts": [
+        "Long run 16km en 1:33. Sin parar. Sales de hidratación"
+      ]
+    },
+    {
+      "turn": 33,
+      "user_msg": "Gustavo y yo corrimos juntos el sábado. Me enseñó el tema de las zonas cardíacas. Dice que tengo que",
+      "elapsed_ms": 9061,
+      "passed": false,
+      "entity_accuracy": 100,
+      "relation_accuracy": null,
+      "fact_accuracy": 0,
+      "topic_ok": true,
+      "graph_nodes": 18,
+      "graph_edges": 29,
+      "node_delta": 2,
+      "failures": [
+        "facts missing: ['Aprendiendo zonas cardíacas, entrenar en']"
+      ],
+      "missing_entities": [],
+      "missing_facts": [
+        "Aprendiendo zonas cardíacas, entrenar en zona 2 los easy run"
+      ]
+    },
+    {
+      "turn": 34,
+      "user_msg": "Compré zapatillas de carbono Hoka Rocket X2 para la carrera. Son increíblemente livianas. 180.000 AR",
+      "elapsed_ms": 8719,
+      "passed": false,
+      "entity_accuracy": 100,
+      "relation_accuracy": 0,
+      "fact_accuracy": null,
+      "topic_ok": true,
+      "graph_nodes": 20,
+      "graph_edges": 33,
+      "node_delta": 2,
+      "failures": [
+        "relations missing: [('locos_x_correr', 'neuquen')]"
+      ],
+      "missing_entities": [],
+      "missing_facts": []
+    },
+    {
+      "turn": 35,
+      "user_msg": "Marcos me agregó ejercicios de fortalecimiento de core y glúteos para prevenir lesiones en la media.",
+      "elapsed_ms": 6375,
+      "passed": false,
+      "entity_accuracy": null,
+      "relation_accuracy": null,
+      "fact_accuracy": 0,
+      "topic_ok": true,
+      "graph_nodes": 20,
+      "graph_edges": 33,
+      "node_delta": 0,
+      "failures": [
+        "facts missing: ['Prevención lesiones: planchas, hip thrus']"
+      ],
+      "missing_entities": [],
+      "missing_facts": [
+        "Prevención lesiones: planchas, hip thrust, step ups con peso"
+      ]
+    },
+    {
+      "turn": 36,
+      "user_msg": "Long run de 18km! Mi más largo ever. 1:46. Me sentí fuerte hasta el final. Creo que puedo hacer los ",
+      "elapsed_ms": 7078,
+      "passed": false,
+      "entity_accuracy": null,
+      "relation_accuracy": null,
+      "fact_accuracy": 0,
+      "topic_ok": true,
+      "graph_nodes": 20,
+      "graph_edges": 33,
+      "node_delta": 0,
+      "failures": [
+        "facts missing: ['Long run 18km en 1:46, se sintió fuerte']"
+      ],
+      "missing_entities": [],
+      "missing_facts": [
+        "Long run 18km en 1:46, se sintió fuerte"
+      ]
+    },
+    {
+      "turn": 37,
+      "user_msg": "Ezequiel me dijo que cargue carbohidratos 3 días antes de la carrera. Pasta, arroz, pan. Y la mañana",
+      "elapsed_ms": 8233,
+      "passed": false,
+      "entity_accuracy": null,
+      "relation_accuracy": null,
+      "fact_accuracy": 0,
+      "topic_ok": true,
+      "graph_nodes": 22,
+      "graph_edges": 37,
+      "node_delta": 2,
+      "failures": [
+        "facts missing: ['Carbo loading 3 días antes. Carrera: ban']"
+      ],
+      "missing_entities": [],
+      "missing_facts": [
+        "Carbo loading 3 días antes. Carrera: banana + manteca maní 2"
+      ]
+    },
+    {
+      "turn": 38,
+      "user_msg": "Mes 4: peso 85.8kg! Casi en el objetivo de 85! Nunca me sentí tan bien físicamente. Laura dice que s",
+      "elapsed_ms": 6782,
+      "passed": false,
+      "entity_accuracy": null,
+      "relation_accuracy": null,
+      "fact_accuracy": 0,
+      "topic_ok": true,
+      "graph_nodes": 22,
+      "graph_edges": 37,
+      "node_delta": 0,
+      "failures": [
+        "facts missing: ['Mes 4: 85.8kg (-6.2 total). Casi en obje']"
+      ],
+      "missing_entities": [],
+      "missing_facts": [
+        "Mes 4: 85.8kg (-6.2 total). Casi en objetivo de 85kg"
+      ]
+    },
+    {
+      "turn": 39,
+      "user_msg": "La media maratón es este domingo! Plan: salir conservador los primeros 10km (zona 2), meter ritmo de",
+      "elapsed_ms": 6671,
+      "passed": false,
+      "entity_accuracy": null,
+      "relation_accuracy": null,
+      "fact_accuracy": 0,
+      "topic_ok": true,
+      "graph_nodes": 22,
+      "graph_edges": 37,
+      "node_delta": 0,
+      "failures": [
+        "facts missing: ['Estrategia: conservador 0-10km, ritmo 10']"
+      ],
+      "missing_entities": [],
+      "missing_facts": [
+        "Estrategia: conservador 0-10km, ritmo 10-18km, sprint final "
+      ]
+    },
+    {
+      "turn": 40,
+      "user_msg": "MEDIA MARATÓN COMPLETADA!!! 21km en 1:58:42. Bajé de las 2 horas!! Gustavo hizo 1:45. Marcos vino a ",
+      "elapsed_ms": 7907,
+      "passed": false,
+      "entity_accuracy": null,
+      "relation_accuracy": null,
+      "fact_accuracy": 0,
+      "topic_ok": true,
+      "graph_nodes": 22,
+      "graph_edges": 37,
+      "node_delta": 0,
+      "failures": [
+        "facts missing: ['Resultado: 1:58:42 (sub-2h!!)', 'Resultado media maratón: 1:45']"
+      ],
+      "missing_entities": [],
+      "missing_facts": [
+        "Resultado: 1:58:42 (sub-2h!!)",
+        "Resultado media maratón: 1:45"
+      ]
+    },
+    {
+      "turn": 41,
+      "user_msg": "Después de la media me tomé una semana de descanso total. Solo caminatas suaves. El cuerpo lo necesi",
+      "elapsed_ms": 6327,
+      "passed": false,
+      "entity_accuracy": null,
+      "relation_accuracy": null,
+      "fact_accuracy": 0,
+      "topic_ok": true,
+      "graph_nodes": 22,
+      "graph_edges": 37,
+      "node_delta": 0,
+      "failures": [
+        "facts missing: ['Semana descanso post media maratón']"
+      ],
+      "missing_entities": [],
+      "missing_facts": [
+        "Semana descanso post media maratón"
+      ]
+    },
+    {
+      "turn": 42,
+      "user_msg": "Objetivo cumplido: hoy me pesé y estoy en 85.1kg!! Prácticamente en 85. Fueron 4 meses y medio de la",
+      "elapsed_ms": 5890,
+      "passed": false,
+      "entity_accuracy": null,
+      "relation_accuracy": null,
+      "fact_accuracy": 0,
+      "topic_ok": true,
+      "graph_nodes": 22,
+      "graph_edges": 37,
+      "node_delta": 0,
+      "failures": [
+        "facts missing: ['OBJETIVO CUMPLIDO: 85.1kg (de 92kg en 4.']"
+      ],
+      "missing_entities": [],
+      "missing_facts": [
+        "OBJETIVO CUMPLIDO: 85.1kg (de 92kg en 4.5 meses, -6.9kg)"
+      ]
+    },
+    {
+      "turn": 43,
+      "user_msg": "Marcos dice que ahora el objetivo debería ser mantener y ganar músculo. Sugiere subir un poco las ca",
+      "elapsed_ms": 5984,
+      "passed": false,
+      "entity_accuracy": null,
+      "relation_accuracy": null,
+      "fact_accuracy": 0,
+      "topic_ok": true,
+      "graph_nodes": 22,
+      "graph_edges": 37,
+      "node_delta": 0,
+      "failures": [
+        "facts missing: ['Nueva fase: mantenimiento + hipertrofia.']"
+      ],
+      "missing_entities": [],
+      "missing_facts": [
+        "Nueva fase: mantenimiento + hipertrofia. Subir calorías, más"
+      ]
+    },
+    {
+      "turn": 44,
+      "user_msg": "Gustavo me convenció de anotarnos en una maratón completa en Buenos Aires el año que viene. 42km. Es",
+      "elapsed_ms": 7297,
+      "passed": false,
+      "entity_accuracy": 0,
+      "relation_accuracy": null,
+      "fact_accuracy": null,
+      "topic_ok": true,
+      "graph_nodes": 22,
+      "graph_edges": 37,
+      "node_delta": 0,
+      "failures": [
+        "entities missing: ['Maratón Buenos Aires']"
+      ],
+      "missing_entities": [
+        "Maratón Buenos Aires"
+      ],
+      "missing_facts": []
+    },
+    {
+      "turn": 45,
+      "user_msg": "Laura ya baja 3kg desde que empezó CrossFit. Está re motivada. Ahora quiere empezar a correr también",
+      "elapsed_ms": 6500,
+      "passed": false,
+      "entity_accuracy": null,
+      "relation_accuracy": null,
+      "fact_accuracy": 0,
+      "topic_ok": true,
+      "graph_nodes": 22,
+      "graph_edges": 37,
+      "node_delta": 0,
+      "failures": [
+        "facts missing: ['Bajó 3kg con CrossFit, quiere empezar ru']"
+      ],
+      "missing_entities": [],
+      "missing_facts": [
+        "Bajó 3kg con CrossFit, quiere empezar running"
+      ]
+    },
+    {
+      "turn": 46,
+      "user_msg": "Me compré un foam roller y una pistola de masaje para recuperación. El foam roller 25.000 ARS y la p",
+      "elapsed_ms": 7405,
+      "passed": false,
+      "entity_accuracy": null,
+      "relation_accuracy": null,
+      "fact_accuracy": 0,
+      "topic_ok": true,
+      "graph_nodes": 23,
+      "graph_edges": 39,
+      "node_delta": 1,
+      "failures": [
+        "facts missing: ['Equipamiento recuperación: foam roller 2']"
+      ],
+      "missing_entities": [],
+      "missing_facts": [
+        "Equipamiento recuperación: foam roller 25K + pistola masaje "
+      ]
+    },
+    {
+      "turn": 47,
+      "user_msg": "Nuevo PR en Fran: 6:15!! De 8:45 a 6:15 en 4 meses. Marcos dice que es un progreso increíble para al",
+      "elapsed_ms": 6358,
+      "passed": false,
+      "entity_accuracy": null,
+      "relation_accuracy": null,
+      "fact_accuracy": 0,
+      "topic_ok": true,
+      "graph_nodes": 23,
+      "graph_edges": 39,
+      "node_delta": 0,
+      "failures": [
+        "facts missing: ['Benchmark Fran PR: 6:15 (de 8:45, mejora']"
+      ],
+      "missing_entities": [],
+      "missing_facts": [
+        "Benchmark Fran PR: 6:15 (de 8:45, mejora 2:30 en 4 meses)"
+      ]
+    },
+    {
+      "turn": 48,
+      "user_msg": "5km PR: 24:32!!! Bajé de 25 minutos que era mi objetivo original. De 28:30 a 24:32. El CrossFit y el",
+      "elapsed_ms": 31782,
+      "passed": false,
+      "entity_accuracy": null,
+      "relation_accuracy": null,
+      "fact_accuracy": 0,
+      "topic_ok": true,
+      "graph_nodes": 23,
+      "graph_edges": 39,
+      "node_delta": 0,
+      "failures": [
+        "facts missing: ['5km PR: 24:32 (de 28:30, mejora 3:58)']"
+      ],
+      "missing_entities": [],
+      "missing_facts": [
+        "5km PR: 24:32 (de 28:30, mejora 3:58)"
+      ]
+    },
+    {
+      "turn": 49,
+      "user_msg": "Resumen de todo el proceso: 92→85kg, 5km de 28:30→24:32, Fran de 8:45→6:15, media maratón en 1:58. M",
+      "elapsed_ms": 8546,
+      "passed": false,
+      "entity_accuracy": null,
+      "relation_accuracy": null,
+      "fact_accuracy": 0,
+      "topic_ok": true,
+      "graph_nodes": 23,
+      "graph_edges": 39,
+      "node_delta": 0,
+      "failures": [
+        "facts missing: ['Resumen 4.5 meses: 92→85kg, 5km 28:30→24']"
+      ],
+      "missing_entities": [],
+      "missing_facts": [
+        "Resumen 4.5 meses: 92→85kg, 5km 28:30→24:32, Fran 8:45→6:15,"
+      ]
+    },
+    {
+      "turn": 50,
+      "user_msg": "Hacé una nota con toda la evolución fitness por favor. Pesos, tiempos, PRs, rutinas, todo. Quiero te",
+      "elapsed_ms": 5969,
+      "passed": true,
+      "entity_accuracy": null,
+      "relation_accuracy": null,
+      "fact_accuracy": null,
+      "topic_ok": true,
+      "graph_nodes": 23,
+      "graph_edges": 39,
+      "node_delta": 0,
+      "failures": [],
+      "missing_entities": [],
+      "missing_facts": []
+    }
+  ]
+}

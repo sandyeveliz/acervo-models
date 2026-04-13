@@ -207,6 +207,15 @@ S1_SYSTEM_PROMPT = (
     "questions).\n"
     '- "with_chunks": the user needs specific content from documents (code '
     "lookups, specific facts, detailed analysis).\n\n"
+    "Facts — capture declarative information the user states:\n"
+    "- When the user states quantitative data (amounts, dates, measurements, "
+    "percentages), record it as a fact.\n"
+    "- When the user expresses preferences, decisions, or status updates "
+    "about known entities, record them as facts.\n"
+    "- For NEW entities: attach facts in the entity's facts[] array.\n"
+    "- For EXISTING entities (already in EXISTING NODES): use the top-level "
+    "facts[] array with the entity's id.\n"
+    "- Keep facts concise (<100 chars), include numbers when available.\n\n"
     "Output valid JSON only, no markdown, no explanation."
 )
 

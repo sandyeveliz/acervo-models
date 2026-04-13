@@ -1,0 +1,1502 @@
+{
+  "name": "salud_familia",
+  "domain": "Salud Familia",
+  "total_turns": 50,
+  "passed_turns": 10,
+  "pass_rate": 20,
+  "entity_accuracy": 48,
+  "relation_accuracy": 21,
+  "fact_accuracy": 7,
+  "topic_accuracy": 94,
+  "final_graph": {
+    "nodes": 37,
+    "edges": 72
+  },
+  "total_elapsed_ms": 371183,
+  "entity_misses": [
+    {
+      "turn": 2,
+      "msg": "Lionel tiene turno con la pediatra Dra. Fernández el viernes a las 10am. Le toca la vacuna de los 6 ",
+      "missing": [
+        "Turno pediatra viernes"
+      ]
+    },
+    {
+      "turn": 5,
+      "msg": "El próximo control es a los 9 meses, en julio. Ahí le toca la antigripal y control de desarrollo.",
+      "missing": [
+        "Control 9 meses"
+      ]
+    },
+    {
+      "turn": 6,
+      "msg": "La doctora nos dijo que ya podemos empezar con alimentación complementaria. Dijo que arranquemos con",
+      "missing": [
+        "BLW"
+      ]
+    },
+    {
+      "turn": 12,
+      "msg": "Laura tiene turno con la ginecóloga Dra. Martínez la semana que viene. Es el control post-parto de l",
+      "missing": [
+        "Control post-parto Laura"
+      ]
+    },
+    {
+      "turn": 13,
+      "msg": "Tenemos OSDE 310, cubre bastante bien. Las consultas pediátricas no tienen copago. Las vacunas del c",
+      "missing": [
+        "OSDE 310"
+      ]
+    },
+    {
+      "turn": 15,
+      "msg": "Laura empezó kinesiología con Martín Sosa en la clínica Rebalance de Neuquén. Son 2 sesiones por sem",
+      "missing": [
+        "Martín Sosa",
+        "Clínica Rebalance",
+        "Neuquén"
+      ]
+    },
+    {
+      "turn": 16,
+      "msg": "Lionel probó zapallo hoy por primera vez. Le encantó. Mañana vamos con batata. Estamos siguiendo el ",
+      "missing": [
+        "Baby-Led Weaning (libro)"
+      ]
+    },
+    {
+      "turn": 21,
+      "msg": "Lionel tiene fiebre, 38.5. Le dimos Ibueván gotas como nos dijo la Dra. Fernández. Si sube a 39 tene",
+      "missing": [
+        "Hospital Castro Rendón"
+      ]
+    },
+    {
+      "turn": 25,
+      "msg": "Mi hermano Diego dice que su hija Valentina de 3 años tuvo lo mismo con la fiebre por dientes, que d",
+      "missing": [
+        "Diego"
+      ]
+    },
+    {
+      "turn": 27,
+      "msg": "Laura quiere anotarse en natación para mamás y bebés con Lionel. Hay clases en el club Cipolletti lo",
+      "missing": [
+        "Club Cipolletti"
+      ]
+    },
+    {
+      "turn": 34,
+      "msg": "Mi suegra Marta viene de Buenos Aires la semana que viene a conocer a Lionel. Se queda 10 días en ca",
+      "missing": [
+        "Buenos Aires"
+      ]
+    },
+    {
+      "turn": 37,
+      "msg": "Vi un Fiat Cronos 2024 en la concesionaria Yacopini de Neuquén, 22.000.000 ARS. También un VW Virtus",
+      "missing": [
+        "Yacopini",
+        "Dietrich"
+      ]
+    },
+    {
+      "turn": 38,
+      "msg": "Laura prefiere el Virtus por el baúl más grande. Mi viejo Raúl me dijo que VW tiene mejor reventa qu",
+      "missing": [
+        "Raúl"
+      ]
+    },
+    {
+      "turn": 39,
+      "msg": "Listo, compramos el Virtus! Lo retiramos el martes. Vendimos el Gol Trend en 12.000.000 ARS. Sacamos",
+      "missing": [
+        "VW Virtus 2024"
+      ]
+    },
+    {
+      "turn": 41,
+      "msg": "Lionel tiene una alergia alimentaria. Le dimos huevo por primera vez y le brotaron ronchas en la car",
+      "missing": [
+        "Hospital Bouquet Roldán"
+      ]
+    },
+    {
+      "turn": 44,
+      "msg": "La Dra. Fernández nos dijo que avisemos en la guardería de las alergias. La directora de Pequeños Pa",
+      "missing": [
+        "Analía"
+      ]
+    },
+    {
+      "turn": 48,
+      "msg": "Para el cumple de 1 de Lionel estamos organizando una fiesta en el salón Aventura de Cipolletti. Van",
+      "missing": [
+        "Cumpleaños 1 año Lionel"
+      ]
+    },
+    {
+      "turn": 49,
+      "msg": "La torta la encargamos a Dulce María, una pastelería en el centro. Laura contactó a una fotógrafa, L",
+      "missing": [
+        "Dulce María"
+      ]
+    }
+  ],
+  "relation_misses": [
+    {
+      "turn": 9,
+      "msg": "Estamos viendo guarderías para Lionel. Hay una que se llama Pequeños Pasos en el centro de Cipollett",
+      "missing": [
+        [
+          "pequenos_pasos",
+          "cipolletti"
+        ]
+      ]
+    },
+    {
+      "turn": 10,
+      "msg": "También vimos Jardín Arcoíris en Fernández Oro. Es más barata, 120.000 ARS, pero queda más lejos. Ti",
+      "missing": [
+        [
+          "jardin_arcoiris",
+          "fernandez_oro"
+        ]
+      ]
+    },
+    {
+      "turn": 12,
+      "msg": "Laura tiene turno con la ginecóloga Dra. Martínez la semana que viene. Es el control post-parto de l",
+      "missing": [
+        [
+          "dra_martinez",
+          "laura"
+        ]
+      ]
+    },
+    {
+      "turn": 15,
+      "msg": "Laura empezó kinesiología con Martín Sosa en la clínica Rebalance de Neuquén. Son 2 sesiones por sem",
+      "missing": [
+        [
+          "martin_sosa",
+          "rebalance"
+        ],
+        [
+          "rebalance",
+          "neuquen"
+        ],
+        [
+          "martin_sosa",
+          "laura"
+        ]
+      ]
+    },
+    {
+      "turn": 16,
+      "msg": "Lionel probó zapallo hoy por primera vez. Le encantó. Mañana vamos con batata. Estamos siguiendo el ",
+      "missing": [
+        [
+          "libro_blw",
+          "blw"
+        ]
+      ]
+    },
+    {
+      "turn": 24,
+      "msg": "Mi vieja Rosa viene a quedarse con Lionel la semana que viene para que Laura y yo podamos salir a ce",
+      "missing": [
+        [
+          "rosa",
+          "general_roca"
+        ]
+      ]
+    },
+    {
+      "turn": 25,
+      "msg": "Mi hermano Diego dice que su hija Valentina de 3 años tuvo lo mismo con la fiebre por dientes, que d",
+      "missing": [
+        [
+          "valentina",
+          "diego"
+        ]
+      ]
+    },
+    {
+      "turn": 26,
+      "msg": "Averigüé y OSDE cubre estimulación temprana para Lionel. El centro CESAT en Cipolletti tiene sesione",
+      "missing": [
+        [
+          "cesat",
+          "cipolletti"
+        ]
+      ]
+    },
+    {
+      "turn": 27,
+      "msg": "Laura quiere anotarse en natación para mamás y bebés con Lionel. Hay clases en el club Cipolletti lo",
+      "missing": [
+        [
+          "club_cipolletti",
+          "cipolletti"
+        ]
+      ]
+    },
+    {
+      "turn": 29,
+      "msg": "Anotá que tengo que renovar la credencial de OSDE de Lionel. Necesito llevar partida de nacimiento y",
+      "missing": [
+        [
+          "osde",
+          "cipolletti"
+        ]
+      ]
+    },
+    {
+      "turn": 30,
+      "msg": "Lionel arrancó la guardería Pequeños Pasos hoy! Se quedó 2 horas de adaptación. No lloró, la maestra",
+      "missing": [
+        [
+          "sofia",
+          "pequenos_pasos"
+        ]
+      ]
+    },
+    {
+      "turn": 34,
+      "msg": "Mi suegra Marta viene de Buenos Aires la semana que viene a conocer a Lionel. Se queda 10 días en ca",
+      "missing": [
+        [
+          "marta",
+          "buenos_aires"
+        ]
+      ]
+    },
+    {
+      "turn": 37,
+      "msg": "Vi un Fiat Cronos 2024 en la concesionaria Yacopini de Neuquén, 22.000.000 ARS. También un VW Virtus",
+      "missing": [
+        [
+          "yacopini",
+          "neuquen"
+        ]
+      ]
+    },
+    {
+      "turn": 42,
+      "msg": "La Dra. López nos derivó a un alergista. Sacamos turno con el Dr. Ruiz en la clínica CIAREC de Neuqu",
+      "missing": [
+        [
+          "dr_ruiz",
+          "ciarec"
+        ],
+        [
+          "ciarec",
+          "neuquen"
+        ],
+        [
+          "dr_ruiz",
+          "lionel"
+        ]
+      ]
+    },
+    {
+      "turn": 44,
+      "msg": "La Dra. Fernández nos dijo que avisemos en la guardería de las alergias. La directora de Pequeños Pa",
+      "missing": [
+        [
+          "analia",
+          "pequenos_pasos"
+        ]
+      ]
+    }
+  ],
+  "fact_misses": [
+    {
+      "turn": 4,
+      "msg": "Fuimos al turno. Lionel pesó 8.2kg y midió 67cm. La doctora dijo que está perfecto de peso y talla. ",
+      "missing": [
+        "Peso: 8.2kg, talla: 67cm a los 6 meses",
+        "Resultado: peso y talla normales, vacunas aplicadas sin comp"
+      ]
+    },
+    {
+      "turn": 6,
+      "msg": "La doctora nos dijo que ya podemos empezar con alimentación complementaria. Dijo que arranquemos con",
+      "missing": [
+        "Inicia alimentación complementaria: zapallo, batata, banana",
+        "Método elegido: BLW (Baby Led Weaning)"
+      ]
+    },
+    {
+      "turn": 7,
+      "msg": "Lionel está durmiendo horrible, se despierta cada 2 horas. Laura está agotada. La asesora de sueño C",
+      "missing": [
+        "Se despierta cada 2 horas de noche",
+        "Técnica recomendada: desvanecimiento gradual"
+      ]
+    },
+    {
+      "turn": 10,
+      "msg": "También vimos Jardín Arcoíris en Fernández Oro. Es más barata, 120.000 ARS, pero queda más lejos. Ti",
+      "missing": [
+        "Laura la prefiere por cercanía a su trabajo"
+      ]
+    },
+    {
+      "turn": 11,
+      "msg": "Decidimos ir con Pequeños Pasos. Arranca en agosto cuando Lionel tenga 8 meses. Tiene que llevar cer",
+      "missing": [
+        "Lionel arranca en agosto con 8 meses",
+        "Requisitos: certificado de vacunas al día y apto médico"
+      ]
+    },
+    {
+      "turn": 13,
+      "msg": "Tenemos OSDE 310, cubre bastante bien. Las consultas pediátricas no tienen copago. Las vacunas del c",
+      "missing": [
+        "Costo: 50.000 ARS por sesión, particular (no cubre OSDE)"
+      ]
+    },
+    {
+      "turn": 14,
+      "msg": "¿Sabés si OSDE cubre kinesiólogo para Laura? Tiene dolor de espalda desde el embarazo y quiere ir a ",
+      "missing": [
+        "Tiene dolor de espalda desde el embarazo, quiere ir al kines"
+      ]
+    },
+    {
+      "turn": 15,
+      "msg": "Laura empezó kinesiología con Martín Sosa en la clínica Rebalance de Neuquén. Son 2 sesiones por sem",
+      "missing": [
+        "Kinesiología: 2 sesiones/semana, lunes y jueves. Copago OSDE"
+      ]
+    },
+    {
+      "turn": 16,
+      "msg": "Lionel probó zapallo hoy por primera vez. Le encantó. Mañana vamos con batata. Estamos siguiendo el ",
+      "missing": [
+        "Primera comida: zapallo, le gustó"
+      ]
+    },
+    {
+      "turn": 17,
+      "msg": "Me preocupa un poco que Lionel todavía no se sienta solo. La Dra. Fernández dijo que es normal hasta",
+      "missing": [
+        "Aún no se sienta solo, normal según pediatra hasta 8-9 meses"
+      ]
+    },
+    {
+      "turn": 18,
+      "msg": "¿Podés anotar el calendario de vacunas que nos queda? A los 12 meses: triple viral y hepatitis A. A ",
+      "missing": [
+        "Vacunas pendientes: 12m triple viral + hep A, 15-18m varicel"
+      ]
+    },
+    {
+      "turn": 19,
+      "msg": "Laura tuvo el control con la Dra. Martínez. Todo bien, le colocaron el DIU Mirena. Tiene que volver ",
+      "missing": [
+        "Resultado: todo bien, se colocó DIU Mirena, control en un me"
+      ]
+    },
+    {
+      "turn": 20,
+      "msg": "Lionel empezó a gatear!!! 🎉 tiene 7 meses y medio. Ahora hay que poner protecciones en todos lados. ",
+      "missing": [
+        "Empezó a gatear a los 7 meses y medio"
+      ]
+    },
+    {
+      "turn": 21,
+      "msg": "Lionel tiene fiebre, 38.5. Le dimos Ibueván gotas como nos dijo la Dra. Fernández. Si sube a 39 tene",
+      "missing": [
+        "Fiebre 38.5, medicado con Ibueván gotas",
+        "Si llega a 39 ir a guardia del Castro Rendón"
+      ]
+    },
+    {
+      "turn": 22,
+      "msg": "Bajó la fiebre a 37.2, parece que era por los dientes. Le están saliendo los dos de abajo. La pediat",
+      "missing": [
+        "Fiebre por dentición, le salen los dos incisivos inferiores"
+      ]
+    },
+    {
+      "turn": 29,
+      "msg": "Anotá que tengo que renovar la credencial de OSDE de Lionel. Necesito llevar partida de nacimiento y",
+      "missing": [
+        "Pendiente: renovar credencial OSDE, llevar partida de nacimi"
+      ]
+    },
+    {
+      "turn": 30,
+      "msg": "Lionel arrancó la guardería Pequeños Pasos hoy! Se quedó 2 horas de adaptación. No lloró, la maestra",
+      "missing": [
+        "Primer día de guardería: adaptación 2 horas, sin llanto"
+      ]
+    },
+    {
+      "turn": 32,
+      "msg": "Fuimos al control de los 9 meses. Lionel pesa 9.1kg, mide 72cm. La Dra. Fernández está muy conforme.",
+      "missing": [
+        "Control 9 meses: peso 9.1kg, talla 72cm, vacuna antigripal a",
+        "Resultado: desarrollo conforme según pediatra"
+      ]
+    },
+    {
+      "turn": 33,
+      "msg": "La kinesióloga de Laura le dio el alta. Ya no tiene más dolor de espalda. Le recomendó seguir hacien",
+      "missing": [
+        "Alta de kinesiología, ya sin dolor de espalda",
+        "Recomendación: ejercicio y fortalecer zona core"
+      ]
+    },
+    {
+      "turn": 39,
+      "msg": "Listo, compramos el Virtus! Lo retiramos el martes. Vendimos el Gol Trend en 12.000.000 ARS. Sacamos",
+      "missing": [
+        "Vendido en 12.000.000 ARS"
+      ]
+    },
+    {
+      "turn": 41,
+      "msg": "Lionel tiene una alergia alimentaria. Le dimos huevo por primera vez y le brotaron ronchas en la car",
+      "missing": [
+        "Alergia alimentaria al huevo, reacción con ronchas en la car"
+      ]
+    },
+    {
+      "turn": 42,
+      "msg": "La Dra. López nos derivó a un alergista. Sacamos turno con el Dr. Ruiz en la clínica CIAREC de Neuqu",
+      "missing": [
+        "Derivado a alergista, pendiente análisis IgE específico"
+      ]
+    },
+    {
+      "turn": 43,
+      "msg": "Los resultados del alergista: Lionel tiene alergia al huevo (IgE positivo) y alergia leve a la leche",
+      "missing": [
+        "Alergia al huevo confirmada (IgE positivo), alergia leve a l",
+        "Pronóstico: posible superación antes de los 3 años",
+        "Dieta: evitar huevo y derivados, leche en pequeñas cantidade"
+      ]
+    },
+    {
+      "turn": 44,
+      "msg": "La Dra. Fernández nos dijo que avisemos en la guardería de las alergias. La directora de Pequeños Pa",
+      "missing": [
+        "Tiene protocolo para alergias alimentarias"
+      ]
+    },
+    {
+      "turn": 47,
+      "msg": "Laura dice que vayamos con Sancor que tiene mejor reputación. Mi viejo Raúl también tiene seguro con",
+      "missing": [
+        "Elegido como seguro de vida familiar, plan completo contrata"
+      ]
+    }
+  ],
+  "turns": [
+    {
+      "turn": 1,
+      "user_msg": "Te cuento un poco de mi familia. Somos tres: yo (Sandy), mi señora Laura y nuestro hijo Lionel que t",
+      "elapsed_ms": 7703,
+      "passed": true,
+      "entity_accuracy": 100,
+      "relation_accuracy": 100,
+      "fact_accuracy": null,
+      "topic_ok": true,
+      "graph_nodes": 3,
+      "graph_edges": 6,
+      "node_delta": 3,
+      "failures": [],
+      "missing_entities": [],
+      "missing_facts": []
+    },
+    {
+      "turn": 2,
+      "user_msg": "Lionel tiene turno con la pediatra Dra. Fernández el viernes a las 10am. Le toca la vacuna de los 6 ",
+      "elapsed_ms": 6921,
+      "passed": false,
+      "entity_accuracy": 50,
+      "relation_accuracy": 100,
+      "fact_accuracy": null,
+      "topic_ok": true,
+      "graph_nodes": 4,
+      "graph_edges": 8,
+      "node_delta": 1,
+      "failures": [
+        "entities missing: ['Turno pediatra viernes']"
+      ],
+      "missing_entities": [
+        "Turno pediatra viernes"
+      ],
+      "missing_facts": []
+    },
+    {
+      "turn": 3,
+      "user_msg": "¿Qué vacunas le tocan a los 6 meses? quiero ir preparado y saber qué esperar",
+      "elapsed_ms": 5484,
+      "passed": true,
+      "entity_accuracy": null,
+      "relation_accuracy": null,
+      "fact_accuracy": null,
+      "topic_ok": true,
+      "graph_nodes": 4,
+      "graph_edges": 8,
+      "node_delta": 0,
+      "failures": [],
+      "missing_entities": [],
+      "missing_facts": []
+    },
+    {
+      "turn": 4,
+      "user_msg": "Fuimos al turno. Lionel pesó 8.2kg y midió 67cm. La doctora dijo que está perfecto de peso y talla. ",
+      "elapsed_ms": 7390,
+      "passed": false,
+      "entity_accuracy": null,
+      "relation_accuracy": null,
+      "fact_accuracy": 33,
+      "topic_ok": true,
+      "graph_nodes": 4,
+      "graph_edges": 8,
+      "node_delta": 0,
+      "failures": [
+        "facts missing: ['Peso: 8.2kg, talla: 67cm a los 6 meses', 'Resultado: peso y talla normales, vacuna']"
+      ],
+      "missing_entities": [],
+      "missing_facts": [
+        "Peso: 8.2kg, talla: 67cm a los 6 meses",
+        "Resultado: peso y talla normales, vacunas aplicadas sin comp"
+      ]
+    },
+    {
+      "turn": 5,
+      "user_msg": "El próximo control es a los 9 meses, en julio. Ahí le toca la antigripal y control de desarrollo.",
+      "elapsed_ms": 6094,
+      "passed": false,
+      "entity_accuracy": 0,
+      "relation_accuracy": null,
+      "fact_accuracy": null,
+      "topic_ok": true,
+      "graph_nodes": 4,
+      "graph_edges": 8,
+      "node_delta": 0,
+      "failures": [
+        "entities missing: ['Control 9 meses']"
+      ],
+      "missing_entities": [
+        "Control 9 meses"
+      ],
+      "missing_facts": []
+    },
+    {
+      "turn": 6,
+      "user_msg": "La doctora nos dijo que ya podemos empezar con alimentación complementaria. Dijo que arranquemos con",
+      "elapsed_ms": 6592,
+      "passed": false,
+      "entity_accuracy": 0,
+      "relation_accuracy": null,
+      "fact_accuracy": 0,
+      "topic_ok": true,
+      "graph_nodes": 5,
+      "graph_edges": 9,
+      "node_delta": 1,
+      "failures": [
+        "entities missing: ['BLW']",
+        "facts missing: ['Inicia alimentación complementaria: zapa', 'Método elegido: BLW (Baby Led Weaning)']"
+      ],
+      "missing_entities": [
+        "BLW"
+      ],
+      "missing_facts": [
+        "Inicia alimentación complementaria: zapallo, batata, banana",
+        "Método elegido: BLW (Baby Led Weaning)"
+      ]
+    },
+    {
+      "turn": 7,
+      "user_msg": "Lionel está durmiendo horrible, se despierta cada 2 horas. Laura está agotada. La asesora de sueño C",
+      "elapsed_ms": 7250,
+      "passed": false,
+      "entity_accuracy": 100,
+      "relation_accuracy": 100,
+      "fact_accuracy": 0,
+      "topic_ok": true,
+      "graph_nodes": 6,
+      "graph_edges": 11,
+      "node_delta": 1,
+      "failures": [
+        "facts missing: ['Se despierta cada 2 horas de noche', 'Técnica recomendada: desvanecimiento gra']"
+      ],
+      "missing_entities": [],
+      "missing_facts": [
+        "Se despierta cada 2 horas de noche",
+        "Técnica recomendada: desvanecimiento gradual"
+      ]
+    },
+    {
+      "turn": 8,
+      "user_msg": "qué cansancio, bueno al menos es viernes jaja",
+      "elapsed_ms": 5657,
+      "passed": true,
+      "entity_accuracy": null,
+      "relation_accuracy": null,
+      "fact_accuracy": null,
+      "topic_ok": true,
+      "graph_nodes": 6,
+      "graph_edges": 11,
+      "node_delta": 0,
+      "failures": [],
+      "missing_entities": [],
+      "missing_facts": []
+    },
+    {
+      "turn": 9,
+      "user_msg": "Estamos viendo guarderías para Lionel. Hay una que se llama Pequeños Pasos en el centro de Cipollett",
+      "elapsed_ms": 7390,
+      "passed": false,
+      "entity_accuracy": 100,
+      "relation_accuracy": 0,
+      "fact_accuracy": null,
+      "topic_ok": true,
+      "graph_nodes": 7,
+      "graph_edges": 13,
+      "node_delta": 1,
+      "failures": [
+        "relations missing: [('pequenos_pasos', 'cipolletti')]"
+      ],
+      "missing_entities": [],
+      "missing_facts": []
+    },
+    {
+      "turn": 10,
+      "user_msg": "También vimos Jardín Arcoíris en Fernández Oro. Es más barata, 120.000 ARS, pero queda más lejos. Ti",
+      "elapsed_ms": 8280,
+      "passed": false,
+      "entity_accuracy": 100,
+      "relation_accuracy": 0,
+      "fact_accuracy": 0,
+      "topic_ok": true,
+      "graph_nodes": 8,
+      "graph_edges": 16,
+      "node_delta": 1,
+      "failures": [
+        "relations missing: [('jardin_arcoiris', 'fernandez_oro')]",
+        "facts missing: ['Laura la prefiere por cercanía a su trab']"
+      ],
+      "missing_entities": [],
+      "missing_facts": [
+        "Laura la prefiere por cercanía a su trabajo"
+      ]
+    },
+    {
+      "turn": 11,
+      "user_msg": "Decidimos ir con Pequeños Pasos. Arranca en agosto cuando Lionel tenga 8 meses. Tiene que llevar cer",
+      "elapsed_ms": 6484,
+      "passed": false,
+      "entity_accuracy": null,
+      "relation_accuracy": 100,
+      "fact_accuracy": 0,
+      "topic_ok": true,
+      "graph_nodes": 8,
+      "graph_edges": 16,
+      "node_delta": 0,
+      "failures": [
+        "facts missing: ['Lionel arranca en agosto con 8 meses', 'Requisitos: certificado de vacunas al dí']"
+      ],
+      "missing_entities": [],
+      "missing_facts": [
+        "Lionel arranca en agosto con 8 meses",
+        "Requisitos: certificado de vacunas al día y apto médico"
+      ]
+    },
+    {
+      "turn": 12,
+      "user_msg": "Laura tiene turno con la ginecóloga Dra. Martínez la semana que viene. Es el control post-parto de l",
+      "elapsed_ms": 8719,
+      "passed": false,
+      "entity_accuracy": 50,
+      "relation_accuracy": 0,
+      "fact_accuracy": null,
+      "topic_ok": true,
+      "graph_nodes": 9,
+      "graph_edges": 17,
+      "node_delta": 1,
+      "failures": [
+        "entities missing: ['Control post-parto Laura']",
+        "relations missing: [('dra_martinez', 'laura')]"
+      ],
+      "missing_entities": [
+        "Control post-parto Laura"
+      ],
+      "missing_facts": []
+    },
+    {
+      "turn": 13,
+      "user_msg": "Tenemos OSDE 310, cubre bastante bien. Las consultas pediátricas no tienen copago. Las vacunas del c",
+      "elapsed_ms": 7109,
+      "passed": false,
+      "entity_accuracy": 0,
+      "relation_accuracy": null,
+      "fact_accuracy": 0,
+      "topic_ok": true,
+      "graph_nodes": 9,
+      "graph_edges": 17,
+      "node_delta": 0,
+      "failures": [
+        "entities missing: ['OSDE 310']",
+        "facts missing: ['Costo: 50.000 ARS por sesión, particular']"
+      ],
+      "missing_entities": [
+        "OSDE 310"
+      ],
+      "missing_facts": [
+        "Costo: 50.000 ARS por sesión, particular (no cubre OSDE)"
+      ]
+    },
+    {
+      "turn": 14,
+      "user_msg": "¿Sabés si OSDE cubre kinesiólogo para Laura? Tiene dolor de espalda desde el embarazo y quiere ir a ",
+      "elapsed_ms": 5671,
+      "passed": false,
+      "entity_accuracy": null,
+      "relation_accuracy": null,
+      "fact_accuracy": 0,
+      "topic_ok": true,
+      "graph_nodes": 9,
+      "graph_edges": 17,
+      "node_delta": 0,
+      "failures": [
+        "facts missing: ['Tiene dolor de espalda desde el embarazo']"
+      ],
+      "missing_entities": [],
+      "missing_facts": [
+        "Tiene dolor de espalda desde el embarazo, quiere ir al kines"
+      ]
+    },
+    {
+      "turn": 15,
+      "user_msg": "Laura empezó kinesiología con Martín Sosa en la clínica Rebalance de Neuquén. Son 2 sesiones por sem",
+      "elapsed_ms": 7686,
+      "passed": false,
+      "entity_accuracy": 0,
+      "relation_accuracy": 0,
+      "fact_accuracy": 0,
+      "topic_ok": true,
+      "graph_nodes": 9,
+      "graph_edges": 17,
+      "node_delta": 0,
+      "failures": [
+        "entities missing: ['Martín Sosa', 'Clínica Rebalance', 'Neuquén']",
+        "relations missing: [('martin_sosa', 'rebalance'), ('rebalance', 'neuquen'), ('martin_sosa', 'laura')]",
+        "facts missing: ['Kinesiología: 2 sesiones/semana, lunes y']"
+      ],
+      "missing_entities": [
+        "Martín Sosa",
+        "Clínica Rebalance",
+        "Neuquén"
+      ],
+      "missing_facts": [
+        "Kinesiología: 2 sesiones/semana, lunes y jueves. Copago OSDE"
+      ]
+    },
+    {
+      "turn": 16,
+      "user_msg": "Lionel probó zapallo hoy por primera vez. Le encantó. Mañana vamos con batata. Estamos siguiendo el ",
+      "elapsed_ms": 9000,
+      "passed": false,
+      "entity_accuracy": 0,
+      "relation_accuracy": 0,
+      "fact_accuracy": 0,
+      "topic_ok": true,
+      "graph_nodes": 11,
+      "graph_edges": 22,
+      "node_delta": 2,
+      "failures": [
+        "entities missing: ['Baby-Led Weaning (libro)']",
+        "relations missing: [('libro_blw', 'blw')]",
+        "facts missing: ['Primera comida: zapallo, le gustó']"
+      ],
+      "missing_entities": [
+        "Baby-Led Weaning (libro)"
+      ],
+      "missing_facts": [
+        "Primera comida: zapallo, le gustó"
+      ]
+    },
+    {
+      "turn": 17,
+      "user_msg": "Me preocupa un poco que Lionel todavía no se sienta solo. La Dra. Fernández dijo que es normal hasta",
+      "elapsed_ms": 7203,
+      "passed": false,
+      "entity_accuracy": null,
+      "relation_accuracy": null,
+      "fact_accuracy": 0,
+      "topic_ok": true,
+      "graph_nodes": 13,
+      "graph_edges": 24,
+      "node_delta": 2,
+      "failures": [
+        "facts missing: ['Aún no se sienta solo, normal según pedi']"
+      ],
+      "missing_entities": [],
+      "missing_facts": [
+        "Aún no se sienta solo, normal según pediatra hasta 8-9 meses"
+      ]
+    },
+    {
+      "turn": 18,
+      "user_msg": "¿Podés anotar el calendario de vacunas que nos queda? A los 12 meses: triple viral y hepatitis A. A ",
+      "elapsed_ms": 7421,
+      "passed": false,
+      "entity_accuracy": null,
+      "relation_accuracy": null,
+      "fact_accuracy": 0,
+      "topic_ok": true,
+      "graph_nodes": 13,
+      "graph_edges": 24,
+      "node_delta": 0,
+      "failures": [
+        "facts missing: ['Vacunas pendientes: 12m triple viral + h']"
+      ],
+      "missing_entities": [],
+      "missing_facts": [
+        "Vacunas pendientes: 12m triple viral + hep A, 15-18m varicel"
+      ]
+    },
+    {
+      "turn": 19,
+      "user_msg": "Laura tuvo el control con la Dra. Martínez. Todo bien, le colocaron el DIU Mirena. Tiene que volver ",
+      "elapsed_ms": 7250,
+      "passed": false,
+      "entity_accuracy": null,
+      "relation_accuracy": null,
+      "fact_accuracy": 0,
+      "topic_ok": true,
+      "graph_nodes": 13,
+      "graph_edges": 26,
+      "node_delta": 0,
+      "failures": [
+        "facts missing: ['Resultado: todo bien, se colocó DIU Mire']"
+      ],
+      "missing_entities": [],
+      "missing_facts": [
+        "Resultado: todo bien, se colocó DIU Mirena, control en un me"
+      ]
+    },
+    {
+      "turn": 20,
+      "user_msg": "Lionel empezó a gatear!!! 🎉 tiene 7 meses y medio. Ahora hay que poner protecciones en todos lados. ",
+      "elapsed_ms": 6655,
+      "passed": false,
+      "entity_accuracy": null,
+      "relation_accuracy": null,
+      "fact_accuracy": 0,
+      "topic_ok": true,
+      "graph_nodes": 13,
+      "graph_edges": 26,
+      "node_delta": 0,
+      "failures": [
+        "facts missing: ['Empezó a gatear a los 7 meses y medio']"
+      ],
+      "missing_entities": [],
+      "missing_facts": [
+        "Empezó a gatear a los 7 meses y medio"
+      ]
+    },
+    {
+      "turn": 21,
+      "user_msg": "Lionel tiene fiebre, 38.5. Le dimos Ibueván gotas como nos dijo la Dra. Fernández. Si sube a 39 tene",
+      "elapsed_ms": 7359,
+      "passed": false,
+      "entity_accuracy": 0,
+      "relation_accuracy": null,
+      "fact_accuracy": 0,
+      "topic_ok": true,
+      "graph_nodes": 13,
+      "graph_edges": 26,
+      "node_delta": 0,
+      "failures": [
+        "entities missing: ['Hospital Castro Rendón']",
+        "facts missing: ['Fiebre 38.5, medicado con Ibueván gotas', 'Si llega a 39 ir a guardia del Castro Re']"
+      ],
+      "missing_entities": [
+        "Hospital Castro Rendón"
+      ],
+      "missing_facts": [
+        "Fiebre 38.5, medicado con Ibueván gotas",
+        "Si llega a 39 ir a guardia del Castro Rendón"
+      ]
+    },
+    {
+      "turn": 22,
+      "user_msg": "Bajó la fiebre a 37.2, parece que era por los dientes. Le están saliendo los dos de abajo. La pediat",
+      "elapsed_ms": 7030,
+      "passed": false,
+      "entity_accuracy": null,
+      "relation_accuracy": null,
+      "fact_accuracy": 0,
+      "topic_ok": true,
+      "graph_nodes": 14,
+      "graph_edges": 27,
+      "node_delta": 1,
+      "failures": [
+        "facts missing: ['Fiebre por dentición, le salen los dos i']"
+      ],
+      "missing_entities": [],
+      "missing_facts": [
+        "Fiebre por dentición, le salen los dos incisivos inferiores"
+      ]
+    },
+    {
+      "turn": 23,
+      "user_msg": "Necesito organizar todos los turnos médicos. Podés hacer una nota con todo lo que tenemos agendado? ",
+      "elapsed_ms": 5922,
+      "passed": true,
+      "entity_accuracy": null,
+      "relation_accuracy": null,
+      "fact_accuracy": null,
+      "topic_ok": true,
+      "graph_nodes": 14,
+      "graph_edges": 27,
+      "node_delta": 0,
+      "failures": [],
+      "missing_entities": [],
+      "missing_facts": []
+    },
+    {
+      "turn": 24,
+      "user_msg": "Mi vieja Rosa viene a quedarse con Lionel la semana que viene para que Laura y yo podamos salir a ce",
+      "elapsed_ms": 7233,
+      "passed": false,
+      "entity_accuracy": 100,
+      "relation_accuracy": 0,
+      "fact_accuracy": null,
+      "topic_ok": true,
+      "graph_nodes": 16,
+      "graph_edges": 30,
+      "node_delta": 2,
+      "failures": [
+        "relations missing: [('rosa', 'general_roca')]"
+      ],
+      "missing_entities": [],
+      "missing_facts": []
+    },
+    {
+      "turn": 25,
+      "user_msg": "Mi hermano Diego dice que su hija Valentina de 3 años tuvo lo mismo con la fiebre por dientes, que d",
+      "elapsed_ms": 6453,
+      "passed": false,
+      "entity_accuracy": 50,
+      "relation_accuracy": 0,
+      "fact_accuracy": null,
+      "topic_ok": true,
+      "graph_nodes": 17,
+      "graph_edges": 31,
+      "node_delta": 1,
+      "failures": [
+        "entities missing: ['Diego']",
+        "relations missing: [('valentina', 'diego')]"
+      ],
+      "missing_entities": [
+        "Diego"
+      ],
+      "missing_facts": []
+    },
+    {
+      "turn": 26,
+      "user_msg": "Averigüé y OSDE cubre estimulación temprana para Lionel. El centro CESAT en Cipolletti tiene sesione",
+      "elapsed_ms": 11109,
+      "passed": false,
+      "entity_accuracy": 100,
+      "relation_accuracy": 0,
+      "fact_accuracy": null,
+      "topic_ok": true,
+      "graph_nodes": 19,
+      "graph_edges": 35,
+      "node_delta": 2,
+      "failures": [
+        "relations missing: [('cesat', 'cipolletti')]"
+      ],
+      "missing_entities": [],
+      "missing_facts": []
+    },
+    {
+      "turn": 27,
+      "user_msg": "Laura quiere anotarse en natación para mamás y bebés con Lionel. Hay clases en el club Cipolletti lo",
+      "elapsed_ms": 7359,
+      "passed": false,
+      "entity_accuracy": 0,
+      "relation_accuracy": 0,
+      "fact_accuracy": null,
+      "topic_ok": true,
+      "graph_nodes": 20,
+      "graph_edges": 38,
+      "node_delta": 1,
+      "failures": [
+        "entities missing: ['Club Cipolletti']",
+        "relations missing: [('club_cipolletti', 'cipolletti')]"
+      ],
+      "missing_entities": [
+        "Club Cipolletti"
+      ],
+      "missing_facts": []
+    },
+    {
+      "turn": 28,
+      "user_msg": "Che me acabo de dar cuenta que estamos gastando un montón en salud. Podés hacer un resumen de todos ",
+      "elapsed_ms": 6000,
+      "passed": true,
+      "entity_accuracy": null,
+      "relation_accuracy": null,
+      "fact_accuracy": null,
+      "topic_ok": true,
+      "graph_nodes": 20,
+      "graph_edges": 38,
+      "node_delta": 0,
+      "failures": [],
+      "missing_entities": [],
+      "missing_facts": []
+    },
+    {
+      "turn": 29,
+      "user_msg": "Anotá que tengo que renovar la credencial de OSDE de Lionel. Necesito llevar partida de nacimiento y",
+      "elapsed_ms": 7311,
+      "passed": false,
+      "entity_accuracy": null,
+      "relation_accuracy": 0,
+      "fact_accuracy": 50,
+      "topic_ok": true,
+      "graph_nodes": 20,
+      "graph_edges": 38,
+      "node_delta": 0,
+      "failures": [
+        "relations missing: [('osde', 'cipolletti')]",
+        "facts missing: ['Pendiente: renovar credencial OSDE, llev']"
+      ],
+      "missing_entities": [],
+      "missing_facts": [
+        "Pendiente: renovar credencial OSDE, llevar partida de nacimi"
+      ]
+    },
+    {
+      "turn": 30,
+      "user_msg": "Lionel arrancó la guardería Pequeños Pasos hoy! Se quedó 2 horas de adaptación. No lloró, la maestra",
+      "elapsed_ms": 8109,
+      "passed": false,
+      "entity_accuracy": 100,
+      "relation_accuracy": 0,
+      "fact_accuracy": 0,
+      "topic_ok": true,
+      "graph_nodes": 21,
+      "graph_edges": 41,
+      "node_delta": 1,
+      "failures": [
+        "relations missing: [('sofia', 'pequenos_pasos')]",
+        "facts missing: ['Primer día de guardería: adaptación 2 ho']"
+      ],
+      "missing_entities": [],
+      "missing_facts": [
+        "Primer día de guardería: adaptación 2 horas, sin llanto"
+      ]
+    },
+    {
+      "turn": 31,
+      "user_msg": "Hoy Lionel dijo 'mamá' por primera vez!! Laura se largó a llorar de emoción. Tiene 9 meses y ya dice",
+      "elapsed_ms": 7530,
+      "passed": true,
+      "entity_accuracy": null,
+      "relation_accuracy": null,
+      "fact_accuracy": 100,
+      "topic_ok": true,
+      "graph_nodes": 21,
+      "graph_edges": 43,
+      "node_delta": 0,
+      "failures": [],
+      "missing_entities": [],
+      "missing_facts": []
+    },
+    {
+      "turn": 32,
+      "user_msg": "Fuimos al control de los 9 meses. Lionel pesa 9.1kg, mide 72cm. La Dra. Fernández está muy conforme.",
+      "elapsed_ms": 7063,
+      "passed": false,
+      "entity_accuracy": null,
+      "relation_accuracy": null,
+      "fact_accuracy": 0,
+      "topic_ok": true,
+      "graph_nodes": 21,
+      "graph_edges": 43,
+      "node_delta": 0,
+      "failures": [
+        "facts missing: ['Control 9 meses: peso 9.1kg, talla 72cm,', 'Resultado: desarrollo conforme según ped']"
+      ],
+      "missing_entities": [],
+      "missing_facts": [
+        "Control 9 meses: peso 9.1kg, talla 72cm, vacuna antigripal a",
+        "Resultado: desarrollo conforme según pediatra"
+      ]
+    },
+    {
+      "turn": 33,
+      "user_msg": "La kinesióloga de Laura le dio el alta. Ya no tiene más dolor de espalda. Le recomendó seguir hacien",
+      "elapsed_ms": 7265,
+      "passed": false,
+      "entity_accuracy": null,
+      "relation_accuracy": null,
+      "fact_accuracy": 0,
+      "topic_ok": true,
+      "graph_nodes": 22,
+      "graph_edges": 45,
+      "node_delta": 1,
+      "failures": [
+        "facts missing: ['Alta de kinesiología, ya sin dolor de es', 'Recomendación: ejercicio y fortalecer zo']"
+      ],
+      "missing_entities": [],
+      "missing_facts": [
+        "Alta de kinesiología, ya sin dolor de espalda",
+        "Recomendación: ejercicio y fortalecer zona core"
+      ]
+    },
+    {
+      "turn": 34,
+      "user_msg": "Mi suegra Marta viene de Buenos Aires la semana que viene a conocer a Lionel. Se queda 10 días en ca",
+      "elapsed_ms": 7796,
+      "passed": false,
+      "entity_accuracy": 50,
+      "relation_accuracy": 0,
+      "fact_accuracy": null,
+      "topic_ok": true,
+      "graph_nodes": 23,
+      "graph_edges": 47,
+      "node_delta": 1,
+      "failures": [
+        "entities missing: ['Buenos Aires']",
+        "relations missing: [('marta', 'buenos_aires')]"
+      ],
+      "missing_entities": [
+        "Buenos Aires"
+      ],
+      "missing_facts": []
+    },
+    {
+      "turn": 35,
+      "user_msg": "estoy re cansado de no dormir bien jaja, pero bueno, dicen que después del año mejora. vos qué opina",
+      "elapsed_ms": 5875,
+      "passed": true,
+      "entity_accuracy": null,
+      "relation_accuracy": null,
+      "fact_accuracy": null,
+      "topic_ok": true,
+      "graph_nodes": 23,
+      "graph_edges": 47,
+      "node_delta": 0,
+      "failures": [],
+      "missing_entities": [],
+      "missing_facts": []
+    },
+    {
+      "turn": 36,
+      "user_msg": "Necesitamos cambiar de auto. El Gol Trend 2018 ya se nos queda chico con el cochecito y todo. Estoy ",
+      "elapsed_ms": 8250,
+      "passed": false,
+      "entity_accuracy": 100,
+      "relation_accuracy": null,
+      "fact_accuracy": null,
+      "topic_ok": false,
+      "graph_nodes": 24,
+      "graph_edges": 48,
+      "node_delta": 1,
+      "failures": [
+        "topic: expected=changed, got=same"
+      ],
+      "missing_entities": [],
+      "missing_facts": []
+    },
+    {
+      "turn": 37,
+      "user_msg": "Vi un Fiat Cronos 2024 en la concesionaria Yacopini de Neuquén, 22.000.000 ARS. También un VW Virtus",
+      "elapsed_ms": 8047,
+      "passed": false,
+      "entity_accuracy": 0,
+      "relation_accuracy": 0,
+      "fact_accuracy": null,
+      "topic_ok": true,
+      "graph_nodes": 26,
+      "graph_edges": 50,
+      "node_delta": 2,
+      "failures": [
+        "entities missing: ['Yacopini', 'Dietrich']",
+        "relations missing: [('yacopini', 'neuquen')]"
+      ],
+      "missing_entities": [
+        "Yacopini",
+        "Dietrich"
+      ],
+      "missing_facts": []
+    },
+    {
+      "turn": 38,
+      "user_msg": "Laura prefiere el Virtus por el baúl más grande. Mi viejo Raúl me dijo que VW tiene mejor reventa qu",
+      "elapsed_ms": 7921,
+      "passed": false,
+      "entity_accuracy": 0,
+      "relation_accuracy": null,
+      "fact_accuracy": null,
+      "topic_ok": true,
+      "graph_nodes": 26,
+      "graph_edges": 50,
+      "node_delta": 0,
+      "failures": [
+        "entities missing: ['Raúl']"
+      ],
+      "missing_entities": [
+        "Raúl"
+      ],
+      "missing_facts": []
+    },
+    {
+      "turn": 39,
+      "user_msg": "Listo, compramos el Virtus! Lo retiramos el martes. Vendimos el Gol Trend en 12.000.000 ARS. Sacamos",
+      "elapsed_ms": 9969,
+      "passed": false,
+      "entity_accuracy": 50,
+      "relation_accuracy": null,
+      "fact_accuracy": 0,
+      "topic_ok": true,
+      "graph_nodes": 28,
+      "graph_edges": 53,
+      "node_delta": 2,
+      "failures": [
+        "entities missing: ['VW Virtus 2024']",
+        "facts missing: ['Vendido en 12.000.000 ARS']"
+      ],
+      "missing_entities": [
+        "VW Virtus 2024"
+      ],
+      "missing_facts": [
+        "Vendido en 12.000.000 ARS"
+      ]
+    },
+    {
+      "turn": 40,
+      "user_msg": "¿Podés hacerme un resumen de todo lo de la familia? Quiero tener un panorama general de cómo estamos",
+      "elapsed_ms": 5984,
+      "passed": true,
+      "entity_accuracy": null,
+      "relation_accuracy": null,
+      "fact_accuracy": null,
+      "topic_ok": true,
+      "graph_nodes": 28,
+      "graph_edges": 53,
+      "node_delta": 0,
+      "failures": [],
+      "missing_entities": [],
+      "missing_facts": []
+    },
+    {
+      "turn": 41,
+      "user_msg": "Lionel tiene una alergia alimentaria. Le dimos huevo por primera vez y le brotaron ronchas en la car",
+      "elapsed_ms": 7358,
+      "passed": false,
+      "entity_accuracy": 50,
+      "relation_accuracy": null,
+      "fact_accuracy": 0,
+      "topic_ok": true,
+      "graph_nodes": 29,
+      "graph_edges": 55,
+      "node_delta": 1,
+      "failures": [
+        "entities missing: ['Hospital Bouquet Roldán']",
+        "facts missing: ['Alergia alimentaria al huevo, reacción c']"
+      ],
+      "missing_entities": [
+        "Hospital Bouquet Roldán"
+      ],
+      "missing_facts": [
+        "Alergia alimentaria al huevo, reacción con ronchas en la car"
+      ]
+    },
+    {
+      "turn": 42,
+      "user_msg": "La Dra. López nos derivó a un alergista. Sacamos turno con el Dr. Ruiz en la clínica CIAREC de Neuqu",
+      "elapsed_ms": 9750,
+      "passed": false,
+      "entity_accuracy": 100,
+      "relation_accuracy": 0,
+      "fact_accuracy": 0,
+      "topic_ok": true,
+      "graph_nodes": 31,
+      "graph_edges": 57,
+      "node_delta": 2,
+      "failures": [
+        "relations missing: [('dr_ruiz', 'ciarec'), ('ciarec', 'neuquen'), ('dr_ruiz', 'lionel')]",
+        "facts missing: ['Derivado a alergista, pendiente análisis']"
+      ],
+      "missing_entities": [],
+      "missing_facts": [
+        "Derivado a alergista, pendiente análisis IgE específico"
+      ]
+    },
+    {
+      "turn": 43,
+      "user_msg": "Los resultados del alergista: Lionel tiene alergia al huevo (IgE positivo) y alergia leve a la leche",
+      "elapsed_ms": 7719,
+      "passed": false,
+      "entity_accuracy": null,
+      "relation_accuracy": null,
+      "fact_accuracy": 0,
+      "topic_ok": true,
+      "graph_nodes": 31,
+      "graph_edges": 57,
+      "node_delta": 0,
+      "failures": [
+        "facts missing: ['Alergia al huevo confirmada (IgE positiv', 'Pronóstico: posible superación antes de ', 'Dieta: evitar huevo y derivados, leche e']"
+      ],
+      "missing_entities": [],
+      "missing_facts": [
+        "Alergia al huevo confirmada (IgE positivo), alergia leve a l",
+        "Pronóstico: posible superación antes de los 3 años",
+        "Dieta: evitar huevo y derivados, leche en pequeñas cantidade"
+      ]
+    },
+    {
+      "turn": 44,
+      "user_msg": "La Dra. Fernández nos dijo que avisemos en la guardería de las alergias. La directora de Pequeños Pa",
+      "elapsed_ms": 8719,
+      "passed": false,
+      "entity_accuracy": 0,
+      "relation_accuracy": 0,
+      "fact_accuracy": 0,
+      "topic_ok": true,
+      "graph_nodes": 32,
+      "graph_edges": 60,
+      "node_delta": 1,
+      "failures": [
+        "entities missing: ['Analía']",
+        "relations missing: [('analia', 'pequenos_pasos')]",
+        "facts missing: ['Tiene protocolo para alergias alimentari']"
+      ],
+      "missing_entities": [
+        "Analía"
+      ],
+      "missing_facts": [
+        "Tiene protocolo para alergias alimentarias"
+      ]
+    },
+    {
+      "turn": 45,
+      "user_msg": "¿Podés hacer una nota con todas las alergias y restricciones alimentarias de Lionel? Así la tenemos ",
+      "elapsed_ms": 5984,
+      "passed": true,
+      "entity_accuracy": null,
+      "relation_accuracy": null,
+      "fact_accuracy": null,
+      "topic_ok": true,
+      "graph_nodes": 32,
+      "graph_edges": 60,
+      "node_delta": 0,
+      "failures": [],
+      "missing_entities": [],
+      "missing_facts": []
+    },
+    {
+      "turn": 46,
+      "user_msg": "Estoy averiguando seguro de vida. El corredor de seguros Germán Villa me pasó dos opciones: uno de S",
+      "elapsed_ms": 9469,
+      "passed": false,
+      "entity_accuracy": 100,
+      "relation_accuracy": null,
+      "fact_accuracy": null,
+      "topic_ok": false,
+      "graph_nodes": 35,
+      "graph_edges": 65,
+      "node_delta": 3,
+      "failures": [
+        "topic: expected=changed, got=same"
+      ],
+      "missing_entities": [],
+      "missing_facts": []
+    },
+    {
+      "turn": 47,
+      "user_msg": "Laura dice que vayamos con Sancor que tiene mejor reputación. Mi viejo Raúl también tiene seguro con",
+      "elapsed_ms": 8594,
+      "passed": false,
+      "entity_accuracy": null,
+      "relation_accuracy": null,
+      "fact_accuracy": 0,
+      "topic_ok": true,
+      "graph_nodes": 35,
+      "graph_edges": 68,
+      "node_delta": 0,
+      "failures": [
+        "facts missing: ['Elegido como seguro de vida familiar, pl']"
+      ],
+      "missing_entities": [],
+      "missing_facts": [
+        "Elegido como seguro de vida familiar, plan completo contrata"
+      ]
+    },
+    {
+      "turn": 48,
+      "user_msg": "Para el cumple de 1 de Lionel estamos organizando una fiesta en el salón Aventura de Cipolletti. Van",
+      "elapsed_ms": 7750,
+      "passed": false,
+      "entity_accuracy": 0,
+      "relation_accuracy": null,
+      "fact_accuracy": null,
+      "topic_ok": false,
+      "graph_nodes": 35,
+      "graph_edges": 68,
+      "node_delta": 0,
+      "failures": [
+        "topic: expected=changed, got=same",
+        "entities missing: ['Cumpleaños 1 año Lionel']"
+      ],
+      "missing_entities": [
+        "Cumpleaños 1 año Lionel"
+      ],
+      "missing_facts": []
+    },
+    {
+      "turn": 49,
+      "user_msg": "La torta la encargamos a Dulce María, una pastelería en el centro. Laura contactó a una fotógrafa, L",
+      "elapsed_ms": 8296,
+      "passed": false,
+      "entity_accuracy": 50,
+      "relation_accuracy": null,
+      "fact_accuracy": null,
+      "topic_ok": true,
+      "graph_nodes": 37,
+      "graph_edges": 72,
+      "node_delta": 2,
+      "failures": [
+        "entities missing: ['Dulce María']"
+      ],
+      "missing_entities": [
+        "Dulce María"
+      ],
+      "missing_facts": []
+    },
+    {
+      "turn": 50,
+      "user_msg": "Bueno, haceme un resumen general de todo lo de salud de la familia. Turnos pendientes, alergias de L",
+      "elapsed_ms": 6000,
+      "passed": true,
+      "entity_accuracy": null,
+      "relation_accuracy": null,
+      "fact_accuracy": null,
+      "topic_ok": true,
+      "graph_nodes": 37,
+      "graph_edges": 72,
+      "node_delta": 0,
+      "failures": [],
+      "missing_entities": [],
+      "missing_facts": []
+    }
+  ]
+}

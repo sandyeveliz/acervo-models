@@ -1,0 +1,1661 @@
+{
+  "name": "libro",
+  "domain": "Libro",
+  "total_turns": 50,
+  "passed_turns": 6,
+  "pass_rate": 12,
+  "entity_accuracy": 70,
+  "relation_accuracy": 3,
+  "fact_accuracy": 8,
+  "topic_accuracy": 94,
+  "final_graph": {
+    "nodes": 57,
+    "edges": 130
+  },
+  "total_elapsed_ms": 413635,
+  "entity_misses": [
+    {
+      "turn": 5,
+      "msg": "El realismo mágico es fundamental. Lo sobrenatural se presenta como cotidiano: la levitación de Reme",
+      "missing": [
+        "Remedios la Bella"
+      ]
+    },
+    {
+      "turn": 6,
+      "msg": "Hagamos un mapa de la familia Buendía. Primera generación: José Arcadio Buendía y Úrsula. Hijos: Jos",
+      "missing": [
+        "José Arcadio (hijo)",
+        "Amaranta Buendía"
+      ]
+    },
+    {
+      "turn": 10,
+      "msg": "¿Cuál es tu interpretación de por qué el pueblo se llama Macondo? Leí que García Márquez lo tomó de ",
+      "missing": [
+        "Aracataca"
+      ]
+    },
+    {
+      "turn": 19,
+      "msg": "El último Aureliano descifra los pergaminos de Melquíades al final. Descubre que contienen toda la h",
+      "missing": [
+        "Último Aureliano"
+      ]
+    },
+    {
+      "turn": 24,
+      "msg": "Los personajes principales son Horacio Oliveira, un intelectual argentino en París, y La Maga (Lucía",
+      "missing": [
+        "La Maga (Lucía)"
+      ]
+    },
+    {
+      "turn": 32,
+      "msg": "Ahora quiero arrancar con 'El túnel' de Ernesto Sábato. Es mucho más corto y oscuro. Lo leí hace año",
+      "missing": [
+        "Ernesto Sábato"
+      ]
+    },
+    {
+      "turn": 36,
+      "msg": "Los celos de Castel son enfermizos. Sospecha de todos: de Allende (el esposo ciego de María), de Hun",
+      "missing": [
+        "Allende",
+        "Hunter"
+      ]
+    },
+    {
+      "turn": 40,
+      "msg": "Voy a leer Ficciones de Borges. Lo tengo hace años en la biblioteca y nunca lo abrí. Dicen que es de",
+      "missing": [
+        "Ficciones",
+        "Jorge Luis Borges"
+      ]
+    },
+    {
+      "turn": 42,
+      "msg": "'El jardín de senderos que se bifurcan' es impresionante. Es un cuento de espionaje que es en realid",
+      "missing": [
+        "El jardín de senderos que se bifurcan"
+      ]
+    },
+    {
+      "turn": 48,
+      "msg": "'Funes el memorioso' lo leí anoche. Un tipo que después de un accidente recuerda absolutamente todo.",
+      "missing": [
+        "Funes el memorioso"
+      ]
+    }
+  ],
+  "relation_misses": [
+    {
+      "turn": 1,
+      "msg": "Acabo de terminar de leer 'Cien años de soledad' de Gabriel García Márquez. Quiero que me ayudes a a",
+      "missing": [
+        [
+          "cien_anos",
+          "garcia_marquez"
+        ]
+      ]
+    },
+    {
+      "turn": 2,
+      "msg": "El libro cuenta la historia de la familia Buendía en el pueblo ficticio de Macondo, a lo largo de si",
+      "missing": [
+        [
+          "jose_arcadio_buendia",
+          "macondo"
+        ],
+        [
+          "jose_arcadio_buendia",
+          "cien_anos"
+        ],
+        [
+          "ursula",
+          "cien_anos"
+        ]
+      ]
+    },
+    {
+      "turn": 3,
+      "msg": "Uno de los temas centrales es la soledad. Cada personaje experimenta una forma diferente de soledad.",
+      "missing": [
+        [
+          "coronel_aureliano",
+          "cien_anos"
+        ]
+      ]
+    },
+    {
+      "turn": 5,
+      "msg": "El realismo mágico es fundamental. Lo sobrenatural se presenta como cotidiano: la levitación de Reme",
+      "missing": [
+        [
+          "remedios_bella",
+          "cien_anos"
+        ]
+      ]
+    },
+    {
+      "turn": 6,
+      "msg": "Hagamos un mapa de la familia Buendía. Primera generación: José Arcadio Buendía y Úrsula. Hijos: Jos",
+      "missing": [
+        [
+          "jose_arcadio_hijo",
+          "jose_arcadio_buendia"
+        ],
+        [
+          "coronel_aureliano",
+          "jose_arcadio_buendia"
+        ]
+      ]
+    },
+    {
+      "turn": 7,
+      "msg": "Segunda generación: José Arcadio (hijo) se casa con Rebeca. Aureliano se casa con Remedios Moscote (",
+      "missing": [
+        [
+          "rebeca",
+          "jose_arcadio_hijo"
+        ],
+        [
+          "remedios_moscote",
+          "coronel_aureliano"
+        ]
+      ]
+    },
+    {
+      "turn": 8,
+      "msg": "Melquíades es un personaje clave. Es un gitano que visita Macondo y trae inventos (el imán, la lupa,",
+      "missing": [
+        [
+          "melquiades",
+          "cien_anos"
+        ]
+      ]
+    },
+    {
+      "turn": 9,
+      "msg": "La casa de los Buendía es casi un personaje más. Empieza como una casa modesta de barro y caña, crec",
+      "missing": [
+        [
+          "casa_buendia",
+          "macondo"
+        ]
+      ]
+    },
+    {
+      "turn": 11,
+      "msg": "Hablemos de la masacre de las bananeras. Es uno de los momentos más impactantes. La compañía bananer",
+      "missing": [
+        [
+          "masacre_bananeras",
+          "cien_anos"
+        ],
+        [
+          "jose_arcadio_segundo",
+          "masacre_bananeras"
+        ]
+      ]
+    },
+    {
+      "turn": 16,
+      "msg": "Fernanda del Carpio es interesante. Viene de una familia aristocrática en decadencia, se casa con Au",
+      "missing": [
+        [
+          "fernanda",
+          "aureliano_segundo"
+        ]
+      ]
+    },
+    {
+      "turn": 17,
+      "msg": "Meme (Renata Remedios) es hija de Aureliano Segundo y Fernanda. Se enamora de Mauricio Babilonia, un",
+      "missing": [
+        [
+          "meme",
+          "aureliano_segundo"
+        ]
+      ]
+    },
+    {
+      "turn": 22,
+      "msg": "Ahora quiero comparar con otro libro. Estoy leyendo 'Rayuela' de Julio Cortázar. Es completamente di",
+      "missing": [
+        [
+          "rayuela",
+          "cortazar"
+        ]
+      ]
+    },
+    {
+      "turn": 24,
+      "msg": "Los personajes principales son Horacio Oliveira, un intelectual argentino en París, y La Maga (Lucía",
+      "missing": [
+        [
+          "oliveira",
+          "rayuela"
+        ],
+        [
+          "la_maga",
+          "rayuela"
+        ],
+        [
+          "oliveira",
+          "club_serpiente"
+        ],
+        [
+          "la_maga",
+          "club_serpiente"
+        ]
+      ]
+    },
+    {
+      "turn": 29,
+      "msg": "Cuando vuelve a Buenos Aires, Oliveira vive con Traveler y Talita, una pareja amiga. Traveler es su ",
+      "missing": [
+        [
+          "traveler",
+          "rayuela"
+        ],
+        [
+          "talita",
+          "rayuela"
+        ]
+      ]
+    },
+    {
+      "turn": 32,
+      "msg": "Ahora quiero arrancar con 'El túnel' de Ernesto Sábato. Es mucho más corto y oscuro. Lo leí hace año",
+      "missing": [
+        [
+          "el_tunel",
+          "sabato"
+        ]
+      ]
+    },
+    {
+      "turn": 33,
+      "msg": "El túnel arranca con Juan Pablo Castel diciendo que mató a María Iribarne. Todo el libro es su confe",
+      "missing": [
+        [
+          "castel",
+          "el_tunel"
+        ]
+      ]
+    },
+    {
+      "turn": 38,
+      "msg": "Los tres libros que leí (Cien años, Rayuela, El túnel) son de autores del boom latinoamericano, pero",
+      "missing": [
+        [
+          "garcia_marquez",
+          "boom_latinoamericano"
+        ],
+        [
+          "cortazar",
+          "boom_latinoamericano"
+        ],
+        [
+          "sabato",
+          "boom_latinoamericano"
+        ]
+      ]
+    },
+    {
+      "turn": 40,
+      "msg": "Voy a leer Ficciones de Borges. Lo tengo hace años en la biblioteca y nunca lo abrí. Dicen que es de",
+      "missing": [
+        [
+          "ficciones",
+          "borges"
+        ],
+        [
+          "borges",
+          "boom_latinoamericano"
+        ]
+      ]
+    },
+    {
+      "turn": 41,
+      "msg": "Empecé con 'Tlön, Uqbar, Orbis Tertius'. Es una locura. Es sobre el descubrimiento de una encicloped",
+      "missing": [
+        [
+          "tlon",
+          "ficciones"
+        ]
+      ]
+    },
+    {
+      "turn": 42,
+      "msg": "'El jardín de senderos que se bifurcan' es impresionante. Es un cuento de espionaje que es en realid",
+      "missing": [
+        [
+          "jardin_senderos",
+          "ficciones"
+        ]
+      ]
+    },
+    {
+      "turn": 43,
+      "msg": "'La biblioteca de Babel' me hizo pensar en Acervo! Una biblioteca infinita que contiene todos los li",
+      "missing": [
+        [
+          "biblioteca_babel",
+          "ficciones"
+        ]
+      ]
+    },
+    {
+      "turn": 44,
+      "msg": "'Pierre Menard, autor del Quijote' es genial y absurdo. Un escritor francés intenta reescribir el Qu",
+      "missing": [
+        [
+          "pierre_menard",
+          "ficciones"
+        ]
+      ]
+    },
+    {
+      "turn": 45,
+      "msg": "'La lotería en Babilonia' describe una sociedad donde todo se decide por sorteo. Empieza como un jue",
+      "missing": [
+        [
+          "loteria_babilonia",
+          "ficciones"
+        ]
+      ]
+    },
+    {
+      "turn": 48,
+      "msg": "'Funes el memorioso' lo leí anoche. Un tipo que después de un accidente recuerda absolutamente todo.",
+      "missing": [
+        [
+          "funes",
+          "ficciones"
+        ]
+      ]
+    }
+  ],
+  "fact_misses": [
+    {
+      "turn": 3,
+      "msg": "Uno de los temas centrales es la soledad. Cada personaje experimenta una forma diferente de soledad.",
+      "missing": [
+        "Tema central: la soledad, cada personaje la experimenta dife",
+        "Se aísla en laboratorio de alquimia",
+        "Se endurece tras 32 guerras civiles perdidas"
+      ]
+    },
+    {
+      "turn": 4,
+      "msg": "Otro tema es la circularidad del tiempo. Los nombres se repiten: Aureliano, José Arcadio, Remedios, ",
+      "missing": [
+        "Tema: circularidad del tiempo. Nombres y destinos se repiten"
+      ]
+    },
+    {
+      "turn": 5,
+      "msg": "El realismo mágico es fundamental. Lo sobrenatural se presenta como cotidiano: la levitación de Reme",
+      "missing": [
+        "Realismo mágico: lo sobrenatural como cotidiano. Levitación,"
+      ]
+    },
+    {
+      "turn": 7,
+      "msg": "Segunda generación: José Arcadio (hijo) se casa con Rebeca. Aureliano se casa con Remedios Moscote (",
+      "missing": [
+        "Nunca se casa, rechaza todos los pretendientes"
+      ]
+    },
+    {
+      "turn": 8,
+      "msg": "Melquíades es un personaje clave. Es un gitano que visita Macondo y trae inventos (el imán, la lupa,",
+      "missing": [
+        "Trae inventos a Macondo: imán, lupa, hielo. Escribe pergamin"
+      ]
+    },
+    {
+      "turn": 9,
+      "msg": "La casa de los Buendía es casi un personaje más. Empieza como una casa modesta de barro y caña, crec",
+      "missing": [
+        "Evolución: de barro y caña → mansión → ruinas invadidas por "
+      ]
+    },
+    {
+      "turn": 10,
+      "msg": "¿Cuál es tu interpretación de por qué el pueblo se llama Macondo? Leí que García Márquez lo tomó de ",
+      "missing": [
+        "Nombre posiblemente tomado de finca bananera cerca de Aracat"
+      ]
+    },
+    {
+      "turn": 11,
+      "msg": "Hablemos de la masacre de las bananeras. Es uno de los momentos más impactantes. La compañía bananer",
+      "missing": [
+        "Basada en la masacre real de United Fruit Company en 1928 en"
+      ]
+    },
+    {
+      "turn": 12,
+      "msg": "Los gemelos José Arcadio Segundo y Aureliano Segundo son de la cuarta generación. Son opuestos: JASe",
+      "missing": [
+        "Introvertido, obsesionado con los pergaminos de Melquíades",
+        "Extrovertido, derrochador. Opuesto a su gemelo"
+      ]
+    },
+    {
+      "turn": 13,
+      "msg": "El diluvio de cuatro años es otro evento mágico brutal. Llueve sin parar durante 4 años, 11 meses y ",
+      "missing": [
+        "El diluvio: 4 años, 11 meses, 2 días de lluvia continua. Mar"
+      ]
+    },
+    {
+      "turn": 14,
+      "msg": "Analicemos los personajes femeninos. Úrsula es el pilar de la familia, vive más de 100 años y mantie",
+      "missing": [
+        "Pilar de la familia, vive 100+ años. Su muerte marca la desi"
+      ]
+    },
+    {
+      "turn": 16,
+      "msg": "Fernanda del Carpio es interesante. Viene de una familia aristocrática en decadencia, se casa con Au",
+      "missing": [
+        "Aristocrática, rígida, religiosa. Choca con la cultura Buend"
+      ]
+    },
+    {
+      "turn": 17,
+      "msg": "Meme (Renata Remedios) es hija de Aureliano Segundo y Fernanda. Se enamora de Mauricio Babilonia, un",
+      "missing": [
+        "Enviada al convento por Fernanda por su relación con Maurici",
+        "Caracterizado por mariposas amarillas que lo rodean"
+      ]
+    },
+    {
+      "turn": 18,
+      "msg": "Las mariposas amarillas de Mauricio Babilonia son uno de los símbolos más bellos. Aparecen cada vez ",
+      "missing": [
+        "Mariposas amarillas desaparecen cuando lo hieren de balazo"
+      ]
+    },
+    {
+      "turn": 19,
+      "msg": "El último Aureliano descifra los pergaminos de Melquíades al final. Descubre que contienen toda la h",
+      "missing": [
+        "Final: último Aureliano descifra pergaminos mientras Macondo",
+        "Pergaminos escritos en sánscrito, contenían toda la historia"
+      ]
+    },
+    {
+      "turn": 20,
+      "msg": "La frase final del libro es devastadora. Algo como que las estirpes condenadas a cien años de soleda",
+      "missing": [
+        "Final circular: el fin estaba predestinado desde el principi"
+      ]
+    },
+    {
+      "turn": 25,
+      "msg": "El libro se divide en: 'Del lado de allá' (París), 'Del lado de acá' (Buenos Aires), y 'De otros lad",
+      "missing": [
+        "3 partes: Del lado de allá (París), Del lado de acá (Buenos "
+      ]
+    },
+    {
+      "turn": 26,
+      "msg": "Oliveira es un personaje difícil. Es super intelectual pero emocionalmente incapaz. Pierde a La Maga",
+      "missing": [
+        "Intelectual pero emocionalmente incapaz. Pierde a La Maga po"
+      ]
+    },
+    {
+      "turn": 27,
+      "msg": "La Maga es lo opuesto a Oliveira: intuitiva, emocional, vive el momento. Oliveira la admira y la des",
+      "missing": [
+        "Intuitiva, emocional, opuesta a Oliveira. Él la admira y la "
+      ]
+    },
+    {
+      "turn": 28,
+      "msg": "El capítulo 7 es el más famoso. Es el del beso bajo la lluvia en París. Cortázar usa un lenguaje poé",
+      "missing": [
+        "Capítulo 7: escena del beso bajo la lluvia, considerada de l"
+      ]
+    },
+    {
+      "turn": 30,
+      "msg": "El tema del jazz es importante en Rayuela. El Club de la Serpiente se junta a escuchar jazz: Charlie",
+      "missing": [
+        "Jazz como tema central: Parker, Monk, Bessie Smith. Improvis"
+      ]
+    },
+    {
+      "turn": 33,
+      "msg": "El túnel arranca con Juan Pablo Castel diciendo que mató a María Iribarne. Todo el libro es su confe",
+      "missing": [
+        "Estructura: confesión del asesinato de María por Castel. Nov"
+      ]
+    },
+    {
+      "turn": 34,
+      "msg": "Castel es un pintor reconocido pero profundamente aislado. Se obsesiona con María porque ella es la ",
+      "missing": [
+        "Pintor reconocido pero aislado. Se obsesiona con María por u",
+        "Cuadro clave: ventanita con mujer solitaria en la playa"
+      ]
+    },
+    {
+      "turn": 35,
+      "msg": "El túnel del título es la metáfora de la soledad de Castel. Dice que vive en un túnel oscuro y pensó",
+      "missing": [
+        "Metáfora del túnel: soledad como túneles paralelos sin conex"
+      ]
+    },
+    {
+      "turn": 36,
+      "msg": "Los celos de Castel son enfermizos. Sospecha de todos: de Allende (el esposo ciego de María), de Hun",
+      "missing": [
+        "Celos patológicos: sospecha de Allende (esposo ciego) y Hunt"
+      ]
+    },
+    {
+      "turn": 37,
+      "msg": "Es interesante comparar la soledad en El túnel vs Cien años de soledad. En García Márquez es cósmica",
+      "missing": [
+        "Soledad individual, psicológica, claustrofóbica (vs cósmica/"
+      ]
+    },
+    {
+      "turn": 38,
+      "msg": "Los tres libros que leí (Cien años, Rayuela, El túnel) son de autores del boom latinoamericano, pero",
+      "missing": [
+        "Estilos contrastados: Márquez (barroco/mágico), Cortázar (ex"
+      ]
+    },
+    {
+      "turn": 41,
+      "msg": "Empecé con 'Tlön, Uqbar, Orbis Tertius'. Es una locura. Es sobre el descubrimiento de una encicloped",
+      "missing": [
+        "Enciclopedia de mundo ficticio Tlön donde el idealismo filos"
+      ]
+    },
+    {
+      "turn": 42,
+      "msg": "'El jardín de senderos que se bifurcan' es impresionante. Es un cuento de espionaje que es en realid",
+      "missing": [
+        "Cuento de espionaje que reflexiona sobre tiempo y decisiones"
+      ]
+    },
+    {
+      "turn": 43,
+      "msg": "'La biblioteca de Babel' me hizo pensar en Acervo! Una biblioteca infinita que contiene todos los li",
+      "missing": [
+        "Biblioteca infinita con todos los libros posibles. Analogía "
+      ]
+    },
+    {
+      "turn": 44,
+      "msg": "'Pierre Menard, autor del Quijote' es genial y absurdo. Un escritor francés intenta reescribir el Qu",
+      "missing": [
+        "Tema: mismo texto, distinto contexto = distinto significado."
+      ]
+    },
+    {
+      "turn": 45,
+      "msg": "'La lotería en Babilonia' describe una sociedad donde todo se decide por sorteo. Empieza como un jue",
+      "missing": [
+        "Sociedad donde todo se decide por sorteo. Metáfora azar vs d"
+      ]
+    },
+    {
+      "turn": 46,
+      "msg": "Borges es completamente distinto a los otros tres. No escribe novelas sino cuentos cortos. No hay em",
+      "missing": [
+        "Estilo: cuentos cortos, ideas sobre emociones, ensayos filos"
+      ]
+    },
+    {
+      "turn": 47,
+      "msg": "Me falta leer 'Las ruinas circulares', 'Funes el memorioso', y 'El sur'. Pero ya con los que leí ten",
+      "missing": [
+        "Pendientes: Las ruinas circulares, Funes el memorioso, El su"
+      ]
+    },
+    {
+      "turn": 48,
+      "msg": "'Funes el memorioso' lo leí anoche. Un tipo que después de un accidente recuerda absolutamente todo.",
+      "missing": [
+        "Memoria perfecta paraliza el pensamiento. Pensar requiere ol"
+      ]
+    },
+    {
+      "turn": 49,
+      "msg": "Funes me hace pensar de nuevo en Acervo. Un sistema de memoria perfecta (guardar todo) es inútil sin",
+      "missing": [
+        "Analogía Acervo: memoria perfecta sin compresión = inútil. F"
+      ]
+    }
+  ],
+  "turns": [
+    {
+      "turn": 1,
+      "user_msg": "Acabo de terminar de leer 'Cien años de soledad' de Gabriel García Márquez. Quiero que me ayudes a a",
+      "elapsed_ms": 7640,
+      "passed": false,
+      "entity_accuracy": 100,
+      "relation_accuracy": 0,
+      "fact_accuracy": null,
+      "topic_ok": true,
+      "graph_nodes": 2,
+      "graph_edges": 2,
+      "node_delta": 2,
+      "failures": [
+        "relations missing: [('cien_anos', 'garcia_marquez')]"
+      ],
+      "missing_entities": [],
+      "missing_facts": []
+    },
+    {
+      "turn": 2,
+      "user_msg": "El libro cuenta la historia de la familia Buendía en el pueblo ficticio de Macondo, a lo largo de si",
+      "elapsed_ms": 7813,
+      "passed": false,
+      "entity_accuracy": 100,
+      "relation_accuracy": 0,
+      "fact_accuracy": null,
+      "topic_ok": true,
+      "graph_nodes": 5,
+      "graph_edges": 8,
+      "node_delta": 3,
+      "failures": [
+        "relations missing: [('jose_arcadio_buendia', 'macondo'), ('jose_arcadio_buendia', 'cien_anos'), ('ursula', 'cien_anos')]"
+      ],
+      "missing_entities": [],
+      "missing_facts": []
+    },
+    {
+      "turn": 3,
+      "user_msg": "Uno de los temas centrales es la soledad. Cada personaje experimenta una forma diferente de soledad.",
+      "elapsed_ms": 7608,
+      "passed": false,
+      "entity_accuracy": 100,
+      "relation_accuracy": 0,
+      "fact_accuracy": 0,
+      "topic_ok": true,
+      "graph_nodes": 6,
+      "graph_edges": 9,
+      "node_delta": 1,
+      "failures": [
+        "relations missing: [('coronel_aureliano', 'cien_anos')]",
+        "facts missing: ['Tema central: la soledad, cada personaje', 'Se aísla en laboratorio de alquimia', 'Se endurece tras 32 guerras civiles perd']"
+      ],
+      "missing_entities": [],
+      "missing_facts": [
+        "Tema central: la soledad, cada personaje la experimenta dife",
+        "Se aísla en laboratorio de alquimia",
+        "Se endurece tras 32 guerras civiles perdidas"
+      ]
+    },
+    {
+      "turn": 4,
+      "user_msg": "Otro tema es la circularidad del tiempo. Los nombres se repiten: Aureliano, José Arcadio, Remedios, ",
+      "elapsed_ms": 5641,
+      "passed": false,
+      "entity_accuracy": null,
+      "relation_accuracy": null,
+      "fact_accuracy": 0,
+      "topic_ok": true,
+      "graph_nodes": 6,
+      "graph_edges": 9,
+      "node_delta": 0,
+      "failures": [
+        "facts missing: ['Tema: circularidad del tiempo. Nombres y']"
+      ],
+      "missing_entities": [],
+      "missing_facts": [
+        "Tema: circularidad del tiempo. Nombres y destinos se repiten"
+      ]
+    },
+    {
+      "turn": 5,
+      "user_msg": "El realismo mágico es fundamental. Lo sobrenatural se presenta como cotidiano: la levitación de Reme",
+      "elapsed_ms": 6577,
+      "passed": false,
+      "entity_accuracy": 0,
+      "relation_accuracy": 0,
+      "fact_accuracy": 0,
+      "topic_ok": true,
+      "graph_nodes": 7,
+      "graph_edges": 11,
+      "node_delta": 1,
+      "failures": [
+        "entities missing: ['Remedios la Bella']",
+        "relations missing: [('remedios_bella', 'cien_anos')]",
+        "facts missing: ['Realismo mágico: lo sobrenatural como co']"
+      ],
+      "missing_entities": [
+        "Remedios la Bella"
+      ],
+      "missing_facts": [
+        "Realismo mágico: lo sobrenatural como cotidiano. Levitación,"
+      ]
+    },
+    {
+      "turn": 6,
+      "user_msg": "Hagamos un mapa de la familia Buendía. Primera generación: José Arcadio Buendía y Úrsula. Hijos: Jos",
+      "elapsed_ms": 10655,
+      "passed": false,
+      "entity_accuracy": 0,
+      "relation_accuracy": 33,
+      "fact_accuracy": null,
+      "topic_ok": true,
+      "graph_nodes": 9,
+      "graph_edges": 19,
+      "node_delta": 2,
+      "failures": [
+        "entities missing: ['José Arcadio (hijo)', 'Amaranta Buendía']",
+        "relations missing: [('jose_arcadio_hijo', 'jose_arcadio_buendia'), ('coronel_aureliano', 'jose_arcadio_buendia')]"
+      ],
+      "missing_entities": [
+        "José Arcadio (hijo)",
+        "Amaranta Buendía"
+      ],
+      "missing_facts": []
+    },
+    {
+      "turn": 7,
+      "user_msg": "Segunda generación: José Arcadio (hijo) se casa con Rebeca. Aureliano se casa con Remedios Moscote (",
+      "elapsed_ms": 10203,
+      "passed": false,
+      "entity_accuracy": 100,
+      "relation_accuracy": 0,
+      "fact_accuracy": 0,
+      "topic_ok": true,
+      "graph_nodes": 11,
+      "graph_edges": 23,
+      "node_delta": 2,
+      "failures": [
+        "relations missing: [('rebeca', 'jose_arcadio_hijo'), ('remedios_moscote', 'coronel_aureliano')]",
+        "facts missing: ['Nunca se casa, rechaza todos los pretend']"
+      ],
+      "missing_entities": [],
+      "missing_facts": [
+        "Nunca se casa, rechaza todos los pretendientes"
+      ]
+    },
+    {
+      "turn": 8,
+      "user_msg": "Melquíades es un personaje clave. Es un gitano que visita Macondo y trae inventos (el imán, la lupa,",
+      "elapsed_ms": 7703,
+      "passed": false,
+      "entity_accuracy": 100,
+      "relation_accuracy": 0,
+      "fact_accuracy": 0,
+      "topic_ok": true,
+      "graph_nodes": 12,
+      "graph_edges": 26,
+      "node_delta": 1,
+      "failures": [
+        "relations missing: [('melquiades', 'cien_anos')]",
+        "facts missing: ['Trae inventos a Macondo: imán, lupa, hie']"
+      ],
+      "missing_entities": [],
+      "missing_facts": [
+        "Trae inventos a Macondo: imán, lupa, hielo. Escribe pergamin"
+      ]
+    },
+    {
+      "turn": 9,
+      "user_msg": "La casa de los Buendía es casi un personaje más. Empieza como una casa modesta de barro y caña, crec",
+      "elapsed_ms": 7171,
+      "passed": false,
+      "entity_accuracy": 100,
+      "relation_accuracy": 0,
+      "fact_accuracy": 0,
+      "topic_ok": true,
+      "graph_nodes": 13,
+      "graph_edges": 28,
+      "node_delta": 1,
+      "failures": [
+        "relations missing: [('casa_buendia', 'macondo')]",
+        "facts missing: ['Evolución: de barro y caña → mansión → r']"
+      ],
+      "missing_entities": [],
+      "missing_facts": [
+        "Evolución: de barro y caña → mansión → ruinas invadidas por "
+      ]
+    },
+    {
+      "turn": 10,
+      "user_msg": "¿Cuál es tu interpretación de por qué el pueblo se llama Macondo? Leí que García Márquez lo tomó de ",
+      "elapsed_ms": 6953,
+      "passed": false,
+      "entity_accuracy": 0,
+      "relation_accuracy": null,
+      "fact_accuracy": 0,
+      "topic_ok": true,
+      "graph_nodes": 13,
+      "graph_edges": 28,
+      "node_delta": 0,
+      "failures": [
+        "entities missing: ['Aracataca']",
+        "facts missing: ['Nombre posiblemente tomado de finca bana']"
+      ],
+      "missing_entities": [
+        "Aracataca"
+      ],
+      "missing_facts": [
+        "Nombre posiblemente tomado de finca bananera cerca de Aracat"
+      ]
+    },
+    {
+      "turn": 11,
+      "user_msg": "Hablemos de la masacre de las bananeras. Es uno de los momentos más impactantes. La compañía bananer",
+      "elapsed_ms": 10578,
+      "passed": false,
+      "entity_accuracy": 100,
+      "relation_accuracy": 0,
+      "fact_accuracy": 0,
+      "topic_ok": true,
+      "graph_nodes": 16,
+      "graph_edges": 31,
+      "node_delta": 3,
+      "failures": [
+        "relations missing: [('masacre_bananeras', 'cien_anos'), ('jose_arcadio_segundo', 'masacre_bananeras')]",
+        "facts missing: ['Basada en la masacre real de United Frui']"
+      ],
+      "missing_entities": [],
+      "missing_facts": [
+        "Basada en la masacre real de United Fruit Company en 1928 en"
+      ]
+    },
+    {
+      "turn": 12,
+      "user_msg": "Los gemelos José Arcadio Segundo y Aureliano Segundo son de la cuarta generación. Son opuestos: JASe",
+      "elapsed_ms": 8733,
+      "passed": false,
+      "entity_accuracy": 100,
+      "relation_accuracy": null,
+      "fact_accuracy": 0,
+      "topic_ok": true,
+      "graph_nodes": 17,
+      "graph_edges": 35,
+      "node_delta": 1,
+      "failures": [
+        "facts missing: ['Introvertido, obsesionado con los pergam', 'Extrovertido, derrochador. Opuesto a su ']"
+      ],
+      "missing_entities": [],
+      "missing_facts": [
+        "Introvertido, obsesionado con los pergaminos de Melquíades",
+        "Extrovertido, derrochador. Opuesto a su gemelo"
+      ]
+    },
+    {
+      "turn": 13,
+      "user_msg": "El diluvio de cuatro años es otro evento mágico brutal. Llueve sin parar durante 4 años, 11 meses y ",
+      "elapsed_ms": 7844,
+      "passed": false,
+      "entity_accuracy": null,
+      "relation_accuracy": null,
+      "fact_accuracy": 0,
+      "topic_ok": true,
+      "graph_nodes": 18,
+      "graph_edges": 36,
+      "node_delta": 1,
+      "failures": [
+        "facts missing: ['El diluvio: 4 años, 11 meses, 2 días de ']"
+      ],
+      "missing_entities": [],
+      "missing_facts": [
+        "El diluvio: 4 años, 11 meses, 2 días de lluvia continua. Mar"
+      ]
+    },
+    {
+      "turn": 14,
+      "user_msg": "Analicemos los personajes femeninos. Úrsula es el pilar de la familia, vive más de 100 años y mantie",
+      "elapsed_ms": 7750,
+      "passed": false,
+      "entity_accuracy": null,
+      "relation_accuracy": null,
+      "fact_accuracy": 0,
+      "topic_ok": true,
+      "graph_nodes": 19,
+      "graph_edges": 37,
+      "node_delta": 1,
+      "failures": [
+        "facts missing: ['Pilar de la familia, vive 100+ años. Su ']"
+      ],
+      "missing_entities": [],
+      "missing_facts": [
+        "Pilar de la familia, vive 100+ años. Su muerte marca la desi"
+      ]
+    },
+    {
+      "turn": 15,
+      "user_msg": "Amaranta tiene un conflicto con el amor. Rechaza a Pietro Crespi y a Gerineldo Márquez, los dos homb",
+      "elapsed_ms": 8547,
+      "passed": true,
+      "entity_accuracy": 100,
+      "relation_accuracy": null,
+      "fact_accuracy": 100,
+      "topic_ok": true,
+      "graph_nodes": 21,
+      "graph_edges": 42,
+      "node_delta": 2,
+      "failures": [],
+      "missing_entities": [],
+      "missing_facts": []
+    },
+    {
+      "turn": 16,
+      "user_msg": "Fernanda del Carpio es interesante. Viene de una familia aristocrática en decadencia, se casa con Au",
+      "elapsed_ms": 7936,
+      "passed": false,
+      "entity_accuracy": 100,
+      "relation_accuracy": 0,
+      "fact_accuracy": 0,
+      "topic_ok": true,
+      "graph_nodes": 22,
+      "graph_edges": 44,
+      "node_delta": 1,
+      "failures": [
+        "relations missing: [('fernanda', 'aureliano_segundo')]",
+        "facts missing: ['Aristocrática, rígida, religiosa. Choca ']"
+      ],
+      "missing_entities": [],
+      "missing_facts": [
+        "Aristocrática, rígida, religiosa. Choca con la cultura Buend"
+      ]
+    },
+    {
+      "turn": 17,
+      "user_msg": "Meme (Renata Remedios) es hija de Aureliano Segundo y Fernanda. Se enamora de Mauricio Babilonia, un",
+      "elapsed_ms": 9030,
+      "passed": false,
+      "entity_accuracy": 100,
+      "relation_accuracy": 0,
+      "fact_accuracy": 0,
+      "topic_ok": true,
+      "graph_nodes": 24,
+      "graph_edges": 48,
+      "node_delta": 2,
+      "failures": [
+        "relations missing: [('meme', 'aureliano_segundo')]",
+        "facts missing: ['Enviada al convento por Fernanda por su ', 'Caracterizado por mariposas amarillas qu']"
+      ],
+      "missing_entities": [],
+      "missing_facts": [
+        "Enviada al convento por Fernanda por su relación con Maurici",
+        "Caracterizado por mariposas amarillas que lo rodean"
+      ]
+    },
+    {
+      "turn": 18,
+      "user_msg": "Las mariposas amarillas de Mauricio Babilonia son uno de los símbolos más bellos. Aparecen cada vez ",
+      "elapsed_ms": 7578,
+      "passed": false,
+      "entity_accuracy": null,
+      "relation_accuracy": null,
+      "fact_accuracy": 0,
+      "topic_ok": true,
+      "graph_nodes": 24,
+      "graph_edges": 48,
+      "node_delta": 0,
+      "failures": [
+        "facts missing: ['Mariposas amarillas desaparecen cuando l']"
+      ],
+      "missing_entities": [],
+      "missing_facts": [
+        "Mariposas amarillas desaparecen cuando lo hieren de balazo"
+      ]
+    },
+    {
+      "turn": 19,
+      "user_msg": "El último Aureliano descifra los pergaminos de Melquíades al final. Descubre que contienen toda la h",
+      "elapsed_ms": 7342,
+      "passed": false,
+      "entity_accuracy": 0,
+      "relation_accuracy": null,
+      "fact_accuracy": 0,
+      "topic_ok": true,
+      "graph_nodes": 24,
+      "graph_edges": 48,
+      "node_delta": 0,
+      "failures": [
+        "entities missing: ['Último Aureliano']",
+        "facts missing: ['Final: último Aureliano descifra pergami', 'Pergaminos escritos en sánscrito, conten']"
+      ],
+      "missing_entities": [
+        "Último Aureliano"
+      ],
+      "missing_facts": [
+        "Final: último Aureliano descifra pergaminos mientras Macondo",
+        "Pergaminos escritos en sánscrito, contenían toda la historia"
+      ]
+    },
+    {
+      "turn": 20,
+      "user_msg": "La frase final del libro es devastadora. Algo como que las estirpes condenadas a cien años de soleda",
+      "elapsed_ms": 6532,
+      "passed": false,
+      "entity_accuracy": null,
+      "relation_accuracy": null,
+      "fact_accuracy": 0,
+      "topic_ok": true,
+      "graph_nodes": 24,
+      "graph_edges": 48,
+      "node_delta": 0,
+      "failures": [
+        "facts missing: ['Final circular: el fin estaba predestina']"
+      ],
+      "missing_entities": [],
+      "missing_facts": [
+        "Final circular: el fin estaba predestinado desde el principi"
+      ]
+    },
+    {
+      "turn": 21,
+      "user_msg": "¿Podés hacerme una nota con el árbol genealógico completo de los Buendía? Con las 7 generaciones y l",
+      "elapsed_ms": 6061,
+      "passed": true,
+      "entity_accuracy": null,
+      "relation_accuracy": null,
+      "fact_accuracy": null,
+      "topic_ok": true,
+      "graph_nodes": 24,
+      "graph_edges": 48,
+      "node_delta": 0,
+      "failures": [],
+      "missing_entities": [],
+      "missing_facts": []
+    },
+    {
+      "turn": 22,
+      "user_msg": "Ahora quiero comparar con otro libro. Estoy leyendo 'Rayuela' de Julio Cortázar. Es completamente di",
+      "elapsed_ms": 7188,
+      "passed": false,
+      "entity_accuracy": 100,
+      "relation_accuracy": 0,
+      "fact_accuracy": null,
+      "topic_ok": false,
+      "graph_nodes": 26,
+      "graph_edges": 51,
+      "node_delta": 2,
+      "failures": [
+        "topic: expected=changed, got=same",
+        "relations missing: [('rayuela', 'cortazar')]"
+      ],
+      "missing_entities": [],
+      "missing_facts": []
+    },
+    {
+      "turn": 23,
+      "user_msg": "Rayuela tiene esa estructura donde podés leerlo de dos formas: lineal (capítulos 1-56) o saltando se",
+      "elapsed_ms": 8859,
+      "passed": true,
+      "entity_accuracy": null,
+      "relation_accuracy": null,
+      "fact_accuracy": 100,
+      "topic_ok": true,
+      "graph_nodes": 27,
+      "graph_edges": 55,
+      "node_delta": 1,
+      "failures": [],
+      "missing_entities": [],
+      "missing_facts": []
+    },
+    {
+      "turn": 24,
+      "user_msg": "Los personajes principales son Horacio Oliveira, un intelectual argentino en París, y La Maga (Lucía",
+      "elapsed_ms": 8483,
+      "passed": false,
+      "entity_accuracy": 67,
+      "relation_accuracy": 0,
+      "fact_accuracy": null,
+      "topic_ok": true,
+      "graph_nodes": 30,
+      "graph_edges": 60,
+      "node_delta": 3,
+      "failures": [
+        "entities missing: ['La Maga (Lucía)']",
+        "relations missing: [('oliveira', 'rayuela'), ('la_maga', 'rayuela'), ('oliveira', 'club_serpiente'), ('la_maga', 'club_serpiente')]"
+      ],
+      "missing_entities": [
+        "La Maga (Lucía)"
+      ],
+      "missing_facts": []
+    },
+    {
+      "turn": 25,
+      "user_msg": "El libro se divide en: 'Del lado de allá' (París), 'Del lado de acá' (Buenos Aires), y 'De otros lad",
+      "elapsed_ms": 6453,
+      "passed": false,
+      "entity_accuracy": null,
+      "relation_accuracy": null,
+      "fact_accuracy": 0,
+      "topic_ok": true,
+      "graph_nodes": 30,
+      "graph_edges": 60,
+      "node_delta": 0,
+      "failures": [
+        "facts missing: ['3 partes: Del lado de allá (París), Del ']"
+      ],
+      "missing_entities": [],
+      "missing_facts": [
+        "3 partes: Del lado de allá (París), Del lado de acá (Buenos "
+      ]
+    },
+    {
+      "turn": 26,
+      "user_msg": "Oliveira es un personaje difícil. Es super intelectual pero emocionalmente incapaz. Pierde a La Maga",
+      "elapsed_ms": 7296,
+      "passed": false,
+      "entity_accuracy": null,
+      "relation_accuracy": null,
+      "fact_accuracy": 0,
+      "topic_ok": true,
+      "graph_nodes": 30,
+      "graph_edges": 61,
+      "node_delta": 0,
+      "failures": [
+        "facts missing: ['Intelectual pero emocionalmente incapaz.']"
+      ],
+      "missing_entities": [],
+      "missing_facts": [
+        "Intelectual pero emocionalmente incapaz. Pierde a La Maga po"
+      ]
+    },
+    {
+      "turn": 27,
+      "user_msg": "La Maga es lo opuesto a Oliveira: intuitiva, emocional, vive el momento. Oliveira la admira y la des",
+      "elapsed_ms": 9250,
+      "passed": false,
+      "entity_accuracy": null,
+      "relation_accuracy": null,
+      "fact_accuracy": 0,
+      "topic_ok": true,
+      "graph_nodes": 30,
+      "graph_edges": 65,
+      "node_delta": 0,
+      "failures": [
+        "facts missing: ['Intuitiva, emocional, opuesta a Oliveira']"
+      ],
+      "missing_entities": [],
+      "missing_facts": [
+        "Intuitiva, emocional, opuesta a Oliveira. Él la admira y la "
+      ]
+    },
+    {
+      "turn": 28,
+      "user_msg": "El capítulo 7 es el más famoso. Es el del beso bajo la lluvia en París. Cortázar usa un lenguaje poé",
+      "elapsed_ms": 8250,
+      "passed": false,
+      "entity_accuracy": null,
+      "relation_accuracy": null,
+      "fact_accuracy": 0,
+      "topic_ok": true,
+      "graph_nodes": 31,
+      "graph_edges": 67,
+      "node_delta": 1,
+      "failures": [
+        "facts missing: ['Capítulo 7: escena del beso bajo la lluv']"
+      ],
+      "missing_entities": [],
+      "missing_facts": [
+        "Capítulo 7: escena del beso bajo la lluvia, considerada de l"
+      ]
+    },
+    {
+      "turn": 29,
+      "user_msg": "Cuando vuelve a Buenos Aires, Oliveira vive con Traveler y Talita, una pareja amiga. Traveler es su ",
+      "elapsed_ms": 9235,
+      "passed": false,
+      "entity_accuracy": 100,
+      "relation_accuracy": 0,
+      "fact_accuracy": 100,
+      "topic_ok": true,
+      "graph_nodes": 33,
+      "graph_edges": 71,
+      "node_delta": 2,
+      "failures": [
+        "relations missing: [('traveler', 'rayuela'), ('talita', 'rayuela')]"
+      ],
+      "missing_entities": [],
+      "missing_facts": []
+    },
+    {
+      "turn": 30,
+      "user_msg": "El tema del jazz es importante en Rayuela. El Club de la Serpiente se junta a escuchar jazz: Charlie",
+      "elapsed_ms": 15467,
+      "passed": false,
+      "entity_accuracy": null,
+      "relation_accuracy": null,
+      "fact_accuracy": 0,
+      "topic_ok": true,
+      "graph_nodes": 39,
+      "graph_edges": 82,
+      "node_delta": 6,
+      "failures": [
+        "facts missing: ['Jazz como tema central: Parker, Monk, Be']"
+      ],
+      "missing_entities": [],
+      "missing_facts": [
+        "Jazz como tema central: Parker, Monk, Bessie Smith. Improvis"
+      ]
+    },
+    {
+      "turn": 31,
+      "user_msg": "¿Podés hacerme una nota comparando Cien años de soledad y Rayuela? Temas, estructura, personajes, co",
+      "elapsed_ms": 6984,
+      "passed": true,
+      "entity_accuracy": null,
+      "relation_accuracy": null,
+      "fact_accuracy": null,
+      "topic_ok": true,
+      "graph_nodes": 40,
+      "graph_edges": 83,
+      "node_delta": 1,
+      "failures": [],
+      "missing_entities": [],
+      "missing_facts": []
+    },
+    {
+      "turn": 32,
+      "user_msg": "Ahora quiero arrancar con 'El túnel' de Ernesto Sábato. Es mucho más corto y oscuro. Lo leí hace año",
+      "elapsed_ms": 7186,
+      "passed": false,
+      "entity_accuracy": 50,
+      "relation_accuracy": 0,
+      "fact_accuracy": null,
+      "topic_ok": false,
+      "graph_nodes": 41,
+      "graph_edges": 85,
+      "node_delta": 1,
+      "failures": [
+        "topic: expected=changed, got=same",
+        "entities missing: ['Ernesto Sábato']",
+        "relations missing: [('el_tunel', 'sabato')]"
+      ],
+      "missing_entities": [
+        "Ernesto Sábato"
+      ],
+      "missing_facts": []
+    },
+    {
+      "turn": 33,
+      "user_msg": "El túnel arranca con Juan Pablo Castel diciendo que mató a María Iribarne. Todo el libro es su confe",
+      "elapsed_ms": 9313,
+      "passed": false,
+      "entity_accuracy": 100,
+      "relation_accuracy": 50,
+      "fact_accuracy": 0,
+      "topic_ok": true,
+      "graph_nodes": 43,
+      "graph_edges": 90,
+      "node_delta": 2,
+      "failures": [
+        "relations missing: [('castel', 'el_tunel')]",
+        "facts missing: ['Estructura: confesión del asesinato de M']"
+      ],
+      "missing_entities": [],
+      "missing_facts": [
+        "Estructura: confesión del asesinato de María por Castel. Nov"
+      ]
+    },
+    {
+      "turn": 34,
+      "user_msg": "Castel es un pintor reconocido pero profundamente aislado. Se obsesiona con María porque ella es la ",
+      "elapsed_ms": 9703,
+      "passed": false,
+      "entity_accuracy": null,
+      "relation_accuracy": null,
+      "fact_accuracy": 0,
+      "topic_ok": true,
+      "graph_nodes": 43,
+      "graph_edges": 90,
+      "node_delta": 0,
+      "failures": [
+        "facts missing: ['Pintor reconocido pero aislado. Se obses', 'Cuadro clave: ventanita con mujer solita']"
+      ],
+      "missing_entities": [],
+      "missing_facts": [
+        "Pintor reconocido pero aislado. Se obsesiona con María por u",
+        "Cuadro clave: ventanita con mujer solitaria en la playa"
+      ]
+    },
+    {
+      "turn": 35,
+      "user_msg": "El túnel del título es la metáfora de la soledad de Castel. Dice que vive en un túnel oscuro y pensó",
+      "elapsed_ms": 6811,
+      "passed": false,
+      "entity_accuracy": null,
+      "relation_accuracy": null,
+      "fact_accuracy": 0,
+      "topic_ok": true,
+      "graph_nodes": 44,
+      "graph_edges": 92,
+      "node_delta": 1,
+      "failures": [
+        "facts missing: ['Metáfora del túnel: soledad como túneles']"
+      ],
+      "missing_entities": [],
+      "missing_facts": [
+        "Metáfora del túnel: soledad como túneles paralelos sin conex"
+      ]
+    },
+    {
+      "turn": 36,
+      "user_msg": "Los celos de Castel son enfermizos. Sospecha de todos: de Allende (el esposo ciego de María), de Hun",
+      "elapsed_ms": 14265,
+      "passed": false,
+      "entity_accuracy": 0,
+      "relation_accuracy": null,
+      "fact_accuracy": 0,
+      "topic_ok": true,
+      "graph_nodes": 44,
+      "graph_edges": 106,
+      "node_delta": 0,
+      "failures": [
+        "entities missing: ['Allende', 'Hunter']",
+        "facts missing: ['Celos patológicos: sospecha de Allende (']"
+      ],
+      "missing_entities": [
+        "Allende",
+        "Hunter"
+      ],
+      "missing_facts": [
+        "Celos patológicos: sospecha de Allende (esposo ciego) y Hunt"
+      ]
+    },
+    {
+      "turn": 37,
+      "user_msg": "Es interesante comparar la soledad en El túnel vs Cien años de soledad. En García Márquez es cósmica",
+      "elapsed_ms": 7672,
+      "passed": false,
+      "entity_accuracy": null,
+      "relation_accuracy": null,
+      "fact_accuracy": 0,
+      "topic_ok": true,
+      "graph_nodes": 44,
+      "graph_edges": 106,
+      "node_delta": 0,
+      "failures": [
+        "facts missing: ['Soledad individual, psicológica, claustr']"
+      ],
+      "missing_entities": [],
+      "missing_facts": [
+        "Soledad individual, psicológica, claustrofóbica (vs cósmica/"
+      ]
+    },
+    {
+      "turn": 38,
+      "user_msg": "Los tres libros que leí (Cien años, Rayuela, El túnel) son de autores del boom latinoamericano, pero",
+      "elapsed_ms": 7702,
+      "passed": false,
+      "entity_accuracy": 100,
+      "relation_accuracy": 0,
+      "fact_accuracy": 0,
+      "topic_ok": true,
+      "graph_nodes": 44,
+      "graph_edges": 107,
+      "node_delta": 0,
+      "failures": [
+        "relations missing: [('garcia_marquez', 'boom_latinoamericano'), ('cortazar', 'boom_latinoamericano'), ('sabato', 'boom_latinoamericano')]",
+        "facts missing: ['Estilos contrastados: Márquez (barroco/m']"
+      ],
+      "missing_entities": [],
+      "missing_facts": [
+        "Estilos contrastados: Márquez (barroco/mágico), Cortázar (ex"
+      ]
+    },
+    {
+      "turn": 39,
+      "user_msg": "¿Qué libro me recomendás leer ahora? Siguiendo con latinoamericanos, podría ser Borges, Vargas Llosa",
+      "elapsed_ms": 8563,
+      "passed": true,
+      "entity_accuracy": null,
+      "relation_accuracy": null,
+      "fact_accuracy": null,
+      "topic_ok": true,
+      "graph_nodes": 45,
+      "graph_edges": 109,
+      "node_delta": 1,
+      "failures": [],
+      "missing_entities": [],
+      "missing_facts": []
+    },
+    {
+      "turn": 40,
+      "user_msg": "Voy a leer Ficciones de Borges. Lo tengo hace años en la biblioteca y nunca lo abrí. Dicen que es de",
+      "elapsed_ms": 7250,
+      "passed": false,
+      "entity_accuracy": 0,
+      "relation_accuracy": 0,
+      "fact_accuracy": null,
+      "topic_ok": false,
+      "graph_nodes": 45,
+      "graph_edges": 109,
+      "node_delta": 0,
+      "failures": [
+        "topic: expected=changed, got=same",
+        "entities missing: ['Ficciones', 'Jorge Luis Borges']",
+        "relations missing: [('ficciones', 'borges'), ('borges', 'boom_latinoamericano')]"
+      ],
+      "missing_entities": [
+        "Ficciones",
+        "Jorge Luis Borges"
+      ],
+      "missing_facts": []
+    },
+    {
+      "turn": 41,
+      "user_msg": "Empecé con 'Tlön, Uqbar, Orbis Tertius'. Es una locura. Es sobre el descubrimiento de una encicloped",
+      "elapsed_ms": 8703,
+      "passed": false,
+      "entity_accuracy": 100,
+      "relation_accuracy": 0,
+      "fact_accuracy": 0,
+      "topic_ok": true,
+      "graph_nodes": 46,
+      "graph_edges": 111,
+      "node_delta": 1,
+      "failures": [
+        "relations missing: [('tlon', 'ficciones')]",
+        "facts missing: ['Enciclopedia de mundo ficticio Tlön dond']"
+      ],
+      "missing_entities": [],
+      "missing_facts": [
+        "Enciclopedia de mundo ficticio Tlön donde el idealismo filos"
+      ]
+    },
+    {
+      "turn": 42,
+      "user_msg": "'El jardín de senderos que se bifurcan' es impresionante. Es un cuento de espionaje que es en realid",
+      "elapsed_ms": 7733,
+      "passed": false,
+      "entity_accuracy": 0,
+      "relation_accuracy": 0,
+      "fact_accuracy": 0,
+      "topic_ok": true,
+      "graph_nodes": 47,
+      "graph_edges": 113,
+      "node_delta": 1,
+      "failures": [
+        "entities missing: ['El jardín de senderos que se bifurcan']",
+        "relations missing: [('jardin_senderos', 'ficciones')]",
+        "facts missing: ['Cuento de espionaje que reflexiona sobre']"
+      ],
+      "missing_entities": [
+        "El jardín de senderos que se bifurcan"
+      ],
+      "missing_facts": [
+        "Cuento de espionaje que reflexiona sobre tiempo y decisiones"
+      ]
+    },
+    {
+      "turn": 43,
+      "user_msg": "'La biblioteca de Babel' me hizo pensar en Acervo! Una biblioteca infinita que contiene todos los li",
+      "elapsed_ms": 8344,
+      "passed": false,
+      "entity_accuracy": 100,
+      "relation_accuracy": 0,
+      "fact_accuracy": 0,
+      "topic_ok": true,
+      "graph_nodes": 50,
+      "graph_edges": 115,
+      "node_delta": 3,
+      "failures": [
+        "relations missing: [('biblioteca_babel', 'ficciones')]",
+        "facts missing: ['Biblioteca infinita con todos los libros']"
+      ],
+      "missing_entities": [],
+      "missing_facts": [
+        "Biblioteca infinita con todos los libros posibles. Analogía "
+      ]
+    },
+    {
+      "turn": 44,
+      "user_msg": "'Pierre Menard, autor del Quijote' es genial y absurdo. Un escritor francés intenta reescribir el Qu",
+      "elapsed_ms": 8484,
+      "passed": false,
+      "entity_accuracy": 100,
+      "relation_accuracy": 0,
+      "fact_accuracy": 0,
+      "topic_ok": true,
+      "graph_nodes": 52,
+      "graph_edges": 119,
+      "node_delta": 2,
+      "failures": [
+        "relations missing: [('pierre_menard', 'ficciones')]",
+        "facts missing: ['Tema: mismo texto, distinto contexto = d']"
+      ],
+      "missing_entities": [],
+      "missing_facts": [
+        "Tema: mismo texto, distinto contexto = distinto significado."
+      ]
+    },
+    {
+      "turn": 45,
+      "user_msg": "'La lotería en Babilonia' describe una sociedad donde todo se decide por sorteo. Empieza como un jue",
+      "elapsed_ms": 7000,
+      "passed": false,
+      "entity_accuracy": 100,
+      "relation_accuracy": 0,
+      "fact_accuracy": 0,
+      "topic_ok": true,
+      "graph_nodes": 53,
+      "graph_edges": 120,
+      "node_delta": 1,
+      "failures": [
+        "relations missing: [('loteria_babilonia', 'ficciones')]",
+        "facts missing: ['Sociedad donde todo se decide por sorteo']"
+      ],
+      "missing_entities": [],
+      "missing_facts": [
+        "Sociedad donde todo se decide por sorteo. Metáfora azar vs d"
+      ]
+    },
+    {
+      "turn": 46,
+      "user_msg": "Borges es completamente distinto a los otros tres. No escribe novelas sino cuentos cortos. No hay em",
+      "elapsed_ms": 7311,
+      "passed": false,
+      "entity_accuracy": null,
+      "relation_accuracy": null,
+      "fact_accuracy": 0,
+      "topic_ok": true,
+      "graph_nodes": 53,
+      "graph_edges": 120,
+      "node_delta": 0,
+      "failures": [
+        "facts missing: ['Estilo: cuentos cortos, ideas sobre emoc']"
+      ],
+      "missing_entities": [],
+      "missing_facts": [
+        "Estilo: cuentos cortos, ideas sobre emociones, ensayos filos"
+      ]
+    },
+    {
+      "turn": 47,
+      "user_msg": "Me falta leer 'Las ruinas circulares', 'Funes el memorioso', y 'El sur'. Pero ya con los que leí ten",
+      "elapsed_ms": 9125,
+      "passed": false,
+      "entity_accuracy": null,
+      "relation_accuracy": null,
+      "fact_accuracy": 0,
+      "topic_ok": true,
+      "graph_nodes": 56,
+      "graph_edges": 126,
+      "node_delta": 3,
+      "failures": [
+        "facts missing: ['Pendientes: Las ruinas circulares, Funes']"
+      ],
+      "missing_entities": [],
+      "missing_facts": [
+        "Pendientes: Las ruinas circulares, Funes el memorioso, El su"
+      ]
+    },
+    {
+      "turn": 48,
+      "user_msg": "'Funes el memorioso' lo leí anoche. Un tipo que después de un accidente recuerda absolutamente todo.",
+      "elapsed_ms": 7688,
+      "passed": false,
+      "entity_accuracy": 0,
+      "relation_accuracy": 0,
+      "fact_accuracy": 0,
+      "topic_ok": true,
+      "graph_nodes": 56,
+      "graph_edges": 126,
+      "node_delta": 0,
+      "failures": [
+        "entities missing: ['Funes el memorioso']",
+        "relations missing: [('funes', 'ficciones')]",
+        "facts missing: ['Memoria perfecta paraliza el pensamiento']"
+      ],
+      "missing_entities": [
+        "Funes el memorioso"
+      ],
+      "missing_facts": [
+        "Memoria perfecta paraliza el pensamiento. Pensar requiere ol"
+      ]
+    },
+    {
+      "turn": 49,
+      "user_msg": "Funes me hace pensar de nuevo en Acervo. Un sistema de memoria perfecta (guardar todo) es inútil sin",
+      "elapsed_ms": 9109,
+      "passed": false,
+      "entity_accuracy": null,
+      "relation_accuracy": null,
+      "fact_accuracy": 0,
+      "topic_ok": true,
+      "graph_nodes": 57,
+      "graph_edges": 130,
+      "node_delta": 1,
+      "failures": [
+        "facts missing: ['Analogía Acervo: memoria perfecta sin co']"
+      ],
+      "missing_entities": [],
+      "missing_facts": [
+        "Analogía Acervo: memoria perfecta sin compresión = inútil. F"
+      ]
+    },
+    {
+      "turn": 50,
+      "user_msg": "Hacé una nota con el resumen de los 4 libros que leí, los temas principales de cada uno, las conexio",
+      "elapsed_ms": 8313,
+      "passed": true,
+      "entity_accuracy": null,
+      "relation_accuracy": null,
+      "fact_accuracy": null,
+      "topic_ok": true,
+      "graph_nodes": 57,
+      "graph_edges": 130,
+      "node_delta": 0,
+      "failures": [],
+      "missing_entities": [],
+      "missing_facts": []
+    }
+  ]
+}

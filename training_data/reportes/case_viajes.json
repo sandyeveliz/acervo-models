@@ -1,0 +1,1384 @@
+{
+  "name": "viajes",
+  "domain": "Viajes",
+  "total_turns": 49,
+  "passed_turns": 9,
+  "pass_rate": 18,
+  "entity_accuracy": 65,
+  "relation_accuracy": 0,
+  "fact_accuracy": 6,
+  "topic_accuracy": 100,
+  "final_graph": {
+    "nodes": 46,
+    "edges": 92
+  },
+  "total_elapsed_ms": 363757,
+  "entity_misses": [
+    {
+      "turn": 1,
+      "msg": "Quiero empezar a planificar el viaje a España para enero 2027. Somos 3: yo, Laura y Lionel que va a ",
+      "missing": [
+        "Viaje España 2027",
+        "España"
+      ]
+    },
+    {
+      "turn": 2,
+      "msg": "La idea es Madrid una semana y Barcelona otra semana. Total 15 días. Presupuesto: 5.000 USD para tod",
+      "missing": [
+        "Madrid",
+        "Barcelona"
+      ]
+    },
+    {
+      "turn": 4,
+      "msg": "Laura tiene ciudadanía italiana y ya le inició el trámite a Lionel en el consulado italiano de Bahía",
+      "missing": [
+        "Consulado Italiano Bahía Blanca"
+      ]
+    },
+    {
+      "turn": 7,
+      "msg": "Para alojamiento estoy viendo Airbnb. En Madrid un depto de 1 dormitorio en el barrio Malasaña sale ",
+      "missing": [
+        "Malasaña",
+        "Eixample"
+      ]
+    },
+    {
+      "turn": 12,
+      "msg": "Día 1 domingo: llegar, hacer check-in en el Airbnb, caminar por el centro, Plaza Mayor, Puerta del S",
+      "missing": [
+        "Plaza Mayor"
+      ]
+    },
+    {
+      "turn": 14,
+      "msg": "Día 3: excursión a Toledo. Sale un tren AVE desde Atocha que tarda 30 minutos. Recorremos el casco h",
+      "missing": [
+        "Estación Atocha"
+      ]
+    },
+    {
+      "turn": 16,
+      "msg": "Día 5: Palacio Real y Jardines de Sabatini a la mañana. A la tarde descanso en el depto porque con L",
+      "missing": [
+        "Palacio Real de Madrid"
+      ]
+    },
+    {
+      "turn": 33,
+      "msg": "Necesitamos seguro de viaje. Assist Card o Universal Assistance. ¿Cuál es mejor para viajar con bebé",
+      "missing": [
+        "Assist Card",
+        "Universal Assistance"
+      ]
+    },
+    {
+      "turn": 40,
+      "msg": "Voy a llevar 500 EUR en efectivo y usar la tarjeta Prex para el resto. Prex no cobra comisión por co",
+      "missing": [
+        "Prex"
+      ]
+    }
+  ],
+  "relation_misses": [
+    {
+      "turn": 7,
+      "msg": "Para alojamiento estoy viendo Airbnb. En Madrid un depto de 1 dormitorio en el barrio Malasaña sale ",
+      "missing": [
+        [
+          "malasana",
+          "madrid"
+        ],
+        [
+          "eixample",
+          "barcelona"
+        ]
+      ]
+    },
+    {
+      "turn": 8,
+      "msg": "Laura quiere ir al Museo del Prado, al Parque del Retiro, y comer en el Mercado de San Miguel. En Ba",
+      "missing": [
+        [
+          "museo_prado",
+          "madrid"
+        ],
+        [
+          "sagrada_familia",
+          "barcelona"
+        ],
+        [
+          "park_guell",
+          "barcelona"
+        ]
+      ]
+    },
+    {
+      "turn": 12,
+      "msg": "Día 1 domingo: llegar, hacer check-in en el Airbnb, caminar por el centro, Plaza Mayor, Puerta del S",
+      "missing": [
+        [
+          "plaza_mayor",
+          "madrid"
+        ]
+      ]
+    },
+    {
+      "turn": 13,
+      "msg": "Día 2 lunes: Museo del Prado a la mañana (la entrada con bebé es gratis). A la tarde Parque del Reti",
+      "missing": [
+        [
+          "retiro",
+          "madrid"
+        ]
+      ]
+    },
+    {
+      "turn": 14,
+      "msg": "Día 3: excursión a Toledo. Sale un tren AVE desde Atocha que tarda 30 minutos. Recorremos el casco h",
+      "missing": [
+        [
+          "atocha",
+          "madrid"
+        ]
+      ]
+    },
+    {
+      "turn": 15,
+      "msg": "Día 4: barrio de La Latina para el Rastro (mercado de pulgas, solo los domingos... ah no, es martes.",
+      "missing": [
+        [
+          "chueca",
+          "madrid"
+        ]
+      ]
+    },
+    {
+      "turn": 16,
+      "msg": "Día 5: Palacio Real y Jardines de Sabatini a la mañana. A la tarde descanso en el depto porque con L",
+      "missing": [
+        [
+          "palacio_real",
+          "madrid"
+        ]
+      ]
+    },
+    {
+      "turn": 17,
+      "msg": "Día 6: Segovia. Acueducto romano, Alcázar, cochinillo en Mesón de Cándido (restaurante famosísimo). ",
+      "missing": [
+        [
+          "meson_candido",
+          "segovia"
+        ]
+      ]
+    },
+    {
+      "turn": 18,
+      "msg": "Día 7 sábado: último día en Madrid, Mercado de San Miguel para almorzar, comprar souvenirs en Gran V",
+      "missing": [
+        [
+          "mercado_san_miguel",
+          "madrid"
+        ]
+      ]
+    },
+    {
+      "turn": 21,
+      "msg": "Armemos Barcelona día por día. Día 8 (sábado): llegada desde Madrid, check-in, paseo por Las Ramblas",
+      "missing": [
+        [
+          "las_ramblas",
+          "barcelona"
+        ],
+        [
+          "barrio_gotico",
+          "barcelona"
+        ]
+      ]
+    },
+    {
+      "turn": 23,
+      "msg": "Día 10: playa! La Barceloneta. Lionel va a conocer el mar Mediterráneo. Llevamos protector solar y s",
+      "missing": [
+        [
+          "barceloneta",
+          "barcelona"
+        ]
+      ]
+    },
+    {
+      "turn": 24,
+      "msg": "Día 11: La Pedrera y Casa Batlló de Gaudí. Son caras las entradas pero Laura dice que son imperdible",
+      "missing": [
+        [
+          "casa_batllo",
+          "barcelona"
+        ],
+        [
+          "la_pedrera",
+          "barcelona"
+        ]
+      ]
+    },
+    {
+      "turn": 25,
+      "msg": "Día 12: Montjuïc. Subir en teleférico, ver las fuentes mágicas (funcionan de noche los fines de sema",
+      "missing": [
+        [
+          "montjuic",
+          "barcelona"
+        ]
+      ]
+    },
+    {
+      "turn": 26,
+      "msg": "Día 13: día libre para pasear sin plan. Tal vez mercado de La Boquería para desayunar. Laura quiere ",
+      "missing": [
+        [
+          "boqueria",
+          "barcelona"
+        ]
+      ]
+    },
+    {
+      "turn": 27,
+      "msg": "Día 14: último día. Tibidabo con Lionel, tiene un parque de diversiones antiguo con vistas increíble",
+      "missing": [
+        [
+          "tibidabo",
+          "barcelona"
+        ]
+      ]
+    },
+    {
+      "turn": 37,
+      "msg": "Fede me pasó un contacto en Madrid, su amigo Rodrigo que vive allá hace 5 años. Dice que nos puede d",
+      "missing": [
+        [
+          "rodrigo",
+          "madrid"
+        ]
+      ]
+    }
+  ],
+  "fact_misses": [
+    {
+      "turn": 2,
+      "msg": "La idea es Madrid una semana y Barcelona otra semana. Total 15 días. Presupuesto: 5.000 USD para tod",
+      "missing": [
+        "Plan: Madrid 1 semana + Barcelona 1 semana = 15 días. Presup"
+      ]
+    },
+    {
+      "turn": 3,
+      "msg": "¿Qué necesitamos para viajar con un bebé de 1 año y medio? Documentación, vacunas, etc. Lionel tiene",
+      "missing": [
+        "Tiene pasaporte argentino, no tiene pasaporte italiano"
+      ]
+    },
+    {
+      "turn": 4,
+      "msg": "Laura tiene ciudadanía italiana y ya le inició el trámite a Lionel en el consulado italiano de Bahía",
+      "missing": [
+        "Tiene ciudadanía italiana"
+      ]
+    },
+    {
+      "turn": 5,
+      "msg": "Vi vuelos en Google Flights. Buenos Aires - Madrid ida y vuelta en Iberia sale aprox 1.200 USD por a",
+      "missing": [
+        "Vuelos BUE-MAD Iberia: ~1.200 USD/adulto + ~120 USD Lionel ("
+      ]
+    },
+    {
+      "turn": 6,
+      "msg": "Con 2.520 de vuelos nos quedan 2.480 USD para 15 días. Son unos 165 USD por día para los tres. ¿Es s",
+      "missing": [
+        "Presupuesto diario: ~165 USD/día para 3 personas (15 días, s"
+      ]
+    },
+    {
+      "turn": 11,
+      "msg": "Armemos un itinerario día por día para Madrid. Llegamos un domingo a la mañana.",
+      "missing": [
+        "Llegada a Madrid: domingo por la mañana"
+      ]
+    },
+    {
+      "turn": 13,
+      "msg": "Día 2 lunes: Museo del Prado a la mañana (la entrada con bebé es gratis). A la tarde Parque del Reti",
+      "missing": [
+        "Entrada gratis para bebés"
+      ]
+    },
+    {
+      "turn": 18,
+      "msg": "Día 7 sábado: último día en Madrid, Mercado de San Miguel para almorzar, comprar souvenirs en Gran V",
+      "missing": [
+        "Madrid → Barcelona en AVE, 2h45"
+      ]
+    },
+    {
+      "turn": 19,
+      "msg": "Para Barcelona quiero reservar un depto en el Eixample. Encontré uno en Airbnb por 85 EUR/noche con ",
+      "missing": [
+        "Airbnb Barcelona: Eixample, 85 EUR/noche con cuna, host Marc"
+      ]
+    },
+    {
+      "turn": 20,
+      "msg": "Reservé! Airbnb Madrid del 5 al 12 de enero (7 noches) y Barcelona del 12 al 19 de enero (7 noches).",
+      "missing": [
+        "Alojamiento reservado: Madrid 5-12 ene, Barcelona 12-19 ene."
+      ]
+    },
+    {
+      "turn": 29,
+      "msg": "Entonces los vuelos quedan: ida Buenos Aires → Madrid con Iberia (1.200 USD x2 + 120 Lionel = 2.520)",
+      "missing": [
+        "Vuelos totales: 4.725 USD (ida Iberia 2.520 + vuelta Level 2"
+      ]
+    },
+    {
+      "turn": 30,
+      "msg": "Necesitamos subir el presupuesto a 7.000 USD mínimo. 4.725 vuelos + 1.250 EUR alojamiento (~1.350 US",
+      "missing": [
+        "Presupuesto revisado: 7.000 USD (vuelos 4.725 + alojamiento "
+      ]
+    },
+    {
+      "turn": 31,
+      "msg": "Laura dice que con 925 USD para gastos en 15 días no alcanza. Son 62 USD/día para 3 personas. Comida",
+      "missing": [
+        "Presupuesto final: 8.000 USD. Gastos diarios: ~110 USD/día p"
+      ]
+    },
+    {
+      "turn": 32,
+      "msg": "Para las comidas: desayuno en el depto, almuerzo menú del día (12-15 EUR en España), y cena variada.",
+      "missing": [
+        "Plan comida: desayuno en depto, almuerzo menú del día (12-15"
+      ]
+    },
+    {
+      "turn": 34,
+      "msg": "Contratamos Assist Card plan familiar. 150 USD los 15 días para los 3. Cobertura médica 60.000 USD, ",
+      "missing": [
+        "Seguro: Assist Card familiar, 150 USD/15 días, cobertura 60K"
+      ]
+    },
+    {
+      "turn": 35,
+      "msg": "Lista de cosas que llevar para Lionel en el viaje: pañales para 3 días (después compramos allá), com",
+      "missing": [
+        "Equipaje Lionel: pañales 3 días, comida, cochecito Chicco, p"
+      ]
+    },
+    {
+      "turn": 36,
+      "msg": "Ah, la Dra. Fernández me dijo que pidamos un certificado médico de viaje para Lionel, por las alergi",
+      "missing": [
+        "Pendiente: certificado médico de viaje para Lionel (alergias"
+      ]
+    },
+    {
+      "turn": 38,
+      "msg": "Checklist del viaje: ✅ vuelos, ✅ alojamiento, ✅ seguro, ⬜ pasaporte Lionel, ⬜ certificado médico, ⬜ ",
+      "missing": [
+        "Checklist: vuelos ✅, alojamiento ✅, seguro ✅. Pendiente: pas"
+      ]
+    },
+    {
+      "turn": 40,
+      "msg": "Voy a llevar 500 EUR en efectivo y usar la tarjeta Prex para el resto. Prex no cobra comisión por co",
+      "missing": [
+        "Efectivo: 500 EUR + tarjeta Prex para resto"
+      ]
+    },
+    {
+      "turn": 41,
+      "msg": "Salió el pasaporte italiano de Lionel! Ahora tenemos los 3 pasaportes listos. Laura y Lionel viajan ",
+      "missing": [
+        "Documentación: Laura y Lionel pasaporte italiano, Sandy pasa"
+      ]
+    },
+    {
+      "turn": 42,
+      "msg": "Reservé la Sagrada Familia para el 13 de enero a las 9am. Número de reserva: SGF-2027-45892. Entrada",
+      "missing": [
+        "Reserva 13 enero 9am, ref SGF-2027-45892, 52 EUR (2 adultos)"
+      ]
+    },
+    {
+      "turn": 45,
+      "msg": "Actualicemos el itinerario: sacamos un día libre y agregamos Montserrat y Montjuïc queda para la tar",
+      "missing": [
+        "Accesible con cochecito via cremallera según Fede"
+      ]
+    },
+    {
+      "turn": 46,
+      "msg": "El certificado médico de Lionel ya está listo. La Dra. Fernández lo hizo en inglés y español. Incluy",
+      "missing": [
+        "Certificado médico Lionel listo: bilingüe, alergias + medica"
+      ]
+    },
+    {
+      "turn": 47,
+      "msg": "Presupuesto final final: vuelos 4.725 + alojamiento 1.350 + seguro 150 + entradas ~200 + comida/tran",
+      "missing": [
+        "Presupuesto final: 8.000 USD. Ahorrados 3.200, faltan 4.800",
+        "Progreso: 3.200 de 8.000 USD (40%)"
+      ]
+    }
+  ],
+  "turns": [
+    {
+      "turn": 1,
+      "user_msg": "Quiero empezar a planificar el viaje a España para enero 2027. Somos 3: yo, Laura y Lionel que va a ",
+      "elapsed_ms": 7030,
+      "passed": false,
+      "entity_accuracy": 0,
+      "relation_accuracy": null,
+      "fact_accuracy": null,
+      "topic_ok": true,
+      "graph_nodes": 2,
+      "graph_edges": 2,
+      "node_delta": 2,
+      "failures": [
+        "entities missing: ['Viaje España 2027', 'España']"
+      ],
+      "missing_entities": [
+        "Viaje España 2027",
+        "España"
+      ],
+      "missing_facts": []
+    },
+    {
+      "turn": 2,
+      "user_msg": "La idea es Madrid una semana y Barcelona otra semana. Total 15 días. Presupuesto: 5.000 USD para tod",
+      "elapsed_ms": 6234,
+      "passed": false,
+      "entity_accuracy": 0,
+      "relation_accuracy": null,
+      "fact_accuracy": 0,
+      "topic_ok": true,
+      "graph_nodes": 2,
+      "graph_edges": 2,
+      "node_delta": 0,
+      "failures": [
+        "entities missing: ['Madrid', 'Barcelona']",
+        "facts missing: ['Plan: Madrid 1 semana + Barcelona 1 sema']"
+      ],
+      "missing_entities": [
+        "Madrid",
+        "Barcelona"
+      ],
+      "missing_facts": [
+        "Plan: Madrid 1 semana + Barcelona 1 semana = 15 días. Presup"
+      ]
+    },
+    {
+      "turn": 3,
+      "user_msg": "¿Qué necesitamos para viajar con un bebé de 1 año y medio? Documentación, vacunas, etc. Lionel tiene",
+      "elapsed_ms": 6000,
+      "passed": false,
+      "entity_accuracy": null,
+      "relation_accuracy": null,
+      "fact_accuracy": 0,
+      "topic_ok": true,
+      "graph_nodes": 2,
+      "graph_edges": 2,
+      "node_delta": 0,
+      "failures": [
+        "facts missing: ['Tiene pasaporte argentino, no tiene pasa']"
+      ],
+      "missing_entities": [],
+      "missing_facts": [
+        "Tiene pasaporte argentino, no tiene pasaporte italiano"
+      ]
+    },
+    {
+      "turn": 4,
+      "user_msg": "Laura tiene ciudadanía italiana y ya le inició el trámite a Lionel en el consulado italiano de Bahía",
+      "elapsed_ms": 7609,
+      "passed": false,
+      "entity_accuracy": 0,
+      "relation_accuracy": null,
+      "fact_accuracy": 0,
+      "topic_ok": true,
+      "graph_nodes": 2,
+      "graph_edges": 3,
+      "node_delta": 0,
+      "failures": [
+        "entities missing: ['Consulado Italiano Bahía Blanca']",
+        "facts missing: ['Tiene ciudadanía italiana']"
+      ],
+      "missing_entities": [
+        "Consulado Italiano Bahía Blanca"
+      ],
+      "missing_facts": [
+        "Tiene ciudadanía italiana"
+      ]
+    },
+    {
+      "turn": 5,
+      "user_msg": "Vi vuelos en Google Flights. Buenos Aires - Madrid ida y vuelta en Iberia sale aprox 1.200 USD por a",
+      "elapsed_ms": 8265,
+      "passed": false,
+      "entity_accuracy": 100,
+      "relation_accuracy": null,
+      "fact_accuracy": 0,
+      "topic_ok": true,
+      "graph_nodes": 6,
+      "graph_edges": 7,
+      "node_delta": 4,
+      "failures": [
+        "facts missing: ['Vuelos BUE-MAD Iberia: ~1.200 USD/adulto']"
+      ],
+      "missing_entities": [],
+      "missing_facts": [
+        "Vuelos BUE-MAD Iberia: ~1.200 USD/adulto + ~120 USD Lionel ("
+      ]
+    },
+    {
+      "turn": 6,
+      "user_msg": "Con 2.520 de vuelos nos quedan 2.480 USD para 15 días. Son unos 165 USD por día para los tres. ¿Es s",
+      "elapsed_ms": 5780,
+      "passed": false,
+      "entity_accuracy": null,
+      "relation_accuracy": null,
+      "fact_accuracy": 0,
+      "topic_ok": true,
+      "graph_nodes": 6,
+      "graph_edges": 7,
+      "node_delta": 0,
+      "failures": [
+        "facts missing: ['Presupuesto diario: ~165 USD/día para 3 ']"
+      ],
+      "missing_entities": [],
+      "missing_facts": [
+        "Presupuesto diario: ~165 USD/día para 3 personas (15 días, s"
+      ]
+    },
+    {
+      "turn": 7,
+      "user_msg": "Para alojamiento estoy viendo Airbnb. En Madrid un depto de 1 dormitorio en el barrio Malasaña sale ",
+      "elapsed_ms": 7391,
+      "passed": false,
+      "entity_accuracy": 0,
+      "relation_accuracy": 0,
+      "fact_accuracy": null,
+      "topic_ok": true,
+      "graph_nodes": 8,
+      "graph_edges": 11,
+      "node_delta": 2,
+      "failures": [
+        "entities missing: ['Malasaña', 'Eixample']",
+        "relations missing: [('malasana', 'madrid'), ('eixample', 'barcelona')]"
+      ],
+      "missing_entities": [
+        "Malasaña",
+        "Eixample"
+      ],
+      "missing_facts": []
+    },
+    {
+      "turn": 8,
+      "user_msg": "Laura quiere ir al Museo del Prado, al Parque del Retiro, y comer en el Mercado de San Miguel. En Ba",
+      "elapsed_ms": 10000,
+      "passed": false,
+      "entity_accuracy": 100,
+      "relation_accuracy": 0,
+      "fact_accuracy": null,
+      "topic_ok": true,
+      "graph_nodes": 13,
+      "graph_edges": 21,
+      "node_delta": 5,
+      "failures": [
+        "relations missing: [('museo_prado', 'madrid'), ('sagrada_familia', 'barcelona'), ('park_guell', 'barcelona')]"
+      ],
+      "missing_entities": [],
+      "missing_facts": []
+    },
+    {
+      "turn": 9,
+      "user_msg": "¿Es fácil moverse en Madrid con cochecito? ¿El metro tiene ascensores? Con Lionel necesitamos que se",
+      "elapsed_ms": 5952,
+      "passed": true,
+      "entity_accuracy": null,
+      "relation_accuracy": null,
+      "fact_accuracy": null,
+      "topic_ok": true,
+      "graph_nodes": 13,
+      "graph_edges": 21,
+      "node_delta": 0,
+      "failures": [],
+      "missing_entities": [],
+      "missing_facts": []
+    },
+    {
+      "turn": 10,
+      "user_msg": "Mi amigo Fede viajó a España el año pasado y me recomendó Toledo como excursión de un día desde Madr",
+      "elapsed_ms": 8030,
+      "passed": true,
+      "entity_accuracy": 100,
+      "relation_accuracy": null,
+      "fact_accuracy": null,
+      "topic_ok": true,
+      "graph_nodes": 16,
+      "graph_edges": 27,
+      "node_delta": 3,
+      "failures": [],
+      "missing_entities": [],
+      "missing_facts": []
+    },
+    {
+      "turn": 11,
+      "user_msg": "Armemos un itinerario día por día para Madrid. Llegamos un domingo a la mañana.",
+      "elapsed_ms": 5875,
+      "passed": false,
+      "entity_accuracy": null,
+      "relation_accuracy": null,
+      "fact_accuracy": 0,
+      "topic_ok": true,
+      "graph_nodes": 16,
+      "graph_edges": 27,
+      "node_delta": 0,
+      "failures": [
+        "facts missing: ['Llegada a Madrid: domingo por la mañana']"
+      ],
+      "missing_entities": [],
+      "missing_facts": [
+        "Llegada a Madrid: domingo por la mañana"
+      ]
+    },
+    {
+      "turn": 12,
+      "user_msg": "Día 1 domingo: llegar, hacer check-in en el Airbnb, caminar por el centro, Plaza Mayor, Puerta del S",
+      "elapsed_ms": 7530,
+      "passed": false,
+      "entity_accuracy": 0,
+      "relation_accuracy": 0,
+      "fact_accuracy": null,
+      "topic_ok": true,
+      "graph_nodes": 16,
+      "graph_edges": 27,
+      "node_delta": 0,
+      "failures": [
+        "entities missing: ['Plaza Mayor']",
+        "relations missing: [('plaza_mayor', 'madrid')]"
+      ],
+      "missing_entities": [
+        "Plaza Mayor"
+      ],
+      "missing_facts": []
+    },
+    {
+      "turn": 13,
+      "user_msg": "Día 2 lunes: Museo del Prado a la mañana (la entrada con bebé es gratis). A la tarde Parque del Reti",
+      "elapsed_ms": 8266,
+      "passed": false,
+      "entity_accuracy": 100,
+      "relation_accuracy": 0,
+      "fact_accuracy": 0,
+      "topic_ok": true,
+      "graph_nodes": 16,
+      "graph_edges": 29,
+      "node_delta": 0,
+      "failures": [
+        "relations missing: [('retiro', 'madrid')]",
+        "facts missing: ['Entrada gratis para bebés']"
+      ],
+      "missing_entities": [],
+      "missing_facts": [
+        "Entrada gratis para bebés"
+      ]
+    },
+    {
+      "turn": 14,
+      "user_msg": "Día 3: excursión a Toledo. Sale un tren AVE desde Atocha que tarda 30 minutos. Recorremos el casco h",
+      "elapsed_ms": 7390,
+      "passed": false,
+      "entity_accuracy": 0,
+      "relation_accuracy": 0,
+      "fact_accuracy": null,
+      "topic_ok": true,
+      "graph_nodes": 17,
+      "graph_edges": 31,
+      "node_delta": 1,
+      "failures": [
+        "entities missing: ['Estación Atocha']",
+        "relations missing: [('atocha', 'madrid')]"
+      ],
+      "missing_entities": [
+        "Estación Atocha"
+      ],
+      "missing_facts": []
+    },
+    {
+      "turn": 15,
+      "user_msg": "Día 4: barrio de La Latina para el Rastro (mercado de pulgas, solo los domingos... ah no, es martes.",
+      "elapsed_ms": 7375,
+      "passed": false,
+      "entity_accuracy": 100,
+      "relation_accuracy": 0,
+      "fact_accuracy": null,
+      "topic_ok": true,
+      "graph_nodes": 19,
+      "graph_edges": 33,
+      "node_delta": 2,
+      "failures": [
+        "relations missing: [('chueca', 'madrid')]"
+      ],
+      "missing_entities": [],
+      "missing_facts": []
+    },
+    {
+      "turn": 16,
+      "user_msg": "Día 5: Palacio Real y Jardines de Sabatini a la mañana. A la tarde descanso en el depto porque con L",
+      "elapsed_ms": 9328,
+      "passed": false,
+      "entity_accuracy": 0,
+      "relation_accuracy": 0,
+      "fact_accuracy": null,
+      "topic_ok": true,
+      "graph_nodes": 22,
+      "graph_edges": 36,
+      "node_delta": 3,
+      "failures": [
+        "entities missing: ['Palacio Real de Madrid']",
+        "relations missing: [('palacio_real', 'madrid')]"
+      ],
+      "missing_entities": [
+        "Palacio Real de Madrid"
+      ],
+      "missing_facts": []
+    },
+    {
+      "turn": 17,
+      "user_msg": "Día 6: Segovia. Acueducto romano, Alcázar, cochinillo en Mesón de Cándido (restaurante famosísimo). ",
+      "elapsed_ms": 9327,
+      "passed": false,
+      "entity_accuracy": 100,
+      "relation_accuracy": 0,
+      "fact_accuracy": null,
+      "topic_ok": true,
+      "graph_nodes": 25,
+      "graph_edges": 43,
+      "node_delta": 3,
+      "failures": [
+        "relations missing: [('meson_candido', 'segovia')]"
+      ],
+      "missing_entities": [],
+      "missing_facts": []
+    },
+    {
+      "turn": 18,
+      "user_msg": "Día 7 sábado: último día en Madrid, Mercado de San Miguel para almorzar, comprar souvenirs en Gran V",
+      "elapsed_ms": 9547,
+      "passed": false,
+      "entity_accuracy": 100,
+      "relation_accuracy": 0,
+      "fact_accuracy": 0,
+      "topic_ok": true,
+      "graph_nodes": 26,
+      "graph_edges": 49,
+      "node_delta": 1,
+      "failures": [
+        "relations missing: [('mercado_san_miguel', 'madrid')]",
+        "facts missing: ['Madrid → Barcelona en AVE, 2h45']"
+      ],
+      "missing_entities": [],
+      "missing_facts": [
+        "Madrid → Barcelona en AVE, 2h45"
+      ]
+    },
+    {
+      "turn": 19,
+      "user_msg": "Para Barcelona quiero reservar un depto en el Eixample. Encontré uno en Airbnb por 85 EUR/noche con ",
+      "elapsed_ms": 8436,
+      "passed": false,
+      "entity_accuracy": null,
+      "relation_accuracy": null,
+      "fact_accuracy": 0,
+      "topic_ok": true,
+      "graph_nodes": 27,
+      "graph_edges": 51,
+      "node_delta": 1,
+      "failures": [
+        "facts missing: ['Airbnb Barcelona: Eixample, 85 EUR/noche']"
+      ],
+      "missing_entities": [],
+      "missing_facts": [
+        "Airbnb Barcelona: Eixample, 85 EUR/noche con cuna, host Marc"
+      ]
+    },
+    {
+      "turn": 20,
+      "user_msg": "Reservé! Airbnb Madrid del 5 al 12 de enero (7 noches) y Barcelona del 12 al 19 de enero (7 noches).",
+      "elapsed_ms": 7594,
+      "passed": false,
+      "entity_accuracy": null,
+      "relation_accuracy": null,
+      "fact_accuracy": 0,
+      "topic_ok": true,
+      "graph_nodes": 27,
+      "graph_edges": 52,
+      "node_delta": 0,
+      "failures": [
+        "facts missing: ['Alojamiento reservado: Madrid 5-12 ene, ']"
+      ],
+      "missing_entities": [],
+      "missing_facts": [
+        "Alojamiento reservado: Madrid 5-12 ene, Barcelona 12-19 ene."
+      ]
+    },
+    {
+      "turn": 21,
+      "user_msg": "Armemos Barcelona día por día. Día 8 (sábado): llegada desde Madrid, check-in, paseo por Las Ramblas",
+      "elapsed_ms": 9483,
+      "passed": false,
+      "entity_accuracy": 100,
+      "relation_accuracy": 0,
+      "fact_accuracy": null,
+      "topic_ok": true,
+      "graph_nodes": 29,
+      "graph_edges": 56,
+      "node_delta": 2,
+      "failures": [
+        "relations missing: [('las_ramblas', 'barcelona'), ('barrio_gotico', 'barcelona')]"
+      ],
+      "missing_entities": [],
+      "missing_facts": []
+    },
+    {
+      "turn": 22,
+      "user_msg": "Día 9: Sagrada Familia a la mañana (hay que reservar con meses de anticipación!). A la tarde Park Gü",
+      "elapsed_ms": 7594,
+      "passed": true,
+      "entity_accuracy": null,
+      "relation_accuracy": null,
+      "fact_accuracy": 100,
+      "topic_ok": true,
+      "graph_nodes": 29,
+      "graph_edges": 58,
+      "node_delta": 0,
+      "failures": [],
+      "missing_entities": [],
+      "missing_facts": []
+    },
+    {
+      "turn": 23,
+      "user_msg": "Día 10: playa! La Barceloneta. Lionel va a conocer el mar Mediterráneo. Llevamos protector solar y s",
+      "elapsed_ms": 8344,
+      "passed": false,
+      "entity_accuracy": 100,
+      "relation_accuracy": 0,
+      "fact_accuracy": null,
+      "topic_ok": true,
+      "graph_nodes": 31,
+      "graph_edges": 62,
+      "node_delta": 2,
+      "failures": [
+        "relations missing: [('barceloneta', 'barcelona')]"
+      ],
+      "missing_entities": [],
+      "missing_facts": []
+    },
+    {
+      "turn": 24,
+      "user_msg": "Día 11: La Pedrera y Casa Batlló de Gaudí. Son caras las entradas pero Laura dice que son imperdible",
+      "elapsed_ms": 7530,
+      "passed": false,
+      "entity_accuracy": 100,
+      "relation_accuracy": 0,
+      "fact_accuracy": null,
+      "topic_ok": true,
+      "graph_nodes": 33,
+      "graph_edges": 64,
+      "node_delta": 2,
+      "failures": [
+        "relations missing: [('casa_batllo', 'barcelona'), ('la_pedrera', 'barcelona')]"
+      ],
+      "missing_entities": [],
+      "missing_facts": []
+    },
+    {
+      "turn": 25,
+      "user_msg": "Día 12: Montjuïc. Subir en teleférico, ver las fuentes mágicas (funcionan de noche los fines de sema",
+      "elapsed_ms": 6641,
+      "passed": false,
+      "entity_accuracy": 100,
+      "relation_accuracy": 0,
+      "fact_accuracy": null,
+      "topic_ok": true,
+      "graph_nodes": 34,
+      "graph_edges": 66,
+      "node_delta": 1,
+      "failures": [
+        "relations missing: [('montjuic', 'barcelona')]"
+      ],
+      "missing_entities": [],
+      "missing_facts": []
+    },
+    {
+      "turn": 26,
+      "user_msg": "Día 13: día libre para pasear sin plan. Tal vez mercado de La Boquería para desayunar. Laura quiere ",
+      "elapsed_ms": 7077,
+      "passed": false,
+      "entity_accuracy": 100,
+      "relation_accuracy": 0,
+      "fact_accuracy": null,
+      "topic_ok": true,
+      "graph_nodes": 36,
+      "graph_edges": 68,
+      "node_delta": 2,
+      "failures": [
+        "relations missing: [('boqueria', 'barcelona')]"
+      ],
+      "missing_entities": [],
+      "missing_facts": []
+    },
+    {
+      "turn": 27,
+      "user_msg": "Día 14: último día. Tibidabo con Lionel, tiene un parque de diversiones antiguo con vistas increíble",
+      "elapsed_ms": 7936,
+      "passed": false,
+      "entity_accuracy": 100,
+      "relation_accuracy": 0,
+      "fact_accuracy": null,
+      "topic_ok": true,
+      "graph_nodes": 37,
+      "graph_edges": 70,
+      "node_delta": 1,
+      "failures": [
+        "relations missing: [('tibidabo', 'barcelona')]"
+      ],
+      "missing_entities": [],
+      "missing_facts": []
+    },
+    {
+      "turn": 28,
+      "user_msg": "El vuelo de vuelta sale de Barcelona directo a Buenos Aires con Level (low cost de Iberia). 1.050 US",
+      "elapsed_ms": 7610,
+      "passed": true,
+      "entity_accuracy": 100,
+      "relation_accuracy": null,
+      "fact_accuracy": null,
+      "topic_ok": true,
+      "graph_nodes": 38,
+      "graph_edges": 72,
+      "node_delta": 1,
+      "failures": [],
+      "missing_entities": [],
+      "missing_facts": []
+    },
+    {
+      "turn": 29,
+      "user_msg": "Entonces los vuelos quedan: ida Buenos Aires → Madrid con Iberia (1.200 USD x2 + 120 Lionel = 2.520)",
+      "elapsed_ms": 6202,
+      "passed": false,
+      "entity_accuracy": null,
+      "relation_accuracy": null,
+      "fact_accuracy": 0,
+      "topic_ok": true,
+      "graph_nodes": 38,
+      "graph_edges": 72,
+      "node_delta": 0,
+      "failures": [
+        "facts missing: ['Vuelos totales: 4.725 USD (ida Iberia 2.']"
+      ],
+      "missing_entities": [],
+      "missing_facts": [
+        "Vuelos totales: 4.725 USD (ida Iberia 2.520 + vuelta Level 2"
+      ]
+    },
+    {
+      "turn": 30,
+      "user_msg": "Necesitamos subir el presupuesto a 7.000 USD mínimo. 4.725 vuelos + 1.250 EUR alojamiento (~1.350 US",
+      "elapsed_ms": 6390,
+      "passed": false,
+      "entity_accuracy": null,
+      "relation_accuracy": null,
+      "fact_accuracy": 0,
+      "topic_ok": true,
+      "graph_nodes": 38,
+      "graph_edges": 72,
+      "node_delta": 0,
+      "failures": [
+        "facts missing: ['Presupuesto revisado: 7.000 USD (vuelos ']"
+      ],
+      "missing_entities": [],
+      "missing_facts": [
+        "Presupuesto revisado: 7.000 USD (vuelos 4.725 + alojamiento "
+      ]
+    },
+    {
+      "turn": 31,
+      "user_msg": "Laura dice que con 925 USD para gastos en 15 días no alcanza. Son 62 USD/día para 3 personas. Comida",
+      "elapsed_ms": 6250,
+      "passed": false,
+      "entity_accuracy": null,
+      "relation_accuracy": null,
+      "fact_accuracy": 0,
+      "topic_ok": true,
+      "graph_nodes": 38,
+      "graph_edges": 72,
+      "node_delta": 0,
+      "failures": [
+        "facts missing: ['Presupuesto final: 8.000 USD. Gastos dia']"
+      ],
+      "missing_entities": [],
+      "missing_facts": [
+        "Presupuesto final: 8.000 USD. Gastos diarios: ~110 USD/día p"
+      ]
+    },
+    {
+      "turn": 32,
+      "user_msg": "Para las comidas: desayuno en el depto, almuerzo menú del día (12-15 EUR en España), y cena variada.",
+      "elapsed_ms": 6734,
+      "passed": false,
+      "entity_accuracy": null,
+      "relation_accuracy": null,
+      "fact_accuracy": 0,
+      "topic_ok": true,
+      "graph_nodes": 38,
+      "graph_edges": 72,
+      "node_delta": 0,
+      "failures": [
+        "facts missing: ['Plan comida: desayuno en depto, almuerzo']"
+      ],
+      "missing_entities": [],
+      "missing_facts": [
+        "Plan comida: desayuno en depto, almuerzo menú del día (12-15"
+      ]
+    },
+    {
+      "turn": 33,
+      "user_msg": "Necesitamos seguro de viaje. Assist Card o Universal Assistance. ¿Cuál es mejor para viajar con bebé",
+      "elapsed_ms": 5984,
+      "passed": false,
+      "entity_accuracy": 0,
+      "relation_accuracy": null,
+      "fact_accuracy": null,
+      "topic_ok": true,
+      "graph_nodes": 38,
+      "graph_edges": 72,
+      "node_delta": 0,
+      "failures": [
+        "entities missing: ['Assist Card', 'Universal Assistance']"
+      ],
+      "missing_entities": [
+        "Assist Card",
+        "Universal Assistance"
+      ],
+      "missing_facts": []
+    },
+    {
+      "turn": 34,
+      "user_msg": "Contratamos Assist Card plan familiar. 150 USD los 15 días para los 3. Cobertura médica 60.000 USD, ",
+      "elapsed_ms": 7484,
+      "passed": false,
+      "entity_accuracy": null,
+      "relation_accuracy": null,
+      "fact_accuracy": 0,
+      "topic_ok": true,
+      "graph_nodes": 39,
+      "graph_edges": 74,
+      "node_delta": 1,
+      "failures": [
+        "facts missing: ['Seguro: Assist Card familiar, 150 USD/15']"
+      ],
+      "missing_entities": [],
+      "missing_facts": [
+        "Seguro: Assist Card familiar, 150 USD/15 días, cobertura 60K"
+      ]
+    },
+    {
+      "turn": 35,
+      "user_msg": "Lista de cosas que llevar para Lionel en el viaje: pañales para 3 días (después compramos allá), com",
+      "elapsed_ms": 8155,
+      "passed": false,
+      "entity_accuracy": null,
+      "relation_accuracy": null,
+      "fact_accuracy": 0,
+      "topic_ok": true,
+      "graph_nodes": 39,
+      "graph_edges": 74,
+      "node_delta": 0,
+      "failures": [
+        "facts missing: ['Equipaje Lionel: pañales 3 días, comida,']"
+      ],
+      "missing_entities": [],
+      "missing_facts": [
+        "Equipaje Lionel: pañales 3 días, comida, cochecito Chicco, p"
+      ]
+    },
+    {
+      "turn": 36,
+      "user_msg": "Ah, la Dra. Fernández me dijo que pidamos un certificado médico de viaje para Lionel, por las alergi",
+      "elapsed_ms": 7280,
+      "passed": false,
+      "entity_accuracy": null,
+      "relation_accuracy": null,
+      "fact_accuracy": 0,
+      "topic_ok": true,
+      "graph_nodes": 40,
+      "graph_edges": 76,
+      "node_delta": 1,
+      "failures": [
+        "facts missing: ['Pendiente: certificado médico de viaje p']"
+      ],
+      "missing_entities": [],
+      "missing_facts": [
+        "Pendiente: certificado médico de viaje para Lionel (alergias"
+      ]
+    },
+    {
+      "turn": 37,
+      "user_msg": "Fede me pasó un contacto en Madrid, su amigo Rodrigo que vive allá hace 5 años. Dice que nos puede d",
+      "elapsed_ms": 6797,
+      "passed": false,
+      "entity_accuracy": 100,
+      "relation_accuracy": 0,
+      "fact_accuracy": null,
+      "topic_ok": true,
+      "graph_nodes": 41,
+      "graph_edges": 78,
+      "node_delta": 1,
+      "failures": [
+        "relations missing: [('rodrigo', 'madrid')]"
+      ],
+      "missing_entities": [],
+      "missing_facts": []
+    },
+    {
+      "turn": 38,
+      "user_msg": "Checklist del viaje: ✅ vuelos, ✅ alojamiento, ✅ seguro, ⬜ pasaporte Lionel, ⬜ certificado médico, ⬜ ",
+      "elapsed_ms": 5905,
+      "passed": false,
+      "entity_accuracy": null,
+      "relation_accuracy": null,
+      "fact_accuracy": 0,
+      "topic_ok": true,
+      "graph_nodes": 41,
+      "graph_edges": 78,
+      "node_delta": 0,
+      "failures": [
+        "facts missing: ['Checklist: vuelos ✅, alojamiento ✅, segu']"
+      ],
+      "missing_entities": [],
+      "missing_facts": [
+        "Checklist: vuelos ✅, alojamiento ✅, seguro ✅. Pendiente: pas"
+      ]
+    },
+    {
+      "turn": 39,
+      "user_msg": "¿Cuántos euros debería llevar en efectivo? Sé que se paga mucho con tarjeta en España pero algún efe",
+      "elapsed_ms": 6046,
+      "passed": true,
+      "entity_accuracy": null,
+      "relation_accuracy": null,
+      "fact_accuracy": null,
+      "topic_ok": true,
+      "graph_nodes": 41,
+      "graph_edges": 78,
+      "node_delta": 0,
+      "failures": [],
+      "missing_entities": [],
+      "missing_facts": []
+    },
+    {
+      "turn": 40,
+      "user_msg": "Voy a llevar 500 EUR en efectivo y usar la tarjeta Prex para el resto. Prex no cobra comisión por co",
+      "elapsed_ms": 6828,
+      "passed": false,
+      "entity_accuracy": 0,
+      "relation_accuracy": null,
+      "fact_accuracy": 0,
+      "topic_ok": true,
+      "graph_nodes": 41,
+      "graph_edges": 78,
+      "node_delta": 0,
+      "failures": [
+        "entities missing: ['Prex']",
+        "facts missing: ['Efectivo: 500 EUR + tarjeta Prex para re']"
+      ],
+      "missing_entities": [
+        "Prex"
+      ],
+      "missing_facts": [
+        "Efectivo: 500 EUR + tarjeta Prex para resto"
+      ]
+    },
+    {
+      "turn": 41,
+      "user_msg": "Salió el pasaporte italiano de Lionel! Ahora tenemos los 3 pasaportes listos. Laura y Lionel viajan ",
+      "elapsed_ms": 7625,
+      "passed": false,
+      "entity_accuracy": null,
+      "relation_accuracy": null,
+      "fact_accuracy": 50,
+      "topic_ok": true,
+      "graph_nodes": 42,
+      "graph_edges": 81,
+      "node_delta": 1,
+      "failures": [
+        "facts missing: ['Documentación: Laura y Lionel pasaporte ']"
+      ],
+      "missing_entities": [],
+      "missing_facts": [
+        "Documentación: Laura y Lionel pasaporte italiano, Sandy pasa"
+      ]
+    },
+    {
+      "turn": 42,
+      "user_msg": "Reservé la Sagrada Familia para el 13 de enero a las 9am. Número de reserva: SGF-2027-45892. Entrada",
+      "elapsed_ms": 7125,
+      "passed": false,
+      "entity_accuracy": null,
+      "relation_accuracy": null,
+      "fact_accuracy": 0,
+      "topic_ok": true,
+      "graph_nodes": 42,
+      "graph_edges": 81,
+      "node_delta": 0,
+      "failures": [
+        "facts missing: ['Reserva 13 enero 9am, ref SGF-2027-45892']"
+      ],
+      "missing_entities": [],
+      "missing_facts": [
+        "Reserva 13 enero 9am, ref SGF-2027-45892, 52 EUR (2 adultos)"
+      ]
+    },
+    {
+      "turn": 43,
+      "user_msg": "Compré un chip prepago Holafly España con datos ilimitados por 15 días. 34 EUR. Es eSIM así que no n",
+      "elapsed_ms": 7390,
+      "passed": true,
+      "entity_accuracy": 100,
+      "relation_accuracy": null,
+      "fact_accuracy": null,
+      "topic_ok": true,
+      "graph_nodes": 43,
+      "graph_edges": 82,
+      "node_delta": 1,
+      "failures": [],
+      "missing_entities": [],
+      "missing_facts": []
+    },
+    {
+      "turn": 44,
+      "user_msg": "Laura quiere hacer una excursión a Montserrat desde Barcelona. Es un monasterio en la montaña a 1 ho",
+      "elapsed_ms": 7297,
+      "passed": true,
+      "entity_accuracy": 100,
+      "relation_accuracy": null,
+      "fact_accuracy": null,
+      "topic_ok": true,
+      "graph_nodes": 44,
+      "graph_edges": 84,
+      "node_delta": 1,
+      "failures": [],
+      "missing_entities": [],
+      "missing_facts": []
+    },
+    {
+      "turn": 45,
+      "user_msg": "Actualicemos el itinerario: sacamos un día libre y agregamos Montserrat y Montjuïc queda para la tar",
+      "elapsed_ms": 9546,
+      "passed": false,
+      "entity_accuracy": null,
+      "relation_accuracy": null,
+      "fact_accuracy": 0,
+      "topic_ok": true,
+      "graph_nodes": 45,
+      "graph_edges": 88,
+      "node_delta": 1,
+      "failures": [
+        "facts missing: ['Accesible con cochecito via cremallera s']"
+      ],
+      "missing_entities": [],
+      "missing_facts": [
+        "Accesible con cochecito via cremallera según Fede"
+      ]
+    },
+    {
+      "turn": 46,
+      "user_msg": "El certificado médico de Lionel ya está listo. La Dra. Fernández lo hizo en inglés y español. Incluy",
+      "elapsed_ms": 8000,
+      "passed": false,
+      "entity_accuracy": null,
+      "relation_accuracy": null,
+      "fact_accuracy": 0,
+      "topic_ok": true,
+      "graph_nodes": 46,
+      "graph_edges": 91,
+      "node_delta": 1,
+      "failures": [
+        "facts missing: ['Certificado médico Lionel listo: bilingü']"
+      ],
+      "missing_entities": [],
+      "missing_facts": [
+        "Certificado médico Lionel listo: bilingüe, alergias + medica"
+      ]
+    },
+    {
+      "turn": 47,
+      "user_msg": "Presupuesto final final: vuelos 4.725 + alojamiento 1.350 + seguro 150 + entradas ~200 + comida/tran",
+      "elapsed_ms": 8203,
+      "passed": false,
+      "entity_accuracy": null,
+      "relation_accuracy": null,
+      "fact_accuracy": 0,
+      "topic_ok": true,
+      "graph_nodes": 46,
+      "graph_edges": 91,
+      "node_delta": 0,
+      "failures": [
+        "facts missing: ['Presupuesto final: 8.000 USD. Ahorrados ', 'Progreso: 3.200 de 8.000 USD (40%)']"
+      ],
+      "missing_entities": [],
+      "missing_facts": [
+        "Presupuesto final: 8.000 USD. Ahorrados 3.200, faltan 4.800",
+        "Progreso: 3.200 de 8.000 USD (40%)"
+      ]
+    },
+    {
+      "turn": 48,
+      "user_msg": "Laura está re emocionada con el viaje. Es la primera vez que vamos a Europa los tres juntos. Hacé un",
+      "elapsed_ms": 7421,
+      "passed": true,
+      "entity_accuracy": null,
+      "relation_accuracy": null,
+      "fact_accuracy": null,
+      "topic_ok": true,
+      "graph_nodes": 46,
+      "graph_edges": 92,
+      "node_delta": 0,
+      "failures": [],
+      "missing_entities": [],
+      "missing_facts": []
+    },
+    {
+      "turn": 49,
+      "user_msg": "Gracias! Ya queda poco. Voy a seguir juntando plata mes a mes. Si sale algún bonus de laburo, va dir",
+      "elapsed_ms": 5921,
+      "passed": true,
+      "entity_accuracy": null,
+      "relation_accuracy": null,
+      "fact_accuracy": null,
+      "topic_ok": true,
+      "graph_nodes": 46,
+      "graph_edges": 92,
+      "node_delta": 0,
+      "failures": [],
+      "missing_entities": [],
+      "missing_facts": []
+    }
+  ]
+}

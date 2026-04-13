@@ -14,6 +14,7 @@ venv/
 # Generated data (large JSONL files — regenerate with scripts)
 training_data/*.jsonl
 training_data/v2/
+training_data/v3/
 01_dataset/data/
 01_dataset/training_data/
 
